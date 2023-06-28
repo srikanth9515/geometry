@@ -1,7 +1,7 @@
 %%
 %\subsection{Perpendicular Bisectors}
 \renewcommand{\theequation}{\theenumi}
-\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
 \item Show that 
@@ -10,7 +10,17 @@
 \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R.
 \end{align}
 %
-\solution In $\triangle OBC$, using the cosine formula, 
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/circle/tri_ccentre.tex}}
+	\end{center}
+	\caption{Circumcentre $O$ of $\triangle ABC$}
+	\label{fig:tri_ccentre}	
+\end{figure}
+		\solution In $\triangle OBC$, (see 
+	\figref{fig:tri_ccentre}	
+) using the cosine formula, 
 \begin{align}
 \cos 2A = \frac{R^2+R^2 - a^2}{2R^2} = 1 -\frac{a^2}{2R^2}
 \label{eq:crad_cos2a}
@@ -96,6 +106,7 @@ upon substituting from \eqref{eq:tri_crad_R} and using Hero's formula.
 ar\brak{\triangle OBC} = \frac{1}{2}R^2\sin 2A
 \end{align}
 %
+\iffalse
 \item Find the circumradius of $\triangle ABC$ for $a = 5, b = 6, c = 4$.
 %
 \\
@@ -103,6 +114,7 @@ ar\brak{\triangle OBC} = \frac{1}{2}R^2\sin 2A
 \begin{lstlisting}
 codes/circle/tri_cradius.py
 \end{lstlisting}
+\fi
 
 
 \end{enumerate}

@@ -1,5 +1,5 @@
 \renewcommand{\theequation}{\theenumi}
-\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
 \item Find Hero's formula for the area of a triangle.
@@ -54,6 +54,7 @@ in \eqref{eq:tri_ex_hero_temp}, the area of $\triangle ABC$ is
 \end{align}
 %
 This is known as Hero's formula.
+\iffalse
 \item Find the area of $\triangle ABC$ in Fig. \ref{fig:tri_rect}.
 \\
 \solution The desired are is computed using \eqref{eq:tri_area_hero} by the following 
@@ -62,32 +63,28 @@ the python code.
 codes/triangle/tri_area_hero.py
 \end{lstlisting}
 %
-
+\fi
 \item Show that the sum of two sides of a triangle is always greater than the third side.
 \\
 \solution In \eqref{eq:tri_area_hero}, all terms under the square roots should be positive.  Hence,
 %
 \begin{align}
 \label{eq:tri_hero_ineq}
-\begin{split}
-s-a &>0
-\\
-s-b &>0
-\\
-s-c &>0
-\end{split}
+s-a >0
+,\,
+s-b >0
+,\,
+s-c >0
 \end{align}
 resulting in 
 %
 \begin{align}
-\begin{split}
 \label{eq:tri_sum_ineq}
-b+c &>a
-\\
-c+a &>b
-\\
-a+b &>c
-\end{split}
+b+c >a
+,\,
+c+a >b
+,\,
+a+b >c
 \end{align}
 \end{enumerate}
 

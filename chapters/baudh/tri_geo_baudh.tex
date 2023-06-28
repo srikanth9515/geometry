@@ -1,6 +1,6 @@
 Use Fig. \ref{fig:tri_baudh} for all problems in this section.
 \renewcommand{\theequation}{\theenumi}
-\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
 
@@ -83,6 +83,7 @@ c &= a\frac{a}{c} + b \frac{b}{c} \quad \brak{\text{from} \quad \eqref{eq:tri_tr
 %
 \item Show that $c > a, c > b$
 %
+	\\
 \solution From 	\eqref{eq:tri_baudh},
 	\begin{align}
 	c^2 - a^2 &= b^2
@@ -95,6 +96,7 @@ c &= a\frac{a}{c} + b \frac{b}{c} \quad \brak{\text{from} \quad \eqref{eq:tri_tr
 Similarly, it can be shown that $c > b$.
 \item In a right angled triangle, the hypotenuse is the longest side.
 \label{them:hyp_largest}
+\iffalse
 \item Draw Fig. \ref{fig:tri_baudh} for $a = 4, c =3$.
 \label{const:tri_baudh}
 %
@@ -119,12 +121,14 @@ and the equivalent latex-tikz code is
 figs/triangle/tri_baudh.tex
 \end{lstlisting}
 %
+\fi
 \item Using 	\eqref{eq:tri_baudh}, for $a = 4, c = 3$,
 %
 \begin{align}
 b = \sqrt{a^2+c^2} = \sqrt{4^2+3^2} = 5
 \end{align}
 %
+\iffalse
 \item For  point $\vec{D} = \myvec{d_1\\d_2}$, its {\em norm} is defined as
 %
 \begin{align}
@@ -216,5 +220,5 @@ which can be simplified to obtain
 \implies \brak{\vec{B}^T-\vec{A}^T}\brak{\vec{B}-\vec{C}} = 0
 \end{multline}
 yielding \eqref{eq:tri_baudh_orth}.
-
+\fi
 \end{enumerate}

@@ -1,6 +1,6 @@
 
 \renewcommand{\theequation}{\theenumi}
-\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 %
 \item
@@ -16,6 +16,7 @@
 	\label{fig:tri_rect}	
 \end{figure}
 %
+\iffalse
 \item Draw Fig. \ref{fig:tri_rect} for $a = 4, c =3$.
 \label{const:tri_rect}
 \\
@@ -37,6 +38,7 @@ and the equivalent latex-tikz code is
 \begin{lstlisting}
 figs/triangle/tri_rect.tex
 \end{lstlisting}
+\fi
 
 \item
 	The area of the two triangles constituting the rectangle is the same.
@@ -95,6 +97,7 @@ ar\brak{\Delta ABC} &= ar\brak{\Delta ADC} + ar\brak{\Delta ADB} \\
 &= \frac{1}{2}ah
 \end{align}
 %
+\iffalse
 \item Draw Fig. \ref{fig:tri_sss} with $a=6$, $b=5$  and $c=4$.  
 \label{const:tri_sss}
 \\
@@ -104,7 +107,6 @@ ar\brak{\Delta ABC} &= ar\brak{\Delta ADC} + ar\brak{\Delta ADB} \\
 \vec{A} = \myvec{p\\q}, \vec{B} = \myvec{0\\0}, \vec{C} = \myvec{a\\0}, \vec{D} = \myvec{p\\0}
 \end{align}
 %
-
 Then
 \begin{align}
 \label{eq:c_tricoord}
@@ -151,4 +153,5 @@ and the equivalent latex-tikz code is
 \begin{lstlisting}
 figs/triangle/tri_sss.tex
 \end{lstlisting}
+\fi
 \end{enumerate}

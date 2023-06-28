@@ -1,5 +1,5 @@
 \renewcommand{\theequation}{\theenumi}
-\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
 \item
@@ -52,7 +52,6 @@ ar \brak{\triangle ABC} &= \frac{1}{2}ac \sin B = \frac{1}{2}ac
 \solution Fig. \ref{fig:tri_sss} can be suitably modified to obtain 
 \begin{multline}
 ar\brak{\Delta ABC} = 
-\\
 \frac{1}{2}ab\sin C = \frac{1}{s}bc\sin A = \frac{1}{2}ca\sin B
 \end{multline}
 Dividing the above by $abc$, we obtain
@@ -120,7 +119,7 @@ c
 Using the properties of determinants,
 %
 \begin{align}
-\cos A &= \frac{
+\cos A = \frac{
 \begin{vmatrix}
 a & c & b \\
 b & 0 & a \\
@@ -135,8 +134,7 @@ b & a & 0
 \end{vmatrix}
 	}
 	=\frac{ab^2 + ac^2 - a^3}{abc + abc} 
-\\
-&= \frac{b^2 + c^2 - a^2}{2abc}
+= \frac{b^2 + c^2 - a^2}{2abc}
 \end{align}
 %
 \item Show that 

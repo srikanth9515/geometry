@@ -1,10 +1,11 @@
 %%
 \renewcommand{\theequation}{\theenumi}
-\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
 \item In Fig. \ref{fig:tri_ccentre}, points $\vec{A}, \vec{B}, \vec{C}$  are at a distance $R$ from $\vec{O}$.  Trace all such points. The locus of such points is defined as a {\em circle}.
 %
+	\iffalse
 \\
 \solution This is done by the following python code
 %
@@ -17,7 +18,7 @@ and the equivalent latex-tikz code to draw Fig. \ref{fig:tri_ccircle} is
 \begin{lstlisting}
 figs/triangle/tri_ccircle.tex
 \end{lstlisting}
-
+\fi
 \begin{figure}[!ht]
 	\begin{center}
 		

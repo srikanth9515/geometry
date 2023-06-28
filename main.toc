@@ -6,28 +6,27 @@
 \contentsline {chapter}{\numberline {4}Miscellaneous }{71}{chapter.4}%
 \contentsline {chapter}{\numberline {A}Baudhayana Theorem}{113}{appendix.A}%
 \contentsline {section}{\numberline {A.1}The Right Angled Triangle}{113}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Sum of Angles}{116}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Proof of Baudhayana Theorem}{119}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Area of a Triangle}{125}{appendix.B}%
-\contentsline {section}{\numberline {B.1}From a Rectangle}{125}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Sine and Cosine formula}{129}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Hero's formula}{136}{section.B.3}%
-\contentsline {chapter}{\numberline {C}Circumcentre}{139}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Locating the Circumcentre}{139}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Finding the Circumradius}{143}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Drawing the Circumcircle}{146}{section.C.3}%
-\contentsline {chapter}{\numberline {D}Incentre}{149}{appendix.D}%
-\contentsline {section}{\numberline {D.1}Locating the Incentre}{149}{section.D.1}%
-\contentsline {section}{\numberline {D.2}Drawing the Incircle}{152}{section.D.2}%
-\contentsline {section}{\numberline {D.3}Congruent Triangles}{152}{section.D.3}%
-\contentsline {chapter}{\numberline {E}Medians of a Triangle}{155}{appendix.E}%
-\contentsline {section}{\numberline {E.1}Basic Proportionality Theorem}{155}{section.E.1}%
-\contentsline {section}{\numberline {E.2}Similar Triangles}{157}{section.E.2}%
-\contentsline {section}{\numberline {E.3}Centroid}{157}{section.E.3}%
-\contentsline {section}{\numberline {E.4}Median and Area}{162}{section.E.4}%
-\contentsline {section}{\numberline {E.5}Parallelogram}{163}{section.E.5}%
-\contentsline {chapter}{\numberline {F}Circles}{171}{appendix.F}%
-\contentsline {section}{\numberline {F.1}Area of a Circle}{171}{section.F.1}%
-\contentsline {section}{\numberline {F.2}Miscellaneous Properties}{178}{section.F.2}%
-\contentsline {chapter}{\numberline {G}Miscellaneous}{185}{appendix.G}%
-\contentsline {section}{\numberline {G.1}Trigonometric Identities}{185}{section.G.1}%
+\contentsline {section}{\numberline {A.2}Sum of Angles}{114}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Proof of Baudhayana Theorem}{115}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Area of a Triangle}{119}{appendix.B}%
+\contentsline {section}{\numberline {B.1}From a Rectangle}{119}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Sine and Cosine formula}{122}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Hero's formula}{128}{section.B.3}%
+\contentsline {chapter}{\numberline {C}Circumcentre}{131}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Locating the Circumcentre}{131}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Finding the Circumradius}{133}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Drawing the Circumcircle}{137}{section.C.3}%
+\contentsline {chapter}{\numberline {D}Incentre}{139}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Locating the Incentre}{139}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Drawing the Incircle}{142}{section.D.2}%
+\contentsline {section}{\numberline {D.3}Congruent Triangles}{142}{section.D.3}%
+\contentsline {chapter}{\numberline {E}Medians of a Triangle}{145}{appendix.E}%
+\contentsline {section}{\numberline {E.1}Basic Proportionality Theorem}{145}{section.E.1}%
+\contentsline {section}{\numberline {E.2}Similar Triangles}{147}{section.E.2}%
+\contentsline {section}{\numberline {E.3}Centroid}{147}{section.E.3}%
+\contentsline {section}{\numberline {E.4}Median and Area}{152}{section.E.4}%
+\contentsline {section}{\numberline {E.5}Parallelogram}{153}{section.E.5}%
+\contentsline {chapter}{\numberline {F}Circles}{161}{appendix.F}%
+\contentsline {section}{\numberline {F.1}Miscellaneous Properties}{161}{section.F.1}%
+\contentsline {chapter}{\numberline {G}Miscellaneous}{167}{appendix.G}%
+\contentsline {section}{\numberline {G.1}Trigonometric Identities}{167}{section.G.1}%
