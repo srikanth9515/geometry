@@ -34,7 +34,7 @@
 
 \booktitle{Geometry}
 
-\subtitle{Through Trigonometry}
+\subtitle{Through Algebra}
 
 \AuAff{G. V. V. Sharma}
 
@@ -202,40 +202,12 @@ This book shows how to solve problems in geometry using trigonometry.
 
 %
 
-\chapter{Triangle}
+\chapter{The Baudhayana Theorem}
+\section{Proof}
+\input{./chapters/baudh/tri_geo_baudh}
+\section{Examples}
 \input{./chapters/exercises/tri_geo_exer}
 %
-\chapter{Quadrilateral}
-\input{./chapters/exercises/quad_geo_exer}
-%
-\chapter{Circle}
-\input{./chapters/exercises/circ_geo_exer}
-\chapter{Miscellaneous }
-\input{./chapters/exercises/geo_misc}
-
-\iffalse
-\section{Quadrilateral Constructions}
-\input{./chapters/exercises/quad_geo_const}
-\section{Circle Constructions}
-\input{./chapters/exercises/circ_const_exer}
-\section{Triangle Constructions}
-\input{./chapters/exercises/tri_geo_const}
-\chapter{Two Dice}
-\input{conv-trans/main.tex}
-\fi
-
-%\include{ch02} 
-\backmatter
-\appendix
-\chapter{Baudhayana Theorem}
-\section{The Right Angled Triangle}
-\input{./chapters/baudh/tri_geo_rt}
-\section{Sum of Angles}
-\input{./chapters/baudh/tri_geo_sum_angle}
-\section{Proof of Baudhayana Theorem}
-\input{./chapters/baudh/tri_geo_baudh}
-
-
 \chapter{Area of a Triangle}
 \section{From a Rectangle}
 \input{./chapters/area/tri_geo_rect_area}
@@ -243,15 +215,16 @@ This book shows how to solve problems in geometry using trigonometry.
 \input{./chapters/area/tri_geo_sincos}
 \section{Hero's formula}
 \input{./chapters/area/tri_geo_hero}
-
 \chapter{Circumcentre}
-\section{Locating the Circumcentre}
+\section{Properties}
 \input{./chapters/circumc/tri_geo_ccentre}
-\section{Finding the Circumradius}
+\section{Circumradius}
 \input{./chapters/circumc/tri_geo_cradius}
-\section{Drawing the Circumcircle}
+\section{Circumcircle}
 \input{./chapters/circumc/tri_geo_ccircle}
 
+\chapter{Altitudes of a Triangle}
+\input{./chapters/misc/tri_geo_alt}
 \chapter{Incentre}
 \section{Locating the Incentre}
 \input{./chapters/inc/tri_geo_icentre}
@@ -271,65 +244,33 @@ This book shows how to solve problems in geometry using trigonometry.
 \input{./chapters/median/tri_geo_med_area}
 \section{Parallelogram}
 \input{./chapters/quad/quad_geo_prop}
+\chapter{Quadrilateral}
+\input{./chapters/exercises/quad_geo_exer}
 %
-
 \chapter{Circles}
-\iffalse
-\section{Area of a Circle}
-\input{./chapters/area/circ_geo_area}
-\fi
 \section{Miscellaneous Properties}
 \input{./chapters/misc/circ_geo_prop}
+\section{Examples}
+\input{./chapters/exercises/circ_geo_exer}
+\chapter{Miscellaneous }
+\input{./chapters/exercises/geo_misc}
 
-\chapter{Miscellaneous}
-\section{Trigonometric Identities}
+%\include{ch02} 
+\backmatter
+\appendix
+\chapter{The Right Angled Triangle}
+\input{./chapters/baudh/tri_geo_rt}
+\chapter{Sum of Angles}
+\input{./chapters/baudh/tri_geo_sum_angle}
+\chapter{Area of a Circle}
+\input{./chapters/area/circ_geo_area}
+%
+\chapter{Trigonometric Identities}
 \input{./chapters/quad/trig_id}
 \iffalse
+\chapter{Miscellaneous}
 \section{Constructions}
 \input{./chapters/quad/quad_const_exam}
-\section{Altitudes of a Triangle}
-\input{./chapters/misc/tri_geo_alt}
-\chapter{ Vectors}
-\section{$2\times 1$ vectors}
-\input{matrix/two.tex}
-%\include{app01}
-%\appendix
-\section{$3\times 1$ vectors}
-\input{matrix/three.tex}
-\chapter{Matrices}
-\input{matrix/mat.tex}
-
-\chapter{Linear Forms}
-\section{Two Dimensions}
-\input{linear/two.tex}
-\section{Three Dimensions}
-\input{linear/three.tex}
-\chapter{Quadratic Forms}
-%\numberwithin{equation}{section}
-%\numberwithin{equation}{section}
-\section{Conic equation }
-\input{quad/defs.tex}
-\section{Circles}
-\input{quad/circle.tex}
-
-\section{Standard Form}
-\input{quad/stddef.tex}
-\chapter{Conic Parameters}
-\section{Standard Form}
-\input{quad/standard.tex}
-\section{Quadratic Form }
-\input{quad/coroll.tex}
-
-\chapter{Conic Lines}
-\section{Pair of Straight Lines}
-%
-\input{quad/pair.tex}
-\section{Intersection of Conics}
-\input{quadlines/inter.tex}
-\section{ Chords of a Conic}
-\input{quadlines/chord.tex}
-\section{ Tangent and Normal}
-\input{quadlines/tangent.tex}
 \fi
 %\chapter{Proofs}
 %   \section{}

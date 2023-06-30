@@ -1,32 +1,33 @@
 \vskip -8pt
 \contentsline {schapter}{Introduction}{iii}{chapter*.2}%
-\contentsline {chapter}{\numberline {1}Triangle}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Quadrilateral}{29}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Circle}{41}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Miscellaneous }{71}{chapter.4}%
-\contentsline {chapter}{\numberline {A}Baudhayana Theorem}{113}{appendix.A}%
-\contentsline {section}{\numberline {A.1}The Right Angled Triangle}{113}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Sum of Angles}{114}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Proof of Baudhayana Theorem}{115}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Area of a Triangle}{119}{appendix.B}%
-\contentsline {section}{\numberline {B.1}From a Rectangle}{119}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Sine and Cosine formula}{122}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Hero's formula}{128}{section.B.3}%
-\contentsline {chapter}{\numberline {C}Circumcentre}{131}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Locating the Circumcentre}{131}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Finding the Circumradius}{133}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Drawing the Circumcircle}{137}{section.C.3}%
-\contentsline {chapter}{\numberline {D}Incentre}{139}{appendix.D}%
-\contentsline {section}{\numberline {D.1}Locating the Incentre}{139}{section.D.1}%
-\contentsline {section}{\numberline {D.2}Drawing the Incircle}{142}{section.D.2}%
-\contentsline {section}{\numberline {D.3}Congruent Triangles}{142}{section.D.3}%
-\contentsline {chapter}{\numberline {E}Medians of a Triangle}{145}{appendix.E}%
-\contentsline {section}{\numberline {E.1}Basic Proportionality Theorem}{145}{section.E.1}%
-\contentsline {section}{\numberline {E.2}Similar Triangles}{147}{section.E.2}%
-\contentsline {section}{\numberline {E.3}Centroid}{147}{section.E.3}%
-\contentsline {section}{\numberline {E.4}Median and Area}{152}{section.E.4}%
-\contentsline {section}{\numberline {E.5}Parallelogram}{153}{section.E.5}%
-\contentsline {chapter}{\numberline {F}Circles}{161}{appendix.F}%
-\contentsline {section}{\numberline {F.1}Miscellaneous Properties}{161}{section.F.1}%
-\contentsline {chapter}{\numberline {G}Miscellaneous}{167}{appendix.G}%
-\contentsline {section}{\numberline {G.1}Trigonometric Identities}{167}{section.G.1}%
+\contentsline {chapter}{\numberline {1}The Baudhayana Theorem}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Proof}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Examples}{6}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Area of a Triangle}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}From a Rectangle}{19}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Sine and Cosine formula}{22}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Hero's formula}{28}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Circumcentre}{31}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Properties}{31}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Circumradius}{34}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Circumcircle}{36}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Altitudes of a Triangle}{39}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Incentre}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Locating the Incentre}{43}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Drawing the Incircle}{46}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Congruent Triangles}{46}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Medians of a Triangle}{49}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Basic Proportionality Theorem}{49}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Similar Triangles}{51}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Centroid}{51}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Median and Area}{56}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Parallelogram}{57}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Quadrilateral}{65}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Circles}{77}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Miscellaneous Properties}{77}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Examples}{82}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Miscellaneous }{91}{chapter.9}%
+\contentsline {chapter}{\numberline {A}The Right Angled Triangle}{111}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Sum of Angles}{113}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Area of a Circle}{115}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Trigonometric Identities}{123}{appendix.D}%

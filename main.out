@@ -1,31 +1,32 @@
 \BOOKMARK [0][-]{chapter*.2}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Triangle}{}% 2
-\BOOKMARK [0][-]{chapter.2}{Quadrilateral}{}% 3
-\BOOKMARK [0][-]{chapter.3}{Circle}{}% 4
-\BOOKMARK [0][-]{chapter.4}{Miscellaneous }{}% 5
-\BOOKMARK [0][-]{appendix.A}{Baudhayana Theorem}{}% 6
-\BOOKMARK [1][-]{section.A.1}{The Right Angled Triangle}{appendix.A}% 7
-\BOOKMARK [1][-]{section.A.2}{Sum of Angles}{appendix.A}% 8
-\BOOKMARK [1][-]{section.A.3}{Proof of Baudhayana Theorem}{appendix.A}% 9
-\BOOKMARK [0][-]{appendix.B}{Area of a Triangle}{}% 10
-\BOOKMARK [1][-]{section.B.1}{From a Rectangle}{appendix.B}% 11
-\BOOKMARK [1][-]{section.B.2}{Sine and Cosine formula}{appendix.B}% 12
-\BOOKMARK [1][-]{section.B.3}{Hero's formula}{appendix.B}% 13
-\BOOKMARK [0][-]{appendix.C}{Circumcentre}{}% 14
-\BOOKMARK [1][-]{section.C.1}{Locating the Circumcentre}{appendix.C}% 15
-\BOOKMARK [1][-]{section.C.2}{Finding the Circumradius}{appendix.C}% 16
-\BOOKMARK [1][-]{section.C.3}{Drawing the Circumcircle}{appendix.C}% 17
-\BOOKMARK [0][-]{appendix.D}{Incentre}{}% 18
-\BOOKMARK [1][-]{section.D.1}{Locating the Incentre}{appendix.D}% 19
-\BOOKMARK [1][-]{section.D.2}{Drawing the Incircle}{appendix.D}% 20
-\BOOKMARK [1][-]{section.D.3}{Congruent Triangles}{appendix.D}% 21
-\BOOKMARK [0][-]{appendix.E}{Medians of a Triangle}{}% 22
-\BOOKMARK [1][-]{section.E.1}{Basic Proportionality Theorem}{appendix.E}% 23
-\BOOKMARK [1][-]{section.E.2}{Similar Triangles}{appendix.E}% 24
-\BOOKMARK [1][-]{section.E.3}{Centroid}{appendix.E}% 25
-\BOOKMARK [1][-]{section.E.4}{Median and Area}{appendix.E}% 26
-\BOOKMARK [1][-]{section.E.5}{Parallelogram}{appendix.E}% 27
-\BOOKMARK [0][-]{appendix.F}{Circles}{}% 28
-\BOOKMARK [1][-]{section.F.1}{Miscellaneous Properties}{appendix.F}% 29
-\BOOKMARK [0][-]{appendix.G}{Miscellaneous}{}% 30
-\BOOKMARK [1][-]{section.G.1}{Trigonometric Identities}{appendix.G}% 31
+\BOOKMARK [0][-]{chapter.1}{The Baudhayana Theorem}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Proof}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Examples}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Area of a Triangle}{}% 5
+\BOOKMARK [1][-]{section.2.1}{From a Rectangle}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Sine and Cosine formula}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Hero's formula}{chapter.2}% 8
+\BOOKMARK [0][-]{chapter.3}{Circumcentre}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Properties}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Circumradius}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.3}{Circumcircle}{chapter.3}% 12
+\BOOKMARK [0][-]{chapter.4}{Altitudes of a Triangle}{}% 13
+\BOOKMARK [0][-]{chapter.5}{Incentre}{}% 14
+\BOOKMARK [1][-]{section.5.1}{Locating the Incentre}{chapter.5}% 15
+\BOOKMARK [1][-]{section.5.2}{Drawing the Incircle}{chapter.5}% 16
+\BOOKMARK [1][-]{section.5.3}{Congruent Triangles}{chapter.5}% 17
+\BOOKMARK [0][-]{chapter.6}{Medians of a Triangle}{}% 18
+\BOOKMARK [1][-]{section.6.1}{Basic Proportionality Theorem}{chapter.6}% 19
+\BOOKMARK [1][-]{section.6.2}{Similar Triangles}{chapter.6}% 20
+\BOOKMARK [1][-]{section.6.3}{Centroid}{chapter.6}% 21
+\BOOKMARK [1][-]{section.6.4}{Median and Area}{chapter.6}% 22
+\BOOKMARK [1][-]{section.6.5}{Parallelogram}{chapter.6}% 23
+\BOOKMARK [0][-]{chapter.7}{Quadrilateral}{}% 24
+\BOOKMARK [0][-]{chapter.8}{Circles}{}% 25
+\BOOKMARK [1][-]{section.8.1}{Miscellaneous Properties}{chapter.8}% 26
+\BOOKMARK [1][-]{section.8.2}{Examples}{chapter.8}% 27
+\BOOKMARK [0][-]{chapter.9}{Miscellaneous }{}% 28
+\BOOKMARK [0][-]{appendix.A}{The Right Angled Triangle}{}% 29
+\BOOKMARK [0][-]{appendix.B}{Sum of Angles}{}% 30
+\BOOKMARK [0][-]{appendix.C}{Area of a Circle}{}% 31
+\BOOKMARK [0][-]{appendix.D}{Trigonometric Identities}{}% 32

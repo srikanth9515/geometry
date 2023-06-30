@@ -23,12 +23,12 @@ Use Fig. \ref{fig:tri_baudh} for all problems in this section.
 
 \solution From Problem \ref{prob:tri_compl_angle} and  \eqref{eq:tri_trig_defs}
 %
-\begin{multline}
+\begin{align}
 \label{eq:tri_90-ang}
 \cos \angle BAC = \cos \alpha =	\cos \brak{90\degree-\theta} = \frac{c}{b} 
-\\
+%\\
 = \sin \angle ABC = \sin \theta
-\end{multline}
+\end{align}
 %
 \item
 Show that 
@@ -128,11 +128,10 @@ figs/triangle/tri_baudh.tex
 b = \sqrt{a^2+c^2} = \sqrt{4^2+3^2} = 5
 \end{align}
 %
-\iffalse
 \item For  point $\vec{D} = \myvec{d_1\\d_2}$, its {\em norm} is defined as
 %
 \begin{align}
-OD = d_1^2+d_2^2 = \norm{\vec{D}} \define \sqrt{\vec{D}^T\vec{D}}, 
+OD = d_1^2+d_2^2 = \norm{\vec{D}} \define \sqrt{\vec{D}^{\top}\vec{D}}, 
 \label{eq:tri_norm_def}
 \end{align}
 %
@@ -140,12 +139,12 @@ where
 %
 \begin{align}
 \label{eq:tri_transpose_def}
- \vec{D}^T  \define \myvec{d_1 & d_2},
+ \vec{D}^{\top}  \define \myvec{d_1 & d_2},
 \\
-\vec{D}^T\vec{D} \define \myvec{d_1 & d_2} \myvec{d_1 \\ d_2} = d_1^2+d_2^2
+\vec{D}^{\top}\vec{D} \define \myvec{d_1 & d_2} \myvec{d_1 \\ d_2} = d_1^2+d_2^2
 \end{align}
 %
-\eqref{eq:tri_transpose_def} is the definition of {\em transpose}. $\vec{D}$ is defined to be a {\em column vector} and $\vec{D}^T$  is the corresponding {\em row vector} representing the same point.
+\eqref{eq:tri_transpose_def} is the definition of {\em transpose}. $\vec{D}$ is defined to be a {\em column vector} and $\vec{D}^{\top}$  is the corresponding {\em row vector} representing the same point.
 
 \item Also, it is easy to verify that
 %
@@ -162,7 +161,7 @@ This is known as the {\em distance formula}.
 \label{them:tri_baudh_orth}
 \begin{align}
 \label{eq:tri_baudh_orth}
-\brak{\vec{A}-\vec{B}}^T\brak{\vec{B}-\vec{C}} = 0
+\brak{\vec{A}-\vec{B}}^{\top}\brak{\vec{B}-\vec{C}} = 0
 \end{align}
 \\
 \solution From the Baudhayana theorem,
@@ -175,50 +174,49 @@ a^2+c^2 &= b^2
 which, from \eqref{eq:tri_transpose_def}
  can be expressed as
 \begin{multline}
-\brak{\vec{B}-\vec{A}}^T\brak{\vec{B}-\vec{A}}
+\brak{\vec{B}-\vec{A}}^{\top}\brak{\vec{B}-\vec{A}}
 +
-\brak{\vec{C}-\vec{B}}^T\brak{\vec{C}-\vec{B}}
+\brak{\vec{C}-\vec{B}}^{\top}\brak{\vec{C}-\vec{B}}
 \\
 =
-\brak{\vec{A}-\vec{C}}^T\brak{\vec{A}-\vec{C}}
+\brak{\vec{A}-\vec{C}}^{\top}\brak{\vec{A}-\vec{C}}
 \end{multline}
 %
 Expanding
 \begin{multline}
-\brak{\vec{B}-\vec{A}}^T\brak{\vec{B}-\vec{A}} 
-\\
-= \vec{B}^T\vec{B} - \vec{B}^T\vec{A} - \vec{A}^T\vec{B}+\vec{A}^T\vec{A}
+\brak{\vec{B}-\vec{A}}^{\top}\brak{\vec{B}-\vec{A}} 
+%\\
+= \vec{B}^{\top}\vec{B} - \vec{B}^{\top}\vec{A} - \vec{A}^{\top}\vec{B}+\vec{A}^{\top}\vec{A}
 \end{multline}
-$\because \vec{A}^T\vec{B} = \vec{B}^T\vec{A}$, the above equation can be expressed as
+$\because \vec{A}^{\top}\vec{B} = \vec{B}^{\top}\vec{A}$, the above equation can be expressed as
 \begin{align}
 \norm{\vec{B}-\vec{A}}^2 = 
-\norm{\vec{A}}^2 + \norm{\vec{B}}^2 - 2\vec{A}^T\vec{B}
+\norm{\vec{A}}^2 + \norm{\vec{B}}^2 - 2\vec{A}^{\top}\vec{B}
 \end{align}
 %
 Thus, \eqref{eq:tri_baudh_orth_norm} can be expressed using the above equation as
 \begin{multline}
-\norm{\vec{A}}^2 + \norm{\vec{B}}^2 - 2\vec{A}^T\vec{B}
-\\
+\norm{\vec{A}}^2 + \norm{\vec{B}}^2 - 2\vec{A}^{\top}\vec{B}
+%\\
 +
-\norm{\vec{B}}^2 + \norm{\vec{C}}^2 - 2\vec{B}^T\vec{C}
+\norm{\vec{B}}^2 + \norm{\vec{C}}^2 - 2\vec{B}^{\top}\vec{C}
 \\
 =
-\norm{\vec{A}}^2 + \norm{\vec{C}}^2 - 2\vec{A}^T\vec{C}
+\norm{\vec{A}}^2 + \norm{\vec{C}}^2 - 2\vec{A}^{\top}\vec{C}
 \end{multline}
 %
 which can be simplified to obtain
 %
-\begin{multline}
-2\norm{\vec{B}}^2 - 2\vec{B}^T\vec{C}
-\\
-- 2\vec{A}^T\vec{B}+ 2\vec{A}^T\vec{C}
+\begin{align}
+2\norm{\vec{B}}^2 - 2\vec{B}^{\top}\vec{C}
+%\\
+- 2\vec{A}^{\top}\vec{B}+ 2\vec{A}^{\top}\vec{C}
 =0
 \\
-\text{or, } \vec{B}^T\brak{\vec{B}-\vec{C}}
--\vec{A}^T\brak{\vec{B}-\vec{C}} = 0
+\text{or, } \vec{B}^{\top}\brak{\vec{B}-\vec{C}}
+-\vec{A}^{\top}\brak{\vec{B}-\vec{C}} = 0
 \\
-\implies \brak{\vec{B}^T-\vec{A}^T}\brak{\vec{B}-\vec{C}} = 0
-\end{multline}
+\implies \brak{\vec{B}^{\top}-\vec{A}^{\top}}\brak{\vec{B}-\vec{C}} = 0
+\end{align}
 yielding \eqref{eq:tri_baudh_orth}.
-\fi
 \end{enumerate}

@@ -1,11 +1,21 @@
 %%
+	Refer to \figref{fig:tri_ccentre}.
 %\subsection{Perpendicular Bisectors}
-\renewcommand{\theequation}{\theenumi}
+%\renewcommand{\theequation}{\theenumi}
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 %
 \item In $\triangle OBC$, $OB = OC = R$.  Such a triangle is known as an {\em isoceles triangle}.
+	\label{prob:tri-ccentre-def}
 %
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/circle/tri_ccentre.tex}}
+	\end{center}
+	\caption{Circumcentre $O$ of $\triangle ABC$}
+	\label{fig:tri_ccentre}	
+\end{figure}
 \item Show that $\angle OBC = \angle OCB$.  In an isoceles triangle, opposite sides and corresponding opposite angles are equal.
 \label{prob:tri_ang_side_eq}
 \\
@@ -61,11 +71,17 @@ upon substituting from \eqref{eq:tri_ccentre_A1}.
 \item Let $\vec{D}$ be the mid point of $BC$.  Show that $OD \perp BC$.
 \label{prob:tri_perp_bisect}
 %
-\iffalse
 \\
-\solution From \eqref{eq:circle_const_chord_bc}, 
+\solution From 
+	\eqref{prob:tri-ccentre-def},
 %
 \begin{align}
+	\norm{\vec{O}-\vec{C}} = 
+	\norm{\vec{O}-\vec{B}}  = R
+	\\
+	\implies 
+	\norm{\vec{O}-\vec{C}}^2 = 
+	\norm{\vec{O}-\vec{B}}^2
 \brak{\vec{B}-\vec{C}}^T\vec{O} &=   \frac{\norm{\vec{B}}^2- \norm{\vec{C}}^2}{2}
 \\
 \implies \brak{\vec{B}-\vec{C}}^T\vec{O} &=   \frac{1}{2}\brak{\vec{B}- \vec{C}}^T\brak{\vec{B}+ \vec{C}}
@@ -76,7 +92,6 @@ upon substituting from \eqref{eq:tri_ccentre_A1}.
 \end{align}
 %
 $\because \vec{D} = \frac{\vec{B}+\vec{C}}{2}$ is the mid point of $BC$.  From \eqref{eq:tri_baudh_orth} we then conclude that $OD \perp BC$.
-\fi
 %
 \item Perpendicular bisectors of a triangle meet at the circumcentre.
 %
@@ -149,13 +164,5 @@ figs/triangle/tri_ccentre.tex
 \end{lstlisting}
 %
 \fi
-\begin{figure}[!ht]
-	\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/circle/tri_ccentre.tex}}
-	\end{center}
-	\caption{Circumcentre $O$ of $\triangle ABC$}
-	\label{fig:tri_ccentre}	
-\end{figure}
 \end{enumerate}
 
