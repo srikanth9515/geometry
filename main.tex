@@ -202,16 +202,20 @@ This book shows how to solve problems in geometry using trigonometry.
 
 %
 
-\chapter{The Baudhayana Theorem}
-\section{Proof}
+\chapter{Trigonometry}
+\section{Ratios}
+\input{./chapters/baudh/tri_geo_rt}
+\section{The Baudhayana Theorem}
 \input{./chapters/baudh/tri_geo_baudh}
-\section{Examples}
-\input{./chapters/exercises/tri_geo_exer}
+\iffalse
+\fi
 %
-\chapter{Area of a Triangle}
+\section{Area of a Triangle}
+\iffalse
 \section{From a Rectangle}
 \input{./chapters/area/tri_geo_rect_area}
-\section{Sine and Cosine formula}
+\fi
+\section{Applications}
 \input{./chapters/area/tri_geo_sincos}
 \section{Hero's formula}
 \input{./chapters/area/tri_geo_hero}
@@ -244,6 +248,8 @@ This book shows how to solve problems in geometry using trigonometry.
 \input{./chapters/median/tri_geo_med_area}
 \section{Parallelogram}
 \input{./chapters/quad/quad_geo_prop}
+\section{Triangle}
+\input{./chapters/exercises/tri_geo_exer}
 \chapter{Quadrilateral}
 \input{./chapters/exercises/quad_geo_exer}
 %
@@ -258,15 +264,17 @@ This book shows how to solve problems in geometry using trigonometry.
 %\include{ch02} 
 \backmatter
 \appendix
-\chapter{The Right Angled Triangle}
-\input{./chapters/baudh/tri_geo_rt}
+\iffalse
 \chapter{Sum of Angles}
 \input{./chapters/baudh/tri_geo_sum_angle}
+\fi
 \chapter{Area of a Circle}
 \input{./chapters/area/circ_geo_area}
 %
 \chapter{Trigonometric Identities}
-\input{./chapters/quad/trig_id}
+\input{./chapters/app/trig_id}
+\chapter{Vectors}
+\input{./chapters/app/vector}
 \iffalse
 \chapter{Miscellaneous}
 \section{Constructions}

@@ -2,10 +2,33 @@
 %
 %
 \renewcommand{\theequation}{\theenumi}
-\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\thechapter.\arabic*.,ref=\thechapter.\theenumi]
 \numberwithin{equation}{enumi}
 %
 %
+\item Show that
+\begin{align}
+\label{eq:sin90}
+\sin 90 \degree = 1
+\end{align}
+%
+
+\solution In Fig. \ref{fig:tri_right_angle_area}, 
+using \eqref{eq:tri_area_sin} and \eqref{eq:tri_area_rect}
+\begin{align}
+ar \brak{\triangle ABC} &= \frac{1}{2}ac \sin B = \frac{1}{2}ac
+\\
+\implies \sin B &= \sin 90\degree = 1
+\end{align}
+%
+\item Show that
+\begin{align}
+\label{eq:cos90}
+\cos 90 \degree = 1
+\end{align}
+%
+\solution Trivial using \eqref{eq:tri_sin_cos_id}.
+
 \item
 	Using Fig. \ref{trig_id_sin_theta}, show that 
 	%

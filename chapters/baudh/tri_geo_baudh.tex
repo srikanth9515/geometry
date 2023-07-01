@@ -1,17 +1,4 @@
 Use Fig. \ref{fig:tri_baudh} for all problems in this section.
-\renewcommand{\theequation}{\theenumi}
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-
-
-
-\item  Show that
-	\begin{equation}
-	\cos \theta = \sin \brak{90\degree - \theta}
-	\label{eq:tri_baudh_comp}	
-	\end{equation}
-
-
 \begin{figure}[!ht]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{./figs/triangle/tri_baudh.tex}}
@@ -19,16 +6,10 @@ Use Fig. \ref{fig:tri_baudh} for all problems in this section.
 	\caption{Baudhayana Theorem}
 	\label{fig:tri_baudh}	
 \end{figure}
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
 
-
-\solution From Problem \ref{prob:tri_compl_angle} and  \eqref{eq:tri_trig_defs}
-%
-\begin{align}
-\label{eq:tri_90-ang}
-\cos \angle BAC = \cos \alpha =	\cos \brak{90\degree-\theta} = \frac{c}{b} 
-%\\
-= \sin \angle ABC = \sin \theta
-\end{align}
 %
 \item
 Show that 
@@ -80,7 +61,12 @@ From \eqref{ch1_budh_basic}, show that
 c &= a\frac{a}{c} + b \frac{b}{c} \quad \brak{\text{from} \quad \eqref{eq:tri_trig_defs}}\\
 \Rightarrow c^2 &= a^2 + b^2
 \end{align}
+\end{enumerate}
 %
+\iffalse
+\section{Applications}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
 \item Show that $c > a, c > b$
 %
 	\\
@@ -121,7 +107,6 @@ and the equivalent latex-tikz code is
 figs/triangle/tri_baudh.tex
 \end{lstlisting}
 %
-\fi
 \item Using 	\eqref{eq:tri_baudh}, for $a = 4, c = 3$,
 %
 \begin{align}
@@ -154,8 +139,11 @@ AC \define  \norm{\vec{A}-\vec{C}} =  \norm{\myvec{4\\-3}} = \sqrt{3^2+4^2} = 5
 \end{align}
 %
 This is known as the {\em distance formula}.
+\fi
 %
-\item Prove the distance formula in \eqref{eq:tri_norm_dist} using Baudhayana theorem.
+\item Prove the distance formula in 
+  \eqref{eq:norm2d_dist}
+ using the Baudhayana theorem.
 %
 \item Show that 
 \label{them:tri_baudh_orth}
@@ -171,7 +159,8 @@ a^2+c^2 &= b^2
 \implies \norm{\vec{B}-\vec{A}}^2+\norm{\vec{C}-\vec{A}}^2&=\norm{\vec{B}-\vec{C}}^2
 \label{eq:tri_baudh_orth_norm}
 \end{align}
-which, from \eqref{eq:tri_transpose_def}
+which, from 
+  \eqref{eq:norm2d}
  can be expressed as
 \begin{multline}
 \brak{\vec{B}-\vec{A}}^{\top}\brak{\vec{B}-\vec{A}}
@@ -220,3 +209,4 @@ which can be simplified to obtain
 \end{align}
 yielding \eqref{eq:tri_baudh_orth}.
 \end{enumerate}
+\fi

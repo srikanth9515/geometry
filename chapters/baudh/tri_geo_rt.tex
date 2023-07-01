@@ -1,10 +1,3 @@
-Refer to Fig. \ref{fig:tri_right_angle}.
-%\renewcommand{\theequation}{\theenumi}
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-\item
-
-
 A right angled triangle looks like Fig. \ref{fig:tri_right_angle}.
 \begin{figure}[!ht]
 \centering
@@ -13,6 +6,9 @@ A right angled triangle looks like Fig. \ref{fig:tri_right_angle}.
 \label{fig:tri_right_angle}	
 \end{figure}
 with angles $\angle A,\angle B$ and $\angle C$ and sides $a, b$ and $c$.  The unique feature of this triangle is $\angle B$ which is defined to be $90\degree$.
+%\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
 \item
 	For simplicity, let the greek letter $\theta = \angle C$.  We have the following definitions.
 \begin{equation}
@@ -24,6 +20,91 @@ with angles $\angle A,\angle B$ and $\angle C$ and sides $a, b$ and $c$.  The un
 	\end{matrix}
 \end{equation}
 %
+\item  Show that
+	\begin{equation}
+	\cos \theta = \sin \brak{90\degree - \theta}
+	\label{eq:tri_baudh_comp}	
+	\end{equation}
+\solution From \eqref{eq:tri_trig_defs},
+%
+\begin{align}
+\label{eq:tri_90-ang}
+\cos \angle BAC = \cos \alpha =	\cos \brak{90\degree-\theta} = \frac{c}{b} 
+%\\
+= \sin \angle ABC = \sin \theta
+\end{align}
+\item
+In Fig. \ref{fig:tri_cosine_formula}, show that
+%
+\begin{equation}
+\label{eq:tri_cos_form}
+\cos A = \frac{b^2+c^2-a^2}{2bc}
+\end{equation}
+%
+\begin{figure}[!ht]
+	\begin{center}
+		
+		%\includegraphics[width=\columnwidth]{./figs/ch2_triang_ar}
+		%\vspace*{-10cm}
+		\resizebox{\columnwidth}{!}{\input{./figs/triangle/tri_cosine_formula.tex}}
+	\end{center}
+	\caption{The cosine formula}
+	\label{fig:tri_cosine_formula}	
+\end{figure}
+\solution From Fig. \ref{fig:tri_cosine_formula}, 
+%
+\begin{align}
+a &= x + y = b \cos C + c \cos B.
+\end{align}
+%
+Similarly,
+%
+\begin{align}
+b &= c \cos A + a \cos C \\
+c &= b \cos A + a \cos B
+\end{align}
+%
+The above equations can be expressed in matrix form as
+%
+\begin{equation}
+\begin{pmatrix}
+0 & c & b \\
+c & 0 & a \\
+b & a & 0
+\end{pmatrix}
+\begin{pmatrix}
+\cos A \\
+\cos B \\
+\cos C
+\end{pmatrix}
+= 
+\begin{pmatrix}
+a\\
+b\\
+c
+\end{pmatrix}
+\end{equation}
+%
+Using the properties of determinants,
+%
+\begin{align}
+\cos A = \frac{
+\begin{vmatrix}
+a & c & b \\
+b & 0 & a \\
+c & a & 0
+\end{vmatrix}
+	}
+	{
+\begin{vmatrix}
+0 & c & b \\
+c & 0 & a \\
+b & a & 0
+\end{vmatrix}
+	}
+	=\frac{ab^2 + ac^2 - a^3}{abc + abc} 
+= \frac{b^2 + c^2 - a^2}{2abc}
+\end{align}
 \iffalse
 \item Draw Fig. \ref{fig:tri_right_angle} for $a = 4, c =3$.
 \label{const:tri_right_angle}
