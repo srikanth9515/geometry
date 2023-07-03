@@ -7,28 +7,28 @@
 \contentsline {chapter}{\numberline {2}Coordinate Geometry}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Vectors}{11}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Collinear Points}{13}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Matrices: Cosine Formula}{16}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Area of a Triangle: Cross Product}{19}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Parallelogram}{23}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Properties}{23}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Circumradius}{26}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Circumcircle}{29}{section.2.8}%
-\contentsline {chapter}{\numberline {3}Altitudes of a Triangle}{31}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Incentre}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Locating the Incentre}{35}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Drawing the Incircle}{38}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Congruent Triangles}{38}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Medians of a Triangle}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Basic Proportionality Theorem}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Similar Triangles}{43}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Centroid}{43}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Median and Area}{47}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Parallelogram}{48}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Triangle}{54}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Quadrilateral}{69}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Circles}{81}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Miscellaneous Properties}{81}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Examples}{86}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Miscellaneous }{95}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Area of a Circle}{115}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Trigonometric Identities}{123}{appendix.B}%
+\contentsline {section}{\numberline {2.3}Matrices: Cosine Formula}{18}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Area of a Triangle: Cross Product}{20}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Parallelogram}{24}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Properties}{25}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Circumradius}{27}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Circumcircle}{30}{section.2.8}%
+\contentsline {chapter}{\numberline {3}Altitudes of a Triangle}{33}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Incentre}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Locating the Incentre}{37}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Drawing the Incircle}{40}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Congruent Triangles}{40}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Medians of a Triangle}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Basic Proportionality Theorem}{43}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Similar Triangles}{45}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Centroid}{45}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Median and Area}{49}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Parallelogram}{50}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Triangle}{56}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Quadrilateral}{71}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Circles}{83}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Miscellaneous Properties}{83}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Examples}{88}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Miscellaneous }{97}{chapter.8}%
+\contentsline {chapter}{\numberline {A}Area of a Circle}{117}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Trigonometric Identities}{125}{appendix.B}%

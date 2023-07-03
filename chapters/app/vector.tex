@@ -130,6 +130,7 @@ yielding
 	  \label{prop:two-tri-indep}
   \begin{align}
 	  p\brak{\vec{A}- \vec{B}} +q\brak{\vec{C} -\vec{B}} 
+	  \\
 	  =\brak{p+q}\vec{B}- p\vec{A} -q\vec{C} = 0
 	  \\
 	  \implies p=0, q=0
@@ -159,6 +160,7 @@ yielding
 \solution From 
 	  \eqref{eq:section_formula},
   \begin{align}
+	  \label{eq:section_formula-G}
 \vec{G} = 
 	   \frac{k_1\vec{E}+ \vec{B}}{k_1+1}
 	  &= \frac{k_2\vec{F}+ \vec{C}}{k_2+1}
@@ -166,8 +168,68 @@ yielding
 	  \implies 
 	   \frac{k_1\brak{\frac{\vec{A}+\vec{C}}{2}}+ \vec{B}}{k_1+1}
 	  &= \frac{k_2\brak{\frac{\vec{A}+\vec{B}}{2}}+ \vec{C}}{k_2+1}
+	  \\
+	  \implies 
+	\brak{k_2+1}   \cbrak{k_1\brak{{\vec{A}+\vec{C}}}+ 2\vec{B}}
+	  &= \brak{k_1+1}\cbrak{k_2\brak{{\vec{A}+\vec{B}}}+ 2\vec{C}}
   \end{align}
+  which can be expressed as
+  \begin{align}
+	  \cbrak{2 + k_2- k_1k_2 }\vec{B}-\brak{k_2-k_1}\vec{A}  - \cbrak{k_1 +2 - k_1k_2}\vec{C}
+	  =0
+  \end{align}
+  and is of the form
 	  \eqref{eq:two-tri-indep}
+	  with 
+  \begin{align}
+	  p = {k_2-k_1}, q = {k_1 +2 - k_1k_2}.
+  \end{align}
+  Thus, from 
+	  \eqref{eq:two-tri-indep}
+  \begin{align}
+\label{eq:tri_med_centroid_ratio-1}
+	  k_2-k_1 &= 0,
+	  \\
+	  k_1 +2 - k_1k_2 &=0
+\label{eq:tri_med_centroid_ratio-2}
+  \end{align}
+  Thus, from 
+\eqref{eq:tri_med_centroid_ratio-2}
+  \begin{align}
+	  k_1=k_2
+  \end{align}
+  and substituting the above in 
+\eqref{eq:tri_med_centroid_ratio-2} results in the quadratic
+  \begin{align}
+	  k_1^2 - k_1-2 &=0
+	  \\
+	  \implies 
+	  \brak{k_1-2}\brak{k_1+1} &=0
+  \end{align}
+  admitting $k_1=k_2=2$ as the only possible solution.
+  \item Substituting $k_1 =2 $ in 
+	  \eqref{eq:section_formula-G}
+  \begin{align}
+	  \vec{G}=\frac{\vec{A}+\vec{B} + \vec{C}}{3}
+	  \label{eq:centroid-G}
+  \end{align}
+\item $AG$ is extended to join $BC$ at $\vec{D}$.  Show that $AD$ is also a median.
+	\\
+	\solution Considering the ratios in \figref{},
+  \begin{align}
+\vec{G} = 
+	  \frac{k_3\vec{D}+\vec{A} }{k_3+1} 
+	  \\
+	\vec{D}  =\frac{k_4\vec{C}+\vec{B} }{k_4+1} 
+  \end{align}
+  Substituting from 
+	  \eqref{eq:centroid-G}
+	  in the above, 
+  \begin{align}
+	  \brak{k_3+1}\frac{\vec{A}+\vec{B} + \vec{C}}{3}
+ = 
+	  {k_3\brak{\frac{k_4\vec{C}+\vec{B} }{k_4+1}} +\vec{A} } 
+  \end{align}
   \iffalse
   \item In $\triangle ABC$, if $\vec{D}, \vec{E}$ divide the lines $AB, AC$ in the ratio $k:1$ respectively,  then $DE \parallel BC$.
 	  \label{prop:two-tri-bpt}
