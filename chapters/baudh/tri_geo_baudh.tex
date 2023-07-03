@@ -39,27 +39,41 @@ From \eqref{ch1_budh_basic}, show that
 \label{eq:tri_sin_cos_id}
 \sin ^2 \theta + \cos ^2 \theta = 1
 \end{equation}
-
-
 %
 \solution Dividing both sides of \eqref{ch1_budh_basic} by $b$, 
 \begin{align}
 1 &= \frac{a}{b}\cos\theta + \frac{c}{b}\sin\theta\\
 \Rightarrow &\sin ^2 \theta + \cos ^2 \theta = 1 \quad \brak{\text{from} \quad \eqref{eq:tri_trig_defs}}
 \end{align}
+\item In a right angled triangle, the hypotenuse is the longest side.
+\label{them:hyp_largest}
+\\
+\solution From 
+\eqref{eq:tri_sin_cos_id},
+\begin{align}
+	0 \le \sin \theta, \cos \theta \le 1
+\end{align}
+Hence, 
+\begin{align}
+	b \sin \theta \le b \implies  c \le b
+\end{align}
+Similalry,
+\begin{align}
+	a \le b
+\end{align}
 
 \item
 	Using \eqref{ch1_budh_basic}, show that
 	\begin{equation}
 	\label{eq:tri_baudh}
-	c^2 = a^2 + b^2
+	b^2 = a^2 + c^2
 	\end{equation}
 	\eqref{eq:tri_baudh} is known as the Baudhayana theorem.  It is also known as the Pythagoras theorem.
-
+\\
 \solution From \eqref{ch1_budh_basic},
 \begin{align}
-c &= a\frac{a}{c} + b \frac{b}{c} \quad \brak{\text{from} \quad \eqref{eq:tri_trig_defs}}\\
-\Rightarrow c^2 &= a^2 + b^2
+b &= a\frac{a}{b} + c \frac{c}{b} \quad \brak{\text{from} \quad \eqref{eq:tri_trig_defs}}\\
+\implies b^2 &= a^2 + c^2
 \end{align}
 \end{enumerate}
 %
@@ -80,8 +94,6 @@ c &= a\frac{a}{c} + b \frac{b}{c} \quad \brak{\text{from} \quad \eqref{eq:tri_tr
 	\end{align}
 %
 Similarly, it can be shown that $c > b$.
-\item In a right angled triangle, the hypotenuse is the longest side.
-\label{them:hyp_largest}
 \iffalse
 \item Draw Fig. \ref{fig:tri_baudh} for $a = 4, c =3$.
 \label{const:tri_baudh}
