@@ -4,31 +4,32 @@
 \contentsline {section}{\numberline {1.1}Ratios}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}The Baudhayana Theorem}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Area of a Triangle}{5}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Coordinate Geometry}{11}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Vectors}{11}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Collinear Points}{13}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Matrices: Cosine Formula}{18}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Area of a Triangle: Cross Product}{20}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Parallelogram}{24}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Properties}{25}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Circumradius}{27}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Circumcircle}{30}{section.2.8}%
-\contentsline {chapter}{\numberline {3}Altitudes of a Triangle}{33}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Incentre}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Locating the Incentre}{37}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Drawing the Incircle}{40}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Congruent Triangles}{40}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Medians of a Triangle}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Basic Proportionality Theorem}{43}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Similar Triangles}{45}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Centroid}{45}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Median and Area}{49}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Parallelogram}{50}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Triangle}{56}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Quadrilateral}{71}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Circles}{83}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Miscellaneous Properties}{83}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Examples}{88}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Miscellaneous }{97}{chapter.8}%
-\contentsline {chapter}{\numberline {A}Area of a Circle}{117}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Trigonometric Identities}{125}{appendix.B}%
+\contentsline {section}{\numberline {1.4}Angle Bisectors}{9}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Coordinate Geometry}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Vectors}{15}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Collinear Points}{17}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Matrices: Cosine Formula}{23}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Area of a Triangle: Cross Product}{25}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Parallelogram}{29}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Altitudes of a Triangle:Line Equation}{30}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Properties}{34}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Circumradius}{36}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Circumcircle}{39}{section.2.9}%
+\contentsline {chapter}{\numberline {3}Incentre}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Locating the Incentre}{41}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Drawing the Incircle}{43}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Congruent Triangles}{44}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Medians of a Triangle}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Basic Proportionality Theorem}{47}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Similar Triangles}{49}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Centroid}{49}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Median and Area}{53}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Parallelogram}{54}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Triangle}{60}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Quadrilateral}{75}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Circles}{87}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Miscellaneous Properties}{87}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Examples}{91}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Miscellaneous }{101}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Area of a Circle}{121}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Trigonometric Identities}{129}{appendix.B}%
