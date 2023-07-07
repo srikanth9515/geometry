@@ -2,10 +2,25 @@
 %
 %
 \renewcommand{\theequation}{\theenumi}
-\begin{enumerate}[label=\thechapter.\arabic*.,ref=\thechapter.\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 %
+\item Show that
+\begin{align}
+\label{eq:cos90}
+\cos 90 \degree = 0
+\end{align}
 %
+\solution Using 
+\eqref{eq:tri_cos_form}
+in 
+\figref{fig:tri_right_angle},	
+%
+\begin{align}
+	\cos 90 \degree = \frac{a^2+c^2-b^2}{2ac} = 0
+\end{align}
+upon substituting from 
+	\eqref{eq:tri_baudh}.
 \item Show that
 \begin{align}
 \label{eq:sin90}
@@ -13,21 +28,8 @@
 \end{align}
 %
 
-\solution In Fig. \ref{fig:tri_right_angle_area}, 
-using \eqref{eq:tri_area_sin} and \eqref{eq:tri_area_rect}
-\begin{align}
-ar \brak{\triangle ABC} &= \frac{1}{2}ac \sin B = \frac{1}{2}ac
-\\
-\implies \sin B &= \sin 90\degree = 1
-\end{align}
-%
-\item Show that
-\begin{align}
-\label{eq:cos90}
-\cos 90 \degree = 1
-\end{align}
-%
-\solution Trivial using \eqref{eq:tri_sin_cos_id}.
+\solution Trivial from 
+	\eqref{eq:tri_baudh_comp}.
 
 \item
 	Prove the following identities 
@@ -60,13 +62,12 @@ This gives \eqref{trig_id_sin_diff}.  In \eqref{trig_id_sin_diff}, replace $\alp
 %
 $90{\degree} - \alpha$.  This results in
 %
-\begin{multline}
+\begin{align}
 \sin\brak{90{\degree} - \alpha - \beta}
-\\
-=
+	&=
 \sin \brak{90{\degree} -\alpha} \cos \beta - \cos \brak{90{\degree} -\alpha} \sin \beta \\
-\implies \cos\brak{\alpha + \beta} = \cos \alpha \cos \beta - \sin \alpha \sin \beta
-\end{multline}
+	\implies \cos\brak{\alpha + \beta} &= \cos \alpha \cos \beta - \sin \alpha \sin \beta
+\end{align}
 % 
 \item
 	Using \eqref{trig_id_sin_theta_eq} and \eqref{trig_id_cos_diff}, show that
@@ -115,7 +116,6 @@ we obtain
 \begin{multline}
 \sin \brak{\theta_1 + \theta_2}\cos \theta_2 
 =\cos \theta_1\cos\theta_2 \sin\theta_2 
-\\	
 + \sin \theta_1\cos^2\theta_2
 \end{multline}
 %
@@ -177,6 +177,17 @@ resulting in \eqref{eq:trig_id_sum_diff1}
 \end{align}
 from \eqref{eq:trig_id_ang_sum_diff}.  Other identities may be proved similarly.
 %
+\item Show that 
+  \begin{align}
+\label{eq:trig-id-2A-sin}
+	  \sin 2 \theta = 2 \sin \theta \cos \theta
+	  \\
+	  \cos 2 \theta &= 1 - 2 \sin^2 \theta 
+	  =  2 \cos^2 \theta -1
+	  \\
+	  &= \cos^2 \theta -\sin^2 \theta 
+\label{eq:trig-id-2A-cos}
+  \end{align}
 %\item Show that 
 %\begin{align}
 %\sin \brak{-\theta} = -\sin \theta

@@ -29,12 +29,42 @@ Using
 \\
 	\text{or, } \angle B &= \angle C.
 \end{align}
-\item Show that 
+\item In 
+	\figref{fig:tri-isosc},	
+	show that 
+  \begin{align}
+	  a = 2R \sin\frac{ \theta }{2}
+\label{eq:crad_cos2a}
+  \end{align}
+		\solution In $\triangle OBC$,  using the cosine formula from
+\eqref{eq:tri_cos_form},
+\begin{align}
+	\cos \theta &= \frac{R^2+R^2 - a^2}{2R^2} = 1 -\frac{a^2}{2R^2}
+	\\
+	\implies \frac{a^2}{2R^2}&= 2\sin^2\frac{\theta}{2}
+\end{align}
+yielding 
+\eqref{eq:crad_cos2a}.
+\item In
+	\figref{fig:tri_ccircle-ang},
+show that 
 \begin{align}
 \label{eq:tri_crad_R}
 \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R.
 \end{align}
 %
+%
+\solution
+From 
+\eqref{eq:ang-subtend-ccentre}
+and 
+\eqref{eq:crad_cos2a}
+  \begin{align}
+	  a = 2R \sin A
+  \end{align}
+
+
+\end{enumerate}
 \iffalse
 \begin{figure}[!ht]
 	\begin{center}
@@ -45,14 +75,7 @@ Using
 	\label{fig:tri_ccentre}	
 \end{figure}
 \fi
-		\solution In $\triangle OBC$, (see 
-	\figref{fig:tri_ccentre}	
-) using the cosine formula, 
-\begin{align}
-\cos 2A = \frac{R^2+R^2 - a^2}{2R^2} = 1 -\frac{a^2}{2R^2}
-\label{eq:crad_cos2a}
-\end{align}
-%
+  \iffalse
 Using the sine formula, 
 \begin{align}
 \frac{\sin 2A}{a} &= \frac{\sin \theta_1}{R} = \frac{\sin\brak{90\degree- A}}{R}
@@ -133,7 +156,6 @@ upon substituting from \eqref{eq:tri_crad_R} and using Hero's formula.
 ar\brak{\triangle OBC} = \frac{1}{2}R^2\sin 2A
 \end{align}
 %
-\iffalse
 \item Find the circumradius of $\triangle ABC$ for $a = 5, b = 6, c = 4$.
 %
 \\
@@ -142,6 +164,3 @@ ar\brak{\triangle OBC} = \frac{1}{2}R^2\sin 2A
 codes/circle/tri_cradius.py
 \end{lstlisting}
 \fi
-
-
-\end{enumerate}

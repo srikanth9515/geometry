@@ -73,7 +73,8 @@ $AD \perp BC$ and $BE \perp AC$ are defined to be the altitudes of $\triangle AB
 \\
 \solution 
 From \eqref{eq:line_dir_pt-alt}
-\eqref{eq:dir_normal_orth}
+\eqref{eq:dir_normal_orth},
+  \eqref{eq:dot2d-orth}
 and 
 \eqref{eq:line_normal_pt},
 the equations of $AD$ and $BE$ are 
@@ -98,8 +99,10 @@ Adding both the above and simplifying,
 \brak{\vec{B}-\vec{A}}^{\top}\brak{\vec{H}-\vec{C}} &= 0  
 \end{align}
 %
-$\implies CH \perp AB$ from Theorem \ref{them:tri_baudh_orth}, or $CF \perp AB$.  
+$\implies CH \perp AB$ 
+from   \eqref{eq:dot2d-orth}, or $CF \perp AB$.  
 %
+\iffalse
 The python code for  Fig. \ref{fig:tri_alt_h} is
 \begin{lstlisting}
 codes/triangle/tri_alt_h.py
@@ -110,8 +113,7 @@ and the equivalent latex-tikz code is
 \begin{lstlisting}
 figs/triangle/tri_alt_h.tex
 \end{lstlisting}
-
+\fi
 \item Altitudes of a $\triangle$ meet at the {\em orthocentre} $H$.
 %
-\item Find $\vec{H}$.
 \end{enumerate}

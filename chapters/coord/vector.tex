@@ -46,6 +46,7 @@
 	In 
 \figref{fig:tri_right_angle},	
 \begin{align}
+  \label{eq:dot2d-orth}
   \vec{A}^{\top} \vec{C}  = 0
 \end{align}
 \item The {\em norm} of $\vec{A}$ is defined as
@@ -272,65 +273,6 @@ yielding
   \begin{align}
 	  k_3 = 2
   \end{align}
-  \iffalse
-  \item In $\triangle ABC$, if $\vec{D}, \vec{E}$ divide the lines $AB, AC$ in the ratio $k:1$ respectively,  then $DE \parallel BC$.
-	  \label{prop:two-tri-bpt}
-	  \begin{proof}
-		  From 
-	  \eqref{eq:section_formula}, 
-  \begin{align}
-	  \vec{D}&= \frac{k\vec{B}+ \vec{A}}{k+1}
-	  \\
-	  \vec{E}&= \frac{k\vec{C}+ \vec{A}}{k+1}
-	  \\
-	  \implies 
-	  \vec{D}-	  \vec{E}&= \frac{k}{k+1}\brak{\vec{B}- \vec{C}}
-  \end{align}
-  Thus, from 
-		  Appendix \ref{prop:two-dir-vec}, $DE \parallel BC$.
-
-	  \end{proof}
-
-  \item In $\triangle ABC$, if $DE \parallel BC$, $\vec{D}$ and $\vec{E}$ divide the lines $AB, AC$ in the same ratio.  
-	  \label{prop:two-tri-bpt-conv}
-	  \begin{proof}
-If $DE \parallel BC$,
-		  from 
- \eqref{eq:two-par-dir-vec}
-  \begin{align}
-	  \label{prop:two-tri-bpt-conv-1}
-	  \brak{\vec{B}- \vec{C}} = k\brak{\vec{D}-	  \vec{E}}
-  \end{align}
-Using   
-	  \eqref{eq:section_formula}, 
-let 
-  \begin{align}
-	  \vec{D}&= \frac{k_1\vec{B}+ \vec{A}}{k_1+1}
-	  \\
-	  \vec{E}&= \frac{k_2\vec{C}+ \vec{A}}{k_2+1}
-  \end{align}
-	  Subtituting the above in 
-	  \eqref{prop:two-tri-bpt-conv-1}, after some algebra, we obtain 
-	
-  \begin{align}
-\brak{p+q}\vec{A}- p\vec{B} -q\vec{C} &= 0
-  \end{align}
-  where
-  \begin{align}
-	  p = \frac{1}{k} -  \frac{k_1}{k_1+1},
-	  q = \frac{1}{k} -  \frac{k_1}{k_1+1}
-  \end{align}
-  %
-From 	  
-	  \eqref{eq:two-tri-indep},
-  \begin{align}
-	p = q = 0
-	  \\
-	  \implies k_1 = k_2  = \frac{1}{k-1}
-  \end{align}
-
-	  \end{proof}
-	  \fi
 \end{enumerate}
 \section{Matrices: Cosine Formula}
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
@@ -347,6 +289,7 @@ is defined as
   &= \mydet{a_1 & b_1\\a_2 & b_2} = a_1b_2 - a_2 b_1
 \end{align}
 %
+\iffalse
 \item Let 
 \begin{align}
   \vec{A} = \myvec{a_1\\a_2 \\ a_3},\, 
@@ -362,8 +305,7 @@ and
 Then, \begin{align}  
 	\mydet{\vec{A} & \vec{B} & \vec{C}} = a_1 \mydet{\vec{B}_{23} & \vec{C}_23} +a_2 \mydet{\vec{C}_{23} & \vec{A}_{23}} +a_3\mydet{\vec{A}_{23} & \vec{B}_{23}} 
 \end{align}
-
-
+\fi
 
 \item
 In Fig. \ref{fig:tri_cosine_formula}, show that
@@ -453,13 +395,6 @@ b & a & 0
 \numberwithin{equation}{enumi}
 \item The {\em cross product} or {\em vector product} defined as $\vec{A}\times \vec{B}$ is given by  
   \eqref{eq:det2d} for  $2 \times 1$ vectors.
-  \iffalse
-\item For  $3 \times 1$ vectors, 
-\begin{align}
-  \label{eq:cross3d}
-	\vec{A} \times \vec{B} = \myvec{ \mydet{\vec{A}_{23} & \vec{B}_{23}} \\[10pt] \mydet{\vec{A}_{31} & \vec{B}_{31}} \\[10pt] \mydet{\vec{A}_{12}  & \vec{B}_{12}}}
-\end{align}
-\fi
 \item The area of the triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by 
 	\label{prop:area2d}
 \begin{align}
@@ -477,34 +412,94 @@ b & a & 0
 	\vec{A}\times\vec{B}  &= \pm\brak{\vec{C}\times \vec{D}}
   \end{align}
   where the sign depends on the orientation of the vectors.
+\end{enumerate}
+\section{Parallelogram}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+  \item If $ABCD$ be a parallelogram,
+	  \label{prop:two-pgm}
+  \begin{align}
+	  \label{eq:two-pgm}
+ \vec{B}-\vec{A} = \vec{C} -\vec{D}
+  \end{align}
+%  \item Diagonals of a parallelogram bisect each other.
+%	  \label{prop:two-pgm-diag-bisect}
+\item The area of the parallelogram with vertices $\vec{A}, \vec{B}, \vec{C}$ and $\vec{D}$ is given by 
+  \label{prop:pgm2d}
+\begin{align}
+  \label{eq:pgm2d}
+	\norm{\brak{\vec{A}-\vec{B}} \times \brak{\vec{A}-\vec{D}}}
+ = 
+ \norm{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}
+  \end{align}
+\end{enumerate}
+  \iffalse
+  \item In $\triangle ABC$, if $\vec{D}, \vec{E}$ divide the lines $AB, AC$ in the ratio $k:1$ respectively,  then $DE \parallel BC$.
+	  \label{prop:two-tri-bpt}
+	  \begin{proof}
+		  From 
+	  \eqref{eq:section_formula}, 
+  \begin{align}
+	  \vec{D}&= \frac{k\vec{B}+ \vec{A}}{k+1}
+	  \\
+	  \vec{E}&= \frac{k\vec{C}+ \vec{A}}{k+1}
+	  \\
+	  \implies 
+	  \vec{D}-	  \vec{E}&= \frac{k}{k+1}\brak{\vec{B}- \vec{C}}
+  \end{align}
+  Thus, from 
+		  Appendix \ref{prop:two-dir-vec}, $DE \parallel BC$.
+
+	  \end{proof}
+
+  \item In $\triangle ABC$, if $DE \parallel BC$, $\vec{D}$ and $\vec{E}$ divide the lines $AB, AC$ in the same ratio.  
+	  \label{prop:two-tri-bpt-conv}
+	  \begin{proof}
+If $DE \parallel BC$,
+		  from 
+ \eqref{eq:two-par-dir-vec}
+  \begin{align}
+	  \label{prop:two-tri-bpt-conv-1}
+	  \brak{\vec{B}- \vec{C}} = k\brak{\vec{D}-	  \vec{E}}
+  \end{align}
+Using   
+	  \eqref{eq:section_formula}, 
+let 
+  \begin{align}
+	  \vec{D}&= \frac{k_1\vec{B}+ \vec{A}}{k_1+1}
+	  \\
+	  \vec{E}&= \frac{k_2\vec{C}+ \vec{A}}{k_2+1}
+  \end{align}
+	  Subtituting the above in 
+	  \eqref{prop:two-tri-bpt-conv-1}, after some algebra, we obtain 
+	
+  \begin{align}
+\brak{p+q}\vec{A}- p\vec{B} -q\vec{C} &= 0
+  \end{align}
+  where
+  \begin{align}
+	  p = \frac{1}{k} -  \frac{k_1}{k_1+1},
+	  q = \frac{1}{k} -  \frac{k_1}{k_1+1}
+  \end{align}
+  %
+From 	  
+	  \eqref{eq:two-tri-indep},
+  \begin{align}
+	p = q = 0
+	  \\
+	  \implies k_1 = k_2  = \frac{1}{k-1}
+  \end{align}
+
+	  \end{proof}
+	  \fi
+  \iffalse
+\item For  $3 \times 1$ vectors, 
+\begin{align}
+  \label{eq:cross3d}
+	\vec{A} \times \vec{B} = \myvec{ \mydet{\vec{A}_{23} & \vec{B}_{23}} \\[10pt] \mydet{\vec{A}_{31} & \vec{B}_{31}} \\[10pt] \mydet{\vec{A}_{12}  & \vec{B}_{12}}}
+\end{align}
   \item The median divides the triangle into two triangles of equal area.
 	  \label{prop:two-median-area}
-\item Let $\vec{x}$ be equidistant from the points $\vec{A}$ and $\vec{B}$.  Then 
-  \begin{align}
-	  \brak{\vec{A}-\vec{B}}^{\top}{\vec{x}} 
-	  =  \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2}
-  \label{eq:norm2d_equidist}
-  \end{align}
-  \solution 
-\begin{align}
-	\norm{\vec{x}-\vec{A}} &=
-\norm{\vec{A}-\vec{B}} 
-\\
-	\implies \norm{\vec{x}-\vec{A}}^2 &=
-\norm{\vec{x}-\vec{B}}^2 
-\end{align}
-which can be expressed as 
-\begin{multline}
-%  \label{eq:norm2d_dist}
-	\brak{\vec{x}-\vec{A}}^{\top} \brak{\vec{x}-\vec{A}}=
-	\brak{\vec{x}-\vec{B}}^{\top} 
-\brak{\vec{x}-\vec{B}}
-\\
-	\implies	\norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{A} + \norm{\vec{A}}^2
-	\\= \norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{B} + \norm{\vec{B}}^2
-\end{multline}
-which can be simplified to obtain
-  \eqref{eq:norm2d_equidist}.
 \item If $\vec{x}$ lies on the  $x$-axis and is  equidistant from the points $\vec{A}$ and $\vec{B}$, 
   \begin{align}
 	  \vec{x} &=
@@ -588,24 +583,4 @@ which can be simplified to obtain
   \\
   \vec{e}_2&= \myvec{0\\1}.
   \end{align}
-\end{enumerate}
-\section{Parallelogram}
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-  \item If $ABCD$ be a parallelogram,
-	  \label{prop:two-pgm}
-  \begin{align}
-	  \label{eq:two-pgm}
- \vec{B}-\vec{A} = \vec{C} -\vec{D}
-  \end{align}
-%  \item Diagonals of a parallelogram bisect each other.
-%	  \label{prop:two-pgm-diag-bisect}
-\item The area of the parallelogram with vertices $\vec{A}, \vec{B}, \vec{C}$ and $\vec{D}$ is given by 
-  \label{prop:pgm2d}
-\begin{align}
-  \label{eq:pgm2d}
-	\norm{\brak{\vec{A}-\vec{B}} \times \brak{\vec{A}-\vec{D}}}
- = 
- \norm{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}
-  \end{align}
-\end{enumerate}
+\fi
