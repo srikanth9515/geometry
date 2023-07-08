@@ -87,6 +87,7 @@ Thus,
 	\vec{B} \equiv
 	\vec{B}-
 	\vec{A} \equiv \kappa \myvec{1 \\ m},
+\label{eq:dir-vec}
 \end{align}
 where $m$ is defined to be the slope of $AB$.
 	In 
@@ -138,7 +139,7 @@ yielding
 	  \label{eq:two-tri-indep}
   \end{align}
   \item In 
-	\figref{fig:tri_med_meet}, 
+	\figref{fig:tri_med_isect}	
 	\begin{align}
 	AF = BF, \,
 	AE = BE, 
@@ -153,10 +154,12 @@ yielding
 %
 \begin{figure}[!ht]
 	\begin{center}
-		\resizebox{\columnwidth}{!}{\input{./figs/triangle/tri_med_meet.tex}}
+		\resizebox{\columnwidth}{!}{\input{./figs/coord/tri_med_isect.tex}}
+%		\resizebox{\columnwidth}{!}{\input{./figs/coord/tri_med_meet.tex}}
 	\end{center}
-	\caption{$\frac{GA}{GD} =2$}
-	\label{fig:tri_med_meet}	
+	\caption{$k_1=k_2=2$.}
+	\label{fig:tri_med_isect}	
+	%\label{fig:tri_med_meet}	
 \end{figure}
 \solution From 
 	  \eqref{eq:section_formula},
@@ -214,9 +217,21 @@ yielding
 	  \vec{G}=\frac{\vec{A}+\vec{B} + \vec{C}}{3}
 	  \label{eq:centroid-G}
   \end{align}
-\item $AG$ is extended to join $BC$ at $\vec{D}$.  Show that $AD$ is also a median.
+\item 
+In	\figref{fig:tri_med_meet},	
+$AG$ is extended to join $BC$ at $\vec{D}$.  Show that $AD$ is also a median.
+\begin{figure}[!ht]
+	\begin{center}
+%		\resizebox{\columnwidth}{!}{\input{./figs/coord/tri_med_isect.tex}}
+		\resizebox{\columnwidth}{!}{\input{./figs/coord/tri_med_meet.tex}}
+	\end{center}
+	\caption{$k_3 = 2, k_4 =1$}
+%	\label{fig:tri_med_isect}	
+	\label{fig:tri_med_meet}	
+\end{figure}
 	\\
-	\solution Considering the ratios in \figref{},
+	\solution Considering the ratios in 
+	\figref{fig:tri_med_meet},	
   \begin{align}
 \vec{G} = 
 	  \frac{k_3\vec{D}+\vec{A} }{k_3+1} 
