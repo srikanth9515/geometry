@@ -6,7 +6,8 @@
 \contentsline {section}{\numberline {1.3}Area of a Triangle}{5}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Angle Bisectors}{9}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Circumradius}{13}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Identities}{15}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Tangent}{15}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Identities}{16}{section.1.7}%
 \contentsline {chapter}{\numberline {2}Coordinate Geometry}{21}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Vectors}{21}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Collinear Points}{23}{section.2.2}%
