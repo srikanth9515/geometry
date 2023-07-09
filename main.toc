@@ -16,7 +16,7 @@
 \contentsline {section}{\numberline {2.6}Altitudes of a Triangle:Line Equation}{33}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Circumcircle: Circle Equation}{36}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Tangent}{41}{section.2.8}%
-\contentsline {chapter}{\numberline {3}Triangle}{45}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Quadrilateral}{59}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Circle}{71}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Miscellaneous }{79}{chapter.6}%
+\contentsline {chapter}{\numberline {3}Triangle}{47}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Quadrilateral}{61}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Circle}{73}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Miscellaneous }{81}{chapter.6}%

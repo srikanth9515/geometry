@@ -64,8 +64,8 @@ upon substituting in \eqref{erq:circ_tang-line-quad}. Using the definition of th
 	\\
 	  \implies 
 	  \brak{\vec{P}-\vec{C}}^{\top}\brak{\vec{C} -\vec{O}} = 0
+		\label{eq:circ_tang-line-orth-pc}
   \end{align}
-		from \eqref{eq:circ_tang-line-orth-dir},	
 		which is equivalent to 
 		\eqref{eq:circ_tang-line-orth}.
 
@@ -91,12 +91,64 @@ In Fig. \ref{fig:circ_tang_icept} show that
 	\\
 	\solution
 	Let 
+    Let
   \begin{align}
-	  \vec{A} = \vec{O}+R\myvec{\cos \theta_1 \\ \sin \theta_1},\,
-	  \vec{B} = \vec{O}+R \myvec{\cos \theta_2 \\ \sin \theta_2},\,
-	  \vec{C} = \vec{O}+R \myvec{\cos \theta_3 \\ \sin \theta_3}
+	  \vec{O} = \vec{0}
+	  \vec{A} = \myvec{\cos \theta_1 \\ \sin \theta_1},\,
+	  \vec{B} =  \myvec{\cos \theta_2 \\ \sin \theta_2},\,
+	  \vec{C} =  \myvec{\cos \theta_3 \\ \sin \theta_3}
   \end{align}
-  and $PC$ be the $x$-axis.
+  \iffalse
+  From 
+\eqref{eq:tri_ccentre_subtend-temp}
+  \begin{align}
+	  \cos \alpha = \cos\brak{ \frac{\theta_1-\theta_3}{2}  }
+		\label{eq:circ_tang-line-alpha}	
+  \end{align}
+  \fi
+  Without loss of generality,  let 
+  \begin{align}
+	  \theta_3 = \frac{\pi}{2}
+		\label{eq:circ_tang-line-t3}	
+  \end{align}
+  Then, 
+  \begin{align}
+	  \vec{C}-\vec{O} = \myvec{0 \\ 1}
+  \end{align}
+  %which is the direction vector of the $y$-axis.
+  From 
+		from \eqref{eq:circ_tang-line-orth-pc},	
+  \begin{align}
+	  \vec{C}-\vec{P} = \myvec{1 \\ 0}
+		\label{eq:circ_tang-line-pc},	
+  \end{align}
+From   
+\eqref{eq:tri_cos_form-ccentre}
+and 
+		\eqref{eq:circ_tang-line-pc},	
+  \begin{align}
+	  \cos \theta &= \frac{
+		  \myvec{\cos \theta_3-\cos \theta_1 & \sin \theta_3-\sin \theta_1}
+		  \myvec{1 \\ 0}
+		  }
+		  {
+	   2 \sin \brak{\frac{\theta_1-\theta_3}{2}}
+			  } 
+			  \\
+			  &=
+	    \sin \brak{\frac{\theta_1+\theta_3}{2}}
+	    =\cos\brak{\frac{\pi}{2}-\frac{\theta_1+\theta_3}{2}}
+	    =\cos\brak{\frac{\pi}{4}-\frac{\theta_1}{2}}
+  \end{align}
+  upon substituting from 
+		\eqref{eq:circ_tang-line-t3}.  Similarly, 	
+		from
+\eqref{eq:tri_ccentre_subtend-temp},
+  \begin{align}
+	  \cos \alpha = \cos \brak{\frac{\theta_1-\theta_3}{2}  }
+	    =\cos\brak{\frac{\pi}{4}-\frac{\theta_1}{2}}
+	  =\cos \theta
+  \end{align}
 	\iffalse
 
 %
