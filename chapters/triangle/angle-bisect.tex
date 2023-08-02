@@ -1,0 +1,40 @@
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Suppose the equations $AB, BC$ and $CA$ are respectively given by 
+		\begin{align}
+			\label{eq:tri-sides}
+			\vec{n}_i^{\top}\vec{x}=c_i \quad i = 1, 2, 3 
+		\end{align}
+		The equations of the respective angle bisectors are then given by 
+		\begin{align}
+			\frac{\abs{\vec{n}_i^{\top}\vec{x}-c_i}}{\norm{\vec{n}_i}}
+		=
+			\frac{\vec{n}_j^{\top}\vec{x}-c_j}{\norm{\vec{n}_j}}
+\quad i \ne j
+		\end{align}
+		Substitute numerical values and find the equations of the angle bisectors of $A, B$ and $C$.
+	\item Find the intersection $\vec{I}$ of the angle bisectors of $B$ and $C$.
+	\item Using 
+    \eqref{eq:angle2d}
+verify that 
+		\begin{align}
+			\angle BAI = \angle CAI.
+		\end{align}
+	\item Find the distance from $\vec{I}$ to $BC$.  
+	\item Repeat the above exercise for the sides $AB$ and $AC$.
+	\item This distance is known as the inradius $r$.
+	\item Draw a circle with center $I$ and radius $r$.  This is known as the incentre.
+	\item The equation of the incircle is given by 
+		\begin{align}
+			\norm{\vec{x}-\vec{I}}^2 = r^2
+		\end{align}
+		Find the parameteric equation of $BC$ and use it to verify that $BC$ intersects the incircle at exactly one point $\vec{D}_3$.  $BC$ is defined to be a {\em tangent} to the incircle.  $\vec{D}_3$ is defined to be {\em point of contact}.
+	\item Find the other points of contact $\vec{E}_3$ and $\vec{F}_3$.
+	\item Verify that 
+		\begin{align}
+			AE_3 = AF_3=m, BD_3 = BF_3=n, CD_3 = CE_3=p.
+		\end{align}
+	\item Obtain $p,q,r$ in terms of $a,b,c$, the sides of the triangle using a matrix equation.  Obtain the numerical values.
+\end{enumerate}

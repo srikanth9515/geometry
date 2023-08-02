@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.22)  9 JUL 2023 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.22)  2 AUG 2023 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1401,7 +1401,7 @@ LaTeX Info: Redefining \nameref on input line 26.
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-<figs/logo.jpg, id=119, 642.4pt x 642.4pt>
+<figs/logo.jpg, id=143, 642.4pt x 642.4pt>
 File: figs/logo.jpg Graphic file (type jpg)
 <use figs/logo.jpg>
 Package pdftex.def Info: figs/logo.jpg  used on input line 52.
@@ -1522,7 +1522,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 1.
-(./chapters/trig/tri_geo_rt.tex (./figs/trig/tri_right_angle.tex)
+(./chapters/triangle/exam.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1530,53 +1533,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
 
-])
-(./chapters/trig/tri_geo_baudh.tex (./figs/triangle/tri_baudh.tex)
+]
+Overfull \hbox (4.68596pt too wide) in paragraph at lines 31--34
+\OT1/cmr/m/n/10.95 is the di-rec-tion vec-tor of $\OML/cmm/m/it/10.95 AB$\OT1/c
+mr/m/n/10.95 . Find the pa-ram-e-teric equa-tions of $\OML/cmm/m/it/10.95 AB; B
+C$
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
+ [2])
+(./chapters/triangle/median.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [3])
+(./chapters/triangle/altitude.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4])
-(./chapters/trig/tri_geo_sincos.tex (./figs/triangle/tri_sss.tex)
+(./chapters/triangle/perp-bisect.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
-(./figs/triangle/tri_sin_inc.tex
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
+ [5])
+(./chapters/triangle/angle-bisect.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [6])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1588,30 +1589,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [8
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8])
-(./chapters/trig/ang.tex (./figs/trig/tri-icentre.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+]
+Chapter 2.
+(./chapters/trig/tri_geo_rt.tex (./figs/trig/tri_right_angle.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [9])
+(./chapters/trig/tri_geo_baudh.tex (./figs/triangle/tri_baudh.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-(./figs/trig/tri-iradius.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1621,7 +1616,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
-(./figs/trig/tri_icircle.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1631,26 +1625,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12])
-(./chapters/trig/tri_geo_cradius.tex (./figs/trig/tri_isosc.tex)
-Underfull \vbox (badness 3229) has occurred while \output is active []
-
-
+(./chapters/trig/tri_geo_sincos.tex (./figs/triangle/tri_sss.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
+(./figs/triangle/tri_sin_inc.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14])
-(./chapters/trig/tangent.tex) (./chapters/trig/trig_id.tex
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1665,7 +1660,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
+ [16])
+(./chapters/trig/ang.tex (./figs/trig/tri-icentre.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1675,14 +1671,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
-Underfull \hbox (badness 1014) detected at line 120
- []$[]   [] [] [] \OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/
-it/10.95 ^^R[] [] ^^R[] [] ^^R[] \OT1/cmr/m/n/10.95 + [] \OML/cmm/m/it/10.95 ^^
-R[] [][] ^^R[]$ [][]  
- []
-
-
-Underfull \vbox (badness 2689) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1690,24 +1679,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18])
+ [18]
+(./figs/trig/tri-iradius.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
+(./figs/trig/tri_icircle.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20
 
-]
-Chapter 2.
-(./chapters/coord/vector.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20])
+(./chapters/trig/tri_geo_cradius.tex (./figs/trig/tri_isosc.tex)
+Underfull \vbox (badness 3229) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1724,14 +1718,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+ [22])
+(./chapters/trig/tangent.tex) (./chapters/trig/trig_id.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-Underfull \vbox (badness 6125) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1740,7 +1735,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-(./figs/coord/tri_med_isect.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1750,7 +1744,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1014) detected at line 120
+ []$[]   [] [] [] \OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/
+it/10.95 ^^R[] [] ^^R[] [] ^^R[] \OT1/cmr/m/n/10.95 + [] \OML/cmm/m/it/10.95 ^^
+R[] [][] ^^R[]$ [][]  
+ []
+
+
+Underfull \vbox (badness 2689) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1758,11 +1759,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
-(./figs/coord/tri_med_meet.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [26])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1774,10 +1771,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [28
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
+]
+Chapter 3.
+(./chapters/coord/vector.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1787,7 +1785,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-(./figs/triangle/tri_cosine_formula.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1802,11 +1799,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [31]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6125) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1814,9 +1808,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32])
-(./chapters/coord/tri_geo_alt.tex (./figs/coord/tri_alt.tex)
-Underfull \vbox (badness 1558) has occurred while \output is active []
+ [32]
+(./figs/coord/tri_med_isect.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1834,17 +1828,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34]
-(./figs/coord/tri_alt_h.tex)
-Underfull \vbox (badness 2970) has occurred while \output is active []
-
-
+(./figs/coord/tri_med_meet.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35])
-(./chapters/coord/tri_geo_ccentre.tex (./figs/coord/tri-perp-bis.tex)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1854,13 +1847,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-(./figs/coord/tri_ccircle.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37]
+(./figs/triangle/tri_cosine_formula.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1888,8 +1884,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40])
-(./chapters/coord/circ_geo_prop.tex (./figs/coord/circ_tang.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(./chapters/coord/tri_geo_alt.tex (./figs/coord/tri_alt.tex)
+Underfull \vbox (badness 1558) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1907,14 +1903,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42]
-(./figs/coord/circ_tang_icept.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(./figs/coord/tri_alt_h.tex)
+Underfull \vbox (badness 2970) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1922,7 +1912,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44])
+ [43])
+(./chapters/coord/tri_geo_ccentre.tex (./figs/coord/tri-perp-bis.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+(./figs/coord/tri_ccircle.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1934,11 +1935,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46
 
-]
-Chapter 3.
-(./chapters/exercises/tri_geo_exer.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1950,7 +1953,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48])
+(./chapters/coord/circ_geo_prop.tex (./figs/coord/circ_tang.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1962,7 +1972,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [50]
+(./figs/coord/circ_tang_icept.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1974,7 +1988,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1986,7 +2003,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
+ [54
+
+]
+Chapter 4.
+(./chapters/exercises/tri_geo_exer.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1999,35 +2020,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 328.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 328.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 328.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [57]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 345.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 350.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58])
+ [58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2039,11 +2043,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60
-
-]
-Chapter 4.
-(./chapters/exercises/quad_geo_exer.tex
+ [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2068,53 +2068,63 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [64]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 328.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 345.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 350.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [67]
-Overfull \hbox (0.17122pt too wide) in paragraph at lines 164--165
-[]$\OML/cmm/m/it/10.95 ABCD; DCFE$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 
-ABFE$ \OT1/cmr/m/n/10.95 are par-al-lel-o-grams. Show that ar$(\OML/cmm/m/it/10
-.95 ADE\OT1/cmr/m/n/10.95 ) =
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]
+ [68
+
+]
+Chapter 5.
+(./chapters/exercises/quad_geo_exer.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [69]
-(./solutions/3/57/chapters/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [70]))
+ [70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2126,11 +2136,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72
-
-]
-Chapter 5.
-(./chapters/exercises/circ_geo_exer.tex
+ [72]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2149,6 +2155,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [75]
+Overfull \hbox (0.17122pt too wide) in paragraph at lines 164--165
+[]$\OML/cmm/m/it/10.95 ABCD; DCFE$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 
+ABFE$ \OT1/cmr/m/n/10.95 are par-al-lel-o-grams. Show that ar$(\OML/cmm/m/it/10
+.95 ADE\OT1/cmr/m/n/10.95 ) =
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2161,14 +2174,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [77]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 120.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 120.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 120.
+(./solutions/3/57/chapters/solution.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2176,36 +2183,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78]
+ [78]))
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79])
+ [79]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
-Chapter 6.
-(./chapters/exercises/geo_misc.tex
-Overfull \hbox (1.84592pt too wide) in paragraph at lines 9--11
-[]\OT1/cmr/m/n/10.95 A,B and C are three points on a cir-cle with cen-tre $\OML
-/cmm/m/it/10.95 O$ \OT1/cmr/m/n/10.95 such that $\U/msa/m/n/10.95 \\OML/cmm/m/i
-t/10.95 BOC \OT1/cmr/m/n/10.95 =
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [81
+ [80
 
 ]
+Chapter 6.
+(./chapters/exercises/circ_geo_exer.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2230,6 +2230,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [85]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 120.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 120.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 120.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2241,19 +2251,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87]
+ [87])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [88]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Chapter 7.
+(./chapters/exercises/geo_misc.tex
+Overfull \hbox (1.84592pt too wide) in paragraph at lines 9--11
+[]\OT1/cmr/m/n/10.95 A,B and C are three points on a cir-cle with cen-tre $\OML
+/cmm/m/it/10.95 O$ \OT1/cmr/m/n/10.95 such that $\U/msa/m/n/10.95 \\OML/cmm/m/i
+t/10.95 BOC \OT1/cmr/m/n/10.95 =
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [89]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [89
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2278,15 +2299,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [93]
-Overfull \hbox (19.4436pt too wide) in paragraph at lines 316--317
-[]$\OMS/cmsy/m/n/10.95 4\OML/cmm/m/it/10.95 ODC \OMS/cmsy/m/n/10.95 ^^X 4\OML/c
-mm/m/it/10.95 OBA; \U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 BOC \OT1/cmr/m/n/10.95
- = 125[]$ and $\U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 CDO \OT1/cmr/m/n/10.95 = 7
-0[]$. Find $\U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 DOC; \U/msa/m/n/10.95 \\OML/c
-mm/m/it/10.95 DCO$
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2316,7 +2328,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [98])
+ [98]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2328,19 +2340,76 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [100
+ [100]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [101]
+Overfull \hbox (19.4436pt too wide) in paragraph at lines 316--317
+[]$\OMS/cmsy/m/n/10.95 4\OML/cmm/m/it/10.95 ODC \OMS/cmsy/m/n/10.95 ^^X 4\OML/c
+mm/m/it/10.95 OBA; \U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 BOC \OT1/cmr/m/n/10.95
+ = 125[]$ and $\U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 CDO \OT1/cmr/m/n/10.95 = 7
+0[]$. Find $\U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 DOC; \U/msa/m/n/10.95 \\OML/c
+mm/m/it/10.95 DCO$
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [103]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [104]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [105]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [106])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [107]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [108
 
 ]
 No file main.ind.
 (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 96EA128EFFBA830F0CBA4262C9F23D84;1289.
+(rerunfilecheck)             Checksum: F43F7EEE5A8913B62E2DFFA4CCBC7568;1625.
  ) 
 Here is how much of TeX's memory you used:
- 31059 strings out of 479304
- 590054 string characters out of 5869779
- 1073961 words of memory out of 5000000
- 46419 multiletter control sequences out of 15000+600000
+ 31168 strings out of 479304
+ 591515 string characters out of 5869779
+ 1074961 words of memory out of 5000000
+ 46434 multiletter control sequences out of 15000+600000
  419576 words of font info for 90 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  218i,15n,217p,585b,1351s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2362,10 +2431,10 @@ dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfrm0800.pfb>
-Output written on main.pdf (107 pages, 427298 bytes).
+Output written on main.pdf (115 pages, 440744 bytes).
 PDF statistics:
- 1795 PDF objects out of 2073 (max. 8388607)
- 1600 compressed objects within 16 object streams
- 902 named destinations out of 1000 (max. 500000)
- 290 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1943 PDF objects out of 2073 (max. 8388607)
+ 1738 compressed objects within 18 object streams
+ 980 named destinations out of 1000 (max. 500000)
+ 338 words of extra memory for PDF output out of 10000 (max. 10000000)
 

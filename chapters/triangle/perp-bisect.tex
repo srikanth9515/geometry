@@ -1,0 +1,28 @@
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The equation of the perpendicular bisector of $BC$ is
+		\begin{align}
+			\label{eq:tri-perp-bisect}
+			\brak{\vec{x}-\frac{\vec{B}+\vec{C}}{2}}\brak{\vec{B}-\vec{C}} = 0
+		\end{align}
+		Substitute numerical values and find the equations of the perpendicular bisectors of $AB, BC$ and $CA$.
+	\item Find the intersection $\vec{O}$ of the perpendicular bisectors of $AB$ and $AC$.
+	\item Verify that $\vec{O}$ satisfies
+			\eqref{eq:tri-perp-bisect}.
+$\vec{O}$ is known as the circumcentre.
+		\item Verify that 
+		\begin{align}
+			OA = OB = OC 
+		\end{align}
+	\item Draw the circle with centre at $\vec{O}$ and radius 
+		\begin{align}
+			R = OA
+		\end{align}
+		This is known as the {\em circumradius}. 
+	\item Verify that 
+		\begin{align}
+			\angle BOC = 2\angle BAC.
+		\end{align}
+\end{enumerate}
