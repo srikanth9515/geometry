@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.22)  2 AUG 2023 18:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.22)  2 AUG 2023 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2406,9 +2406,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F43F7EEE5A8913B62E2DFFA4CCBC7568;1625.
  ) 
 Here is how much of TeX's memory you used:
- 31168 strings out of 479304
- 591515 string characters out of 5869779
- 1074961 words of memory out of 5000000
+ 31167 strings out of 479304
+ 591503 string characters out of 5869779
+ 1073961 words of memory out of 5000000
  46434 multiletter control sequences out of 15000+600000
  419576 words of font info for 90 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -2431,10 +2431,10 @@ dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfrm0800.pfb>
-Output written on main.pdf (115 pages, 440744 bytes).
+Output written on main.pdf (115 pages, 440357 bytes).
 PDF statistics:
- 1943 PDF objects out of 2073 (max. 8388607)
- 1738 compressed objects within 18 object streams
- 980 named destinations out of 1000 (max. 500000)
+ 1942 PDF objects out of 2073 (max. 8388607)
+ 1737 compressed objects within 18 object streams
+ 979 named destinations out of 1000 (max. 500000)
  338 words of extra memory for PDF output out of 10000 (max. 10000000)
 
