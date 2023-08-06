@@ -1,0 +1,219 @@
+\begin{figure}[!ht]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{./figs/triangle/tri_sss.tex}}
+	\end{center}
+	\caption{Area of a Triangle}
+	\label{fig:tri_sss}	
+\end{figure}
+\iffalse
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!}{\input{./figs/triangle/tri_right_angle.tex}}
+\caption{}
+\label{fig:tri_right_angle_area}	
+\end{figure}
+\fi
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item
+\label{prob:tri_area_sin}
+	Show that the area of $\Delta ABC$ in Fig. 	\ref{fig:tri_sss}	is $\frac{1}{2}ab \sin C$.
+
+\solution We have
+%
+\begin{equation}
+ar\brak{\Delta ABC} = \frac{1}{2}ah = \frac{1}{2}ab\sin C \quad \brak{\because \quad h = b \sin C}.
+\label{eq:tri_area_sin}
+\end{equation}
+
+\item
+	Show that 
+	\begin{equation}
+	\frac{\sin A}{a} = \frac{\sin B}{b} = \frac{\sin C}{c}
+	\end{equation}
+
+\solution Fig. \ref{fig:tri_sss} can be suitably modified to obtain 
+\begin{align}
+ar\brak{\Delta ABC} = 
+\frac{1}{2}ab\sin C = \frac{1}{2}bc\sin A = \frac{1}{2}ca\sin B
+\end{align}
+Dividing the above by $abc$, we obtain
+	\begin{equation}
+\label{eq:tri_sin_form}
+	\frac{\sin A}{a} = \frac{\sin B}{b} = \frac{\sin C}{c}
+	\end{equation}
+This is known as the sine formula.	
+%
+%
+\item Show that 
+%
+\begin{align}
+\label{eq:trig_id_sin_inc}
+\alpha > \beta \implies \sin \alpha > \sin \beta
+\end{align}
+%
+
+\begin{figure}[!ht]
+	\begin{center}
+		
+		%\includegraphics[width=\columnwidth]{./figs/fig:tri_sin_inc}
+		%\vspace*{-10cm}
+		\resizebox{\columnwidth}{!}{\input{./figs/triangle/tri_sin_inc.tex}}
+	\end{center}
+	\caption{}
+	%\caption{$\sin \brak{\theta_1+\theta_2} = \sin\theta_1\cos\theta_2 + \cos\theta_1\sin\theta_2$}
+	\label{fig:tri_sin_inc}	
+\end{figure}
+\solution In Fig. \ref{fig:tri_sin_inc}, 	
+%
+\begin{align}
+ar\brak{\triangle ABD} &< ar \brak{\triangle ABC}
+\\
+\implies \frac{1}{2}lc \sin \theta_1 &<  \frac{1}{2}ac \sin \brak{\theta_1 + \theta_2 }
+\\
+\implies \frac{l}{a} &< \frac{\sin \brak{\theta_1 + \theta_2 }}{\sin \theta_1}
+\\
+\text{or, } 1 < \frac{l}{a} &< \frac{\sin \brak{\theta_1 + \theta_2 }}{\sin \theta_1}
+\\
+\implies \frac{\sin \brak{\theta_1 + \theta_2 }}{\sin \theta_1} > 1
+\end{align}
+%
+from Theorem \ref{them:hyp_largest}. This proves \eqref{eq:trig_id_sin_inc}.
+%From \eqref{eq:trig_id_sum_diff3},
+%%
+%\begin{multline}
+% \sin \theta_1 - \sin \theta_2 = 2\sin\brak{\frac{\theta_1-\theta_2}{2}}
+%\\
+%\times \cos\brak{\frac{\theta_1+\theta_2}{2}} > 0, \because \theta_1-\theta_2 > 0
+%\end{multline}
+%
+\item
+	Using 
+	\figref{fig:tri_sin_inc},
+%Fig. \ref{trig_id_sin_theta}, 
+show that 
+	%
+\begin{equation}
+\label{trig_id_sin_theta_eq}
+\sin  \theta_1 = \sin \brak{\theta_1 + \theta_2}\cos \theta_2 - \cos\brak{\theta_1+\theta_2}\sin\theta_2
+\end{equation}	
+	%
+\iffalse
+\begin{figure}[!ht]
+	\begin{center}
+		
+		%\includegraphics[width=\columnwidth]{./figs/trig_id_sin_theta}
+		%\vspace*{-10cm}
+		\resizebox{\columnwidth}{!}{\input{./figs/triangle/tri_sin_inc.tex}}
+	\end{center}
+	\caption{$\sin \brak{\theta_1+\theta_2} = \sin\theta_1\cos\theta_2 + \cos\theta_1\sin\theta_2$}
+	\label{trig_id_sin_theta}	
+\end{figure}
+\fi
+%
+
+\solution The following equations can be obtained from the figure using the forumula for the area of a triangle
+%
+\begin{align}
+ar \brak{\Delta ABC} &= \frac{1}{2}ac \sin\brak{\theta_1 + \theta_2} \\
+&= ar \brak{\Delta BDC} + ar \brak{\Delta ADB} \\
+&= \frac{1}{2}cl \sin{\theta_1} + \frac{1}{2}al \sin{\theta_2} \\ 
+&= \frac{1}{2}ac \sin{\theta_1} \sec \theta_2 + \frac{1}{2}a^2 \tan{\theta_2} 
+\end{align}
+$\brak{\because
+	l = a \sec \theta_2}$.  From the above,
+\begin{align}
+\sin\brak{\theta_1 + \theta_2} &=  \sin{\theta_1} \sec \theta_2 + \frac{a}{c} \tan{\theta_2} \\
+	&=  \sin{\theta_1} \sec \theta_2 
++ \cos\brak{\theta_1 + \theta_2} \tan{\theta_2} 
+\end{align}
+Multiplying both sides by $\cos \theta_2$,
+\begin{align}
+\sin\brak{\theta_1 + \theta_2}\cos{\theta_2} =  \sin{\theta_1}  
++ \cos\brak{\theta_1 + \theta_2} \sin\theta_2  
+\end{align}
+%
+resulting in
+\eqref{trig_id_sin_theta_eq}.
+\item Find Hero's formula for the area of a triangle.
+\\
+\solution 
+%In Fig. \ref{fig:rt_triangle}, from Baudhayana's theorem, 
+%\begin{align}
+%\label{eq:tri_geo_baudh}
+%b^2 = a^2+c^2 &
+%\\
+%=b^2\cos^2C+b^2\sin^2C &
+%\\
+%\implies \cos^2C+\sin^2C &= 1
+%\end{align}
+%
+%In Fig. \ref{fig:tri_const_ex_cos_form}, 
+From \eqref{prob:tri_area_sin}, the area of $\triangle ABC$ is 
+{\footnotesize
+\begin{align}
+\label{eq:tri_geo_area_sin_form}
+ \frac{1}{2}ab\sin C
+%\\
+&=\frac{1}{2}ab\sqrt{1-\cos^2C} 
+\quad \brak{\text{from } \eqref{eq:tri_sin_cos_id}
+%\eqref{eq:tri_geo_baudh}
+}
+\\
+&=\frac{1}{2}ab\sqrt{1-\brak{\frac{a^2+b^2-c^2}{2ab}}^2} \brak{\text{from } \eqref{eq:tri_cos_form}
+}
+\\
+&=\frac{1}{4}\sqrt{\brak{2ab}^2-\brak{a^2+b^2-c^2}}
+\\
+&=\frac{1}{4}\sqrt{\brak{2ab+a^2+b^2-c^2}\brak{2ab-a^2-b^2+c^2}}
+\\
+&= \frac{1}{4}\sqrt{\cbrak{\brak{a+b}^2-c^2}\cbrak{c^2-\brak{a-b}^2}}
+\\
+&= \frac{1}{4}\sqrt{\brak{a+b+c}\brak{a+b-c}\brak{a+c-b}\brak{b+c-a}}
+\label{eq:tri_ex_hero_temp}
+\end{align}
+}
+Substituting 
+%
+\begin{align}
+s=\frac{a+b+c}{2}
+\end{align}
+%
+in \eqref{eq:tri_ex_hero_temp}, the area of $\triangle ABC$ is 
+%
+\begin{align}
+\label{eq:tri_area_hero}
+\sqrt{s\brak{s-a}\brak{s-b}\brak{s-c}}
+\end{align}
+%
+This is known as Hero's formula.
+\iffalse
+\item In a triangle, the side opposite the greater angle is greater.
+\begin{figure}[!ht]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{./figs/quad/tri_ang_side.tex}}
+	\end{center}
+	\caption{Side opposite the greater angle is greater}
+	\label{fig:tri_ang_side}	
+\end{figure}
+\\
+\solution In Fig. 	\ref{fig:tri_ang_side},	let
+%
+\begin{align}
+\angle B > \angle C
+\end{align}
+%
+Then, using the sine formula,
+%
+\begin{align}
+\frac{\sin B}{b} &=\frac{\sin C}{c}
+\\
+\implies   \frac{\sin B}{\sin C} &= \frac{b}{c} > 1
+\end{align}
+using \eqref{eq:trig_id_sin_inc}.
+
+
+\fi
+\end{enumerate}

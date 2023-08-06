@@ -1,0 +1,119 @@
+%\subsection{Properties}
+%
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+%
+\item Find the equation of the line $BC$.
+%
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/coord/tri_alt.tex}}
+	\end{center}
+	\caption{Drawing the altitude}
+	\label{fig:tri_alt}	
+\end{figure}
+\\
+\solution Let $\vec{x}$ be any point on $BC$.  Using section formula, for some $k$, 
+%
+\begin{align}
+\vec{x} &= \frac{k\vec{C}+\vec{B}}{k+1} = \frac{\brak{k+1}\vec{C}+\brak{\vec{B}-\vec{C}}}{k+1}
+\\
+\implies \vec{x} &= \vec{C} + \lambda \vec{m}
+\label{eq:line_dir_pt}
+\end{align}
+%
+where 
+%
+\begin{align}
+\vec{m} 
+ = \frac{\vec{B}-\vec{C}}{k+1} \equiv \vec{B}-\vec{C}
+\label{eq:line_dir_pt-alt}
+\end{align}
+%
+\item The {\em normal vector} to $\vec{m}$ is defined as
+%
+\begin{align}
+\label{eq:dir_normal_orth}
+\vec{n}^{\top}\vec{m} &= 0
+\end{align}
+%
+%
+\begin{align}
+\vec{n} &= \myvec{0 & -1 \\ 1 & 0}\vec{m}
+\end{align}
+%
+\item 
+From \eqref{eq:dir_normal_orth} and \eqref{eq:line_dir_pt}, 
+it can be verified that 
+%
+\begin{align}
+\vec{n}^{\top}\vec{x} &= \vec{n}^{\top}\vec{C} + \lambda \vec{n}^{\top}\vec{m}
+\\
+\implies \vec{n}^{\top}\vec{x} &= \vec{n}^{\top}\vec{C}
+\label{eq:line_normal_pt}
+\end{align}
+%
+\eqref{eq:line_normal_pt} is defined to be the {\em normal form} of the line $BC$.  
+%
+\item 
+	In \figref{fig:tri_alt_h},	
+$AD \perp BC$ and $BE \perp AC$ are defined to be the altitudes of $\triangle ABC$. 
+\item Let $\vec{H}$ be the intersection of the altitudes $AD$ and $BE$ as shown in Fig. \ref{fig:tri_alt_h}.  $CH$ is extended to meet $AB$ at $\vec{F}$.  Show that $CF \perp AB$.
+%
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/coord/tri_alt_h.tex}}
+	\end{center}
+	\caption{Altitudes of a triangle meet at the orthocentre $H$}
+	\label{fig:tri_alt_h}	
+\end{figure}
+%
+\\
+\solution 
+From \eqref{eq:line_dir_pt-alt}
+\eqref{eq:dir_normal_orth},
+  \eqref{eq:dot2d-orth}
+and 
+\eqref{eq:line_normal_pt},
+the equations of $AD$ and $BE$ are 
+%
+\begin{align}
+\brak{\vec{B}-\vec{C}}^{\top}\brak{\vec{x}-\vec{A}} &= 0  
+\\
+\brak{\vec{C}-\vec{A}}^{\top}\brak{\vec{x}-\vec{B}} &= 0  
+\end{align}
+%
+ $\because \vec{H}$ lies on both $AD$ and $BE$, it satisfies the above equations, and 
+%
+\begin{align}
+\brak{\vec{B}-\vec{C}}^{\top}\brak{\vec{H}-\vec{A}} &= 0  
+\\
+\brak{\vec{C}-\vec{A}}^{\top}\brak{\vec{H}-\vec{B}} &= 0  
+\end{align}
+%
+Adding both the above and simplifying, 
+%
+\begin{align}
+\brak{\vec{B}-\vec{A}}^{\top}\brak{\vec{H}-\vec{C}} &= 0  
+\end{align}
+%
+$\implies CH \perp AB$ 
+from   \eqref{eq:dot2d-orth}, or $CF \perp AB$.  
+%
+\iffalse
+The python code for  Fig. \ref{fig:tri_alt_h} is
+\begin{lstlisting}
+codes/triangle/tri_alt_h.py
+\end{lstlisting}
+%
+and the equivalent latex-tikz code is
+%
+\begin{lstlisting}
+figs/triangle/tri_alt_h.tex
+\end{lstlisting}
+\fi
+\item Altitudes of a $\triangle$ meet at the {\em orthocentre} $H$.
+%
+\end{enumerate}

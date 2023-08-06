@@ -1,0 +1,57 @@
+%Code by GVV Sharma
+%July 6, 2023
+%Revised July 7, 2023
+%released under GNU GPL
+%The Isosceles Triangle
+
+\begin{tikzpicture}
+[scale=2,>=stealth,point/.style={draw,circle,fill = black,inner sep=0.5pt},]
+
+%Triangle sides
+\def\a{5}
+\def\b{6}
+\def\c{4}
+ 
+%Coordinates of A
+%\def\p{{\a^2+\c^2-\b^2}/{(2*\a)}}
+\def\p{0.5}
+\def\q{{sqrt(\c^2-\p^2)}}
+
+%Labeling points
+%\node (A) at (\p,\q)[point,label=above right:$A$] {};
+\node (B) at (0, 0)[point,label=below left:$B$] {};
+\node (C) at (\a, 0)[point,label=below right:$C$] {};
+
+%Circumcentre
+
+\node (O) at (2.5,1.70084013)[point,label=above right:$O$] {};
+
+%Drawing triangle OBC
+%\draw (A) -- node[left] {$\textrm{c}$} (B) -- node[below] {$\textrm{a}$} (C) -- node[above,yshift=2mm] {$\textrm{b}$} (A);
+%Drawing OA, OB, OC
+%\draw (O) -- node[left] {$\textrm{R}$} (A);
+\draw (O) -- node[below] {${R}$} (B);
+\draw (O) -- node[below] {${R}$} (C);
+\draw (B) -- node[below] {${a}$} (C);
+
+\tkzMarkAngle[fill=blue!50,size=.3](C,B,O)
+\tkzMarkAngle[fill=blue!50,size=.3](O,C,B)
+
+
+\tkzMarkAngle[fill=red!10](B,O,C)
+\tkzLabelAngle[pos=0.3](B,O,C){$\theta$}
+%\tkzMarkAngle[fill=red!10](A,C,O)
+
+\iffalse
+\tkzMarkAngle[fill=orange!50,size=.3](B,A,O)
+\tkzMarkAngle[fill=orange!50,size=.3](O,B,A)
+
+\tkzLabelAngle[pos=0.5](O,C,B){$\theta_1$}
+\tkzLabelAngle[pos=0.5](O,B,C){$\theta_1$}
+\tkzLabelAngle[pos=0.5](O,A,B){$\theta_2$}
+\tkzLabelAngle[pos=0.5](O,B,A){$\theta_2$}
+\tkzLabelAngle[pos=1.5](O,A,C){$\theta_3$}
+\tkzLabelAngle[pos=1.5](O,C,A){$\theta_3$}
+\fi
+
+\end{tikzpicture}

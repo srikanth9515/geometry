@@ -1,0 +1,319 @@
+%%
+%	Refer to \figref{fig:tri_ccentre}.
+%\subsection{Perpendicular Bisectors}
+%\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+%
+\item In 
+	\label{prob:tri-ccentre-def}
+	\figref{fig:tri-perp-bis}, 
+\begin{align}
+OB = OC=R, 	BD = DC.
+\end{align}
+Show that $OD \perp BC$.
+%
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/coord/tri-perp-bis.tex}}
+	\end{center}
+	\caption{Perpendicular bisector.}
+	\label{fig:tri-perp-bis}	
+%github/geometry/figs/
+\end{figure}
+\\
+\solution 
+\begin{align}
+	\norm{\vec{O}-\vec{C}} &=
+\norm{\vec{O}-\vec{B}} =R
+\\
+	\implies \norm{\vec{O}-\vec{C}}^2 &=
+\norm{\vec{O}-\vec{B}}^2 
+\end{align}
+which can be expressed as 
+\begin{align}
+%  \label{eq:norm2d_dist}
+	\brak{\vec{O}-\vec{C}}^{\top} \brak{\vec{O}-\vec{C}}&=
+	\brak{\vec{O}-\vec{B}}^{\top} 
+\brak{\vec{O}-\vec{B}}
+\\
+\norm{\vec{O}}^2-2{\vec{O}}^{\top}\vec{C} + \norm{\vec{C}}^2
+	&= \norm{\vec{O}}^2-2{\vec{O}}^{\top}\vec{B} + \norm{\vec{B}}^2
+	\\
+	\implies 
+	  \brak{\vec{B}-\vec{C}}^{\top}{\vec{O}} 
+	  &=  \frac{\norm{\vec{B}}^2 - \norm{\vec{C}}^2}{2}
+\end{align}
+which can be simplified to obtain
+  \begin{align}
+	  \brak{\vec{B}-\vec{C}}^{\top}\cbrak{{\vec{O}}- 
+	    \brak{\frac{{\vec{B}} + {\vec{C}}}{2}}}=0
+  \label{eq:norm2d_equidist}
+  \\
+	  \text{or, }
+	  \brak{\vec{B}-\vec{C}}^{\top}\cbrak{{\vec{O}}- \vec{D}}=0
+  \end{align}
+  which proves the give result using 
+	  \eqref{eq:section_formula}
+	  and 
+  \eqref{eq:dot2d-orth}.
+  \item The equation  of the circle in 
+	\figref{fig:tri_ccircle-ang},
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/coord/tri_ccircle.tex}}
+	\end{center}
+	\caption{Circumcircle of $\triangle ABC$}
+	\label{fig:tri_ccircle-ang}	
+\end{figure}
+	is
+  \begin{align}
+	  \norm{\vec{x}-\vec{O}} = R
+  \end{align}
+  This is known as the {\em circumcircle} of $\triangle ABC$.
+  \item In 
+	\figref{fig:tri_cosine_formula}	
+	show that 
+\begin{equation}
+	\cos A= 	\frac{\brak{\vec{A}-
+	\vec{B}}^{\top}\brak{\vec{A}-\vec{C}}}{\norm{\vec{A}-\vec{B}}\norm{\vec{A}-\vec{C}}}
+\label{eq:tri_cos_form-ccentre}
+\end{equation}
+\solution
+From 
+\eqref{eq:tri_cos_form}, using 
+  \eqref{eq:norm2d_dist},
+\begin{align}
+\label{eq:tri_cos_form-ccentre-norm}
+	\cos A&= 	\frac{\norm{\vec{A}-\vec{B}}^2+\norm{\vec{A}-\vec{C}}^2-\norm{\vec{B}-\vec{C}}^2}{2\norm{\vec{A}-\vec{B}}\norm{\vec{A}-\vec{C}}}
+	\\
+	&= 	\frac{\norm{\vec{A}}^2-\vec{A}^{\top}\vec{B}-\vec{A}^{\top}\vec{C}+\vec{B}^{\top}\vec{C}}{\norm{\vec{A}-\vec{B}}\norm{\vec{A}-\vec{C}}}
+\end{align}
+which can be expressed as 
+\eqref{eq:tri_cos_form-ccentre}.
+\item Any point on the circle can be expressed as 
+  \begin{align}
+	  \vec{x} = \vec{O} + R\myvec{\cos \theta \\ \sin \theta}, \quad 0 \in \sbrak{0, 2\pi}
+\label{eq:polar-ccentre}.
+  \end{align}
+  \item Let
+  \begin{align}
+	  R = 1,\,
+	  \vec{O} = \vec{0} ,\,
+	  \vec{A} = \myvec{\cos \theta_1 \\ \sin \theta_1},\,
+	  \vec{B} = \myvec{\cos \theta_2 \\ \sin \theta_2},\,
+  \end{align}
+Show that 
+  \begin{align}
+	  \norm{\vec{A}-\vec{B}} = 
+	   2 \sin \brak{\frac{\theta_1-\theta_2}{2}}
+\label{eq:norm-polar-ccentre}
+  \end{align}
+  \solution 
+  From 
+\eqref{eq:polar-ccentre}.
+  \begin{align}
+	  \vec{A}-\vec{B} &= 
+\myvec{\cos \theta_1-\cos \theta_2 \\ \sin \theta_1-\sin \theta_2}
+\\
+\implies 
+	  \norm{\vec{A}-\vec{B}}^2 &= 
+	  \brak{\cos \theta_1-\cos \theta_2}^2 +\brak{\sin \theta_1-\sin \theta_2}^2
+	  \\
+	  &= 2\cbrak{1-
+	  \cos \brak{\theta_1-\theta_2}} = 4 \sin^2 \brak{\frac{\theta_1-\theta_2}{2}}
+  \end{align}
+  yielding 
+\eqref{eq:norm-polar-ccentre} from
+\eqref{eq:trig-id-2A-cos}.
+  \item In 
+	\figref{fig:tri_ccircle-ang},
+show that 
+  \begin{align}
+	  \theta = 2A
+\label{eq:ang-subtend-ccentre}.
+  \end{align}
+  \solution Let 
+  \begin{align}
+	  \vec{C} = \myvec{\cos \theta_3 \\ \sin \theta_3}
+  \end{align}
+  Then, 
+  substituting 
+  from 
+\eqref{eq:norm-polar-ccentre}
+in 
+\eqref{eq:tri_cos_form-ccentre-norm},
+  \begin{align}
+	  \cos A &= \frac{4 \sin^2 \brak{\frac{\theta_1-\theta_2}{2}} +4\sin^2 \brak{\frac{\theta_1-\theta_3}{2}}-4 \sin^2 \brak{\frac{\theta_2-\theta_3}{2}}}{8 \sin \brak{\frac{\theta_1-\theta_2}{2}} \sin \brak{\frac{\theta_1-\theta_3}{2}}}
+	  \\
+	   &= \frac{2 \sin^2 \brak{\frac{\theta_1-\theta_2}{2}} +\cos \brak{{\theta_2-\theta_3}}- \cos \brak{{\theta_1-\theta_3}}}{4 \sin \brak{\frac{\theta_1-\theta_2}{2}} \sin \brak{\frac{\theta_1-\theta_3}{2}}}
+  \end{align}
+  from 
+\eqref{eq:trig-id-2A-cos}. $\therefore$ from 
+\eqref{eq:trig_id_sum_diff4},
+  \begin{align}
+	   \cos A &= \frac{2 \sin^2 \brak{\frac{\theta_1-\theta_2}{2}} +2\sin \brak{\frac{\theta_1-\theta_2}{2}}\sin \brak{\frac{\theta_1+\theta_2}{2}-\theta_3}}{4 \sin \brak{\frac{\theta_1-\theta_2}{2}} \sin \brak{\frac{\theta_1-\theta_3}{2}}}
+	  \\
+	   &= \frac{ \sin \brak{\frac{\theta_1-\theta_2}{2}} +\sin \brak{\frac{\theta_1+\theta_2}{2}-\theta_3}}{ 2\sin\brak{\frac{\theta_1-\theta_3}{2}}}
+  \end{align}
+  From 
+\eqref{eq:trig_id_sum_diff1}, the above equation can be expressed as
+  \begin{align}
+\cos A	   &= \frac{ 2\sin \brak{\frac{\theta_1-\theta_3}{2}} \cos\brak{\frac{\theta_2-\theta_3}{2}}}{ 2\sin\brak{\frac{\theta_1-\theta_3}{2}}} = \cos\brak{\frac{\theta_2-\theta_3}{2}}
+\label{eq:tri_ccentre_subtend-temp}
+	   \\
+	   \implies 2A &= \theta_2-\theta_3
+\label{eq:tri_ccentre_subtend}
+  \end{align}
+  Similarly, 
+  \begin{align}
+	  \cos \theta = \frac{1 + 1 - 4\sin^2\brak{\frac{\theta_2-\theta_3}{2}}}{2} = \cos\brak{{\theta_2-\theta_3}}= \cos 2A
+  \end{align}
+\end{enumerate}
+  \iffalse
+%
+\item  Show that $\angle BOC = 2\angle A$.
+\label{prob:tri_ccentre_subtend}
+%
+\\
+\solution In Fig. \ref{fig:tri_ccentre}, 
+%
+\begin{align}
+%
+\label{eq:tri_ccentre_A23}
+A &= \theta_2+\theta_3
+\\
+B &= \theta_1+\theta_2
+\\
+C &= \theta_3+\theta_1
+\\
+\implies 2\brak{\theta_1+\theta_2+\theta_3} &= A+B+C =180\degree
+\\
+\implies \theta_1+\theta_2+\theta_3 &= 90\degree
+\label{eq:tri_ccentre_sum_123}
+\end{align}
+%
+From \eqref{eq:tri_ccentre_A23} and \eqref{eq:tri_ccentre_sum_123},
+%
+\begin{align}
+%
+\label{eq:tri_ccentre_A1}
+A &= 90\degree - \theta_1
+\end{align}
+%
+Also, in $\triangle OBC$, all angles add up to $180\degree$.  Hence, 
+%
+\begin{align}
+\angle BOC + 2\theta_1 &= 180\degree
+\\
+\implies \angle BOC &= 180\degree - 2\theta_1 = 2 \brak{90\degree - \theta_1}
+%\\
+%&
+= 2\angle A
+\end{align}
+%
+upon substituting from \eqref{eq:tri_ccentre_A1}.
+%
+\item Let $\vec{D}$ be the mid point of $BC$.  Show that $OD \perp BC$.
+\label{prob:tri_perp_bisect}
+%
+\\
+\solution From 
+	\eqref{prob:tri-ccentre-def},
+%
+\begin{align}
+	\norm{\vec{O}-\vec{C}} = 
+	\norm{\vec{O}-\vec{B}}  = R
+	\\
+	\implies 
+	\norm{\vec{O}-\vec{C}}^2 = 
+	\norm{\vec{O}-\vec{B}}^2
+\brak{\vec{B}-\vec{C}}^T\vec{O} &=   \frac{\norm{\vec{B}}^2- \norm{\vec{C}}^2}{2}
+\\
+\implies \brak{\vec{B}-\vec{C}}^T\vec{O} &=   \frac{1}{2}\brak{\vec{B}- \vec{C}}^T\brak{\vec{B}+ \vec{C}}
+\\
+\implies \brak{\vec{B}-\vec{C}}^T&\brak{\vec{O} - \frac{\vec{B}+\vec{C}}{2}} = 0
+\\
+\text{or, } \brak{\vec{B}-\vec{C}}^T&\brak{\vec{O} - \vec{D}} = 0
+\end{align}
+%
+$\because \vec{D} = \frac{\vec{B}+\vec{C}}{2}$ is the mid point of $BC$.  From \eqref{eq:tri_baudh_orth} we then conclude that $OD \perp BC$.
+%
+\item Perpendicular bisectors of a triangle meet at the circumcentre.
+%
+\item In the isosceles $\triangle OBC$, if $BD = DC$, $OD \perp BC$.
+\label{them:isos_pb}
+
+\item Find a point $\vec{O}$ that is equidistant from the vertices of $\triangle ABC$ for $a = 5, b = 6, c = 4$.
+%
+\solution Let $\vec{O}$ be the desired point.  Then,
+\begin{align}
+\label{eq:tri_ccentre_def}
+\norm{\vec{A}-\vec{O}} = \norm{\vec{B}-\vec{O}} = 
+\norm{\vec{C}-\vec{O}} = R
+%\\
+%\implies \norm{\vec{x}-\vec{O}}^2 &=\brak{\vec{x}-\vec{O}}^T\brak{\vec{x}-\vec{O}} = R^2
+\end{align}
+From \eqref{eq:tri_ccentre_def},
+\begin{align}
+\label{eq:circle_const_AB}
+\norm{\vec{A}-\vec{O}}^2 - \norm{\vec{B}-\vec{O}}^2  = 0
+\end{align}
+\begin{multline}
+\implies \brak{\vec{A}-\vec{O}}^T\brak{\vec{A}-\vec{O}} 
+\\
+- \brak{\vec{B}-\vec{O}}^T\brak{\vec{B}-\vec{O}} = 0
+\end{multline}
+%
+which can be simplified as
+\begin{align}
+\label{eq:circle_const_chord_ab}
+\brak{\vec{A}-\vec{B}}^T\vec{O} =   \frac{\norm{\vec{A}}^2- \norm{\vec{B}}^2}{2}
+\end{align}
+Similarly,
+\begin{align}
+\label{eq:circle_const_chord_bc}
+\brak{\vec{B}-\vec{C}}^T\vec{O} =   \frac{\norm{\vec{B}}^2- \norm{\vec{C}}^2}{2}
+\end{align}
+%
+\eqref{eq:circle_const_chord_ab} and \eqref{eq:circle_const_chord_ab}, can be combined to form the matrix equation 
+%
+\begin{align}
+\vec{N}^T\vec{O} &= \vec{c}
+\\
+\implies \vec{O} &= \vec{N}^{-T} \vec{c}
+\label{eq:circle_const_chord_mat}
+\end{align}
+%
+where 
+%
+\begin{align}
+%\label{eq:circle_const_chord_mat}
+\vec{N} &= \myvec{\vec{A}-\vec{B} & \vec{B}-\vec{C}}
+\\
+\vec{c} &= \frac{1}{2}\myvec{\norm{\vec{A}}^2- \norm{\vec{B}}^2 \\ \norm{\vec{B}}^2- \norm{\vec{C}}^2}
+\end{align}
+%
+$\vec{O}$ can be computed using 
+%
+the python code below
+%
+\begin{lstlisting}
+codes/circle/tri_ccentre.py
+\end{lstlisting}
+%
+and the equivalent latex-tikz code to draw Fig. \ref{fig:tri_ccentre} is
+%
+\begin{lstlisting}
+figs/triangle/tri_ccentre.tex
+\end{lstlisting}
+%
+\fi
+  \iffalse
+  \begin{align}
+\brak{\vec{A}-
+	  \vec{B}}^{\top}\brak{\vec{A}-\vec{C}} = \brak{\cos \theta_1-\cos \theta_2} \brak{\cos \theta_1-\cos \theta_3}+\brak{\sin \theta_1-\sin \theta_2}
+  \brak{\sin \theta_1-\sin \theta_3}
+  \end{align}
+  \fi
