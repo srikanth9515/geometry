@@ -1,0 +1,103 @@
+
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\item  In  
+	\figref{fig:tri_icentre}, the bisectors of $\angle B$ and $\angle C$	 meet at $\vec{I}$.
+Show that $IA$ bisects $\angle A$.
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/trig/tri-icentre.tex}}
+	\end{center}
+	\caption{Incentre $I$ of $\triangle ABC$}
+	\label{fig:tri_icentre}	
+\end{figure}
+\\
+\solution
+Using sine formula
+in
+\eqref{eq:tri_sin_form}
+  \begin{align}
+  \frac{l_1}{\sin\frac{C}{2}}
+  &= 
+   \frac{l_3}{\sin \brak{A-\theta}}
+  \\
+   \frac{l_3}{\sin\frac{B}{2}}
+&=\frac{l_2}{\sin\frac{C}{2}}
+  \\
+  \frac{l_1}{\sin\frac{B}{2}}
+	  &=\frac{l_2}{\sin \theta}
+  \end{align}
+  Multiplying the above equations, 
+  \begin{align}
+  \sin \theta &= \sin \brak{A - \theta}
+  \implies \theta = \frac{A}{2}
+  \end{align}
+  \item In
+	\figref{fig:tri_iradius}, 
+  \begin{align}
+	  ID \perp BC, \, 
+	  IE \perp AC, \, 
+	  IF \perp AB.
+  \end{align}
+		\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/trig/tri-iradius.tex}}
+	\end{center}
+	\caption{Inradius $r$ of $\triangle ABC$}
+	\label{fig:tri_iradius}	
+\end{figure}
+  Show that 
+  \begin{align}
+	  ID=   
+	  IE= 
+	  IF=r 
+	\label{eq:tri_iradius}	
+  \end{align}
+  \\
+		\solution
+In $\triangle$s $IDC$ and $IEC$, 
+		\begin{align}
+ID = IE=  \frac{l_3}{\sin\frac{C}{2}}
+		\end{align}
+		Similarly, 
+in $\triangle$s $IEA$ and $IFA$, 
+		\begin{align}
+IF = IE=  \frac{l_1}{\sin\frac{A}{2}}
+		\end{align}
+		yielding 
+	\eqref{eq:tri_iradius}	
+  \item In
+	\figref{fig:tri_iradius}, show that
+  \begin{align}
+	  BD=BF ,\, 
+	  AE=AF ,\, 
+	  CD=CE 
+  \end{align}
+  \solution  From 
+\figref{fig:tri_iradius}, in $\triangle$s $IBD$ and $IBF$, 
+		\begin{align}
+			x = BD = BF = r \cot \frac{B}{2}
+		\end{align}
+		Similarly, other results can be obtained.
+\item The circle with centre $\vec{I}$ and radius $r$ in  
+	\figref{fig:tri_icircle}	
+is known as the {\em incircle}.  Find the radius $r$.
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/trig/tri_icircle.tex}}
+	\end{center}
+	\caption{Incircle of $\triangle ABC$}
+	\label{fig:tri_icircle}	
+\end{figure}
+\\
+\solution
+In $\triangle IBC$, 
+		\begin{align}
+			a = x + y = r\cot \frac{B}{2}+ r\cot \frac{C}{2}
+			\\
+			\implies r = \frac{a}{\cot \frac{B}{2}+ \cot \frac{C}{2}}
+		\end{align}
+\end{enumerate}
+

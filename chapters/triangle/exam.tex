@@ -1,0 +1,66 @@
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The direction vector of $AB$ is defined as
+		\begin{align}
+			\vec{B}-
+			\vec{A}
+		\end{align}
+Find the direction vectors of $AB, BC$ and $CA$.
+	\item The length of side $BC$ is 
+		\begin{align}
+			\norm{\vec{B}-\vec{A}} \triangleq \sqrt{\brak{\vec{B}-\vec{A}}^{\top}{\vec{B}-\vec{A}}}
+		\end{align}
+		where
+		\begin{align}
+			\vec{A}^{\top}\triangleq\myvec{1 & -1}
+		\end{align}
+\item   Points $\vec{A}, \vec{B}, \vec{C}$ are defined to be collinear if 
+		\begin{align}
+			\rank{\myvec{1 & 1 & 1 \\ \vec{A}& \vec{B}&\vec{C}}} = 2
+		\end{align}
+Are the given points in
+			\eqref{eq:tri-pts}
+collinear?
+\item The parameteric form of the equation  of $AB$ is 
+		\begin{align}
+			\vec{x}=\vec{A}+k\vec{m}
+		\end{align}
+		where
+		\begin{align}
+\vec{m}=\vec{B}-\vec{A}
+		\end{align}
+is the direction vector of $AB$.
+Find the parameteric equations of $AB, BC$ and $CA$.
+\\
+		\input{solutions/1/1/4/main.tex}
+\item The normal form of the equation of $AB$  is 
+		\begin{align}
+			\vec{n}^{\top}\brak{	\vec{x}-\vec{A}} = 0
+		\end{align}
+		where 
+		\begin{align}
+			\vec{n}^{\top}\vec{m}&=\vec{n}^{\top}\brak{\vec{B}-\vec{A}} = 0
+			\\
+			\text{or, } \vec{n}&=\myvec{0 & 1 \\ -1 & 0} \vec{m}
+		\end{align}
+Find the normal form of the equations of $AB, BC$ and $CA$.
+\item The area of $\triangle ABC$ is defined as
+		\begin{align}
+			\frac{1}{2}\norm{{\brak{\vec{A}-\vec{B}}\times {\vec{A}-\vec{C}}}}
+		\end{align}
+		where
+		\begin{align}
+			\vec{A}\times\vec{B} \triangleq \mydet{1 & -4 \\-1 & 6}
+		\end{align}
+		Find the area of $\triangle ABC$.
+	\item Find the angles $A, B, C$ if 
+    \label{prop:angle2d}
+  \begin{align}
+    \label{eq:angle2d}
+			\cos A \triangleq 
+\frac{\brak{\vec{B}-\vec{A}}^{\top}{\vec{C}-\vec{A}}}{\norm{\vec{B}-\vec{A}}\norm{\vec{C}-\vec{A}}}
+  \end{align}\\
+  	\input{solutions/1/1/7/main.tex}
+\end{enumerate}

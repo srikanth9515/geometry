@@ -1,0 +1,39 @@
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+%\numberwithin{equation}{enumi}
+
+\iffalse
+\item Find the area of $\triangle ABC$ in Fig. \ref{fig:tri_rect}.
+\\
+\solution The desired are is computed using \eqref{eq:tri_area_hero} by the following 
+the python code.
+\begin{lstlisting}
+codes/triangle/tri_area_hero.py
+\end{lstlisting}
+%
+\item Show that the sum of two sides of a triangle is always greater than the third side.
+\\
+\solution In \eqref{eq:tri_area_hero}, all terms under the square roots should be positive.  Hence,
+%
+\begin{align}
+\label{eq:tri_hero_ineq}
+s-a >0
+,\,
+s-b >0
+,\,
+s-c >0
+\end{align}
+resulting in 
+%
+\begin{align}
+\label{eq:tri_sum_ineq}
+b+c >a
+,\,
+c+a >b
+,\,
+a+b >c
+\end{align}
+\fi
+\end{enumerate}
+
+

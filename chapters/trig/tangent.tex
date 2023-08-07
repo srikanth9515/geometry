@@ -1,0 +1,23 @@
+%%
+%\subsection{Perpendicular Bisectors}
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item
+	In Fig. \ref{fig:circ_tang_icept}, show that $PA.PB = PC^2$.
+\label{them:circ_tang_icept_prod}	
+\\
+\solution 
+In $\triangle$s $APC$ and $BPC$, 
+using
+		\eqref{fig:circ_tang_icept-equal},	
+  \begin{align}
+	  \frac{AP}{\sin \theta} &= \frac{AC}{\sin P} 
+	  \\
+	  \frac{PC}{\sin \theta} &= \frac{BC}{\sin P} 
+	  \\
+	  \implies \frac{PC}{AP} &= \frac{BC}{AC}  \brak{= \frac{BP}{CP}}
+  \end{align}
+  which gives the desired result.
+$\triangle$s $APC$ and $BPC$ are said to be {\em similar}.
+\end{enumerate}

@@ -1,0 +1,611 @@
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+	\item A {\em matrix} of the form 
+\begin{align}
+  \vec{A} \triangleq  \myvec{a_1\\a_2} 
+\end{align}
+		is defined be  {\em column vector}, or simply, vector.
+	In 
+\figref{fig:tri_right_angle}	
+		the point vectors $\vec{A}, \vec{B}, \vec{C}$ can be defined as
+\begin{align}
+\vec{A} = \myvec{0 \\ c},\,
+\vec{B} = \myvec{0 \\ 0},\,
+\vec{C} = \myvec{a \\ 0}
+% \norm{\vec{D}} \define \sqrt{\vec{D}^{\top}\vec{D}}, 
+%\label{eq:tri_norm_def}
+\end{align}
+\item 
+\begin{align}
+  \lambda\vec{A} \triangleq  \myvec{\lambda a_1\\ \lambda a_2} 
+\end{align}
+\item For 
+\begin{align}
+	\vec{B} &= 	\myvec{b_1 \\ b_2},
+	\\
+	\vec{A}+ 
+	\vec{B} &= \myvec{a_1 \\ a_2}+	\myvec{b_1 \\ b_2} = 
+	 \myvec{a_1 +b_1 \\ a_2 +b_2} 
+\end{align}
+  \item  The transpose of $\vec{A}$ is the {\em row vector} defined as
+\begin{align}
+  \label{eq:transpose2d}
+  \vec{A}^{\top}  = \myvec{a_1 & a_2}
+\end{align}
+%
+\item The {\em inner product} or {\em dot product} is defined as
+  \label{prop:dot2d}
+\begin{align}
+  \label{eq:dot2d}
+  \vec{A}^{\top} \vec{B} &\equiv \vec{A} \cdot \vec{B} 
+  = \myvec{a_1 & a_2} \myvec{b_1 \\ b_2}= a_1b_1+a_2b_2 
+\end{align}
+%
+	In 
+\figref{fig:tri_right_angle},	
+\begin{align}
+  \vec{A}^{\top} \vec{C}  = 0
+\end{align}
+\item The {\em norm} of $\vec{A}$ is defined as
+\begin{align}
+  \label{eq:norm2d}
+	\norm{\vec{A}} 
+  &= \sqrt{\vec{A}^{\top} \vec{A}}= \sqrt{a_1^2+a_2^2}
+\end{align}
+\item In 
+\figref{fig:tri_right_angle},	
+it is easy to verify that 
+\begin{align}
+\norm{\vec{A}-\vec{C}}^2  
+  = \myvec{-c & a} \myvec{-c \\ a}
+= a^2 + c^2 = b^2
+\end{align}
+from 
+	\eqref{eq:tri_baudh}.
+Thus, 
+	the distance betwen any two  points $\vec{A}$ and $\vec{B}$ is given by 
+\begin{align}
+  \label{eq:norm2d_dist}
+\norm{\vec{A}-\vec{B}} 
+\end{align}
+\item Show that 
+\begin{align}
+  \label{eq:norm2d_const}
+  \norm{\lambda \vec{A}} 
+  = \abs{\lambda} \norm{\vec{A}}
+\end{align}
+\end{enumerate}
+\section{Collinear Points}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The direction vector of the line $AB$ is
+\begin{align}
+	\vec{A}-
+	\vec{B} \equiv
+	\vec{B}-
+	\vec{A} \equiv \kappa \myvec{1 \\ m},
+\end{align}
+where $m$ is defined to be the slope of $AB$.
+	In 
+\figref{fig:tri_right_angle}, 
+\begin{align}
+\vec{A}-\vec{C}
+	=  \myvec{-c \\ a} \equiv \myvec{1 \\ -\frac{a}{c}} = \myvec{1 \\ -\tan \theta}
+\end{align}
+
+		the slope of $AC$ is $-\tan \theta$
+  \item Points $\vec{A},\vec{B}$ and $\vec{C}$ are on a line  if they have the same direction vector, i.e.
+\begin{align}
+	  \label{eq:collinear}
+	p\brak{\vec{B}-\vec{A}}
+	+ q\brak{\vec{C}-\vec{B}} = 0
+	\implies p, q \ne 0.
+\end{align}
+	$\brak{\vec{A}-\vec{B}},
+	 \brak{\vec{C}-\vec{B}}$
+		are then said to be {\em linearly dependent}.
+		\item If points $\vec{A}, \vec{B}$ and $\vec{C}$ are collinear, 
+  \begin{align}
+	  \vec{B}&= \frac{k\vec{A}+ \vec{C}}{k+1}
+	  \label{eq:section_formula}
+  \end{align}
+  \solution From  
+	  \eqref{eq:collinear},
+	\begin{align}
+	p\brak{\vec{A}-\vec{B}}
+		+ q\brak{\vec{A}-\vec{C}} &= 0
+		\implies \vec{B} = \frac{p\vec{A}+q\vec{C}}{p+q}
+\end{align}
+yielding 
+	  \eqref{eq:section_formula}
+	  upon substituting
+\begin{align}
+	k = \frac{p}{q}.
+\end{align}
+		This is known as {\em section formula}.
+
+  \item Consequently, points $\vec{A},\vec{B}$ and $\vec{C}$ form a triangle  if 
+	  \label{prop:two-tri-indep}
+  \begin{align}
+	  p\brak{\vec{A}- \vec{B}} +q\brak{\vec{C} -\vec{B}} 
+	  \\
+	  =\brak{p+q}\vec{B}- p\vec{A} -q\vec{C} = 0
+	  \\
+	  \implies p=0, q=0
+	  \label{eq:two-tri-indep}
+  \end{align}
+  \item In 
+	\figref{fig:tri_med_meet}, 
+	\begin{align}
+	AF = BF, \,
+	AE = BE, 
+	\end{align}
+	and the medians $BE$ and $CF$ meet at $\vec{G}$.
+	Show that 
+%	Using Fig. \ref{ch2_median_ratio_val}, 
+	\begin{align}
+\label{eq:tri_med_centroid_ratio}
+	\frac{GB}{GE} = \frac{GC}{GF} = 2
+	\end{align}
+%
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/triangle/tri_med_meet.tex}}
+	\end{center}
+	\caption{$\frac{GA}{GD} =2$}
+	\label{fig:tri_med_meet}	
+\end{figure}
+\solution From 
+	  \eqref{eq:section_formula},
+  \begin{align}
+	  \label{eq:section_formula-G}
+\vec{G} = 
+	   \frac{k_1\vec{E}+ \vec{B}}{k_1+1}
+	  &= \frac{k_2\vec{F}+ \vec{C}}{k_2+1}
+	  \\
+	  \implies 
+	   \frac{k_1\brak{\frac{\vec{A}+\vec{C}}{2}}+ \vec{B}}{k_1+1}
+	  &= \frac{k_2\brak{\frac{\vec{A}+\vec{B}}{2}}+ \vec{C}}{k_2+1}
+	  \\
+	  \implies 
+	\brak{k_2+1}   \cbrak{k_1\brak{{\vec{A}+\vec{C}}}+ 2\vec{B}}
+	  &= \brak{k_1+1}\cbrak{k_2\brak{{\vec{A}+\vec{B}}}+ 2\vec{C}}
+  \end{align}
+  which can be expressed as
+  \begin{align}
+	  \cbrak{2 + k_2- k_1k_2 }\vec{B}-\brak{k_2-k_1}\vec{A}  - \cbrak{k_1 +2 - k_1k_2}\vec{C}
+	  =0
+  \end{align}
+  and is of the form
+	  \eqref{eq:two-tri-indep}
+	  with 
+  \begin{align}
+	  p = {k_2-k_1}, q = {k_1 +2 - k_1k_2}.
+  \end{align}
+  Thus, from 
+	  \eqref{eq:two-tri-indep}
+  \begin{align}
+\label{eq:tri_med_centroid_ratio-1}
+	  k_2-k_1 &= 0,
+	  \\
+	  k_1 +2 - k_1k_2 &=0
+\label{eq:tri_med_centroid_ratio-2}
+  \end{align}
+  Thus, from 
+\eqref{eq:tri_med_centroid_ratio-2}
+  \begin{align}
+	  k_1=k_2
+  \end{align}
+  and substituting the above in 
+\eqref{eq:tri_med_centroid_ratio-2} results in the quadratic
+  \begin{align}
+	  k_1^2 - k_1-2 &=0
+	  \\
+	  \implies 
+	  \brak{k_1-2}\brak{k_1+1} &=0
+  \end{align}
+  admitting $k_1=k_2=2$ as the only possible solution.
+  \item Substituting $k_1 =2 $ in 
+	  \eqref{eq:section_formula-G}
+  \begin{align}
+	  \vec{G}=\frac{\vec{A}+\vec{B} + \vec{C}}{3}
+	  \label{eq:centroid-G}
+  \end{align}
+\item $AG$ is extended to join $BC$ at $\vec{D}$.  Show that $AD$ is also a median.
+	\\
+	\solution Considering the ratios in \figref{},
+  \begin{align}
+\vec{G} = 
+	  \frac{k_3\vec{D}+\vec{A} }{k_3+1} 
+	  \\
+	\vec{D}  =\frac{k_4\vec{C}+\vec{B} }{k_4+1} 
+  \end{align}
+  Substituting from 
+	  \eqref{eq:centroid-G}
+	  in the above, 
+  \begin{align}
+	  \brak{k_3+1}\brak{\frac{\vec{A}+\vec{B} + \vec{C}}{3}}
+ = 
+	  {k_3\brak{\frac{k_4\vec{C}+\vec{B} }{k_4+1}} +\vec{A} } 
+	  \\
+	  \implies \brak{k_3+1}\brak{k_4+1}\brak{{\vec{A}+\vec{B} + \vec{C}}}
+ = 
+	  {3} \cbrak{ {k_3\brak{{k_4\vec{C}+\vec{B} }} +\brak{k_4+1}\vec{A} }} 
+  \end{align}
+  which can be expressed as
+  \begin{multline}
+	  \brak{k_3k_4+k_3-2k_4-2}\vec{A}
+	  \\
+	-  \brak{-k_3k_4-k_4+2k_3-1}\vec{B}
+	  \\
+	  - \brak{-k_3-k_4 - 1 
++2k_3k_4} \vec{C} = \vec{0}
+  \end{multline}
+  Comparing the above with 
+	  \eqref{eq:two-tri-indep},
+  \begin{align}
+	  p = {-k_3k_4-k_4+2k_3-1}, q = {-k_3-k_4 - 1 
++2k_3k_4}
+  \end{align}
+  yielding 
+  \begin{align}
+	  \label{eq:centroid-G-meet-1}
+	   {-k_3k_4-k_4+2k_3-1} = 0
+	   \\ {-k_3-k_4 - 1 
++2k_3k_4} = 0
+	  \label{eq:centroid-G-meet-2}
+  \end{align}
+  Subtracting 
+	  \eqref{eq:centroid-G-meet-1}
+	  from
+	  \eqref{eq:centroid-G-meet-2},
+  \begin{align}
+	  3k_3\brak{k_4-1} &= 0
+	  \\
+	  \implies k_4&=1
+  \end{align}
+  which upon substituting in 
+	  \eqref{eq:centroid-G-meet-1}
+	  yields
+  \begin{align}
+	  k_3 = 2
+  \end{align}
+  \iffalse
+  \item In $\triangle ABC$, if $\vec{D}, \vec{E}$ divide the lines $AB, AC$ in the ratio $k:1$ respectively,  then $DE \parallel BC$.
+	  \label{prop:two-tri-bpt}
+	  \begin{proof}
+		  From 
+	  \eqref{eq:section_formula}, 
+  \begin{align}
+	  \vec{D}&= \frac{k\vec{B}+ \vec{A}}{k+1}
+	  \\
+	  \vec{E}&= \frac{k\vec{C}+ \vec{A}}{k+1}
+	  \\
+	  \implies 
+	  \vec{D}-	  \vec{E}&= \frac{k}{k+1}\brak{\vec{B}- \vec{C}}
+  \end{align}
+  Thus, from 
+		  Appendix \ref{prop:two-dir-vec}, $DE \parallel BC$.
+
+	  \end{proof}
+
+  \item In $\triangle ABC$, if $DE \parallel BC$, $\vec{D}$ and $\vec{E}$ divide the lines $AB, AC$ in the same ratio.  
+	  \label{prop:two-tri-bpt-conv}
+	  \begin{proof}
+If $DE \parallel BC$,
+		  from 
+ \eqref{eq:two-par-dir-vec}
+  \begin{align}
+	  \label{prop:two-tri-bpt-conv-1}
+	  \brak{\vec{B}- \vec{C}} = k\brak{\vec{D}-	  \vec{E}}
+  \end{align}
+Using   
+	  \eqref{eq:section_formula}, 
+let 
+  \begin{align}
+	  \vec{D}&= \frac{k_1\vec{B}+ \vec{A}}{k_1+1}
+	  \\
+	  \vec{E}&= \frac{k_2\vec{C}+ \vec{A}}{k_2+1}
+  \end{align}
+	  Subtituting the above in 
+	  \eqref{prop:two-tri-bpt-conv-1}, after some algebra, we obtain 
+	
+  \begin{align}
+\brak{p+q}\vec{A}- p\vec{B} -q\vec{C} &= 0
+  \end{align}
+  where
+  \begin{align}
+	  p = \frac{1}{k} -  \frac{k_1}{k_1+1},
+	  q = \frac{1}{k} -  \frac{k_1}{k_1+1}
+  \end{align}
+  %
+From 	  
+	  \eqref{eq:two-tri-indep},
+  \begin{align}
+	p = q = 0
+	  \\
+	  \implies k_1 = k_2  = \frac{1}{k-1}
+  \end{align}
+
+	  \end{proof}
+	  \fi
+\end{enumerate}
+\section{Matrices: Cosine Formula}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The determinant of the $2 \times 2$ matrix 
+\begin{align}  
+  \vec{M} = \myvec{\vec{A} & \vec{B}}=\mydet{a_1 & b_1\\a_2 & b_2}
+\end{align}
+is defined as
+\begin{align}
+  \label{eq:det2d}
+  \mydet{\vec{M}} &= \mydet{\vec{A} & \vec{B}} 
+  \\
+  &= \mydet{a_1 & b_1\\a_2 & b_2} = a_1b_2 - a_2 b_1
+\end{align}
+%
+\item Let 
+\begin{align}
+  \vec{A} = \myvec{a_1\\a_2 \\ a_3},\, 
+  \vec{B} = \myvec{b_1\\b_2 \\ b_3},\,
+  \vec{C} = \myvec{c_1\\c_2 \\ c_3}
+\end{align}
+and 
+\begin{align}
+  \vec{A}_{ij} = \myvec{a_i\\a_j}, \,
+  \vec{B}_{ij} = \myvec{b_i\\b_j}, \,
+  \vec{C}_{ij} = \myvec{c_i\\c_j}. 
+\end{align}
+Then, \begin{align}  
+	\mydet{\vec{A} & \vec{B} & \vec{C}} = a_1 \mydet{\vec{B}_{23} & \vec{C}_23} +a_2 \mydet{\vec{C}_{23} & \vec{A}_{23}} +a_3\mydet{\vec{A}_{23} & \vec{B}_{23}} 
+\end{align}
+
+
+
+\item
+In Fig. \ref{fig:tri_cosine_formula}, show that
+%
+\begin{equation}
+\label{eq:tri_cos_mat}
+\begin{pmatrix}
+0 & c & b \\
+c & 0 & a \\
+b & a & 0
+\end{pmatrix}
+\begin{pmatrix}
+\cos A \\
+\cos B \\
+\cos C
+\end{pmatrix}
+= 
+\begin{pmatrix}
+a\\
+b\\
+c
+\end{pmatrix}
+\end{equation}
+%
+%
+\begin{figure}[!ht]
+	\begin{center}
+		
+		%\includegraphics[width=\columnwidth]{./figs/ch2_triang_ar}
+		%\vspace*{-10cm}
+		\resizebox{\columnwidth}{!}{\input{./figs/triangle/tri_cosine_formula.tex}}
+	\end{center}
+	\caption{The cosine formula}
+	\label{fig:tri_cosine_formula}	
+\end{figure}
+\solution From Fig. \ref{fig:tri_cosine_formula}, 
+%
+\begin{align}
+	a &= x + y = b \cos C + c \cos B = \myvec{  \cos C & \cos B } \myvec{ b \\ c }
+	\\
+&=\myvec{0 & b & c } \myvec{ \cos A \\ \cos C \\ \cos B } 
+\end{align}
+%
+Similarly,
+%
+\begin{align}
+b &= c \cos A + a \cos C 
+=\myvec{c & 0 & a } \myvec{ \cos A \\ \cos C \\ \cos B } 
+	\\
+c &= b \cos A + a \cos B
+=\myvec{b & a & 0 } \myvec{ \cos A \\ \cos C \\ \cos B } 
+\end{align}
+%
+The above equations can be expressed in matrix form as
+\eqref{eq:tri_cos_mat}.
+
+\item Show that 
+\begin{equation}
+\label{eq:tri_cos_form}
+\cos A = \frac{b^2+c^2-a^2}{2bc}
+\end{equation}
+%
+\solution 
+Using the properties of determinants,
+%
+\begin{align}
+\cos A = \frac{
+\begin{vmatrix}
+a & c & b \\
+b & 0 & a \\
+c & a & 0
+\end{vmatrix}
+	}
+	{
+\begin{vmatrix}
+0 & c & b \\
+c & 0 & a \\
+b & a & 0
+\end{vmatrix}
+	}
+	=\frac{ab^2 + ac^2 - a^3}{abc + abc} 
+= \frac{b^2 + c^2 - a^2}{2abc}
+\end{align}
+\end{enumerate}
+\section{Area of a Triangle: Cross Product}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The {\em cross product} or {\em vector product} defined as $\vec{A}\times \vec{B}$ is given by  
+  \eqref{eq:det2d} for  $2 \times 1$ vectors.
+  \iffalse
+\item For  $3 \times 1$ vectors, 
+\begin{align}
+  \label{eq:cross3d}
+	\vec{A} \times \vec{B} = \myvec{ \mydet{\vec{A}_{23} & \vec{B}_{23}} \\[10pt] \mydet{\vec{A}_{31} & \vec{B}_{31}} \\[10pt] \mydet{\vec{A}_{12}  & \vec{B}_{12}}}
+\end{align}
+\fi
+\item The area of the triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by 
+	\label{prop:area2d}
+\begin{align}
+  \label{eq:area2d}
+	\frac{1}{2}\norm{\brak{\vec{A}-\vec{B}} \times \brak{\vec{A}-\vec{C}}}
+ = 
+ \frac{1}{2}\norm{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}
+  \end{align}
+  \item If 
+  \label{prop:area2d-norm}
+\begin{align}
+  \label{eq:area2d-norm}
+	\norm{\vec{A}\times\vec{B}}  &= \norm{\vec{C}\times \vec{D}}, \quad \text{then}
+	\\
+	\vec{A}\times\vec{B}  &= \pm\brak{\vec{C}\times \vec{D}}
+  \end{align}
+  where the sign depends on the orientation of the vectors.
+  \item The median divides the triangle into two triangles of equal area.
+	  \label{prop:two-median-area}
+\item Let $\vec{x}$ be equidistant from the points $\vec{A}$ and $\vec{B}$.  Then 
+  \begin{align}
+	  \brak{\vec{A}-\vec{B}}^{\top}{\vec{x}} 
+	  =  \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2}
+  \label{eq:norm2d_equidist}
+  \end{align}
+  \solution 
+\begin{align}
+	\norm{\vec{x}-\vec{A}} &=
+\norm{\vec{A}-\vec{B}} 
+\\
+	\implies \norm{\vec{x}-\vec{A}}^2 &=
+\norm{\vec{x}-\vec{B}}^2 
+\end{align}
+which can be expressed as 
+\begin{multline}
+%  \label{eq:norm2d_dist}
+	\brak{\vec{x}-\vec{A}}^{\top} \brak{\vec{x}-\vec{A}}=
+	\brak{\vec{x}-\vec{B}}^{\top} 
+\brak{\vec{x}-\vec{B}}
+\\
+	\implies	\norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{A} + \norm{\vec{A}}^2
+	\\= \norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{B} + \norm{\vec{B}}^2
+\end{multline}
+which can be simplified to obtain
+  \eqref{eq:norm2d_equidist}.
+\item If $\vec{x}$ lies on the  $x$-axis and is  equidistant from the points $\vec{A}$ and $\vec{B}$, 
+  \begin{align}
+	  \vec{x} &=
+	   x\vec{e}_1
+  \end{align}
+  where 
+  \begin{align}
+	  x &=\frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+}
+	  \label{eq:cbse_10_x}
+  \end{align}
+  \solution 
+  From \eqref{eq:norm2d_equidist}.
+  \begin{align}
+	   x\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+		  &=
+	  \frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2}
+   \end{align}
+	  yielding \eqref{eq:cbse_10_x}.
+  \item The angle between two vectors is given by 
+    \label{prop:angle2d}
+  \begin{align}
+    \label{eq:angle2d}
+    \theta = \cos^{-1}\frac{\vec{A}^{\top} \vec{B}}{\norm{A}\norm{B}}
+  \end{align}
+  \item If two vectors are orthogonal (perpendicular), 
+  \begin{align}
+    \label{eq:angle2d_orth}
+\vec{A}^{\top} \vec{B} = 0
+  \end{align}
+  \item For an isoceles triangle $ABC$ ith $AB = AC$, the median $AD \perp BC$.
+    \label{prop:two-isosc}
+%  \begin{align}
+%    \label{eq:two-isosc}
+%\vec{A}^{\top} \vec{B} = 0
+%  \end{align}
+
+  \item The {\em direction vector} of the line joining two points $\vec{A},\vec{B}$ is given by 
+  \begin{align}
+    \label{eq:dir_vec}
+    \vec{m} = \vec{A}-\vec{B}
+  \end{align}
+  \item The points $\vec{A}\vec{A}\vec{A}$
+\item The unit vector in the direction of $\vec{m}$ is defined as
+\begin{align}
+    \frac{\vec{m}}{\norm{\vec{m}}}
+\end{align}
+\item If the direction vector of a line is expressed as 
+		\label{prop:two-dir-vec}
+	\begin{align}
+		\label{eq:two-dir-vec}
+    \vec{m} = \myvec{1\\m},
+\end{align}
+ the $m$ is defined to be the {\em} slope of the line. 
+  \item $AB \parallel CD$ if 
+	  \label{prop:two-par-dir-vec}
+  \begin{align}
+	  \vec{A}- \vec{B}= k\brak{\vec{C}- \vec{D}}
+	  \label{eq:two-par-dir-vec}
+  \end{align}
+  \item The {\em normal vector} to $\vec{m}$ is defined by 
+  \begin{align}
+    \label{eq:normal_vec}
+    \vec{m}^{\top}  \vec{n} = 0
+  \end{align}
+  \item  If
+	  \label{prop:two-orth-para}
+\begin{align}
+	\vec{m}^{\top}  \vec{n}_1 &= 0
+	\\
+	\vec{m}^{\top}  \vec{n}_2 &= 0,
+	\\
+	\vec{n}_1 &\parallel \vec{n}_2
+	  \label{eq:two-orth-para}
+\end{align}
+\item  The standard basis vectors are defined as 
+	\label{def:matrix-two}
+
+  \begin{align}
+  \vec{e}_1&= \myvec{1\\0}, 
+  \\
+  \vec{e}_2&= \myvec{0\\1}.
+  \end{align}
+\end{enumerate}
+\section{Parallelogram}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+  \item If $ABCD$ be a parallelogram,
+	  \label{prop:two-pgm}
+  \begin{align}
+	  \label{eq:two-pgm}
+ \vec{B}-\vec{A} = \vec{C} -\vec{D}
+  \end{align}
+%  \item Diagonals of a parallelogram bisect each other.
+%	  \label{prop:two-pgm-diag-bisect}
+\item The area of the parallelogram with vertices $\vec{A}, \vec{B}, \vec{C}$ and $\vec{D}$ is given by 
+  \label{prop:pgm2d}
+\begin{align}
+  \label{eq:pgm2d}
+	\norm{\brak{\vec{A}-\vec{B}} \times \brak{\vec{A}-\vec{D}}}
+ = 
+ \norm{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}
+  \end{align}
+\end{enumerate}
