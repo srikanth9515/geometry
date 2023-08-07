@@ -59,15 +59,15 @@ plt.plot(x_CI[0,:],x_CI[1,:],label='$CI$')
 plt.plot(x_BI[0,:],x_BI[1,:],label='$BI$')
 
 #Labeling the coordinates
-tri_coords = np.block([[A,B,C,O,I]])
-plt.scatter(tri_coords[0,:], tri_coords[1,:])
+tri_coords = np.block([[A],[B],[C],[I]])
+plt.scatter(tri_coords[:,0], tri_coords[:,1])
 vert_labels = ['A','B','C','I']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
-                 (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
-                 textcoords="offset points",  # how to position the text
+                 (tri_coords[i,0], tri_coords[i,1]), # this is the point to label
+                 textcoords="offset points", # how to position the text
                  xytext=(0,10), # distance from text to points (x,y)
-                 ha='center')# horizontal alignment can be left, right or center
+                 ha='center') # horizontal alignment can be left, right or center
                  
 plt.legend(loc='best')
 plt.grid() # minor
