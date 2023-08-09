@@ -1,0 +1,316 @@
+
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\usepackage{listings}
+\usepackage{commath}
+\usepackage{gvv}
+%
+%\usepackage{setspace}
+%\usepackage{gensymb}
+%\doublespacing
+%\singlespacing
+
+%\usepackage{graphicx}
+%\usepackage{amssymb}
+%\usepackage{relsize}
+%\usepackage[cmex10]{amsmath}
+%\usepackage{amsthm}
+%\interdisplaylinepenalty=2500
+%\savesymbol{iint}
+%\usepackage{txfonts}
+%\restoresymbol{TXF}{iint}
+%\usepackage{wasysym}
+%\usepackage{amsthm}
+%\usepackage{iithtlc}
+%\usepackage{mathrsfs}
+%\usepackage{txfonts}
+%\usepackage{stfloats}
+%\usepackage{bm}
+%\usepackage{cite}
+%\usepackage{cases}
+%\usepackage{subfig}
+%\usepackage{xtab}
+%\usepackage{longtable}
+%\usepackage{multirow}
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+%\usepackage{enumitem}
+%\usepackage{mathtools}
+%\usepackage{tikz}
+%\usepackage{circuitikz}
+%\usepackage{verbatim}
+%\usepackage{tfrupee}
+%\usepackage{stmaryrd}
+%\usetkzobj{all}
+%    \usepackage{color}                                            %%
+%    \usepackage{array}                                            %%
+%    \usepackage{longtable}                                        %%
+%    \usepackage{calc}                                             %%
+%    \usepackage{multirow}                                         %%
+%    \usepackage{hhline}                                           %%
+%    \usepackage{ifthen}                                           %%
+  %optionally (for landscape tables embedded in another document): %%
+%    \usepackage{lscape}     
+%\usepackage{multicol}
+%\usepackage{chngcntr}
+%\usepackage{enumerate}
+
+%\usepackage{wasysym}
+%\documentclass[conference]{IEEEtran}
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+%\newtheorem{thm}{Theorem}[section] 
+%\newtheorem{defn}[thm]{Definition}
+%\newtheorem{algorithm}{Algorithm}[section]
+%\newtheorem{cor}{Corollary}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+%\bibliographystyle{ieeetr}
+\begin{document}
+%
+
+\bibliographystyle{IEEEtran}
+
+
+\vspace{3cm}
+
+\title{
+Probability Assignment 1	}
+}
+\author{EE22BTECH11052 - SUJAL GUPTA
+	
+}	
+%\title{
+%	\logo{Matrix Analysis through Octave}{\begin{center}\includegraphics[scale=.24]{tlc}\end{center}}{}{HAMDSP}
+%}
+
+
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+%\title{Matrix Analysis through Octave}
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+
+%\author{<-this % stops a space
+%\thanks{}}
+%}
+% note the % following the last \IEEEmembership and also \thanks - 
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+% 
+% \author{....lastname \thanks{...} \thanks{...} }
+%                     ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
+
+
+
+% The paper headers
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
+%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+% 
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+
+
+
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+
+
+
+% make the title area
+\maketitle
+
+\newpage
+
+%\tableofcontents
+
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+%\renewcommand{\theequation}{\theenumi}
+
+%\begin{abstract}
+%%\boldmath
+%In this letter, an algorithm for evaluating the exact analytical bit error rate  (BER)  for the piecewise linear (PL) combiner for  multiple relays is presented. Previous results were available only for upto three relays. The algorithm is unique in the sense that  the actual mathematical expressions, that are prohibitively large, need not be explicitly obtained. The diversity gain due to multiple relays is shown through plots of the analytical BER, well supported by simulations. 
+%
+%\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the journal you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals frown on math
+% in the abstract anyway.
+
+% Note that keywords are not normally used for peerreview papers.
+%\begin{IEEEkeywords}
+%Cooperative diversity, decode and forward, piecewise linear
+%\end{IEEEkeywords}
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+%\IEEEpeerreviewmaketitle
+
+%\begin{abstract}
+%his manual includes \LaTeX figures.
+%book provides an introduction to optimization  based on the NCERT textbooks from Class 6-12.  Links to sample Python codes are available in the text.  
+%\end{abstract}
+%Download 
+%\begin{lstlisting}
+%svn co https://github.com/gadepall/school/trunk/training
+%\end{lstlisting}
+
+%\renewcommand{\theequation}{\theenumi}
+%\subsection{Problem}
+
+%\section{Chemistry}
+%\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+%\numberwithin{equation}{enumi}
+Given in the question:
+% \begin{description}
+  % \item 
+  \begin{align}
+    \vec{A} &= \myvec{1\\-1}  ,\\
+  % \item 
+    \vec{B} &= \myvec{-4\\6} ,\\
+  % \item 
+    \vec{C} &= \myvec{-3\\-5}
+    \end{align}
+% \end{description}
+
+The equation of the incircle is given by
+\begin{align}
+\norm{\vec{x}-\vec{I}}^2 = r^2
+\end{align}
+Find the parameteric equation of $BC$ and use it to verify that $BC$
+intersects the incircle at exactly one point $\vec{D_{3}}$ . $BC$ is defined to be a
+tangent to the incircle. $\vec{D_{3}}$ is defined to be point of contact. 
+\solution
+Let us define 
+\begin{align}
+\vec{m} = \vec{C}-\vec{B} 
+\end{align}
+and $\vec{I}$ is the incentre of the $\triangle ABC$
+
+\begin{align}
+\vec{I} &= \frac{1}{\sqrt{74}+\sqrt{32}+\sqrt{122}}\myvec{{\sqrt{122}-4\sqrt{32}-3\sqrt{74}}\\{-\sqrt{122}+6\sqrt{32}-5\sqrt{74}}}\\
+&=\myvec{-1.47756217 \\-0.79495069}
+\end{align}
+The general position vector on the line $BC$ (in parametric form)  and the equation of incircle are:
+\begin{align}
+\vec{x} &= \vec{B} + k{\vec{m}}\label{eq:8}\\
+\norm{\ \vec{x} - \vec{I}\ }^2 &= r^2 \label{eq:9}
+\end{align}
+
+Substituting the value of $ \vec{x} $ from \eqref{eq:8} in \eqref{eq:9}
+\begin{align}
+  \norm{ \vec{B} + k{\vec{m}}- \vec{I} }^2 &= r^2 \\
+  \sbrak{\vec{B} + k{\vec{m}}- \vec{I}}^{\top} \sbrak{\vec{B} + k{\vec{m}}- \vec{I}} &= r^2 
+\end{align}
+On simplifying the above equation:
+\begin{multline}
+k^2\norm{\vec{m}}^2 +2k{\vec{m}^{\top}}\brak{{\vec{B}-\vec{I}}}+\norm{\vec{I}}^2 +\norm{\vec{B}}^2\\-2\brak{\vec{B}^{\top}\vec{I}} - r^2=0
+\end{multline}
+The above is a quadratic equation in $k$.
+The Discriminant of the quadratic equation is:
+\begin{multline}
+D = {\cbrak{2\sbrak{\vec{m}^{\top}\brak{\vec{B}-\vec{I}}}}}^2-4(\ \norm{\vec{m}}^2)(\ \norm{\vec{I}}^2 +\norm{\vec{B}}^2\\-2\brak{\vec{B}^{\top}\vec{I}} - r^2)\\
+= {\sbrak{2\myvec{1&-11}\myvec{-4+1.47756217\\6+0.79495069}}}^2 \\-4[122][2.8151+52-2(1.140544)\\-3.59820]\\
+=4\sbrak{{\brak{-2.522-74.744}}^2-5970.173}\\
+=4[5970.173121-5970.173121]\\
+=0
+\end{multline}
+%\end{multline}
+%\begin{multline}
+%\begin{align}
+
+We substituted the values of $\vec{B},\vec{I},\vec{m}$
+On solving this Discriminant turns out to be zero.
+Hence, the quadratic equation has only one solution.
+To find the unique solution of the equation (i.e. the unique value of $k$), Set discriminant value to 0.
+And the solution is \begin{align}k=\frac{-2\vec{m}^{\top}\brak{\vec{B}-\vec{I}}}{2{\ \norm{\vec{m}}^2}}\end{align}
+
+On substituting the values, the value of $k$ is 
+\begin{align}
+k&=-\myvec{1&-11}\myvec{-4-\frac{\sqrt{122}-4\sqrt{32}-3\sqrt{74}}{\sqrt{74}+\sqrt{32}+\sqrt{122}}\\6-\frac{-\sqrt{122}+6\sqrt{32}-5\sqrt{74}}{\sqrt{74}+\sqrt{32}+\sqrt{122}}}\\
+&=\myvec{1&-11}\myvec{\frac{5\sqrt{122}+\sqrt{74}}{\sqrt{74}+\sqrt{32}+\sqrt{122}}\\\frac{-7\sqrt{122}-11\sqrt{74}}{\sqrt{74}+\sqrt{32}+\sqrt{122}}}\\
+&=\frac{122\sqrt{74}+82\sqrt{122}}{122(\sqrt{74}+\sqrt{122}+\sqrt{32})}\\
+&=0.6333352080102638
+\end{align}
+
+So on substituting this value in \eqref{eq:8}, we get the point $\vec{D_{3}}$ 
+\begin{align}
+\vec{D_{3}} &=\myvec{-4\\6} + \frac{122\sqrt{74}+82\sqrt{122}}{122\brak{\sqrt{74}+\sqrt{122}+\sqrt{32}}}\myvec{1\\-11}\\
+&=\myvec{-4+\frac{122\sqrt{74}+82\sqrt{122}}{122\brak{\sqrt{74}+\sqrt{122}+\sqrt{32}}}\\6-11\frac{122\sqrt{74}+82\sqrt{122}}{122\brak{\sqrt{74}+\sqrt{122}+\sqrt{32}}}}\\
+&=\myvec{{\frac{-366\sqrt{74}-406\sqrt{122}-488\sqrt{32}}{122\brak{\sqrt{74}+\sqrt{32}+\sqrt{122}}}}\\{\frac{-610\sqrt{74}+732\sqrt{32}-170\sqrt{122}}{122\brak{\sqrt{74}+\sqrt{32}+\sqrt{122}}}}}\\
+&=\myvec{-3.36666479\\-0.96668729}
+\end{align}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{/home/sujalgupat484/Desktop/probability/assgn1_1.5.8/figs/incircle.png}
+\caption{Incircle generated using python}
+\label{fig:Incircle_py}
+\end{figure}
+\end{document}
