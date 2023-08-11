@@ -1,4 +1,4 @@
-%\iffalse
+\iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
@@ -111,7 +111,8 @@ Assignment
 \let\vec\mathbf
 
  \textbf{Quesiton 1.4.3}\\
- Verify that $\vec{O}$ satisfies \ref{eq:} . $\vec{O}$ is known as the circumcentre.\\
+ Verify that $\vec{O}$ satisfies \eqref{eq:tri-perp-bisect} . $\vec{O}$ is known as the circumcentre.\\
+ \fi
  \solution
  From the previous question we get,
  \begin{align}
@@ -124,13 +125,13 @@ when substituted in the above equation,
 	&=\frac{1}{12}\myvec{-11&-1}\myvec{-1\\11}\\
 	&=0
 \end{align}
-It is hence proved that $\vec{O}$ satisfies the equation \ref{eq:}
+It is hence proved that $\vec{O}$ satisfies the equation \eqref{eq:tri-perp-bisect}
 \begin{figure}[h]
 \centering
 \includegraphics[width=\columnwidth]{figs/Figure_1.png}
 \caption{Circumcenter plotted using python}
 \label{fig:Circumcenter to BC}
 \end{figure}
-\end{document}
+
 
 
