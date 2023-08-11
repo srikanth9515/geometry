@@ -14,10 +14,31 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
 \usepackage{listings}
-\usepackage{float}
+\usepackage{floatrow}  
 
 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+%\newtheorem{thm}{Theorem}[section] 
+%\newtheorem{defn}[thm]{Definition}
+%\newtheorem{algorithm}{Algorithm}[section]
+%\newtheorem{cor}{Corollary}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+%\bibliographystyle{ieeetr}
 \begin{document}
+%
+
+
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
 \providecommand{\prt}[2]{\ensuremath{p_{#1}^{\left(#2\right)} }}        % own macro for this question
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
@@ -82,37 +103,118 @@
 %\let\StandardTheFigure\thefigure
 \let\vec\mathbf
 
+
 \bibliographystyle{IEEEtran}
 
 
 \vspace{3cm}
 
+\title{
+%	\logo{
+Assignment 1
+%	}
+}
+\author{ EE22BTECH11053 - Tanmay Vishwasrao% <-this % stops a space
+	
+}	
 
-\textbf{1.5.4}
-Find distance from $\vec{I}$ to $BC$. \\
+\maketitle
+
+\newpage
+
+%\tableofcontents
+
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Question 1.5.9\\
+Find the other points of contact $\vec{E}_3$ and $\vec{F}_3$.
 \fi
 \solution
-Given: 
+From the previous references we have the value of Incentre $\vec{I}$ is
 \begin{align}
-\vec{A}=\myvec{1\\-1} \\
-\vec{B}=\myvec{-4\\6} \\
-\vec{C}=\myvec{-3\\-5}
+\vec{I} &=\myvec{-1.4775\\-0.7949}
 \end{align}
-We know incentre \begin{align}
-\vec{I} = \frac{1}{\sqrt{37} + 4 + \sqrt{61}} \myvec{\sqrt{61} - 16 - 3\sqrt{37} \\ -\sqrt{61} + 24 - 5\sqrt{37}}
-\end{align}
-Equation of $BC$:  
+And the value of inradius $r$ is 1.8969. The parametric equation of line is:
 \begin{align}
-\vec{n} ^\top \vec{x} &= c \\ 
-\myvec{11 \\ 1}^\top \vec x &= -38 
+&= \vec{A}+k\vec{m}
 \end{align}
-Distance from $\vec{I}$ to $BC$
+The equation of Incircle is given by:
 \begin{align}
-&=\frac{\abs{\vec{n}^\top \vec{I} - c}}{\norm{\vec{n}}} \\
-&=\frac{\abs{\myvec{11\\1}^\top \frac{1}{\sqrt{37} + 4 + \sqrt{61}} \myvec{\sqrt{61} - 16 - 3\sqrt{37} \\ -\sqrt{61} + 24 - 5\sqrt{37}} +38}}{\norm{\myvec{11\\1}}} \\
-&=\frac{\abs{\frac{\myvec{11&1}\myvec{\sqrt{61} - 16 - 3\sqrt{37} \\ -\sqrt{61} + 24 - 5\sqrt{37}}}{\sqrt{37} + 4 + \sqrt{61}}+38}}{\sqrt{122}}\\
-&=\frac{\abs{\frac{10\sqrt{61}-152-38\sqrt{37}}{\sqrt{37} + 4 + \sqrt{61}}+38}}{\sqrt{122}}\\
-&=\frac{48\sqrt{61}}{(\sqrt{37}+4+\sqrt{61})\sqrt{122}}\\
-&=1.8968 %verified with python
+\norm{\vec{x}-\vec{I}}^2 &= r^2
 \end{align}
+Since its a parametric equation we can substitute $(3)$ as $\vec{x}$ in $(4)$.
+\begin{align}
+\norm{\vec{A}+k\vec{m}-\vec{I}}^2 &= r^2 \\
+\brak{\vec{A}+k\vec{m}-\vec{I}}^\top\brak{\vec{A}+k\vec{m}-\vec{I}} &= r^2
+\end{align}
+On simplifying the above equation:
+\begin{align}
+k^2\norm{\vec{m}}^2+2k\brak{\vec{m}}^\top\brak{\vec{A-I}}+\norm{\vec{I}}^2 \nonumber \\
++\norm{\vec{A}}^2-2\brak{\vec{A}^\top\vec{I}}-r^2 &= 0 \label{eq:6}
+\end{align}
+\begin{enumerate}
+\item Finding the point $\vec{E}_3$.\\
+The equation of $\vec{E}_3$:
+\begin{align}
+\vec{E}_3 &=\vec{A}+k\vec{m}
+\end{align}
+Where 
+\begin{align}
+\vec{m} = \vec{A}-\vec{B}
+\end{align}
+Now putting the values of $\vec{A}, \vec{m}, \vec{I}$ in \ref{eq:6}.
+\begin{align}
+74k^2+27.6463k+2.5821 &= 0
+\end{align}
+Discriminant of the above equation is:
+\begin{align}
+D &= \brak{27.6463}^2-4\brak{74}\brak{2.5821}\\
+&= 764.3179-764.3179\\
+&= 0
+\end{align}
+Since the discriminant is $0$. The value of k will be:
+\begin{align}
+k &= -\frac{2\brak{\vec{m}}^\top\brak{\vec{A-I}}}{2\norm{\vec{m}}^2} \\
+&= -\frac{27.6463}{148} \\
+&= -0.1867
+\end{align}
+Now we can find $\vec{E}_3$ using above results:
+\begin{align}
+\vec{E}_3 &=\myvec{1\\-1}-0.1867\myvec{5\\-7} \\
+&=\myvec{0.066\\0.307}
+\end{align}
+\item Finding the point $\vec{F}_3$.\\
+For the point $\vec{F}_3$ the value of $\vec{m} = \vec{A}-\vec{C}$. 
+\begin{align}
+\vec{F}_3 &=\vec{A}+k\vec{m}
+\end{align}
+Now putting the values of $\vec{A}, \vec{m}, \vec{I}$ in \ref{eq:6}.
+\begin{align}
+32k^2+18.1801k+2.5821 &= 0
+\end{align}
+Discriminant of the above equation is:
+\begin{align}
+D &= \brak{18.1801}^2-4\brak{32}\brak{2.5821}\\
+&= 330.51-330.51\\
+&= 0
+\end{align}
+Since the discriminant is $0$. The value of k will be:
+\begin{align}
+k &= -\frac{2\brak{\vec{m}}^\top\brak{\vec{A-I}}}{2\norm{\vec{m}}^2}\\
+&= -\frac{18.1801}{64}\\
+&= -0.2840
+\end{align}
+Now we can find $\vec{F}_3$ using above results:
+\begin{align}
+\vec{F}_3 &=\myvec{1\\-1}-0.2840\myvec{4\\4}\\
+&= \myvec{-0.136\\-2.136}
+\end{align}
+\end{enumerate}
+\begin{figure}[H]
+\includegraphics[width=\columnwidth]{figs/Incircle.png}
+\caption{Points $\vec{E}_3$ and $\vec{F}_3$ plotted using python}
+\label{fig:i_tri_py}
+\end{figure}
 
