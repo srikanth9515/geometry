@@ -11,7 +11,7 @@
 
 import sys                                          #for path to external scripts
 #sys.path.insert(0, '/home/user/txhome/storage/shared/gitlab/res2021/july/conics/codes/CoordGeo')        #path to my scripts
-sys.path.insert(0, '/home/saiharshith/1.2.3/codes/CoordGeo')        #path to my scripts
+sys.path.insert(0, 'solutions/codes/CoordGeo')        #path to my scripts
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
