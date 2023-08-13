@@ -1,4 +1,4 @@
-
+\iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
@@ -214,7 +214,7 @@ Probability and Random Processes
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 %\renewcommand{\theequation}{\theenumi}
-
+\newcommand{\solution}{\noindent \textbf{Solution: }}
 %\begin{abstract}
 %%\boldmath
 %In this letter, an algorithm for evaluating the exact analytical bit error rate  (BER)  for the piecewise linear (PL) combiner for  multiple relays is presented. Previous results were available only for upto three relays. The algorithm is unique in the sense that  the actual mathematical expressions, that are prohibitively large, need not be explicitly obtained. The diversity gain due to multiple relays is shown through plots of the analytical BER, well supported by simulations. 
@@ -233,7 +233,8 @@ Probability and Random Processes
 %\end{IEEEkeywords}
 Q) Verify that \\
 $$\frac{BG}{GE}=\frac{CG}{GF}=\frac{AG}{GD}=2$$
-Solution: Three vertices of the triangle and midpoints are:
+\fi
+\solution \\ Three vertices of the triangle and midpoints are:
 \begin{align}
 \vec{A} = \myvec{1 \\ -1} ,\ \vec{B} &= \myvec{-4 \\ 6} \\
 \vec{C} = \myvec{-3 \\ -5} ,\ \vec{D} &= \myvec{-3.5 \\ 0.5} \\
@@ -285,7 +286,5 @@ Therefore,
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
 %\IEEEpeerreviewmaketitle
-\pagenumbering{gobble}
 
-\end{document}
 
