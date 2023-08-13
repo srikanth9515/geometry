@@ -3,27 +3,27 @@
 \contentsline {chapter}{\numberline {1}Triangle}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Vectors}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Median}{16}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Altitude}{31}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Perpendicular Bisector}{34}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Angle Bisector}{45}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Trigonometry}{77}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Ratios}{77}{section.2.1}%
-\contentsline {section}{\numberline {2.2}The Baudhayana Theorem}{78}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Area of a Triangle}{81}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Angle Bisectors}{85}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Circumradius}{89}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Tangent}{91}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Identities}{92}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Coordinate Geometry}{97}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Vectors}{97}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Collinear Points}{99}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Matrices: Cosine Formula}{105}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Area of a Triangle: Cross Product}{108}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Parallelogram}{109}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Altitudes of a Triangle:Line Equation}{109}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Circumcircle: Circle Equation}{112}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Tangent}{117}{section.3.8}%
-\contentsline {chapter}{\numberline {4}Triangle}{123}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Quadrilateral}{137}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Circle}{149}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Miscellaneous }{157}{chapter.7}%
+\contentsline {section}{\numberline {1.3}Altitude}{34}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Perpendicular Bisector}{41}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Angle Bisector}{54}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Trigonometry}{89}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ratios}{89}{section.2.1}%
+\contentsline {section}{\numberline {2.2}The Baudhayana Theorem}{90}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Area of a Triangle}{93}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Angle Bisectors}{97}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Circumradius}{101}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Tangent}{103}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Identities}{104}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Coordinate Geometry}{109}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Vectors}{109}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Collinear Points}{111}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Matrices: Cosine Formula}{117}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Area of a Triangle: Cross Product}{120}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Parallelogram}{121}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Altitudes of a Triangle:Line Equation}{121}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Circumcircle: Circle Equation}{124}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Tangent}{129}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Triangle}{135}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Quadrilateral}{149}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Circle}{161}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Miscellaneous }{169}{chapter.7}%
