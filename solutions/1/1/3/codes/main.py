@@ -1,7 +1,7 @@
 import numpy as np
 import sys                                          #for path to external scripts
 #sys.path.insert(0, '/home/user/txhome/storage/shared/gitlab/res2021/july/conics/codes/CoordGeo')        #path to my scripts
-sys.path.insert(0, '/home/saiharshith/1.1.3/codes/CoordGeo')        #path to my scripts
+sys.path.insert(0, 'solutions/1/1/3/codes/CoordGeo')        #path to my scripts
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import math
@@ -103,5 +103,5 @@ plt.axis('equal')
 
 #if using termux
 #plt.savefig('tri_sss.pdf')
-plt.savefig('/home/saiharshith/1.1.3/figs/figure.png')
+plt.savefig('solutions/1/1/3/figs/figure.png')
 
