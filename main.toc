@@ -22,6 +22,7 @@
 \contentsline {subsection}{\numberline {2.2.7}10.3.7}{123}{subsection.2.2.7}%
 \contentsline {subsection}{\numberline {2.2.8}10.4.1}{126}{subsection.2.2.8}%
 \contentsline {subsection}{\numberline {2.2.9}10.4.2}{127}{subsection.2.2.9}%
+\contentsline {subsection}{\numberline {2.2.10}10.4.3}{129}{subsection.2.2.10}%
 \contentsline {chapter}{\numberline {3}Trigonometry}{131}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Ratios}{131}{section.3.1}%
 \contentsline {section}{\numberline {3.2}The Baudhayana Theorem}{132}{section.3.2}%
