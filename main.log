@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.8.14)  26 AUG 2023 09:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.8.14)  26 AUG 2023 11:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1322,7 +1322,7 @@ Package hyperref Info: Link coloring OFF on input line 26.
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-<figs/logo.jpg, id=212, 642.4pt x 642.4pt>
+<figs/logo.jpg, id=216, 642.4pt x 642.4pt>
 File: figs/logo.jpg Graphic file (type jpg)
 <use figs/logo.jpg>
 Package pdftex.def Info: figs/logo.jpg  used on input line 52.
@@ -1532,7 +1532,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-<solutions/1/1/3/figs/figure.png, id=392, 462.528pt x 346.896pt>
+<solutions/1/1/3/figs/figure.png, id=397, 462.528pt x 346.896pt>
 File: solutions/1/1/3/figs/figure.png Graphic file (type png)
 <use solutions/1/1/3/figs/figure.png>
 Package pdftex.def Info: solutions/1/1/3/figs/figure.png  used on input line 37
@@ -1571,7 +1571,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-<solutions/1/1/5/figs/figure.png, id=425, 462.528pt x 346.896pt>
+<solutions/1/1/5/figs/figure.png, id=430, 462.528pt x 346.896pt>
 File: solutions/1/1/5/figs/figure.png Graphic file (type png)
 <use solutions/1/1/5/figs/figure.png>
 Package pdftex.def Info: solutions/1/1/5/figs/figure.png  used on input line 29
@@ -1597,7 +1597,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12 <./solutions/1/1/5/figs/figure.png>]
-<solutions/1/1/5a/figs/figure1.png, id=447, 462.528pt x 346.896pt>
+<solutions/1/1/5a/figs/figure1.png, id=453, 462.528pt x 346.896pt>
 File: solutions/1/1/5a/figs/figure1.png Graphic file (type png)
 <use solutions/1/1/5a/figs/figure1.png>
 Package pdftex.def Info: solutions/1/1/5a/figs/figure1.png  used on input line 
@@ -1622,7 +1622,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-<solutions/1/1/5c/figs/fig.png, id=472, 462.528pt x 346.896pt>
+<solutions/1/1/5c/figs/fig.png, id=477, 462.528pt x 346.896pt>
 File: solutions/1/1/5c/figs/fig.png Graphic file (type png)
 <use solutions/1/1/5c/figs/fig.png>
 Package pdftex.def Info: solutions/1/1/5c/figs/fig.png  used on input line 110.
@@ -1688,7 +1688,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
 (./solutions/1/2/1/main.tex
-<solutions/1/2/1/figs/figure.png, id=551, 462.528pt x 346.896pt>
+<solutions/1/2/1/figs/figure.png, id=556, 462.528pt x 346.896pt>
 File: solutions/1/2/1/figs/figure.png Graphic file (type png)
 <use solutions/1/2/1/figs/figure.png>
 Package pdftex.def Info: solutions/1/2/1/figs/figure.png  used on input line 24
@@ -1760,7 +1760,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-<solutions/1/2/2/figs/figure.png, id=622, 462.528pt x 346.896pt>
+<solutions/1/2/2/figs/figure.png, id=627, 462.528pt x 346.896pt>
 File: solutions/1/2/2/figs/figure.png Graphic file (type png)
 <use solutions/1/2/2/figs/figure.png>
 Package pdftex.def Info: solutions/1/2/2/figs/figure.png  used on input line 21
@@ -1786,7 +1786,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-<solutions/1/2/2a/figs/figure.png, id=643, 462.528pt x 346.896pt>
+<solutions/1/2/2a/figs/figure.png, id=648, 462.528pt x 346.896pt>
 File: solutions/1/2/2a/figs/figure.png Graphic file (type png)
 <use solutions/1/2/2a/figs/figure.png>
 Package pdftex.def Info: solutions/1/2/2a/figs/figure.png  used on input line 2
@@ -1818,7 +1818,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-<solutions/1/2/3/figs/figure.png, id=680, 462.528pt x 346.896pt>
+<solutions/1/2/3/figs/figure.png, id=685, 462.528pt x 346.896pt>
 File: solutions/1/2/3/figs/figure.png Graphic file (type png)
 <use solutions/1/2/3/figs/figure.png>
 Package pdftex.def Info: solutions/1/2/3/figs/figure.png  used on input line 37
@@ -1892,7 +1892,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
-<solutions/1/2/7/figs/figure1.png, id=762, 462.528pt x 346.896pt>
+<solutions/1/2/7/figs/figure1.png, id=767, 462.528pt x 346.896pt>
 File: solutions/1/2/7/figs/figure1.png Graphic file (type png)
 <use solutions/1/2/7/figs/figure1.png>
 Package pdftex.def Info: solutions/1/2/7/figs/figure1.png  used on input line 3
@@ -1929,7 +1929,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-<solutions/1/3/2/figs/figure.png, id=792, 462.528pt x 346.896pt>
+<solutions/1/3/2/figs/figure.png, id=797, 462.528pt x 346.896pt>
 File: solutions/1/3/2/figs/figure.png Graphic file (type png)
 <use solutions/1/3/2/figs/figure.png>
 Package pdftex.def Info: solutions/1/3/2/figs/figure.png  used on input line 23
@@ -1972,7 +1972,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45]
-<solutions/1/3/3/figs/main.png, id=842, 409.0482pt x 312.2064pt>
+<solutions/1/3/3/figs/main.png, id=847, 409.0482pt x 312.2064pt>
 File: solutions/1/3/3/figs/main.png Graphic file (type png)
 <use solutions/1/3/3/figs/main.png>
 Package pdftex.def Info: solutions/1/3/3/figs/main.png  used on input line 169.
@@ -2003,7 +2003,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47]
-<solutions/1/3/4/figs/Figure_1.png, id=867, 462.528pt x 346.896pt>
+<solutions/1/3/4/figs/Figure_1.png, id=872, 462.528pt x 346.896pt>
 File: solutions/1/3/4/figs/Figure_1.png Graphic file (type png)
 <use solutions/1/3/4/figs/Figure_1.png>
 Package pdftex.def Info: solutions/1/3/4/figs/Figure_1.png  used on input line 
@@ -2019,7 +2019,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [48 <./solutions/1/3/4/figs/Figure_1.png>] (./solutions/1/3/5/Q_1.3.5.tex
-<solutions/1/3/5/figs/fig-1.png, id=876, 462.528pt x 346.896pt>
+<solutions/1/3/5/figs/fig-1.png, id=881, 462.528pt x 346.896pt>
 File: solutions/1/3/5/figs/fig-1.png Graphic file (type png)
 <use solutions/1/3/5/figs/fig-1.png>
 Package pdftex.def Info: solutions/1/3/5/figs/fig-1.png  used on input line 217
@@ -2072,7 +2072,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [53]
-<solutions/1/4/1/figs/trianglecircum.png, id=936, 462.528pt x 346.896pt>
+<solutions/1/4/1/figs/trianglecircum.png, id=941, 462.528pt x 346.896pt>
 File: solutions/1/4/1/figs/trianglecircum.png Graphic file (type png)
 <use solutions/1/4/1/figs/trianglecircum.png>
 Package pdftex.def Info: solutions/1/4/1/figs/trianglecircum.png  used on input
@@ -2080,7 +2080,7 @@ Package pdftex.def Info: solutions/1/4/1/figs/trianglecircum.png  used on input
 (pdftex.def)             Requested size: 360.0pt x 270.01141pt.
 )
 (./solutions/1/4/2/main.tex
-<solutions/1/4/2/figs/Figure_1.png, id=937, 462.528pt x 346.896pt>
+<solutions/1/4/2/figs/Figure_1.png, id=942, 462.528pt x 346.896pt>
 File: solutions/1/4/2/figs/Figure_1.png Graphic file (type png)
 <use solutions/1/4/2/figs/Figure_1.png>
 Package pdftex.def Info: solutions/1/4/2/figs/Figure_1.png  used on input line 
@@ -2143,7 +2143,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
-<solutions/1/4/3/figs/Figure_1.png, id=1000, 462.528pt x 346.896pt>
+<solutions/1/4/3/figs/Figure_1.png, id=1005, 462.528pt x 346.896pt>
 File: solutions/1/4/3/figs/Figure_1.png Graphic file (type png)
 <use solutions/1/4/3/figs/Figure_1.png>
 Package pdftex.def Info: solutions/1/4/3/figs/Figure_1.png  used on input line 
@@ -2184,7 +2184,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [63]
-<solutions/1/4/5/figs/figure2.png, id=1049, 462.528pt x 346.896pt>
+<solutions/1/4/5/figs/figure2.png, id=1054, 462.528pt x 346.896pt>
 File: solutions/1/4/5/figs/figure2.png Graphic file (type png)
 <use solutions/1/4/5/figs/figure2.png>
 Package pdftex.def Info: solutions/1/4/5/figs/figure2.png  used on input line 2
@@ -2206,7 +2206,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65 <./solutions/1/4/5/figs/figure2.png>] (./solutions/1/4/6/Q_1.4.6.tex
-<solutions/1/4/6/figs/fig_1.png, id=1070, 462.528pt x 346.896pt>
+<solutions/1/4/6/figs/fig_1.png, id=1075, 462.528pt x 346.896pt>
 File: solutions/1/4/6/figs/fig_1.png Graphic file (type png)
 <use solutions/1/4/6/figs/fig_1.png>
 Package pdftex.def Info: solutions/1/4/6/figs/fig_1.png  used on input line 217
@@ -2270,7 +2270,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [71]
-<solutions/1/5/1(1)/figs/anglebisector.png, id=1145, 415.5525pt x 312.2064pt>
+<solutions/1/5/1(1)/figs/anglebisector.png, id=1150, 415.5525pt x 312.2064pt>
 File: solutions/1/5/1(1)/figs/anglebisector.png Graphic file (type png)
 <use solutions/1/5/1(1)/figs/anglebisector.png>
 Package pdftex.def Info: solutions/1/5/1(1)/figs/anglebisector.png  used on inp
@@ -2296,7 +2296,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [73]
-<solutions/1/5/2/figs/Incentre.png, id=1164, 394.5942pt x 304.2567pt>
+<solutions/1/5/2/figs/Incentre.png, id=1169, 394.5942pt x 304.2567pt>
 File: solutions/1/5/2/figs/Incentre.png Graphic file (type png)
 <use solutions/1/5/2/figs/Incentre.png>
 Package pdftex.def Info: solutions/1/5/2/figs/Incentre.png  used on input line 
@@ -2322,7 +2322,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [75 <./solutions/1/5/2/figs/Incentre.png>]
-<solutions/1/5/3/fig/main.png, id=1183, 462.528pt x 346.896pt>
+<solutions/1/5/3/fig/main.png, id=1188, 462.528pt x 346.896pt>
 File: solutions/1/5/3/fig/main.png Graphic file (type png)
 <use solutions/1/5/3/fig/main.png>
 Package pdftex.def Info: solutions/1/5/3/fig/main.png  used on input line 237.
@@ -2423,7 +2423,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [85]
-<solutions/1/5/7/figs/Diagram.png, id=1297, 462.528pt x 346.896pt>
+<solutions/1/5/7/figs/Diagram.png, id=1302, 462.528pt x 346.896pt>
 File: solutions/1/5/7/figs/Diagram.png Graphic file (type png)
 <use solutions/1/5/7/figs/Diagram.png>
 Package pdftex.def Info: solutions/1/5/7/figs/Diagram.png  used on input line 1
@@ -2472,7 +2472,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [90]
-<solutions/1/5/8/figs/incircle.png, id=1343, 462.528pt x 346.896pt>
+<solutions/1/5/8/figs/incircle.png, id=1348, 462.528pt x 346.896pt>
 File: solutions/1/5/8/figs/incircle.png Graphic file (type png)
 <use solutions/1/5/8/figs/incircle.png>
 Package pdftex.def Info: solutions/1/5/8/figs/incircle.png  used on input line 
@@ -2513,7 +2513,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [94]
-<solutions/1/5/9/figs/Incircle.png, id=1393, 409.0482pt x 317.988pt>
+<solutions/1/5/9/figs/Incircle.png, id=1399, 409.0482pt x 317.988pt>
 File: solutions/1/5/9/figs/Incircle.png Graphic file (type png)
 <use solutions/1/5/9/figs/Incircle.png>
 Package pdftex.def Info: solutions/1/5/9/figs/Incircle.png  used on input line 
@@ -2633,7 +2633,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [107]
-<chapters/9/figs/4.6-4.7.png, id=1563, 592.2125pt x 299.1175pt>
+<chapters/9/figs/4.6-4.7.png, id=1568, 592.2125pt x 299.1175pt>
 File: chapters/9/figs/4.6-4.7.png Graphic file (type png)
 <use chapters/9/figs/4.6-4.7.png>
 Package pdftex.def Info: chapters/9/figs/4.6-4.7.png  used on input line 33.
@@ -2774,7 +2774,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [124]
-<chapters/10/figs/3.7.png, id=1813, 721.69624pt x 713.66624pt>
+<chapters/10/figs/3.7.png, id=1818, 721.69624pt x 713.66624pt>
 File: chapters/10/figs/3.7.png Graphic file (type png)
 <use chapters/10/figs/3.7.png>
 Package pdftex.def Info: chapters/10/figs/3.7.png  used on input line 35.
@@ -2837,7 +2837,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [132]
 Chapter 4.
 (./chapters/10/10.7.1.tex
-<chapters/10/figs/7.8.png, id=1924, 329.23pt x 315.1775pt>
+<chapters/10/figs/7.8.png, id=1929, 329.23pt x 315.1775pt>
 File: chapters/10/figs/7.8.png Graphic file (type png)
 <use chapters/10/figs/7.8.png>
 Package pdftex.def Info: chapters/10/figs/7.8.png  used on input line 14.
@@ -2857,10 +2857,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [134 <./chapters/10/figs/7.8.png>]) (./chapters/10/10.7.2.tex
-
-LaTeX Warning: Reference `fig:7.12' on page 135 undefined on input line 4.
-
-<chapters/10/figs/7.12.png, id=1945, 645.41125pt x 713.66624pt>
+<chapters/10/figs/7.12.png, id=1951, 645.41125pt x 713.66624pt>
 File: chapters/10/figs/7.12.png Graphic file (type png)
 <use chapters/10/figs/7.12.png>
 Package pdftex.def Info: chapters/10/figs/7.12.png  used on input line 7.
@@ -2872,26 +2869,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [135])
+(./chapters/10/10.7.3.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [136]
+ [136])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [137 <./chapters/10/figs/7.12.png>]
+ [137]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [138
-
-]
+ [138 <./chapters/10/figs/7.12.png>]
 Chapter 5.
 (./chapters/trig/tri_geo_rt.tex (./figs/trig/tri_right_angle.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2899,7 +2895,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [139])
+ [139
+
+])
 (./chapters/trig/tri_geo_baudh.tex (./figs/triangle/tri_baudh.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3703,9 +3701,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 No file main.ind.
 (./main.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
@@ -3714,171 +3709,151 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 3F99DE485D68C050BAAB71AAE4604AD0;5650
-(rerunfilecheck)             After:  092AAF396E787695B29DB7547ED1E99C;5742.
+(rerunfilecheck)             Before: 092AAF396E787695B29DB7547ED1E99C;5742
+(rerunfilecheck)             After:  56E4AF022A67A06D49827531EBD9F3F4;5834.
  ) 
 Here is how much of TeX's memory you used:
- 36582 strings out of 476091
- 697007 string characters out of 5794081
- 1880330 words of memory out of 5000000
- 53741 multiletter control sequences out of 15000+600000
+ 36591 strings out of 476091
+ 697139 string characters out of 5794081
+ 1881330 words of memory out of 5000000
+ 53744 multiletter control sequences out of 15000+600000
  529461 words of font info for 98 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  218i,21n,217p,1190b,1371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{equation.348.7} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.358.7} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.350.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.350.5} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.349.10} has been referenced but does not e
+pdfTeX warning (dest): name{equation.359.10} has been referenced but does not e
 xist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.349.6} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.359.1} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.349.3} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.359.6} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{figure.349.1} has been referenced but does not exis
+pdfTeX warning (dest): name{equation.359.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.359.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.359.1} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.345.2} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.322.4} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{figure.343.1} has been referenced but does not exis
+pdfTeX warning (dest): name{equation.323.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.357.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.353.1} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.318.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.337.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.341.1} has been referenced but does not exis
+pdfTeX warning (dest): name{figure.351.1} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.337.2} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.349.2} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.329.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.330.1} has been referenced but does not exis
+pdfTeX warning (dest): name{figure.340.1} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.328.8} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.338.8} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.328.7} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.338.7} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{figure.328.1} has been referenced but does not exis
+pdfTeX warning (dest): name{figure.338.1} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.326.3} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.336.3} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.326.9} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.336.9} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.325.3} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.335.3} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{figure.326.1} has been referenced but does not exis
+pdfTeX warning (dest): name{figure.336.1} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.288.1} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.322.5} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.350.1} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.298.1} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{figure.350.1} has been referenced but does not exis
+pdfTeX warning (dest): name{figure.312.1} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{figure.344.1} has been referenced but does not exis
+pdfTeX warning (dest): name{figure.311.1} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{figure.302.1} has been referenced but does not exis
+pdfTeX warning (dest): name{figure.309.1} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{figure.301.1} has been referenced but does not exis
+pdfTeX warning (dest): name{equation.304.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.308.1} has been referenced but does not exis
 t, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{figure.299.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.294.3} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.307.6} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{figure.298.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.297.6} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.302.1} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.296.1} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.300.1} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.295.1} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.299.1} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.292.1} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.298.2} has been referenced but does not ex
 ist, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{equation.290.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.289.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.288.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.287.1} has been referenced but does not ex
+pdfTeX warning (dest): name{equation.297.1} has been referenced but does not ex
 ist, replaced by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive
@@ -3902,10 +3877,10 @@ ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/tfrupee/tfrupee.pfb>
-Output written on main.pdf (246 pages, 1462712 bytes).
+Output written on main.pdf (246 pages, 1463923 bytes).
 PDF statistics:
- 3914 PDF objects out of 4296 (max. 8388607)
- 3497 compressed objects within 35 object streams
- 2106 named destinations out of 2487 (max. 500000)
- 566 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3924 PDF objects out of 4296 (max. 8388607)
+ 3506 compressed objects within 36 object streams
+ 2109 named destinations out of 2487 (max. 500000)
+ 574 words of extra memory for PDF output out of 10000 (max. 10000000)
 
