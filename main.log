@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.8.14)  28 AUG 2023 11:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.8.14)  28 AUG 2023 12:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1322,7 +1322,7 @@ Package hyperref Info: Link coloring OFF on input line 26.
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-<figs/logo.jpg, id=240, 642.4pt x 642.4pt>
+<figs/logo.jpg, id=159, 642.4pt x 642.4pt>
 File: figs/logo.jpg Graphic file (type jpg)
 <use figs/logo.jpg>
 Package pdftex.def Info: figs/logo.jpg  used on input line 52.
@@ -1388,19 +1388,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5])
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
@@ -1454,13 +1442,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.201 \mainmatter
-                  [4
+ [4
 
 ]
 Chapter 1.
@@ -1538,7 +1520,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-<solutions/1/1/3/figs/figure.png, id=431, 462.528pt x 346.896pt>
+<solutions/1/1/3/figs/figure.png, id=324, 462.528pt x 346.896pt>
 File: solutions/1/1/3/figs/figure.png Graphic file (type png)
 <use solutions/1/1/3/figs/figure.png>
 Package pdftex.def Info: solutions/1/1/3/figs/figure.png  used on input line 37
@@ -1577,7 +1559,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-<solutions/1/1/5/figs/figure.png, id=466, 462.528pt x 346.896pt>
+<solutions/1/1/5/figs/figure.png, id=357, 462.528pt x 346.896pt>
 File: solutions/1/1/5/figs/figure.png Graphic file (type png)
 <use solutions/1/1/5/figs/figure.png>
 Package pdftex.def Info: solutions/1/1/5/figs/figure.png  used on input line 29
@@ -1603,7 +1585,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12 <./solutions/1/1/5/figs/figure.png>]
-<solutions/1/1/5a/figs/figure1.png, id=487, 462.528pt x 346.896pt>
+<solutions/1/1/5a/figs/figure1.png, id=379, 462.528pt x 346.896pt>
 File: solutions/1/1/5a/figs/figure1.png Graphic file (type png)
 <use solutions/1/1/5a/figs/figure1.png>
 Package pdftex.def Info: solutions/1/1/5a/figs/figure1.png  used on input line 
@@ -1628,7 +1610,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-<solutions/1/1/5c/figs/fig.png, id=511, 462.528pt x 346.896pt>
+<solutions/1/1/5c/figs/fig.png, id=403, 462.528pt x 346.896pt>
 File: solutions/1/1/5c/figs/fig.png Graphic file (type png)
 <use solutions/1/1/5c/figs/fig.png>
 Package pdftex.def Info: solutions/1/1/5c/figs/fig.png  used on input line 110.
@@ -1694,7 +1676,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20]
 (./solutions/1/2/1/main.tex
-<solutions/1/2/1/figs/figure.png, id=591, 462.528pt x 346.896pt>
+<solutions/1/2/1/figs/figure.png, id=483, 462.528pt x 346.896pt>
 File: solutions/1/2/1/figs/figure.png Graphic file (type png)
 <use solutions/1/2/1/figs/figure.png>
 Package pdftex.def Info: solutions/1/2/1/figs/figure.png  used on input line 24
@@ -1766,7 +1748,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-<solutions/1/2/2/figs/figure.png, id=661, 462.528pt x 346.896pt>
+<solutions/1/2/2/figs/figure.png, id=554, 462.528pt x 346.896pt>
 File: solutions/1/2/2/figs/figure.png Graphic file (type png)
 <use solutions/1/2/2/figs/figure.png>
 Package pdftex.def Info: solutions/1/2/2/figs/figure.png  used on input line 21
@@ -1792,7 +1774,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-<solutions/1/2/2a/figs/figure.png, id=683, 462.528pt x 346.896pt>
+<solutions/1/2/2a/figs/figure.png, id=575, 462.528pt x 346.896pt>
 File: solutions/1/2/2a/figs/figure.png Graphic file (type png)
 <use solutions/1/2/2a/figs/figure.png>
 Package pdftex.def Info: solutions/1/2/2a/figs/figure.png  used on input line 2
@@ -1824,7 +1806,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-<solutions/1/2/3/figs/figure.png, id=720, 462.528pt x 346.896pt>
+<solutions/1/2/3/figs/figure.png, id=612, 462.528pt x 346.896pt>
 File: solutions/1/2/3/figs/figure.png Graphic file (type png)
 <use solutions/1/2/3/figs/figure.png>
 Package pdftex.def Info: solutions/1/2/3/figs/figure.png  used on input line 37
@@ -1898,7 +1880,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38]
-<solutions/1/2/7/figs/figure1.png, id=801, 462.528pt x 346.896pt>
+<solutions/1/2/7/figs/figure1.png, id=694, 462.528pt x 346.896pt>
 File: solutions/1/2/7/figs/figure1.png Graphic file (type png)
 <use solutions/1/2/7/figs/figure1.png>
 Package pdftex.def Info: solutions/1/2/7/figs/figure1.png  used on input line 3
@@ -1935,7 +1917,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-<solutions/1/3/2/figs/figure.png, id=832, 462.528pt x 346.896pt>
+<solutions/1/3/2/figs/figure.png, id=723, 462.528pt x 346.896pt>
 File: solutions/1/3/2/figs/figure.png Graphic file (type png)
 <use solutions/1/3/2/figs/figure.png>
 Package pdftex.def Info: solutions/1/3/2/figs/figure.png  used on input line 23
@@ -1978,7 +1960,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45]
-<solutions/1/3/3/figs/main.png, id=881, 409.0482pt x 312.2064pt>
+<solutions/1/3/3/figs/main.png, id=773, 409.0482pt x 312.2064pt>
 File: solutions/1/3/3/figs/main.png Graphic file (type png)
 <use solutions/1/3/3/figs/main.png>
 Package pdftex.def Info: solutions/1/3/3/figs/main.png  used on input line 169.
@@ -2009,7 +1991,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47]
-<solutions/1/3/4/figs/Figure_1.png, id=906, 462.528pt x 346.896pt>
+<solutions/1/3/4/figs/Figure_1.png, id=798, 462.528pt x 346.896pt>
 File: solutions/1/3/4/figs/Figure_1.png Graphic file (type png)
 <use solutions/1/3/4/figs/Figure_1.png>
 Package pdftex.def Info: solutions/1/3/4/figs/Figure_1.png  used on input line 
@@ -2025,7 +2007,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [48 <./solutions/1/3/4/figs/Figure_1.png>] (./solutions/1/3/5/Q_1.3.5.tex
-<solutions/1/3/5/figs/fig-1.png, id=915, 462.528pt x 346.896pt>
+<solutions/1/3/5/figs/fig-1.png, id=808, 462.528pt x 346.896pt>
 File: solutions/1/3/5/figs/fig-1.png Graphic file (type png)
 <use solutions/1/3/5/figs/fig-1.png>
 Package pdftex.def Info: solutions/1/3/5/figs/fig-1.png  used on input line 217
@@ -2078,7 +2060,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [53]
-<solutions/1/4/1/figs/trianglecircum.png, id=975, 462.528pt x 346.896pt>
+<solutions/1/4/1/figs/trianglecircum.png, id=866, 462.528pt x 346.896pt>
 File: solutions/1/4/1/figs/trianglecircum.png Graphic file (type png)
 <use solutions/1/4/1/figs/trianglecircum.png>
 Package pdftex.def Info: solutions/1/4/1/figs/trianglecircum.png  used on input
@@ -2086,7 +2068,7 @@ Package pdftex.def Info: solutions/1/4/1/figs/trianglecircum.png  used on input
 (pdftex.def)             Requested size: 360.0pt x 270.01141pt.
 )
 (./solutions/1/4/2/main.tex
-<solutions/1/4/2/figs/Figure_1.png, id=976, 462.528pt x 346.896pt>
+<solutions/1/4/2/figs/Figure_1.png, id=867, 462.528pt x 346.896pt>
 File: solutions/1/4/2/figs/Figure_1.png Graphic file (type png)
 <use solutions/1/4/2/figs/Figure_1.png>
 Package pdftex.def Info: solutions/1/4/2/figs/Figure_1.png  used on input line 
@@ -2149,7 +2131,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
-<solutions/1/4/3/figs/Figure_1.png, id=1039, 462.528pt x 346.896pt>
+<solutions/1/4/3/figs/Figure_1.png, id=931, 462.528pt x 346.896pt>
 File: solutions/1/4/3/figs/Figure_1.png Graphic file (type png)
 <use solutions/1/4/3/figs/Figure_1.png>
 Package pdftex.def Info: solutions/1/4/3/figs/Figure_1.png  used on input line 
@@ -2190,7 +2172,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [63]
-<solutions/1/4/5/figs/figure2.png, id=1088, 462.528pt x 346.896pt>
+<solutions/1/4/5/figs/figure2.png, id=980, 462.528pt x 346.896pt>
 File: solutions/1/4/5/figs/figure2.png Graphic file (type png)
 <use solutions/1/4/5/figs/figure2.png>
 Package pdftex.def Info: solutions/1/4/5/figs/figure2.png  used on input line 2
@@ -2212,7 +2194,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65 <./solutions/1/4/5/figs/figure2.png>] (./solutions/1/4/6/Q_1.4.6.tex
-<solutions/1/4/6/figs/fig_1.png, id=1109, 462.528pt x 346.896pt>
+<solutions/1/4/6/figs/fig_1.png, id=1000, 462.528pt x 346.896pt>
 File: solutions/1/4/6/figs/fig_1.png Graphic file (type png)
 <use solutions/1/4/6/figs/fig_1.png>
 Package pdftex.def Info: solutions/1/4/6/figs/fig_1.png  used on input line 217
@@ -2276,7 +2258,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [71]
-<solutions/1/5/1(1)/figs/anglebisector.png, id=1185, 415.5525pt x 312.2064pt>
+<solutions/1/5/1(1)/figs/anglebisector.png, id=1076, 415.5525pt x 312.2064pt>
 File: solutions/1/5/1(1)/figs/anglebisector.png Graphic file (type png)
 <use solutions/1/5/1(1)/figs/anglebisector.png>
 Package pdftex.def Info: solutions/1/5/1(1)/figs/anglebisector.png  used on inp
@@ -2302,7 +2284,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [73]
-<solutions/1/5/2/figs/Incentre.png, id=1203, 394.5942pt x 304.2567pt>
+<solutions/1/5/2/figs/Incentre.png, id=1095, 394.5942pt x 304.2567pt>
 File: solutions/1/5/2/figs/Incentre.png Graphic file (type png)
 <use solutions/1/5/2/figs/Incentre.png>
 Package pdftex.def Info: solutions/1/5/2/figs/Incentre.png  used on input line 
@@ -2328,7 +2310,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [75 <./solutions/1/5/2/figs/Incentre.png>]
-<solutions/1/5/3/fig/main.png, id=1222, 462.528pt x 346.896pt>
+<solutions/1/5/3/fig/main.png, id=1114, 462.528pt x 346.896pt>
 File: solutions/1/5/3/fig/main.png Graphic file (type png)
 <use solutions/1/5/3/fig/main.png>
 Package pdftex.def Info: solutions/1/5/3/fig/main.png  used on input line 237.
@@ -2429,7 +2411,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [85]
-<solutions/1/5/7/figs/Diagram.png, id=1336, 462.528pt x 346.896pt>
+<solutions/1/5/7/figs/Diagram.png, id=1228, 462.528pt x 346.896pt>
 File: solutions/1/5/7/figs/Diagram.png Graphic file (type png)
 <use solutions/1/5/7/figs/Diagram.png>
 Package pdftex.def Info: solutions/1/5/7/figs/Diagram.png  used on input line 1
@@ -2478,7 +2460,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [90]
-<solutions/1/5/8/figs/incircle.png, id=1382, 462.528pt x 346.896pt>
+<solutions/1/5/8/figs/incircle.png, id=1275, 462.528pt x 346.896pt>
 File: solutions/1/5/8/figs/incircle.png Graphic file (type png)
 <use solutions/1/5/8/figs/incircle.png>
 Package pdftex.def Info: solutions/1/5/8/figs/incircle.png  used on input line 
@@ -2519,7 +2501,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [94]
-<solutions/1/5/9/figs/Incircle.png, id=1434, 409.0482pt x 317.988pt>
+<solutions/1/5/9/figs/Incircle.png, id=1325, 409.0482pt x 317.988pt>
 File: solutions/1/5/9/figs/Incircle.png Graphic file (type png)
 <use solutions/1/5/9/figs/Incircle.png>
 Package pdftex.def Info: solutions/1/5/9/figs/Incircle.png  used on input line 
@@ -2639,7 +2621,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [107]
-<chapters/9/figs/4.6-4.7.png, id=1602, 592.2125pt x 299.1175pt>
+<chapters/9/figs/4.6-4.7.png, id=1494, 592.2125pt x 299.1175pt>
 File: chapters/9/figs/4.6-4.7.png Graphic file (type png)
 <use chapters/9/figs/4.6-4.7.png>
 Package pdftex.def Info: chapters/9/figs/4.6-4.7.png  used on input line 33.
@@ -2798,7 +2780,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [128]
-<chapters/10/figs/3.7.png, id=1914, 721.69624pt x 713.66624pt>
+<chapters/10/figs/3.7.png, id=1807, 721.69624pt x 713.66624pt>
 File: chapters/10/figs/3.7.png Graphic file (type png)
 <use chapters/10/figs/3.7.png>
 Package pdftex.def Info: chapters/10/figs/3.7.png  used on input line 35.
@@ -2861,7 +2843,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [136]
 Chapter 4.
 (./chapters/10/10.7.1.tex
-<chapters/10/figs/7.8.png, id=2016, 329.23pt x 315.1775pt>
+<chapters/10/figs/7.8.png, id=1907, 329.23pt x 315.1775pt>
 File: chapters/10/figs/7.8.png Graphic file (type png)
 <use chapters/10/figs/7.8.png>
 Package pdftex.def Info: chapters/10/figs/7.8.png  used on input line 14.
@@ -2881,7 +2863,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [138 <./chapters/10/figs/7.8.png>]) (./chapters/10/10.7.2.tex
-<chapters/10/figs/7.12.png, id=2037, 645.41125pt x 713.66624pt>
+<chapters/10/figs/7.12.png, id=1930, 645.41125pt x 713.66624pt>
 File: chapters/10/figs/7.12.png Graphic file (type png)
 <use chapters/10/figs/7.12.png>
 Package pdftex.def Info: chapters/10/figs/7.12.png  used on input line 7.
@@ -2907,7 +2889,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [141]
-<chapters/10/figs/7.14.png, id=2080, 722.7pt x 451.6875pt>
+<chapters/10/figs/7.14.png, id=1972, 722.7pt x 451.6875pt>
 File: chapters/10/figs/7.14.png Graphic file (type png)
 <use chapters/10/figs/7.14.png>
 Package pdftex.def Info: chapters/10/figs/7.14.png  used on input line 13.
@@ -2987,57 +2969,90 @@ Overfull \hbox (1.01701pt too wide) in paragraph at lines 15--16
 L/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 3)$
  []
 
-<chapters/11/figs/10.10.png, id=2126, 722.7pt x 523.9575pt>
+<chapters/11/figs/10.10.png, id=2019, 722.7pt x 523.9575pt>
 File: chapters/11/figs/10.10.png Graphic file (type png)
 <use chapters/11/figs/10.10.png>
 Package pdftex.def Info: chapters/11/figs/10.10.png  used on input line 24.
 (pdftex.def)             Requested size: 360.0pt x 261.00272pt.
-)
+) (./chapters/11/11.10.2.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [148]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 8.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 8.
+
+Missing character: There is no ° in font cmr10!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [149 <./chapters/11/figs/10.10.png>]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 10.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 10.
+
+Missing character: There is no ° in font cmr10!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [150
+ [150])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [151]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [152
 
 ]
 Chapter 6.
-(./chapters/trig/tri_geo_rt.tex (./figs/trig/tri_right_angle.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(./chapters/trig/tri_geo_rt.tex
 
+LaTeX Warning: Reference `fig:tri_right_angle' on page 153 undefined on input l
+ine 1.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [151])
-(./chapters/trig/tri_geo_baudh.tex (./figs/triangle/tri_baudh.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [152]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+(./figs/trig/tri_right_angle.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [153]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Reference `eq:tri_trig_defs' on page 154 undefined on input line
+ 28.
+
+) (./chapters/trig/tri_geo_baudh.tex
+
+LaTeX Warning: Reference `fig:tri_baudh' on page 154 undefined on input line 1.
+
+
+(./figs/triangle/tri_baudh.tex)
+
+LaTeX Warning: Reference `eq:tri_90-ang' on page 154 undefined on input line 28
+.
+
+
+LaTeX Warning: Reference `eq:tri_90-ang' on page 154 undefined on input line 28
+.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3045,26 +3060,70 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [154])
-(./chapters/trig/tri_geo_sincos.tex (./figs/triangle/tri_sss.tex)
+ [154]
+
+LaTeX Warning: Reference `ch1_budh_basic' on page 155 undefined on input line 3
+5.
+
+
+LaTeX Warning: Reference `ch1_budh_basic' on page 155 undefined on input line 4
+3.
+
+
+LaTeX Warning: Reference `eq:tri_trig_defs' on page 155 undefined on input line
+ 47.
+
+
+LaTeX Warning: Reference `eq:tri_trig_defs' on page 155 undefined on input line
+ 47.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [155]
-(./figs/triangle/tri_sin_inc.tex
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
+
+LaTeX Warning: Reference `eq:tri_sin_cos_id' on page 156 undefined on input lin
+e 52.
+
+
+LaTeX Warning: Reference `ch1_budh_basic' on page 156 undefined on input line 6
+6.
+
+
+LaTeX Warning: Reference `eq:tri_baudh' on page 156 undefined on input line 71.
+
+
+
+LaTeX Warning: Reference `ch1_budh_basic' on page 156 undefined on input line 7
+3.
+
+
+LaTeX Warning: Reference `eq:tri_trig_defs' on page 156 undefined on input line
+ 77.
+
+
+LaTeX Warning: Reference `eq:tri_trig_defs' on page 156 undefined on input line
+ 77.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [156]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [156])
+(./chapters/trig/tri_geo_sincos.tex (./figs/triangle/tri_sss.tex)
+
+LaTeX Warning: Reference `fig:tri_sss' on page 157 undefined on input line 22.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3073,7 +3132,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [157]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Reference `fig:tri_sss' on page 158 undefined on input line 37.
+
+(./figs/triangle/tri_sin_inc.tex
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+)
+
+LaTeX Warning: Reference `fig:tri_sin_inc' on page 158 undefined on input line 
+69.
+
+
+LaTeX Warning: Reference `them:hyp_largest' on page 158 undefined on input line
+ 83.
+
+
+LaTeX Warning: Reference `eq:trig_id_sin_inc' on page 158 undefined on input li
+ne 83.
+
+
+LaTeX Warning: Reference `fig:tri_sin_inc' on page 158 undefined on input line 
+94.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3081,8 +3162,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [158])
-(./chapters/trig/ang.tex (./figs/trig/tri-icentre.tex)
+ [158]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3092,6 +3172,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [159]
+
+LaTeX Warning: Reference `trig_id_sin_theta_eq' on page 160 undefined on input 
+line 139.
+
+
+LaTeX Warning: Reference `prob:tri_area_sin' on page 160 undefined on input lin
+e 154.
+
+
+LaTeX Warning: Reference `eq:tri_sin_cos_id' on page 160 undefined on input lin
+e 176.
+
+
+LaTeX Warning: Reference `eq:tri_cos_form' on page 160 undefined on input line 
+176.
+
+
+LaTeX Warning: Reference `eq:tri_sin_cos_id' on page 160 undefined on input lin
+e 176.
+
+
+LaTeX Warning: Reference `eq:tri_cos_form' on page 160 undefined on input line 
+176.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3101,7 +3206,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [160]
-(./figs/trig/tri-iradius.tex)
+
+LaTeX Warning: Reference `eq:tri_ex_hero_temp' on page 161 undefined on input l
+ine 184.
+
+) (./chapters/trig/ang.tex
+
+LaTeX Warning: Reference `fig:tri_icentre' on page 161 undefined on input line 
+6.
+
+(./figs/trig/tri-icentre.tex)
+
+LaTeX Warning: Reference `eq:tri_sin_form' on page 161 undefined on input line 
+20.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3111,6 +3230,45 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [161]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [162]
+
+LaTeX Warning: Reference `fig:tri_iradius' on page 163 undefined on input line 
+38.
+
+(./figs/trig/tri-iradius.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [163]
+
+LaTeX Warning: Reference `eq:tri_iradius' on page 164 undefined on input line 7
+0.
+
+
+LaTeX Warning: Reference `fig:tri_iradius' on page 164 undefined on input line 
+72.
+
+
+LaTeX Warning: Reference `fig:tri_iradius' on page 164 undefined on input line 
+79.
+
+
+LaTeX Warning: Reference `fig:tri_icircle' on page 164 undefined on input line 
+85.
+
 (./figs/trig/tri_icircle.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3120,8 +3278,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [162])
-(./chapters/trig/tri_geo_cradius.tex (./figs/trig/tri_isosc.tex)
+ [164])
+(./chapters/trig/tri_geo_cradius.tex
+
+LaTeX Warning: Reference `fig:tri-isosc' on page 165 undefined on input line 7.
+
+
+(./figs/trig/tri_isosc.tex)
 Underfull \vbox (badness 3229) has occurred while \output is active []
 
 
@@ -3130,23 +3293,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [163]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [164])
-(./chapters/trig/tangent.tex) (./chapters/trig/trig_id.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [165]
+
+LaTeX Warning: Reference `eq:tri_sin_form' on page 166 undefined on input line 
+24.
+
+
+LaTeX Warning: Reference `fig:tri-isosc' on page 166 undefined on input line 33
+.
+
+
+LaTeX Warning: Reference `eq:tri_cos_form' on page 166 undefined on input line 
+40.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3156,20 +3316,111 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [166]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Reference `eq:crad_cos2a' on page 167 undefined on input line 47
+.
 
 
+LaTeX Warning: Reference `fig:tri_ccircle-ang' on page 167 undefined on input l
+ine 49.
+
+
+LaTeX Warning: Reference `eq:ang-subtend-ccentre' on page 167 undefined on inpu
+t line 59.
+
+
+LaTeX Warning: Reference `eq:crad_cos2a' on page 167 undefined on input line 61
+.
+
+) (./chapters/trig/tangent.tex
+
+LaTeX Warning: Reference `fig:circ_tang_icept' on page 167 undefined on input l
+ine 7.
+
+
+LaTeX Warning: Reference `fig:circ_tang_icept-equal' on page 167 undefined on i
+nput line 13.
+
+) (./chapters/trig/trig_id.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [167]
+
+LaTeX Warning: Reference `eq:tri_cos_form' on page 168 undefined on input line 
+15.
+
+
+LaTeX Warning: Reference `fig:tri_right_angle' on page 168 undefined on input l
+ine 17.
+
+
+LaTeX Warning: Reference `eq:tri_baudh' on page 168 undefined on input line 23.
+
+
+
+LaTeX Warning: Reference `eq:tri_baudh_comp' on page 168 undefined on input lin
+e 32.
+
+
+LaTeX Warning: Reference `trig_id_sin_theta_eq' on page 168 undefined on input 
+line 52.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [168]
+
+LaTeX Warning: Reference `trig_id_sin_diff' on page 169 undefined on input line
+ 61.
+
+
+LaTeX Warning: Reference `trig_id_sin_diff' on page 169 undefined on input line
+ 61.
+
+
+LaTeX Warning: Reference `trig_id_sin_theta_eq' on page 169 undefined on input 
+line 73.
+
+
+LaTeX Warning: Reference `trig_id_cos_diff' on page 169 undefined on input line
+ 73.
+
+
+LaTeX Warning: Reference `trig_id_sin_theta_eq' on page 169 undefined on input 
+line 83.
+
+
+LaTeX Warning: Reference `trig_id_cos_diff' on page 169 undefined on input line
+ 89.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [169]
 Underfull \hbox (badness 1014) detected at line 120
  []$[]   [] [] [] \OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/
 it/10.95 ^^R[] [] ^^R[] [] ^^R[] \OT1/cmr/m/n/10.95 + [] \OML/cmm/m/it/10.95 ^^
 R[] [][] ^^R[]$ [][]  
  []
+
+
+LaTeX Warning: Reference `trig_id_cos_sum' on page 170 undefined on input line 
+130.
 
 
 Underfull \vbox (badness 2689) has occurred while \output is active []
@@ -3180,26 +3431,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [168])
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [170]
+
+LaTeX Warning: Reference `trig_id_sin_sum' on page 171 undefined on input line 
+159.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [169]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `eq:trig_id_sum_diff1' on page 171 undefined on input 
+line 171.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `eq:trig_id_ang_sum_diff' on page 171 undefined on inp
+ut line 178.
 
- [170
-
-]
-Chapter 7.
-(./chapters/coord/vector.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3211,17 +3456,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [172
+
+]
+Chapter 7.
+(./chapters/coord/vector.tex
+
+LaTeX Warning: Reference `fig:tri_right_angle' on page 173 undefined on input l
+ine 11.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [172]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [173]
-Underfull \vbox (badness 6125) has occurred while \output is active []
+
+LaTeX Warning: Reference `fig:tri_right_angle' on page 174 undefined on input l
+ine 47.
+
+
+LaTeX Warning: Reference `fig:tri_right_angle' on page 174 undefined on input l
+ine 59.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3230,8 +3493,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [174]
-(./figs/coord/tri_med_isect.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Reference `eq:tri_baudh' on page 175 undefined on input line 67.
+
+
+
+LaTeX Warning: Reference `fig:tri_right_angle' on page 175 undefined on input l
+ine 94.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3240,7 +3508,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [175]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Reference `eq:collinear' on page 176 undefined on input line 117
+.
+
+
+LaTeX Warning: Reference `eq:section_formula' on page 176 undefined on input li
+ne 124.
+
+
+LaTeX Warning: Reference `fig:tri_med_isect' on page 176 undefined on input lin
+e 142.
+
+
+Underfull \vbox (badness 6125) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3249,7 +3530,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [176]
-(./figs/coord/tri_med_meet.tex)
+(./figs/coord/tri_med_isect.tex)
+
+LaTeX Warning: Reference `eq:section_formula' on page 177 undefined on input li
+ne 165.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3259,6 +3545,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [177]
+
+LaTeX Warning: Reference `eq:two-tri-indep' on page 178 undefined on input line
+ 186.
+
+
+LaTeX Warning: Reference `eq:two-tri-indep' on page 178 undefined on input line
+ 192.
+
+
+LaTeX Warning: Reference `eq:tri_med_centroid_ratio-2' on page 178 undefined on
+ input line 201.
+
+
+LaTeX Warning: Reference `eq:tri_med_centroid_ratio-2' on page 178 undefined on
+ input line 206.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3268,6 +3571,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [178]
+
+LaTeX Warning: Reference `eq:section_formula-G' on page 179 undefined on input 
+line 215.
+
+
+LaTeX Warning: Reference `fig:tri_med_meet' on page 179 undefined on input line
+ 221.
+
+(./figs/coord/tri_med_meet.tex)
+
+LaTeX Warning: Reference `fig:tri_med_meet' on page 179 undefined on input line
+ 234.
+
+
+LaTeX Warning: Reference `eq:centroid-G' on page 179 undefined on input line 24
+2.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3277,7 +3598,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [179]
-(./figs/triangle/tri_cosine_formula.tex)
+
+LaTeX Warning: Reference `eq:two-tri-indep' on page 180 undefined on input line
+ 263.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3287,6 +3612,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [180]
+
+LaTeX Warning: Reference `eq:centroid-G-meet-1' on page 181 undefined on input 
+line 277.
+
+
+LaTeX Warning: Reference `eq:centroid-G-meet-2' on page 181 undefined on input 
+line 279.
+
+
+LaTeX Warning: Reference `eq:centroid-G-meet-1' on page 181 undefined on input 
+line 286.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3296,6 +3634,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [181]
+
+LaTeX Warning: Reference `fig:tri_cosine_formula' on page 182 undefined on inpu
+t line 326.
+
+(./figs/triangle/tri_cosine_formula.tex)
+
+LaTeX Warning: Reference `fig:tri_cosine_formula' on page 182 undefined on inpu
+t line 359.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [182]
+
+LaTeX Warning: Reference `eq:tri_cos_mat' on page 183 undefined on input line 3
+78.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3304,7 +3666,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [182])
+ [183]
+
+LaTeX Warning: Reference `eq:det2d' on page 184 undefined on input line 412.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [184])
 (./chapters/coord/tri_geo_alt.tex (./figs/coord/tri_alt.tex)
 Underfull \vbox (badness 1558) has occurred while \output is active []
 
@@ -3314,27 +3689,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [183]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [185]
+
+LaTeX Warning: Reference `eq:dir_normal_orth' on page 186 undefined on input li
+ne 48.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `eq:line_dir_pt' on page 186 undefined on input line 4
+8.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [184]
-(./figs/coord/tri_alt_h.tex)
-Underfull \vbox (badness 2970) has occurred while \output is active []
+LaTeX Warning: Reference `eq:line_normal_pt' on page 186 undefined on input lin
+e 58.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [185])
-(./chapters/coord/tri_geo_ccentre.tex (./figs/coord/tri-perp-bis.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3344,13 +3712,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [186]
-(./figs/coord/tri_ccircle.tex)
+
+LaTeX Warning: Reference `fig:tri_alt_h' on page 187 undefined on input line 61
+.
+
+
+LaTeX Warning: Reference `fig:tri_alt_h' on page 187 undefined on input line 63
+.
+
+(./figs/coord/tri_alt_h.tex)
+
+LaTeX Warning: Reference `eq:line_dir_pt-alt' on page 187 undefined on input li
+ne 75.
+
+
+LaTeX Warning: Reference `eq:dir_normal_orth' on page 187 undefined on input li
+ne 76.
+
+
+LaTeX Warning: Reference `eq:dot2d-orth' on page 187 undefined on input line 77
+.
+
+
+LaTeX Warning: Reference `eq:line_normal_pt' on page 187 undefined on input lin
+e 79.
+
+
+Underfull \vbox (badness 2970) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [187]
+
+LaTeX Warning: Reference `eq:dot2d-orth' on page 188 undefined on input line 10
+3.
+
+) (./chapters/coord/tri_geo_ccentre.tex
+
+LaTeX Warning: Reference `fig:tri-perp-bis' on page 188 undefined on input line
+ 10.
+
+(./figs/coord/tri-perp-bis.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3360,16 +3766,36 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [188]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Reference `eq:section_formula' on page 189 undefined on input li
+ne 58.
 
 
+LaTeX Warning: Reference `eq:dot2d-orth' on page 189 undefined on input line 60
+.
+
+
+LaTeX Warning: Reference `fig:tri_ccircle-ang' on page 189 undefined on input l
+ine 62.
+
+(./figs/coord/tri_ccircle.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [189]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Reference `fig:tri_cosine_formula' on page 190 undefined on inpu
+t line 76.
+
+
+LaTeX Warning: Reference `eq:tri_cos_form' on page 190 undefined on input line 
+85.
+
+
+LaTeX Warning: Reference `eq:norm2d_dist' on page 190 undefined on input line 8
+6.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3377,8 +3803,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [190])
-(./chapters/coord/circ_geo_prop.tex (./figs/coord/circ_tang.tex)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [190]
+
+LaTeX Warning: Reference `eq:tri_cos_form-ccentre' on page 191 undefined on inp
+ut line 94.
+
+
+LaTeX Warning: Reference `eq:polar-ccentre' on page 191 undefined on input line
+ 115.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3388,6 +3825,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [191]
+
+LaTeX Warning: Reference `eq:norm-polar-ccentre' on page 192 undefined on input
+ line 128.
+
+
+LaTeX Warning: Reference `eq:trig-id-2A-cos' on page 192 undefined on input lin
+e 129.
+
+
+LaTeX Warning: Reference `fig:tri_ccircle-ang' on page 192 undefined on input l
+ine 131.
+
+
+LaTeX Warning: Reference `eq:norm-polar-ccentre' on page 192 undefined on input
+ line 144.
+
+
+LaTeX Warning: Reference `eq:tri_cos_form-ccentre-norm' on page 192 undefined o
+n input line 146.
+
+
+LaTeX Warning: Reference `eq:trig-id-2A-cos' on page 192 undefined on input lin
+e 153.
+
+
+LaTeX Warning: Reference `eq:trig_id_sum_diff4' on page 192 undefined on input 
+line 154.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3397,14 +3863,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [192]
-(./figs/coord/circ_tang_icept.tex)
+
+LaTeX Warning: Reference `eq:trig_id_sum_diff1' on page 193 undefined on input 
+line 161.
+
+) (./chapters/coord/circ_geo_prop.tex
+
+LaTeX Warning: Reference `fig:circ_tang' on page 193 undefined on input line 7.
+
+
+(./figs/coord/circ_tang.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [193]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Reference `erq:circ_tang-line' on page 194 undefined on input li
+ne 36.
+
+
+LaTeX Warning: Reference `eq:circ_tang-eq' on page 194 undefined on input line 
+38.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3412,7 +3896,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [194])
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [194]
+
+LaTeX Warning: Reference `erq:circ_tang-line-quad' on page 195 undefined on inp
+ut line 60.
+
+
+LaTeX Warning: Reference `eq:dir-vec' on page 195 undefined on input line 61.
+
+
+LaTeX Warning: Reference `eq:circ_tang-line-orth' on page 195 undefined on inpu
+t line 70.
+
+
+LaTeX Warning: Reference `fig:circ_tang_icept' on page 195 undefined on input l
+ine 73.
+
+(./figs/coord/circ_tang_icept.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3424,11 +3927,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [196
 
-]
-Chapter 8.
-(./chapters/exercises/tri_geo_exer.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [196]
+
+LaTeX Warning: Reference `eq:circ_tang-line-orth-pc' on page 197 undefined on i
+nput line 121.
+
+
+LaTeX Warning: Reference `eq:tri_cos_form-ccentre' on page 197 undefined on inp
+ut line 127.
+
+
+LaTeX Warning: Reference `eq:circ_tang-line-pc' on page 197 undefined on input 
+line 129.
+
+
+LaTeX Warning: Reference `eq:circ_tang-line-t3' on page 197 undefined on input 
+line 145.
+
+
+LaTeX Warning: Reference `eq:tri_ccentre_subtend-temp' on page 197 undefined on
+ input line 147.
+
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3440,13 +3963,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [198]
+ [198
+
+]
+Chapter 8.
+(./chapters/exercises/tri_geo_exer.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [199]
+
+LaTeX Warning: Reference `eq:tri_sin_cos_id' on page 200 undefined on input lin
+e 79.
+
+
+LaTeX Warning: Reference `eq:tri_90-ang' on page 200 undefined on input line 80
+.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3489,22 +4025,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [206]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 328.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 328.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 328.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [207]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [208]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 328.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 328.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [209]
 
 LaTeX Warning: Command \textendash invalid in math mode on input line 345.
 
@@ -3517,23 +4065,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [208])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [209]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [210
-
-]
-Chapter 9.
-(./chapters/exercises/quad_geo_exer.tex
+ [210])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3545,7 +4077,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [212]
+ [212
+
+]
+Chapter 9.
+(./chapters/exercises/quad_geo_exer.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3576,13 +4112,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [217]
-Overfull \hbox (0.17122pt too wide) in paragraph at lines 164--165
-[]$\OML/cmm/m/it/10.95 ABCD; DCFE$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 
-ABFE$ \OT1/cmr/m/n/10.95 are par-al-lel-o-grams. Show that ar$(\OML/cmm/m/it/10
-.95 ADE\OT1/cmr/m/n/10.95 ) =
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3595,6 +4124,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [219]
+Overfull \hbox (0.17122pt too wide) in paragraph at lines 164--165
+[]$\OML/cmm/m/it/10.95 ABCD; DCFE$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 
+ABFE$ \OT1/cmr/m/n/10.95 are par-al-lel-o-grams. Show that ar$(\OML/cmm/m/it/10
+.95 ADE\OT1/cmr/m/n/10.95 ) =
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [220]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [221]
 (./solutions/3/57/chapters/solution.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3604,23 +4152,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [220]))
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [221]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [222
-
-]
-Chapter 10.
-(./chapters/exercises/circ_geo_exer.tex
+ [222]))
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3632,7 +4164,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [224]
+ [224
+
+]
+Chapter 10.
+(./chapters/exercises/circ_geo_exer.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3651,16 +4187,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [227]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 120.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 120.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 120.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3672,13 +4198,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [229])
+ [229]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 120.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 120.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 120.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [230]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [231])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [232]
 Chapter 11.
 (./chapters/exercises/geo_misc.tex
 Overfull \hbox (1.84592pt too wide) in paragraph at lines 9--11
@@ -3693,21 +4241,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [231
+ [233
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [232]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [233]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3768,15 +4304,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [243]
-Overfull \hbox (19.4436pt too wide) in paragraph at lines 316--317
-[]$\OMS/cmsy/m/n/10.95 4\OML/cmm/m/it/10.95 ODC \OMS/cmsy/m/n/10.95 ^^X 4\OML/c
-mm/m/it/10.95 OBA; \U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 BOC \OT1/cmr/m/n/10.95
- = 125[]$ and $\U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 CDO \OT1/cmr/m/n/10.95 = 7
-0[]$. Find $\U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 DOC; \U/msa/m/n/10.95 \\OML/c
-mm/m/it/10.95 DCO$
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3789,6 +4316,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [245]
+Overfull \hbox (19.4436pt too wide) in paragraph at lines 316--317
+[]$\OMS/cmsy/m/n/10.95 4\OML/cmm/m/it/10.95 ODC \OMS/cmsy/m/n/10.95 ^^X 4\OML/c
+mm/m/it/10.95 OBA; \U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 BOC \OT1/cmr/m/n/10.95
+ = 125[]$ and $\U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 CDO \OT1/cmr/m/n/10.95 = 7
+0[]$. Find $\U/msa/m/n/10.95 \\OML/cmm/m/it/10.95 DOC; \U/msa/m/n/10.95 \\OML/c
+mm/m/it/10.95 DCO$
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3806,7 +4342,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [248])
+ [248]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3818,48 +4354,73 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [250
+ [250])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [251]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [252
 
 ]
 No file main.ind.
 (./main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7830278CDBC6BE63C017A11A047CD008;6382.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 7636A3632E2AD9BCF9C7AD9F2B913850;3692
+(rerunfilecheck)             After:  78326F6A8C6FF3243F3C11B1C81C3397;6479.
  ) 
 Here is how much of TeX's memory you used:
- 36686 strings out of 476091
- 698395 string characters out of 5794081
- 1880330 words of memory out of 5000000
- 53772 multiletter control sequences out of 15000+600000
+ 36693 strings out of 476091
+ 698449 string characters out of 5794081
+ 1881330 words of memory out of 5000000
+ 53754 multiletter control sequences out of 15000+600000
  529802 words of font info for 99 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 218i,21n,217p,1190b,1371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 218i,21n,217p,1190b,1370s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/tfrupee/tfrupee.pfb>
-Output written on main.pdf (259 pages, 1626144 bytes).
+/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/tfrupee/tfrupee.pfb>
+Output written on main.pdf (259 pages, 1631417 bytes).
 PDF statistics:
- 4066 PDF objects out of 4296 (max. 8388607)
- 3630 compressed objects within 37 object streams
- 2162 named destinations out of 2487 (max. 500000)
- 632 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3858 PDF objects out of 4296 (max. 8388607)
+ 3457 compressed objects within 35 object streams
+ 2184 named destinations out of 2487 (max. 500000)
+ 472 words of extra memory for PDF output out of 10000 (max. 10000000)
 
