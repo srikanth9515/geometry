@@ -43,6 +43,7 @@
 \contentsline {subsection}{\numberline {5.1.4}11.10.3}{161}{subsection.5.1.4}%
 \contentsline {subsection}{\numberline {5.1.5}11.10.4}{163}{subsection.5.1.5}%
 \contentsline {subsection}{\numberline {5.1.6}11.12.1}{166}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}11.12.3}{167}{subsection.5.1.7}%
 \contentsline {chapter}{\numberline {6}Trigonometry}{169}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Ratios}{169}{section.6.1}%
 \contentsline {section}{\numberline {6.2}The Baudhayana Theorem}{170}{section.6.2}%
