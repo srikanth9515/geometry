@@ -50,6 +50,7 @@
 \contentsline {subsection}{\numberline {7.1.1}11.12.1}{169}{subsection.7.1.1}%
 \contentsline {subsection}{\numberline {7.1.2}11.12.2}{170}{subsection.7.1.2}%
 \contentsline {subsection}{\numberline {7.1.3}11.12.3}{171}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}11.12.4}{171}{subsection.7.1.4}%
 \contentsline {chapter}{\numberline {8}Trigonometry}{173}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Ratios}{173}{section.8.1}%
 \contentsline {section}{\numberline {8.2}The Baudhayana Theorem}{174}{section.8.2}%
