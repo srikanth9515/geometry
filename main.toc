@@ -47,28 +47,29 @@
 \contentsline {subsection}{\numberline {6.1.1}11.11.1}{167}{subsection.6.1.1}%
 \contentsline {chapter}{\numberline {7}3D Geometry}{169}{chapter.7}%
 \contentsline {section}{\numberline {7.1}11}{169}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}11.12.1}{169}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}11.12.2}{170}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}11.12.3}{171}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}11.12.4}{171}{subsection.7.1.4}%
-\contentsline {chapter}{\numberline {8}Trigonometry}{173}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Ratios}{173}{section.8.1}%
-\contentsline {section}{\numberline {8.2}The Baudhayana Theorem}{174}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Area of a Triangle}{177}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Angle Bisectors}{181}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Circumradius}{185}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Tangent}{187}{section.8.6}%
-\contentsline {section}{\numberline {8.7}Identities}{188}{section.8.7}%
-\contentsline {chapter}{\numberline {9}Analytic Geometry}{193}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Vectors}{193}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Collinear Points}{195}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Matrices: Cosine Formula}{201}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Area of a Triangle: Cross Product}{204}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Parallelogram}{205}{section.9.5}%
-\contentsline {section}{\numberline {9.6}Altitudes of a Triangle:Line Equation}{205}{section.9.6}%
-\contentsline {section}{\numberline {9.7}Circumcircle: Circle Equation}{208}{section.9.7}%
-\contentsline {section}{\numberline {9.8}Tangent}{213}{section.9.8}%
-\contentsline {chapter}{\numberline {10}Triangle}{219}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Quadrilateral}{233}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Circle}{245}{chapter.12}%
-\contentsline {chapter}{\numberline {13}Miscellaneous }{253}{chapter.13}%
+\contentsline {subsection}{\numberline {7.1.1}Examples:-1-13 (11.12)}{169}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}11.12.1}{171}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}11.12.2}{172}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}11.12.3}{173}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.5}11.12.4}{173}{subsection.7.1.5}%
+\contentsline {chapter}{\numberline {8}Trigonometry}{175}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Ratios}{175}{section.8.1}%
+\contentsline {section}{\numberline {8.2}The Baudhayana Theorem}{176}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Area of a Triangle}{179}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Angle Bisectors}{183}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Circumradius}{187}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Tangent}{189}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Identities}{190}{section.8.7}%
+\contentsline {chapter}{\numberline {9}Analytic Geometry}{195}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Vectors}{195}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Collinear Points}{197}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Matrices: Cosine Formula}{203}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Area of a Triangle: Cross Product}{206}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Parallelogram}{207}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Altitudes of a Triangle:Line Equation}{207}{section.9.6}%
+\contentsline {section}{\numberline {9.7}Circumcircle: Circle Equation}{210}{section.9.7}%
+\contentsline {section}{\numberline {9.8}Tangent}{215}{section.9.8}%
+\contentsline {chapter}{\numberline {10}Triangle}{221}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Quadrilateral}{235}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Circle}{247}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Miscellaneous }{255}{chapter.13}%
