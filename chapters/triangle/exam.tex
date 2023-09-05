@@ -12,13 +12,13 @@ Find the direction vectors of $AB, BC$ and $CA$.
 	\input{solutions/1/1/1/prob_1.tex}
 	\item The length of side $BC$ is 
 		\begin{align}
-			\norm{\vec{B}-\vec{A}} \triangleq \sqrt{\brak{\vec{B}-\vec{A}}^{\top}{\vec{B}-\vec{A}}}
+			\norm{\vec{B}-\vec{A}} \triangleq \sqrt{\brak{\vec{B}-\vec{A}}^{\top}\brak{\vec{B}-\vec{A}}}
 		\end{align}
 		where
 		\begin{align}
 			\vec{A}^{\top}\triangleq\myvec{1 & -1}
 		\end{align}
-  \\		\input{solutions/1/1/2/main.tex}
+		Find the lengths of $AB, BC$ and $CA$.
   \\            \input{solutions/1/1/2a/main.tex}
 \item   Points $\vec{A}, \vec{B}, \vec{C}$ are defined to be collinear if 
 		\begin{align}
@@ -30,6 +30,7 @@ collinear?
  \\		\input{solutions/1/1/3/main.tex}
 \item The parameteric form of the equation  of $AB$ is 
 		\begin{align}
+			\label{eq:geo-param}
 			\vec{x}=\vec{A}+k\vec{m}
 		\end{align}
 		where
@@ -42,6 +43,7 @@ Find the parameteric equations of $AB, BC$ and $CA$.
 		\input{solutions/1/1/4/main.tex}
 \item The normal form of the equation of $AB$  is 
 		\begin{align}
+			\label{eq:geo-normal}
 			\vec{n}^{\top}\brak{	\vec{x}-\vec{A}} = 0
 		\end{align}
 		where 
@@ -49,11 +51,14 @@ Find the parameteric equations of $AB, BC$ and $CA$.
 			\vec{n}^{\top}\vec{m}&=\vec{n}^{\top}\brak{\vec{B}-\vec{A}} = 0
 			\\
 			\text{or, } \vec{n}&=\myvec{0 & 1 \\ -1 & 0} \vec{m}
+			\label{eq:geo-norm-vec}
 		\end{align}
 Find the normal form of the equations of $AB, BC$ and $CA$.
+\\
+\solution
 \input{solutions/1/1/5/assign1.tex}
-\input{solutions/1/1/5a/assignment1.tex}
-\input{solutions/1/1/5c/main.tex}
+%\input{solutions/1/1/5a/assignment1.tex}
+%\input{solutions/1/1/5c/main.tex}
 \item The area of $\triangle ABC$ is defined as
 		\begin{align}
 			\frac{1}{2}\norm{{\brak{\vec{A}-\vec{B}}\times {\vec{A}-\vec{C}}}}
