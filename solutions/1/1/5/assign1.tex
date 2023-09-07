@@ -11,11 +11,15 @@ the direction vector of side $\vec{BC}$ is
 \end{align}
 from 
 			\eqref{eq:geo-norm-vec}.
-Hence the normal equation of side $BC$ is 
+Hence, from 
+			\eqref{eq:geo-normal},
+the normal equation of side $BC$ is 
 \begin{align}
-    \myvec{-11 & -1}\vec{x}&=\myvec{-11 & -1}\myvec{-4\\6}\\
+	\vec{n}^{\top}\brak{	\vec{x}-\vec{B}} &= 0
+			\\
+\implies    \myvec{-11 & -1}\vec{x}&=\myvec{-11 & -1}\myvec{-4\\6}\\
     \implies
-BC: \quad    \myvec{-11 & -1}\vec{x}&=38
+BC: \quad    \myvec{11 & 1}\vec{x}&=-38
 \end{align}
 Similarly, for $AB$,
 from 
@@ -23,13 +27,15 @@ from
 \begin{align}
 	\vec{m} &= \myvec{-5\\7}
 	\\
-	\implies
-        \vec{n} 
+\implies        \vec{n} 
                 &= \myvec{0&1\\-1&0}\myvec{-5\\7}
                 = \myvec{7\\5}
 \end{align}
 and 
 \begin{align}
+	\vec{n}^{\top}\brak{	\vec{x}-\vec{A}} &= 0
+	\\
+	\implies
                 AB: \quad  \vec{n}^{\top}\vec{x} &= \myvec{7&5}\myvec{1\\-1}\\    
        \implies\myvec{7&5}\vec{x} &= 2
 \end{align}
@@ -38,12 +44,15 @@ $CA$,
 from 
 		\eqref{eq:geo-dir-vec-ca}, 
 \begin{align}
-\vec{m} &= \myvec{4 \\ 4}
+\vec{m} &= \myvec{1 \\ 1}
 \\
 \implies \vec{n} 
-&= \myvec{0&1 \\ -1&0}\myvec{4 \\ 4}
-= \myvec{4 \\ -4}\\
-\implies \myvec{4&-4}{\vec{x}} &= \myvec{4&-4}\myvec{-3 \\ -5} 
-= 8 
+&= \myvec{0&1 \\ -1&0}\myvec{1 \\ 1}
+= \myvec{1 \\ -1}\\
+\\
+\implies	\vec{n}^{\top}\brak{	\vec{x}-\vec{C}} &= 0
+\\
+\implies \myvec{1&-1}{\vec{x}} &= \myvec{1&-1}\myvec{-3 \\ -5} 
+= 2 
 \end{align}
 
