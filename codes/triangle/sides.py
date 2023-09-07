@@ -1,18 +1,14 @@
-# #Code by GVV Sharma
-# #December 7, 2019
-# #released under GNU GPL
-# #Drawing a triangle given 3 sides
+#Code by GVV Sharma
+#September 7, 2023
+#released under GNU GPL
+#Drawing a triangle given 3 vertices
+#Some calculations 
 
-# import matplotlib.pyplot as plt
-# import matplotlib.image as mpimg
-# image = mpimg.imread('exit-ramp.jpg')
-# plt.imshow(image)
-# plt.show()
 
 import sys                                          #for path to external scripts
-#sys.path.insert(0, '/home/user/txhome/storage/shared/gitlab/res2021/july/conics/codes/CoordGeo')        #path to my scripts
 sys.path.insert(0, '/home/gadepall/github/geometry/codes/CoordGeo')        #path to my scripts
 import numpy as np
+import numpy.linalg as LA
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
@@ -22,27 +18,38 @@ from triangle.funcs import *
 from conics.funcs import circ_gen
 
 
-#sys.path.insert(0, '/home/user/txhome/storage/shared/gitlab/res2021/july/conics/codes/CoordGeo')        #path to my scripts
-
 #if using termux
 import subprocess
 import shlex
 #end if
 
-'''
-#Triangle sides
-a = 6
-b = 5
-c = 4
-
-
-#Triangle coordinates
-[A,B,C] = tri_vert(a,b,c)
-'''
 #Triangle vertices
 A = np.array([1,-1]).reshape(-1,1)
 B = np.array([-4,6]).reshape(-1,1) 
 C = np.array([-3,-5]).reshape(-1,1) 
+
+#Triangle sides
+c = LA.norm(A-B)
+a = LA.norm(B-C)
+b = LA.norm(C-A)
+print(a,b,c)
+
+#Direction Vectors
+m1 = dir_vec(A,B)
+m2 = dir_vec(B,C)
+m3 = dir_vec(C,A)
+#print(m1,m2,m3)
+
+#Line parameters
+n1 = omat@m1
+c1 = n1.T@A
+n2 = omat@m2
+c2 = n2.T@B
+n3 = omat@m3
+c3 = n3.T@C
+
+#print(n1,c1,n2,c2,n3,c3)
+
 
 #Generating all lines
 x_AB = line_gen(A,B)
@@ -57,20 +64,9 @@ plt.plot(x_BC[0,:],x_BC[1,:],label='$BC$')
 plt.plot(x_CA[0,:],x_CA[1,:],label='$CA$')
 
 #Labeling the coordinates
-#tri_coords = np.vstack((A,B,C,O,I)).T
-#np.block([[A1,A2,B1,B2]])
-'''
-A = A.reshape(-1,1)
-B = B.reshape(-1,1)
-C = C.reshape(-1,1)
-O = O.reshape(-1,1)
-I = I.reshape(-1,1)
-'''
 tri_coords = np.block([[A,B,C]])
-#tri_coords = np.block([[A,B,C,O,I]])
 plt.scatter(tri_coords[0,:], tri_coords[1,:])
 vert_labels = ['A','B','C']
-#vert_labels = ['A','B','C','O','I']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
@@ -84,31 +80,8 @@ plt.grid() # minor
 plt.axis('equal')
 
 #if using termux
-#plt.savefig('tri_sss.pdf')
 plt.savefig('figs/triangle/vector.pdf')
 #subprocess.run(shlex.split("termux-open ./figs/tri_sss.pdf"))
 #else
-# image = mpimg.imread('tri_sss.png')
-# plt.imshow(image)
 plt.show()
-
-'''
-#Plotting the circumcircle
-plt.plot(x_circ[0,:],x_circ[1,:],label='$circumcircle$')
-
-#Plotting the circumcircle
-plt.plot(x_icirc[0,:],x_icirc[1,:],label='$incircle$')
-
-
-#Generating the circumcircle
-[O,R] = ccircle(A,B,C)
-x_circ= circ_gen(O,R)
-
-#Generating the incircle
-[I,r] = icircle(A,B,C)
-x_icirc= circ_gen(I,r)
-'''
-
-
-
 

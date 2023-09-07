@@ -1,16 +1,10 @@
-# #Code by GVV Sharma
-# #December 7, 2019
-# #released under GNU GPL
-# #Drawing a triangle given 3 sides
+#Code by GVV Sharma
+#September 7, 2023
+#released under GNU GPL
+#Drawing the medians of a triangle
 
-# import matplotlib.pyplot as plt
-# import matplotlib.image as mpimg
-# image = mpimg.imread('exit-ramp.jpg')
-# plt.imshow(image)
-# plt.show()
 
 import sys                                          #for path to external scripts
-#sys.path.insert(0, '/home/user/txhome/storage/shared/gitlab/res2021/july/conics/codes/CoordGeo')        #path to my scripts
 sys.path.insert(0, '/home/gadepall/github/geometry/codes/CoordGeo')        #path to my scripts
 import numpy as np
 import matplotlib.pyplot as plt
