@@ -50,6 +50,12 @@ c3 = n3.T@C
 
 #print(n1,c1,n2,c2,n3,c3)
 
+#Angles
+angA = np.degrees(np.arccos((-m1.T@m3)/(c*b)))
+angB = np.degrees(np.arccos((-m1.T@m2)/(c*a)))
+angC = np.degrees(np.arccos((-m2.T@m3)/(a*b)))
+#print(angA,angB,angC)
+
 
 #Generating all lines
 x_AB = line_gen(A,B)
