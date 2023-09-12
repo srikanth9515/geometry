@@ -39,15 +39,17 @@ def line_dir_pt(m,A,k1,k2):
 
 #Intersection of two lines
 def line_intersect(n1,A1,n2,A2):
-  N=np.block([[n1],[n2]])
-  p = np.zeros(2)
-  p[0] = n1@A1
-  p[1] = n2@A2
+  N=np.block([n1,n2]).T
+  print(N)
+  p = np.zeros((2,1))
+  p[0] = n1.T@A1
+  p[1] = n2.T@A2
   #Intersection
   P=np.linalg.solve(N,p)
   return P
 
-#Intersection of two lines
+
+#Foot of the perpendicular
 def perp_foot(n,cn,P):
   m = omat@n
   N=np.block([[n],[m]])

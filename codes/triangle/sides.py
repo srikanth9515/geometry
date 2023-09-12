@@ -41,13 +41,12 @@ m3 = dir_vec(C,A)
 #print(m1,m2,m3)
 
 #Line parameters
-n1 = omat@m1
+n1 = norm_vec(A,B)
 c1 = n1.T@A
-n2 = omat@m2
+n2 = norm_vec(B,C)
 c2 = n2.T@B
-n3 = omat@m3
+n3 = norm_vec(C,A)
 c3 = n3.T@C
-
 #print(n1,c1,n2,c2,n3,c3)
 
 #Angles
