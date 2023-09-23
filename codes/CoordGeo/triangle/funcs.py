@@ -20,19 +20,6 @@ def tri_vert(a,b,c):
 
 
 
-#Foot of the Altitude
-def alt_foot(A,B,C):
-  m = B-C
-  n = np.matmul(omat,m) 
-  N=np.vstack((m,n))
-  p = np.zeros(2)
-  p[0] = m@A 
-  p[1] = n@B
-  #Intersection
-  P=np.linalg.inv(N.T)@p
-  return P
-
-
 #Radius and centre of the circumcircle
 #of triangle ABC
 def ccircle(A,B,C):
