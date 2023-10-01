@@ -1,5 +1,6 @@
 #Code by GVV Sharma
 #September 7, 2023
+#Revised October 1, 2023
 #released under GNU GPL
 #Drawing a triangle given 3 vertices
 #Some calculations 
@@ -11,6 +12,7 @@ import numpy as np
 import numpy.linalg as LA
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+import pandas as pd
 
 #local imports
 from line.funcs import *
@@ -23,10 +25,24 @@ import subprocess
 import shlex
 #end if
 
+
+#Input parameters from excel file
+df= pd.read_excel('tables/vertices.xlsx')
+#print(df)
+dst = df.to_numpy()[:,:]
+#print(dst)
+
 #Triangle vertices
+A  = dst[:,0].reshape(-1,1)
+B  = dst[:,1].reshape(-1,1) 
+C  = dst[:,2].reshape(-1,1)
+
+#print(A,B,C)
+'''
 A = np.array([1,-1]).reshape(-1,1)
 B = np.array([-4,6]).reshape(-1,1) 
 C = np.array([-3,-5]).reshape(-1,1) 
+'''
 
 #Triangle sides
 c = LA.norm(A-B)
@@ -55,6 +71,14 @@ angB = np.degrees(np.arccos((-m1.T@m2)/(c*a)))
 angC = np.degrees(np.arccos((-m2.T@m3)/(a*b)))
 #print(angA,angB,angC)
 
+#Writing sides to excel
+sides=np.array([a,b,c]).reshape(-1,1)
+columns=['a','b','c']
+
+# Create DataFrame from multiple lists
+df = pd.DataFrame(sides.T,columns=columns)
+df.to_excel('tables/output.xlsx')
+#print(df)
 
 #Generating all lines
 x_AB = line_gen(A,B)
