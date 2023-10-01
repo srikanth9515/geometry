@@ -4,6 +4,7 @@
 #released under GNU GPL
 #Functions related to line
 import numpy as np
+import mpmath as mp
 #from line.params import *
 from params import *
 
@@ -14,6 +15,9 @@ def dir_vec(A,B):
 def norm_vec(A,B):
   return omat@dir_vec(A,B)
   #return np.matmul(omat, dir_vec(A,B))
+
+def ang_vec(m1,m2):
+    return mp.acos(float((m1.T@m2)/(np.linalg.norm(m1)*np.linalg.norm(m2))))
 
 #Generate line points
 def line_gen(A,B):

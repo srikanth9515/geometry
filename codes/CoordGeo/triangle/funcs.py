@@ -18,21 +18,23 @@ def tri_vert(a,b,c):
   C = np.array([a,0]) 
   return  A,B,C
 
+#Triangle  mid points
+def tri_mid_pt(A,B,C):
+  D = (B+C)/2
+  E = (C+A)/2
+  F = (A+B)/2
+  return  D,E,F
 
 
 #Radius and centre of the circumcircle
 #of triangle ABC
 def ccircle(A,B,C):
-  p = np.zeros(2)
-  n1 = dir_vec(B,A)
-  p[0] = 0.5*(np.linalg.norm(A)**2-np.linalg.norm(B)**2)
-  n2 = dir_vec(C,B)
-  p[1] = 0.5*(np.linalg.norm(B)**2-np.linalg.norm(C)**2)
-  #Intersection
-  N=np.block([[n1],[n2]])
-  O=np.linalg.solve(N,p)
-  r = np.linalg.norm(A -O)
-  return O,r
+    D,E,F = tri_mid_pt(A,B,C)
+    m1 = dir_vec(A,B)
+    m2 = dir_vec(A,C)
+    O = line_intersect(m1,F,m2,E)
+    r = np.linalg.norm(A -O)
+    return O,r
 
 #Radius and centre of the incircle
 #of triangle ABC

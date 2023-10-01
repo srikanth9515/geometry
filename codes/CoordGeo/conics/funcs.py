@@ -14,7 +14,7 @@ def circ_gen(O,r):
 	x_circ = np.zeros((2,len))
 	x_circ[0,:] = r*np.cos(theta)
 	x_circ[1,:] = r*np.sin(theta)
-	x_circ = (x_circ.T + O).T
+	x_circ = (x_circ + O)
 	return x_circ
 
 #Generating points on an ellipse
