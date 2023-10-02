@@ -5,9 +5,17 @@
 #Functions related to triangle
 
 import numpy as np
+import numpy.linalg as LA
 from line.funcs import *
 #from line.params import *
 from params import *
+
+#Triangle sides
+def tri_sides(A,B,C):
+    a = LA.norm(B-C)
+    b = LA.norm(C-A)
+    c = LA.norm(A-B)
+    return c,a,b
 
 #Triangle vertices
 def tri_vert(a,b,c):
@@ -33,7 +41,7 @@ def ccircle(A,B,C):
     m1 = dir_vec(A,B)
     m2 = dir_vec(A,C)
     O = line_intersect(m1,F,m2,E)
-    r = np.linalg.norm(A -O)
+    r = LA.norm(A -O)
     return O,r
 
 #Radius and centre of the incircle
@@ -43,15 +51,21 @@ def icircle(A,B,C):
   k2 = 1
   p = np.zeros(2)
   t = norm_vec(B,C)
-  n1 = t/np.linalg.norm(t)
+  n1 = t/LA.norm(t)
   t = norm_vec(C,A)
-  n2 = t/np.linalg.norm(t)
+  n2 = t/LA.norm(t)
   t = norm_vec(A,B)
-  n3 = t/np.linalg.norm(t)
+  n3 = t/LA.norm(t)
   p[0] = n1@B- k1*n2@C
   p[1] = n2@C- k2*n3@A
   #Intersection
   N=np.block([[n1 - k1 * n2],[ n2 - k2 * n3]])
-  I=np.linalg.solve(N,p)
+  I=LA.solve(N,p)
   r = n1@(I-B)
   return I,r
+
+#Incircle points of contact
+'''
+def icontact(A,B,C):
+    LA.inv(I_circ_mat)@tri_sides(A,B,C).(-1,1)
+'''

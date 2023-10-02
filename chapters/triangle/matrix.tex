@@ -1,0 +1,49 @@
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+The matrix of the veritices of the triangle is defined as
+		\begin{align}
+			\vec{P} = \myvec{\vec{A} & \vec{B} &\vec{C}}
+		\end{align}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Obtain the direction matrix of the sides of $\triangle ABC$
+	defined as 
+		\begin{align}
+		\vec{M} = 	\myvec{\vec{A}-\vec{B} & \vec{B}-\vec{C} & \vec{C}-\vec{A}}
+		\end{align}
+	\\
+		\solution 
+
+		\begin{align}
+			\vec{M} = \myvec{\vec{A}-\vec{B} & \vec{B}-\vec{C} & \vec{C}-\vec{A}}
+			&= 
+			\myvec{\vec{A} & \vec{B} &\vec{C}}
+			\myvec{1 & 0 & -1 \\ -1 & 1 & 0 \\ 0 & -1 & 1}
+			\\
+			&=\vec{P}\vec{Q}
+		\end{align}
+		where 
+		\begin{align}
+\vec{Q}= 
+			\myvec{1 & 0 & -1 \\ -1 & 1 & 0 \\ 0 & -1 & 1}
+		\end{align}
+		is known as a {\em circulant} matrix.  Note that the 2nd and 3rd row of the above matrix are circular shifts of the 1st row.
+	\item Obtain the normal matrix  of the sides of $\triangle ABC$
+		\\
+		\solution Considering the roation matrix
+		\begin{align}
+			\vec{R}  = \myvec{0 & -1 \\ 1 & 0},
+		\end{align}
+		the normal matrix is obtained as
+		\begin{align}
+			\vec{N} = \vec{R}\vec{M}\vec{Q}
+		\end{align}
+
+	\item Obtain $a, b, c$.
+		\\
+		\solution The sides vector is obtained as
+		\begin{align}
+			\vec{d} = \sqrt{\text{diag}(\vec{M}^{\top}\vec{M})}
+		\end{align}
+	\item Obtain the line equations
+\end{enumerate}
