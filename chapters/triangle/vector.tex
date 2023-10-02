@@ -1,4 +1,4 @@
-%\renewcommand{\theequation}{\theenumi}
+h%\renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
@@ -11,14 +11,20 @@ Find the direction vectors of $AB, BC$ and $CA$.
 \\
 	\input{solutions/1/1/1/prob_1.tex}
 	\item The length of side $BC$ is 
+		\label{prob:side-length}
 		\begin{align}
-			\norm{\vec{B}-\vec{A}} \triangleq \sqrt{\brak{\vec{B}-\vec{A}}^{\top}\brak{\vec{B}-\vec{A}}}
+			c = \norm{\vec{B}-\vec{A}} \triangleq \sqrt{\brak{\vec{B}-\vec{A}}^{\top}\brak{\vec{B}-\vec{A}}}
 		\end{align}
 		where
 		\begin{align}
 			\vec{A}^{\top}\triangleq\myvec{1 & -1}
 		\end{align}
-		Find the lengths of $AB, BC$ and $CA$.
+		Similarly, 
+		\begin{align}
+b = \norm{\vec{C}-\vec{B}},\,
+a = \norm{\vec{A}-\vec{C}}
+		\end{align}
+		Find $a, b, c$.
   \\            \input{solutions/1/1/2a/main.tex}
 \item   Points $\vec{A}, \vec{B}, \vec{C}$ are defined to be collinear if 
 		\begin{align}
