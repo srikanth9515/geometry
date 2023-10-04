@@ -4,7 +4,8 @@ The matrix of the veritices of the triangle is defined as
 		\begin{align}
 			\vec{P} = \myvec{\vec{A} & \vec{B} &\vec{C}}
 		\end{align}
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+		\subsection{Vectors}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
 \item Obtain the direction matrix of the sides of $\triangle ABC$
 	defined as 
@@ -15,18 +16,13 @@ The matrix of the veritices of the triangle is defined as
 		\solution 
 
 		\begin{align}
-			\vec{M} = \myvec{\vec{A}-\vec{B} & \vec{B}-\vec{C} & \vec{C}-\vec{A}}
+			\vec{M} &= \myvec{\vec{A}-\vec{B} & \vec{B}-\vec{C} & \vec{C}-\vec{A}}
+			\\
 			&= 
 			\myvec{\vec{A} & \vec{B} &\vec{C}}
 			\myvec{1 & 0 & -1 \\ -1 & 1 & 0 \\ 0 & -1 & 1}
-			\\
-			&=\vec{P}\vec{Q}
 		\end{align}
-		where 
-		\begin{align}
-\vec{Q}= 
-			\myvec{1 & 0 & -1 \\ -1 & 1 & 0 \\ 0 & -1 & 1}
-		\end{align}
+		where the second matrix above 
 		is known as a {\em circulant} matrix.  Note that the 2nd and 3rd row of the above matrix are circular shifts of the 1st row.
 	\item Obtain the normal matrix  of the sides of $\triangle ABC$
 		\\
@@ -36,7 +32,7 @@ The matrix of the veritices of the triangle is defined as
 		\end{align}
 		the normal matrix is obtained as
 		\begin{align}
-			\vec{N} = \vec{R}\vec{M}\vec{Q}
+			\vec{N} = \vec{R}\vec{M} 
 		\end{align}
 
 	\item Obtain $a, b, c$.
@@ -45,5 +41,104 @@ The matrix of the veritices of the triangle is defined as
 		\begin{align}
 			\vec{d} = \sqrt{\text{diag}(\vec{M}^{\top}\vec{M})}
 		\end{align}
-	\item Obtain the line equations
+	\item Obtain the constant terms in the equations of the sides of the triangle. 
+		\\
+		\solution The constants for the lines can be expressed in vector form as
+		\begin{align}
+			\vec{c} = \text{diag}\cbrak{\brak{\vec{N}^{\top}\vec{P}}} 
+		\end{align}
+\end{enumerate}
+		\subsection{Median}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Obtain the mid point matrix for the sides of the triangle
+	\\
+		\solution
+		\begin{align}
+			\myvec{\vec{D} & \vec{E} &\vec{F}} &= \frac{1}{2}\myvec{\vec{A} & \vec{B} &\vec{C}}
+			\myvec{0 & 1 & 1 \\ 1 & 0 & 1 \\ 1 & 1 & 0}
+		\end{align}
+	\item Obtain the median direction matrix.
+\\
+\solution The median direction matrix is given by 
+		\begin{align}
+			\vec{M}_1 &= \myvec{\vec{A}-\vec{D} & \vec{B}-\vec{E} & \vec{C}-\vec{F}}
+			\\
+			&= 
+			  \myvec{
+				  \vec{A}-\frac{\vec{B}+\vec{C}}{2} &
+			  \vec{B}-\frac{\vec{C}+\vec{A}}{2} &
+			  \vec{C}-\frac{\vec{A}+\vec{B}}{2}} 
+			  \\
+			  &= \myvec{\vec{A} & \vec{B} &\vec{C}}
+			  \myvec{
+				  1 & -\frac{1}{2} & -\frac{1}{2}
+				  \\
+				  -\frac{1}{2} & 1 & -\frac{1}{2}
+				  \\
+				  -\frac{1}{2} & -\frac{1}{2} & 1
+				  }
+		\end{align}
+	\item Obtain the median normal matrix.
+	\item Obtian the median equation constants.
+	\item Obtain the centroid by finding the intersection of the medians.
+
+\end{enumerate}
+		\subsection{Altitude}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Find the normal matrix for the altitudes
+	\\
+		\solution  The desired matrix is 
+\begin{align}
+	\vec{M}_2 &= 	\myvec{\vec{B}-\vec{C} & \vec{C}-\vec{A} & \vec{A}-\vec{B} }
+	\\
+	&= 
+	\myvec{\vec{A} & \vec{B} &\vec{C}}
+			\myvec{ 0 & -1 & 1 \\ 1 & 0 & -1 \\ -1 & 1 & 0}
+		\end{align}
+
+	\item Find the constants vector for the altitudes.
+		\\
+		\solution The desired vector is 
+		\begin{align}
+			\vec{c}_2 = \text{diag}\cbrak{\brak{\vec{M}^{\top}\vec{P}}} 
+		\end{align}
+\end{enumerate}
+		\subsection{Perpendicular Bisector}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Find the normal matrix for the perpendicular bisectors
+	\\
+	\solution The normal matrix is $\vec{M}_2$
+\item Find the constants vector for the perpendicular bisectors.
+		\\
+		\solution The desired vector is 
+		\begin{align}
+			\vec{c}_3 = \text{diag}\cbrak{\vec{M}_2^{\top}\myvec{\vec{D} & \vec{E} &\vec{F}}}
+		\end{align}
+
+\end{enumerate}
+		\subsection{Angle Bisector}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Find the points of contact.
+	\\
+		\solution The points of contact are given by 
+		\begin{align}
+			\myvec{			\frac{n\vec{A}+p\vec{C}}{n+p}
+			&
+						\frac{p\vec{B}+m\vec{A}}{p+m}
+						&
+						\frac{m\vec{C}+n\vec{B}}{m+n}
+			}
+			= 	\myvec{\vec{A} & \vec{B} &\vec{C}}
+			\myvec{
+				\frac{n}{b} & \frac{m}{c} & 0
+				\\
+0 & \frac{p}{c} & \frac{n}{a} 
+				\\
+				\frac{p}{b} & 0 & \frac{m}{a}
+			}
+		\end{align}
 \end{enumerate}

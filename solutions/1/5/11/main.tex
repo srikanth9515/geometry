@@ -2,16 +2,16 @@
 From the given information, 
 \begin{align}
 % 
-    c &= m+n,\\
-    a &= n+p, \\
-    b &= m+p 
+    a &= m+n,\\
+    b &= n+p, \\
+    c &= m+p 
 \end{align}
 which can be expressed as
 \begin{align}
-\myvec{1&1&0\\0&1&1\\1&0&1\\}\myvec{m\\n\\p} &= \myvec{c\\a\\b}
+\myvec{1&1&0\\0&1&1\\1&0&1\\}\myvec{m\\n\\p} &= \myvec{a\\b\\c}
 \\
 \implies 
-	\myvec{m\\n\\p} &= \myvec{1&1&0\\0&1&1\\1&0&1\\}^{-1}\myvec{c\\a\\b}
+	\myvec{m\\n\\p} &= \myvec{1&1&0\\0&1&1\\1&0&1\\}^{-1}\myvec{a\\b\\c}
 \end{align}
 Using row reduction,
 		\begin{align}
@@ -35,13 +35,13 @@ yielding
 	Therefore,
 \begin{align}
 \begin{split}
-    m&=\frac{c+b-a}{2}
+    p&=\frac{c+b-a}{2}
     =\frac{\sqrt{74}+\sqrt{32}-\sqrt{122}}{2}
     \\
-    n&=\frac{a+c-b}{2}
+    m&=\frac{a+c-b}{2}
     =\frac{\sqrt{74}+\sqrt{122}-\sqrt{32}}{2}
     \\
-    p&=\frac{a+b-c}{2}
+    n&=\frac{a+b-c}{2}
     =\frac{\sqrt{122}+\sqrt{32}-\sqrt{74}}{2}
 \end{split}
 	\label{eq:incircle-mnp}
