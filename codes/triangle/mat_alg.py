@@ -140,7 +140,7 @@ C_in = SA.circulant([1,1,0]).T
 
 #m,n,p
 secvec = LA.inv(C_in)@dis
-#cont_mat = np.array([secvec[1]/dis[1],secvec[0]/dis[2],0], [0, secvec[2]/dis[2],secvec[1]/dis[0]],[secvec[2]/dis[1],0,secvec[0]/dis[0]],dtype=object)
+cont_mat = np.array([secvec[1]/dis[1],secvec[0]/dis[2],0], [0, secvec[2]/dis[2],secvec[1]/dis[0]],[secvec[2]/dis[1],0,secvec[0]/dis[0]])
 #cont_mat = np.array([secvec[1]/dis[1],secvec[0]/dis[2],0],dtype=object)
 #print(cont_mat)
 #print(secvec[1]/dis[0])
