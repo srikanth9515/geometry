@@ -2,6 +2,7 @@
 #September 7, 2023
 #Revised October 1, 2023
 #Revised October 2, 2023
+#Revised October 20, 2023
 #released under GNU GPL
 #Matrix Algebra
 
@@ -37,6 +38,7 @@ df= pd.read_excel('tables/vertices.xlsx')
 #Triangle Vertices
 G_v= df.to_numpy()[:,:]
 #print(G_v, C_m)
+print(G_v)
 
 #Direction vector circulant matrix
 C_m= SA.circulant([1,0,-1]).T
@@ -68,6 +70,36 @@ G_dnorm = G_dir@dmat
 G_dgram = G_dnorm.T@G_dnorm
 #print(np.degrees(np.arccos(G_dgram)))
 '''
+
+x = np.zeros((3,2,10))
+#Generating all sides
+for i in range(3):
+    x[i,:,:] = line_gen(G_v[:,i],G_v[:,(i+1)%3])
+
+#Plotting the sides
+for i in range(3):
+    plt.plot(x[i,0,:],x[i,1,:])
+
+#Labeling the coordinates
+plt.scatter(G_v[0,:], G_v[1,:])
+vert_labels = ['A','B','C']
+for i, txt in enumerate(vert_labels):
+    plt.annotate(txt, # this is the text
+                 (G_v[0,i], G_v[1,i]), # this is the point to label
+                 textcoords="offset points", # how to position the text
+                 xytext=(0,10), # distance from text to points (x,y)
+                 ha='center') # horizontal alignment can be left, right or center
+plt.xlabel('$x$')
+plt.ylabel('$y$')
+plt.legend(loc='best')
+plt.grid() # minor
+plt.axis('equal')
+
+#if using termux
+#plt.savefig('figs/triangle/mat-sides.pdf')
+#subprocess.run(shlex.split("termux-open ./figs/tri_sss.pdf"))
+#else
+plt.show()
 
 #-----------------Vectors Ends-------------------------------
 
@@ -141,7 +173,7 @@ C_in = SA.circulant([1,1,0]).T
 #m,n,p
 secvec = LA.inv(C_in)@dis
 cont_mat =np.array([np.block([secvec[1]/dis[1],secvec[0]/dis[2],0]), np.block([0, secvec[2]/dis[2],secvec[1]/dis[0]]),np.block([secvec[2]/dis[1],0,secvec[0]/dis[0]])])
-print(cont_mat)
+#print(cont_mat)
 # np.block(np.block([secvec[1]/dis[1],secvec[0]/dis[2],0]), np.block([0, secvec[2]/dis[2],secvec[1]/dis[0]]),np.block([secvec[2]/dis[1],0,secvec[0]/dis[0]]))
 #print(np.array([np.block([secvec[1]/dis[1],secvec[0]/dis[2],0]), np.block([0, secvec[2]/dis[2],secvec[1]/dis[0]]),np.block([secvec[2]/dis[1],0,secvec[0]/dis[0]])]))
 #cont_mat = np.array([secvec[1]/dis[1],secvec[0]/dis[2],0],dtype=object)
