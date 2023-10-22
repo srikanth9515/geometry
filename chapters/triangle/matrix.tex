@@ -126,19 +126,20 @@ The matrix of the veritices of the triangle is defined as
 	\\
 		\solution The points of contact are given by 
 		\begin{align}
-			\myvec{			\frac{n\vec{A}+p\vec{C}}{n+p}
+			\myvec{			
+						\frac{m\vec{C}+n\vec{B}}{m+n}
+			&
+			\frac{n\vec{A}+p\vec{C}}{n+p}
 			&
 						\frac{p\vec{B}+m\vec{A}}{p+m}
-						&
-						\frac{m\vec{C}+n\vec{B}}{m+n}
 			}
 			= 	\myvec{\vec{A} & \vec{B} &\vec{C}}
 			\myvec{
-				\frac{n}{b} & \frac{m}{c} & 0
+				0 &			\frac{n}{b} & \frac{m}{c}  
 				\\
-0 & \frac{p}{c} & \frac{n}{a} 
+			 \frac{n}{a}& 0 & \frac{p}{c} 
 				\\
-				\frac{p}{b} & 0 & \frac{m}{a}
+			\frac{m}{a}	&		\frac{p}{b} & 0  
 			}
 		\end{align}
 \end{enumerate}

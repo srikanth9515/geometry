@@ -32,15 +32,19 @@ C = np.array([-3,-5]).reshape(-1,1)
 
 #Tangent sides
 sides = tri_sides(A,B,C)
+print(sides)
 
 
 #Generating m,n,p
+I_circ_mat= SA.circulant([1,1,0]).T
 insides = LA.inv(I_circ_mat)@sides
+print(sides,insides)
 
 #Points of contact
-F = (insides[0]*A+ insides[2]*B)/(insides[0]+ insides[2])
-D = (insides[1]*B+ insides[0]*C)/(insides[1]+ insides[0])
-E = (insides[2]*C+ insides[1]*A)/(insides[2]+ insides[1])
+F = (insides[1]*A+ insides[0]*B)/(insides[1]+ insides[0])
+D = (insides[2]*B+ insides[1]*C)/(insides[2]+ insides[1])
+E = (insides[0]*C+ insides[2]*A)/(insides[0]+ insides[2])
+print(D,E,F)
 
 #Generating the circumcircle
 [O,R] = ccircle(D,E,F)
@@ -54,9 +58,11 @@ v1 = dir_vec(O,A)
 v2 = dir_vec(O,B)
 v3 = dir_vec(O,C)
 
+'''
 print(ang_vec(m1,-v1), ang_vec(m3,v1))
 print(ang_vec(m2,-v2), ang_vec(m1,v2))
 print(ang_vec(m3,-v3), ang_vec(m2,v3))
+'''
 
 #Plotting the incircle
 plt.plot(x_circ[0,:],x_circ[1,:],label='$circumcircle$')

@@ -20,6 +20,7 @@ import pandas as pd
 from line.funcs import *
 from triangle.funcs import *
 from conics.funcs import circ_gen
+from plotting.funcs import label_pts
 
 
 #if using termux
@@ -37,8 +38,7 @@ df= pd.read_excel('tables/vertices.xlsx')
 
 #Triangle Vertices
 G_v= df.to_numpy()[:,:]
-#print(G_v, C_m)
-print(G_v)
+#print(G_v)
 
 #Direction vector circulant matrix
 C_m= SA.circulant([1,0,-1]).T
@@ -60,9 +60,9 @@ linmat = np.block([G_n.T,cmat])
 #print(linmat)
 
 #sides vector
-dis = np.linalg.norm(G_dir, axis=0).reshape(-1,1)
-#print(dis)
-
+C_dis= SA.circulant([0,1,0]).T
+dis = C_dis@np.linalg.norm(G_dir, axis=0).reshape(-1,1)
+#print(a,b,c)
 '''
 #Finding the angles of the triangle
 dmat = np.diag(1/d)
@@ -71,35 +71,6 @@ G_dgram = G_dnorm.T@G_dnorm
 #print(np.degrees(np.arccos(G_dgram)))
 '''
 
-x = np.zeros((3,2,10))
-#Generating all sides
-for i in range(3):
-    x[i,:,:] = line_gen(G_v[:,i],G_v[:,(i+1)%3])
-
-#Plotting the sides
-for i in range(3):
-    plt.plot(x[i,0,:],x[i,1,:])
-
-#Labeling the coordinates
-plt.scatter(G_v[0,:], G_v[1,:])
-vert_labels = ['A','B','C']
-for i, txt in enumerate(vert_labels):
-    plt.annotate(txt, # this is the text
-                 (G_v[0,i], G_v[1,i]), # this is the point to label
-                 textcoords="offset points", # how to position the text
-                 xytext=(0,10), # distance from text to points (x,y)
-                 ha='center') # horizontal alignment can be left, right or center
-plt.xlabel('$x$')
-plt.ylabel('$y$')
-plt.legend(loc='best')
-plt.grid() # minor
-plt.axis('equal')
-
-#if using termux
-#plt.savefig('figs/triangle/mat-sides.pdf')
-#subprocess.run(shlex.split("termux-open ./figs/tri_sss.pdf"))
-#else
-plt.show()
 
 #-----------------Vectors Ends-------------------------------
 
@@ -130,29 +101,26 @@ linmat_med = np.block([G_n_med.T,cmat_med])
 #print(linmat_med)
 
 #Find the centroid
-#print(LA.lstsq(G_n_med.T,cmat_med))
+G  = LA.lstsq(G_n_med.T,cmat_med)
+
 #-----------------Median Ends-------------------------------
 
 #-----------------Altitude-------------------------------
 
 #Circulant matrix
 C_alt= SA.circulant([0,-1,1]).T
-#print(C_alt)
 
 #Normal Matrix
 G_dir_alt = G_v@C_alt
-#print(G_dir_alt)
 
 #Find the line constants
 cmat_alt = np.diag(G_dir_alt.T@G_v).reshape(-1,1)
-#print( np.block([G_dir_alt.T,cmat_alt]))
 
 #altitude matrix
 linmat_alt= np.block([G_dir_alt.T,cmat_alt])
-#print(linmat_alt)
 
 #Find the orthocentre
-#print(LA.lstsq(G_dir_alt.T,cmat_alt))
+H  = LA.lstsq(G_dir_alt.T,cmat_alt)
 
 #-----------------Altitude Ends-------------------------------
 
@@ -163,26 +131,60 @@ cmat_perp_bis= np.diag(G_dir_alt.T@G_mid).reshape(-1,1)
 
 
 #Find the Circumcentre
-#print(LA.lstsq(G_dir_alt.T,cmat_perp_bis))
-#-----------------Altitude Ends-------------------------------
+O = LA.lstsq(G_dir_alt.T,cmat_perp_bis)
+#-----------------Perpendicular Bisector Ends -------------------------------
 
-#-----------------Perpendicular Bisector-------------------------------
+#-----------------Angle Bisector-------------------------------
 #Incircle circulant matrix
 C_in = SA.circulant([1,1,0]).T
-
 #m,n,p
 secvec = LA.inv(C_in)@dis
-cont_mat =np.array([np.block([secvec[1]/dis[1],secvec[0]/dis[2],0]), np.block([0, secvec[2]/dis[2],secvec[1]/dis[0]]),np.block([secvec[2]/dis[1],0,secvec[0]/dis[0]])])
-#print(cont_mat)
-# np.block(np.block([secvec[1]/dis[1],secvec[0]/dis[2],0]), np.block([0, secvec[2]/dis[2],secvec[1]/dis[0]]),np.block([secvec[2]/dis[1],0,secvec[0]/dis[0]]))
-#print(np.array([np.block([secvec[1]/dis[1],secvec[0]/dis[2],0]), np.block([0, secvec[2]/dis[2],secvec[1]/dis[0]]),np.block([secvec[2]/dis[1],0,secvec[0]/dis[0]])]))
-#cont_mat = np.array([secvec[1]/dis[1],secvec[0]/dis[2],0],dtype=object)
-#print(cont_mat)
-#print(secvec[1]/dis[0])
-#print(C_in,C_in.T)
-#tvec = np.array([1,2,3]).reshape(-1,1)
-#tC = SA.circulant([0,1,0])
-#print(tC,tvec)
-#print(tC@tvec)
+m,n,p  = secvec 
+a,b,c= dis
+#bisector matrix
+cont_mat =np.array([1/a*np.block([0,n,m]), 1/b*np.block([n,0,p]),1/c*np.block([m,p,0])]).T
+G_ang_bis = G_v@cont_mat 
 
+#Normal Matrix
+G_dir_alt_ang = G_ang_bis@C_alt
+#Mid point matrix
+G_mid_ang = 0.5*G_ang_bis@C_mid
+#Find the line constants
+cmat_ang_bis= np.diag(G_dir_alt_ang.T@G_mid_ang).reshape(-1,1)
+#print( np.block([G_dir_alt.T,cmat_perp_bis]))
 
+#Find the incentre
+I = LA.lstsq(G_dir_alt_ang.T,cmat_ang_bis)
+print(I)
+#print(G_ang_bis)
+#-----------------End Angle Bisector-------------------------------
+#print(G)
+#print(H)
+#print(O)
+#-----------------Plotting-------------------------------
+
+#Generating all sides
+x = np.zeros((3,2,10))
+for i in range(3):
+    x[i,:,:] = line_gen(G_v[:,i],G_v[:,(i+1)%3])
+
+#Plotting the sides
+for i in range(3):
+    plt.plot(x[i,0,:],x[i,1,:])
+
+#Labeling the coordinates
+plt.scatter(G_v[0,:], G_v[1,:])
+plt.scatter(G_ang_bis[0,:], G_ang_bis[1,:])
+vert_labels = ['A','B','C']
+label_pts(G_v,vert_labels) 
+plt.xlabel('$x$')
+plt.ylabel('$y$')
+plt.legend(loc='best')
+plt.grid() # minor
+plt.axis('equal')
+
+#if using termux
+#plt.savefig('figs/triangle/mat-sides.pdf')
+#subprocess.run(shlex.split("termux-open ./figs/tri_sss.pdf"))
+#else
+plt.show()
