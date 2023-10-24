@@ -1,69 +1,54 @@
+//Code by G V V Sharma
+//October 23, 2023
+//matrix operations using lists
 #include <stdio.h>
 #include <stdlib.h>
-//#include "libs/matlist.h"
+#include "libs/matlist.h"
 
-
-typedef struct list
+//matrix data structure
+typedef struct tree
 {
 double data;
-struct list *next;
-}node;
-node *array(char *str, int *n);
-void printMat(node *head,int n);
+struct tree *row;
+struct tree *col;
+}vriksh;
+
+//declare matrix function 
+vriksh *matrix(char *str, int m, int n);
 
 int  main()
 {
-	node *a;
-//	node *head,*temp;
-//FILE *fp; //file pointer
-	int n=0;
-//fp = fopen("A.dat", "r");//open file
-//head = (node *)malloc(sizeof(node));
-//temp = head;
-//while(fscanf(fp,"%lf",temp->data) != EOF)
-//fscanf(fp,"%lf",&temp->data); 
-//fclose(fp);
-//printf("%lf\n",temp->data);
-//printf("%d\n",n);
-a  = array("A.dat", &n);
-//printf("%d\n",n);
+FILE *fp; //file pointer
+double val;//for reading file data
+vriksh *head, *temp;//head of the array
+int m =2, n=2, i, j;
+/*
+a  = array("B.dat", &n);
 printMat(a,n);
+*/
+
+fp = fopen("B.dat", "r");//open file
+head = (vriksh *)malloc(sizeof(vriksh));
+temp = head;
+//row loop
+for (i = 0; i < m, i++)
+{
+	//column loop
+	for (j = 0; j < m, j++)
+	{
+		fscanf(fp,"%lf",&temp->data);
+		temp = temp->col;
+		if (i == m)
+		{
+			temp  = NULL;
+			break;
+		}
+		else
+			temp= (vriksh *)malloc(sizeof(vriksh));
+	if(i==0)
+		temp  = head->row;
+}
+fclose(fp);
     return 0;
 }
 
-node *array(char *str, int *n)
-{
-
-FILE *fp; //file pointer
-double val;//for reading file data
-node *head, *temp;//head of the array
-
-fp = fopen(str, "r");//open file
-*n=0;
-head = (node *)malloc(sizeof(node));
-temp = head;
-
-while(fscanf(fp,"%lf",&temp->data) != EOF)
-{
-temp->next=(node *)malloc(sizeof(node));
-temp  = temp->next;
-++*n;
-}
-
-fclose(fp);
- return head;
-
-}
-//End function for reading matrix from file
-//Function for printing an array
-void printMat(node *head,int n)
-{
-	node *temp=head;
-	while (n !=0)
-	{
-		printf("%lf\n",temp->data);
-		temp= temp->next;
-		--n;
-	}
-}
-//End function for printing array
