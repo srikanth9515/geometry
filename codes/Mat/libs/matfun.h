@@ -10,16 +10,57 @@ double **loadMat(char *str,int m,int n);//load matrix from file
 double Matnorm(double **a, int m);//norm of a vector
 double Matdot(double **a, double ** b, int m);//inner product
 double **Matsub(double **a, double **b, int m, int n);//subtract two matrices
+double **Matadd(double **a, double **b, int m, int n);//add two matrices
+double **Matscale(double **a, int m, int n, double k);//scale matrix
 double **Matinv(double **mat, int m);//invert an m  x m matrix, m <=3
 double **Matmul(double **a, double **b, int m, int n, int p);//multiply matrices a and b
 double **transposeMat(double **a,  int m, int n);//transpose of a
 double **rotMat(double theta); //rotation matrix
 double **normVec(double **a); //normal vector
 void circulantMat(double **c, int m);
+double **Matsec(double **a, double ** b, int m, double k);//section formula
 //End function declaration
 
+//section formula
+double **Matsec(double **a, double ** b, int m, double k){
+	double **temp=createMat(m,1);
+	temp = Matscale(Matadd(a,Matscale(b,m,1,k),m,1),m,1,1/(k+1));
+	return temp;
+}
 
+//add matrices
+double **Matadd(double **a,double **b, int m, int n){
+int i, j;
+double **c;
+c = createMat(m,n);
 
+ for(i=0;i<m;i++)
+ {
+  for(j=0;j<n;j++)
+  {
+c[i][j]= a[i][j]+b[i][j];
+  }
+ }
+return c;
+}
+
+//scale matrix
+double **Matscale(double **a, int m, int n, double k){
+int i, j;
+double **c;
+c = createMat(m,n);
+
+ for(i=0;i<m;i++)
+ {
+  for(j=0;j<n;j++)
+  {
+c[i][j]= k*a[i][j];
+  }
+ }
+return c;
+}
+
+//Generating a circulant matrix from a vector
 void circulantMat(double **c, int m){
     int i,j,k;
  

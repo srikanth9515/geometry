@@ -49,9 +49,11 @@ c = Matnorm(m1,m);
 //Normal vectors
 
 //Printing
+//Print vertices 
+printMat(A,2,1);
+printMat(B,2,1);
 /*
 printMat(n1,2,1);//normal vector
-printMat(A,2,1);//vertex A
 printf("%lf\n",c1);//AB line coefficient
 
 //Triangle sides
@@ -81,5 +83,8 @@ printMat(temp,4,4);
 
 //Matrix inversion
 //printMat(Matinv(temp, 2),2,2);
+//Median
+temp= Matsec(A,B,2,1);
+printMat(temp,2,1);
     return 0;
 }
