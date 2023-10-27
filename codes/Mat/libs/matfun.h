@@ -10,7 +10,7 @@ double **loadMat(char *str,int m,int n);//load matrix from file
 double Matnorm(double **a, int m);//norm of a vector
 double Matdot(double **a, double ** b, int m);//inner product
 double **Matsub(double **a, double **b, int m, int n);//subtract two matrices
-double **Matinv(double **mat);//invert a 2 x 2 matrix
+double **Matinv(double **mat, int m);//invert an m  x m matrix, m <=3
 double **Matmul(double **a, double **b, int m, int n, int p);//multiply matrices a and b
 double **transposeMat(double **a,  int m, int n);//transpose of a
 double **rotMat(double theta); //rotation matrix
@@ -22,10 +22,6 @@ void circulantMat(double **c, int m);
 
 void circulantMat(double **c, int m){
     int i,j,k;
-    /*
-    for (int k = 0; k <= n - 1; k++)
-        temp[k][0] = a[k][0];
-	*/
  
     // Forming the circulant matrix
     for (int i = 1; i <= m - 1; i++) {
@@ -172,20 +168,35 @@ return c;
 //Defining the function for inverse of 2x2 matrix
 
 
-double **Matinv(double **mat)
+double **Matinv(double **a, int m)
 {
-double **c, det;
-c = createMat(2,2);
+double **c, det=0;
+int i,j;
+c = createMat(m,m);
+printMat(c,m,m);
+if (m==2){
+det = a[0][0]*a[1][1]-a[0][1]*a[1][0];
 
-det = mat[0][0]*mat[1][1]-mat[0][1]*mat[1][0];
-
-c[0][0] = mat[1][1]/det;
-c[0][1] = -mat[1][0]/det;
-c[1][0] = -mat[0][1]/det;
-c[1][1] = mat[0][0]/det;
-
+c[0][0] = a[1][1]/det;
+c[0][1] = -a[1][0]/det;
+c[1][0] = -a[0][1]/det;
+c[1][1] = a[0][0]/det;
+}
+else if(m==3){
+for(i=0;i<m;i++)
+      det += a[0][i]*(a[1][(i+1)%3]*a[2][(i+2)%3] - a[1][(i+2)%3]*a[2][(i+1)%3]);
+ 
+   for(i=0;i<m;i++){
+      for(j=0;j<m;j++)
+	   c[i][j]=((a[(i+1)%3][(j+1)%3] * a[(i+2)%3][(j+2)%3]) - (a[(i+1)%3][(j+2)%3]*a[(i+2)%3][(j+1)%3]))/det;
+   }
+}
+else {
+	printf("Invalid input \n");
+	exit(0);
+}
+ 
 return c;
-
 }
 // End  function for inverse of 2x2 matrix
 

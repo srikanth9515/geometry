@@ -19,7 +19,8 @@ double a,b,c; //triangle sides
 int m =2, n=3, i, j;
 double **mat =createMat(m,n);//vertices matrix 
 mat = loadMat("vertices.dat",m, n);//loading matrix from file
-temp= loadMat("circ.dat",4, 1);//loading matrix from file
+//temp= loadMat("circ.dat",4, 1);//loading matrix from file
+temp= loadMat("matex.dat",2, 2);//loading matrix from file
 
 //Extracting vertices
 A = Matcol(mat,m,0);
@@ -77,5 +78,8 @@ printMat(m3,m,1);
 circulantMat(temp, 4);
 printMat(temp,4,4);
 */
+
+//Matrix inversion
+//printMat(Matinv(temp, 2),2,2);
     return 0;
 }
