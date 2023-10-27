@@ -13,9 +13,9 @@ double val;//for reading file data
 vriksh *head, *temp;//head of the array
 node *a;
 int m =3, n=3, i, j;
-//head = loadMat("B.dat", m, n);
-head = loadMat("A.dat", 2, 1);
-//printMat(head,m,n);
-printMat(head,2,1);
+//head = loadMat("A.dat", 2, 1);
+//printMat(head,2,1);
+head = loadMat("B.dat", m, n);
+printMat(head,m,n);
     return 0;
 }

@@ -31,7 +31,7 @@ temp  = head;
 for (i = 0; i < m; i++)
 {
 	temp->sadish = loadVec(fp, n);
-	if (i< n-1){
+	if (i< m-1){
 	temp->next = (vriksh *)malloc(sizeof(vriksh));
 	temp->next->next = NULL; 
 	temp = temp->next; 
@@ -63,7 +63,6 @@ temp  = temp->next;
  return head;
 
 }
-
 //Function for printing an array
 void printVec(node *head,int n)
 {
@@ -81,6 +80,7 @@ void printVec(node *head,int n)
 	}
 }
 //End function for printing array
+
 //Function for printing a matrix
 void printMat(vriksh *head,int m, int n)
 {
@@ -96,3 +96,4 @@ void printMat(vriksh *head,int m, int n)
     }
 }
 //End function for printing a matrix
+
