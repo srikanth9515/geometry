@@ -5,15 +5,24 @@
 //Function declaration
 double **createMat(int m,int n);//create m x n matrix array
 void readMat(double **p, int m,int n);//read matrix into array
-void printmat(double **p,int m,int n);//print matrix
-double **loadmat(char *str,int m,int n);//load matrix from file
-double linalg_norm(double **a, int m);//norm of a vector
-double **linalg_sub(double **a, double **b, int m, int n);//subtract two matrices
-double **linalg_inv(double **mat, int m);//invert a 2 x 2 matrix
-double **matmul(double **a, double **b, int m, int n, int p);//multiply matrices a and b
-double **transpose(double **a,  int m, int n);//transpose of a
+void printMat(double **p,int m,int n);//print matrix
+double **loadMat(char *str,int m,int n);//load matrix from file
+double Matnorm(double **a, int m);//norm of a vector
+double Matdot(double **a, double ** b, int m);//inner product
+double **Matsub(double **a, double **b, int m, int n);//subtract two matrices
+double **Matinv(double **mat, int m);//invert a 2 x 2 matrix
+double **Matmul(double **a, double **b, int m, int n, int p);//multiply matrices a and b
+double **transposeMat(double **a,  int m, int n);//transpose of a
+double **rotMat(double theta); //rotation matrix
+double **normVec(double **a); //normal vector
 //End function declaration
 
+//Obtaining the normal vector
+double **normVec(double **m){
+	double **temp;
+	temp = Matmul(rotMat(M_PI/2),m,2,2,1);
+	return temp;
+}
 
 //Defining the function for matrix creation
 double **createMat(int m,int n)
@@ -32,7 +41,7 @@ a = (double **)malloc(m * sizeof( *a));
 
 //Extract column
 //
-double **col(double **a,int m, int n){
+double **Matcol(double **a,int m, int n){
 	int i = 0;
 	double **b = createMat(m,1);//create column with m rows
 
@@ -59,7 +68,7 @@ void readMat(double **p, int m,int n)
 //End function for reading matrix
 
 //Read  matrix from file
-double **loadmat(char *str,int m,int n)
+double **loadMat(char *str,int m,int n)
 {
 FILE *fp;
 double **a;
@@ -85,7 +94,7 @@ fclose(fp);
 
 
 //Defining the function for printing
-void printmat(double **p, int m,int n)
+void printMat(double **p, int m,int n)
 {
  int i,j;
 
@@ -98,15 +107,31 @@ void printmat(double **p, int m,int n)
 }
 //End function for printing
 
+//Rotation matrix
+
+double **rotMat(double theta){
+double **temp=createMat(2,2);//creating the matrix
+double c = cos(theta), s = sin(theta);
+temp[0][0] = c;
+temp[0][1] = -s;
+temp[1][0] = s;
+temp[1][1] = c;
+
+return temp;
+}
+//inner product
+double Matdot(double **a, double ** b, int m){
+	double **temp= Matmul(transposeMat(a,m,1),b,1,m,1);
+	return temp[0][0];
+}
 //Defining the function for norm
 
-double linalg_norm(double **a, int m){
-	double **temp= matmul(transpose(a,m,1),a,1,m,1);
-	return sqrt(temp[0][0]);
+double Matnorm(double **a, int m){
+	return sqrt(Matdot(a, a, m));
 }
 //Defining the function for difference of matrices
 
-double **linalg_sub(double **a, double **b, int m, int n)
+double **Matsub(double **a, double **b, int m, int n)
 {
 int i, j;
 double **c;
@@ -127,7 +152,7 @@ return c;
 //Defining the function for inverse of 2x2 matrix
 
 
-double **linalg_inv(double **mat, int m)
+double **Matinv(double **mat, int m)
 {
 double **c, det;
 c = createMat(m,m);
@@ -147,7 +172,7 @@ return c;
 
 //Defining the function for product of matrices
 
-double **matmul(double **a, double **b, int m, int n, int p)
+double **Matmul(double **a, double **b, int m, int n, int p)
 {
 int i, j, k;
 double **c, temp =0;
@@ -172,7 +197,7 @@ return c;
 
 //Defining the function for transpose of matrix
 
-double **transpose(double **a,  int m, int n)
+double **transposeMat(double **a,  int m, int n)
 {
 int i, j;
 double **c;
