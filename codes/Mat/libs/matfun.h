@@ -165,7 +165,8 @@ return c;
 }
 //End function for difference of matrices
 
-//Defining the function for inverse of 2x2 matrix
+//Defining the function for inverse of a matrix
+//code adapted from the internet
 
 
 double **Matinv(double **a, int m)
