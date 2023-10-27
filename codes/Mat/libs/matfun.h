@@ -10,13 +10,33 @@ double **loadMat(char *str,int m,int n);//load matrix from file
 double Matnorm(double **a, int m);//norm of a vector
 double Matdot(double **a, double ** b, int m);//inner product
 double **Matsub(double **a, double **b, int m, int n);//subtract two matrices
-double **Matinv(double **mat, int m);//invert a 2 x 2 matrix
+double **Matinv(double **mat);//invert a 2 x 2 matrix
 double **Matmul(double **a, double **b, int m, int n, int p);//multiply matrices a and b
 double **transposeMat(double **a,  int m, int n);//transpose of a
 double **rotMat(double theta); //rotation matrix
 double **normVec(double **a); //normal vector
+void circulantMat(double **c, int m);
 //End function declaration
 
+
+
+void circulantMat(double **c, int m){
+    int i,j,k;
+    /*
+    for (int k = 0; k <= n - 1; k++)
+        temp[k][0] = a[k][0];
+	*/
+ 
+    // Forming the circulant matrix
+    for (int i = 1; i <= m - 1; i++) {
+        for (int j = 0; j <= m - 1; j++) {
+            if (j - 1 >= 0)
+                c[j][i] = c[j - 1][i - 1];
+            else
+                c[j][i] = c[m - 1][i - 1];
+        }
+    }
+}
 //Obtaining the normal vector
 double **normVec(double **m){
 	double **temp;
@@ -152,10 +172,10 @@ return c;
 //Defining the function for inverse of 2x2 matrix
 
 
-double **Matinv(double **mat, int m)
+double **Matinv(double **mat)
 {
 double **c, det;
-c = createMat(m,m);
+c = createMat(2,2);
 
 det = mat[0][0]*mat[1][1]-mat[0][1]*mat[1][0];
 

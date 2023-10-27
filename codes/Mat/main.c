@@ -19,6 +19,7 @@ double a,b,c; //triangle sides
 int m =2, n=3, i, j;
 double **mat =createMat(m,n);//vertices matrix 
 mat = loadMat("vertices.dat",m, n);//loading matrix from file
+temp= loadMat("circ.dat",4, 1);//loading matrix from file
 
 //Extracting vertices
 A = Matcol(mat,m,0);
@@ -48,25 +49,33 @@ c = Matnorm(m1,m);
 
 //Printing
 /*
-printMat(n1,2,1);
-printMat(A,2,1);
-printf("%lf\n",c1);
-*/
+printMat(n1,2,1);//normal vector
+printMat(A,2,1);//vertex A
+printf("%lf\n",c1);//AB line coefficient
+
+//Triangle sides
 printf("%lf\n",a);
 printf("%lf\n",b);
 printf("%lf\n",c);
+
+//Rotation matrix
 //printMat(rotMat(M_PI/2),2,2);
+
+//Normal vectors
 /*
 printMat(n1,2,1);
 printMat(n2,2,1);
 printMat(n3,2,1);
 */
+//Direction vectors
 /*
 printMat(m1,m,1);
 printMat(m2,m,1);
 printMat(m3,m,1);
+
+//Circulant matrix
+circulantMat(temp, 4);
+printMat(temp,4,4);
 */
-
-
     return 0;
 }
