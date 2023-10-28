@@ -1,3 +1,7 @@
+//Functions created by
+// G V V Sharma
+// October 27, 2023
+
 //vector data structure
 typedef struct list
 {
@@ -12,16 +16,34 @@ node *sadish;
 struct tree *next;
 }vriksh;
 
-//function declarations
-vriksh *loadMat(char *str, int m, int n);
+//Function declaration
+//vriksh *loadList(char *str, int m, int n);
 node *array(char *str, int *n);
-void printMat(vriksh *head,int m, int n);
+//void printList(vriksh *head,int m, int n);
 void printVec(node *head,int n);
 node *loadVec(FILE *fp, int n);
+vriksh *createList(int m,int n);//create m x n matrix array
+void readList(vriksh *p, int m,int n);//read matrix into array
+void printList(vriksh *p,int m,int n);//print matrix
+vriksh *loadList(char *str,int m,int n);//load matrix from file
+double Listnorm(vriksh *a, int m);//norm of a vector
+double Listdot(vriksh *a, vriksh * b, int m);//inner product
+vriksh *Listsub(vriksh *a, vriksh *b, int m, int n);//subtract two matrices
+vriksh *Listadd(vriksh *a, vriksh *b, int m, int n);//add two matrices
+vriksh *Listscale(vriksh *a, int m, int n, double k);//scale matrix
+vriksh *Listinv(vriksh *mat, int m);//invert an m  x m matrix, m <=3
+vriksh *Listmul(vriksh *a, vriksh *b, int m, int n, int p);//multiply matrices a and b
+vriksh *transposeList(vriksh *a,  int m, int n);//transpose of a
+vriksh *rotList(double theta); //rotation matrix
+vriksh *normVec(vriksh *a); //normal vector
+void circulantList(vriksh *c, int m);
+vriksh *Listsec(vriksh *a, vriksh * b, int m, double k);//section formula
+//End function declaration
+
  
 //load matrix
 
-vriksh *loadMat(char *str, int m, int n){
+vriksh *loadList(char *str, int m, int n){
 	vriksh *head, *temp;//matrix head
 	int i=0;//dummy integer
 	FILE *fp;
@@ -82,7 +104,7 @@ void printVec(node *head,int n)
 //End function for printing array
 
 //Function for printing a matrix
-void printMat(vriksh *head,int m, int n)
+void printList(vriksh *head,int m, int n)
 {
 	vriksh *temp=head;
 	int i = 0;

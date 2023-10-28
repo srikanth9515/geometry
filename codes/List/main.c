@@ -12,10 +12,10 @@ FILE *fp; //file pointer
 double val;//for reading file data
 vriksh *head, *temp;//head of the array
 node *a;
-int m =3, n=3, i, j;
-//head = loadMat("A.dat", 2, 1);
-//printMat(head,2,1);
-head = loadMat("B.dat", m, n);
-printMat(head,m,n);
+int m =2, n=3, i, j;
+//head = loadList("A.dat", 2, 1);
+//printList(head,2,1);
+head = loadList("vertices.dat", m, n);
+printList(head,m,n);
     return 0;
 }
