@@ -3,7 +3,7 @@
 // October 29, 2023
 
 //Function declaration
-double Listnorm(avyuh *a, int m);//norm of a vector
+double Listnorm(avyuh *a);//norm of a vector
 double Listdot(avyuh *a, avyuh * b);//inner product
 double ListVecdot(sadish *a, sadish * b);//inner product
 avyuh *Listsub(avyuh *a, avyuh *b);//subtract two matrices
@@ -67,3 +67,23 @@ avyuh *Listsub(avyuh *a, avyuh *b){
 	return head;
 }
 
+//norm of a vector
+double Listnorm(avyuh *a){
+	return sqrt(Listdot(a,a));
+}
+
+//rotation matrix
+avyuh *rotList(double theta){ 
+avyuh *head = createList(2,2), *temp;//create empty 2 x 2 matrix 
+sadish *row1, *row2;
+double c = cos(theta), s = sin(theta);
+
+row1 = head->vector;
+row2 = head->next->vector;
+row1->data = c;
+row1->next->data = -s;
+row2->data = s;
+row2->next->data = c;
+return head;
+
+}
