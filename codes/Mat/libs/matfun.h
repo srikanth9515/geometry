@@ -4,7 +4,6 @@
 
 //Function declaration
 double **createMat(int m,int n);//create m x n matrix array
-void readMat(double **p, int m,int n);//read matrix into array
 void printMat(double **p,int m,int n);//print matrix
 double **loadMat(char *str,int m,int n);//load matrix from file
 double Matnorm(double **a, int m);//norm of a vector
@@ -110,19 +109,6 @@ return b;
 }
 
 
-//Defining the function for reading matrix 
-void readMat(double **p, int m,int n)
-{
- int i,j;
- for(i=0;i<m;i++)
- {
-  for(j=0;j<n;j++)
-  {
-   scanf("%lf",&p[i][j]);
-  }
- }
-}
-//End function for reading matrix
 
 //Read  matrix from file
 double **loadMat(char *str,int m,int n)
