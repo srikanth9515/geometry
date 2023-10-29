@@ -19,13 +19,10 @@ struct tree *next;
 //Function declaration
 sadish *Vecind(sadish *a,int n);
 void printVec(sadish *head);
-//void printVec(sadish *head,int n);
 sadish *loadVec(FILE *fp, int n);
 avyuh *createList(int m,int n);//create m x n matrix array
 void printList(avyuh *p);//print matrix
-//void printList(avyuh *p,int m,int n);//print matrix
 avyuh *loadList(char *str,int m,int n);//load matrix from file
-//avyuh *Listcol(avyuh *a,int m, int n);//extract nth column of matrix
 avyuh *Listcol(avyuh *a, int n);//extract nth column of matrix
 avyuh *transposeList(avyuh *a,  int m, int n);//transpose of a
 //End function declaration
@@ -39,7 +36,6 @@ avyuh *transposeList(avyuh *a,  int m, int n){
 //extract column vector
 	for (i = 0; i < n; i++){
 		temp = Listcol(a,i);
-		//temp = Listcol(a,m,i);
 		blist->vector = temp->vector;
 		blist= blist->next;
 	}
@@ -101,58 +97,28 @@ sadish *Vecind(sadish *a,int n){
 }
 
 //Extract column from matrix
-//avyuh *Listcol(avyuh *a,int m, int n){
 avyuh *Listcol(avyuh *a, int n){
 	int i = 0,j = 0;//dummy integers
 	int m = 2;
-	avyuh *b = createList(1,m);//create empty column vector of length m 
-	avyuh *head= b, *alist=a;
-	sadish *temp,*btemp=head->vector ;
-//printList(a);
-//extract column vector
-	for (i = 0; i < m; i++){
-//	while(alist != NULL){
-		temp = Vecind(alist->vector,n);//getting address of the nth column
-//		printf("%lf %d\n",temp->data, i);
-		btemp->data = temp->data;
-		//printf("%lf %d\n",btemp->data, i);
-		alist= alist->next;
-		btemp= btemp->next;
-		//i++;
-	}
-//	printf("I am here");
-return head;
-}
-//
-/*
-//avyuh *Listcol(avyuh *a,int m, int n){
-avyuh *Listcol(avyuh *a, int n){
-	int i = 0,j = 0;//dummy integers
-	int m = 2;
-//	avyuh *b = createList(1,m);//create empty column vector of length m 
 	avyuh *head= (avyuh *)malloc(sizeof(avyuh)), *alist=a;
-	sadish *temp,*btemp;
-head->next = NULL;
-head->vector = createVec(n);
-btemp=head->vector;
-//printList(a);
-//extract column vector
-	for (i = 0; i < m; i++){
-//	while(alist != NULL){
+	sadish *btemp=(sadish *)malloc(sizeof(sadish)),*temp;
+	head->vector= btemp;
+	btemp->next= NULL;
+	head->next= NULL;
+	while(alist != NULL){
 		temp = Vecind(alist->vector,n);//getting address of the nth column
-		printf("%lf %d\n",temp->data, i);
 		btemp->data = temp->data;
-		//printf("%lf %d\n",btemp->data, i);
 		alist= alist->next;
+	if(alist!=NULL){
+		btemp->next = (sadish *)malloc(sizeof(sadish));
+		btemp->next->next=NULL;
 		btemp= btemp->next;
-		//i++;
 	}
-	printf("I am here");
+	}
 return head;
 }
 //load matrix from file
 
-*/
 avyuh *loadList(char *str, int m, int n){
 	avyuh *head, *temp;//matrix head
 	int i=0;//dummy integer
@@ -183,6 +149,7 @@ double val;//for reading file data
 sadish *head,*temp;//head of the array
 head = (sadish *)malloc(sizeof(sadish));
 temp  = head;
+head->next = NULL;
 for (i=0; i < n; i++)
 {
 fscanf(fp,"%lf",&temp->data);
@@ -205,47 +172,15 @@ void printVec(sadish *head)
 		temp= temp->next;
 	}
 }
-/*
-void printVec(sadish *head,int n)
-{
-	sadish *temp=head;
-    if(temp==NULL)
-    {
-	printf("NULL encountered ");
-    return;
-    }
-	while (n !=0)
-	{
-		printf("%lf ",temp->data);
-		temp= temp->next;
-		--n;
-	}
-}
-//Function for printing a matrix
-void printList(avyuh *head,int m, int n)
-{
-	avyuh *temp=head;
-	int i = 0;
-    if(temp==NULL)
-    {
-    return;
-    }
-    for (i = 0; i < m; i++){
-		printVec(temp->vector);
-		//printVec(temp->vector,n);
-		printf("\n");
-	temp= temp->next;
-    }
-}
-*/
 
 void printList(avyuh *head)
 {
 	avyuh *temp=head;
 	while(temp !=NULL){
 		printVec(temp->vector);
-		//printVec(temp->vector,n);
-		printf("\n");
+	//printf("I am here");
+	printf("\n");
+	//printf("I am here");
 	temp= temp->next;
     }
 }

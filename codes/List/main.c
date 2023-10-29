@@ -15,7 +15,7 @@ avyuh *trans, *temp;//head of the array
 sadish *a,*heads;
 avyuh *A,*B,*C;//triangle vertices
 int m =2, n=3, i, j;
-fp = fopen("A.dat","r");
+//fp = fopen("A.dat","r");
 //heads = loadVec(fp,3);
 //head = loadList("A.dat", 3, 1);
 //a = Vecind(heads,0);
@@ -27,20 +27,21 @@ temp= loadList("vertices.dat", m, n);
 //temp= loadList("A.dat", 1, 3);
 
 //Triangle vertices
-//A = Listcol(temp,0);
-//B = Listcol(temp,1);
-//C = Listcol(temp,2);
 /*
-A = Listcol(temp,m,0);
-B = Listcol(temp,m,1);
-C = Listcol(temp,m,2);
+A = Listcol(temp,0);
+B = Listcol(temp,1);
+C = Listcol(temp,2);
 */
 
 //Transpose
 trans = transposeList(temp,m,n);
 
 //printing
-//printList(A);//print vertex C 
+/*
+printList(A);//print vertex C 
+printList(B);//print vertex C 
+printList(C);//print vertex C 
+*/
 ///printList(temp,1,3);
 //printList(temp);
 printList(trans);
