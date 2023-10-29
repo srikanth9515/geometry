@@ -178,9 +178,7 @@ void printList(avyuh *head)
 	avyuh *temp=head;
 	while(temp !=NULL){
 		printVec(temp->vector);
-	//printf("I am here");
 	printf("\n");
-	//printf("I am here");
 	temp= temp->next;
     }
 }
