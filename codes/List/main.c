@@ -54,13 +54,13 @@ mat = rotList(M_PI/2);
 //trans = transposeList(temp,m,n);
 
 //printing
-printList(mat);
+printList(temp);
+//printList(mat);
 /*
 printf("%lf\n",c);
 printf("%lf\n",a);
 printf("%lf\n",b);
 
-printList(temp);
 printList(m1);
 printList(m2);
 printList(m3);

@@ -166,19 +166,15 @@ temp  = temp->next;
 //Function for printing an array
 void printVec(sadish *head)
 {
-	sadish *temp=head;
-	while(temp !=NULL){
+	for (sadish *temp=head; temp !=NULL; temp= temp->next){
 		printf("%lf ",temp->data);
-		temp= temp->next;
 	}
 }
 
 void printList(avyuh *head)
 {
-	avyuh *temp=head;
-	while(temp !=NULL){
+	for (avyuh *temp=head; temp !=NULL; temp= temp->next){
 		printVec(temp->vector);
 	printf("\n");
-	temp= temp->next;
     }
 }
