@@ -24,6 +24,7 @@ avyuh *createList(int m,int n);//create m x n matrix array
 void printList(avyuh *p);//print matrix
 avyuh *loadList(char *str,int m,int n);//load matrix from file
 avyuh *Listcol(avyuh *a, int n);//extract nth column of matrix
+sadish *colVec(avyuh *a, int n);//extract nth column of matrix
 avyuh *transposeList(avyuh *a,  int m, int n);//transpose of a
 //End function declaration
 
@@ -31,12 +32,15 @@ avyuh *transposeList(avyuh *a,  int m, int n);//transpose of a
 avyuh *transposeList(avyuh *a,  int m, int n){
 	int i;//dummy integer
 	avyuh *b = createList(n,1);//create empty n x m matrix 
-	avyuh *head = b, *alist=a, *blist=b, *temp;
+	avyuh *head = b, *alist=a, *blist=b;
+	sadish *temp;
 
 //extract column vector
 	for (i = 0; i < n; i++){
-		temp = Listcol(a,i);
-		blist->vector = temp->vector;
+		//temp = Listcol(a,i);
+		temp = colVec(a,i);
+		blist->vector = temp;
+		//blist->vector = temp->vector;
 		blist= blist->next;
 	}
 return head;
@@ -98,14 +102,19 @@ sadish *Vecind(sadish *a,int n){
 
 //Extract column from matrix
 avyuh *Listcol(avyuh *a, int n){
+	avyuh *head= (avyuh *)malloc(sizeof(avyuh)), *alist;
+	head->vector= colVec(a,n);
+	head->next= NULL;
+return head;
+}
+sadish *colVec(avyuh *a, int n){
 	int i = 0,j = 0;//dummy integers
 	int m = 2;
-	avyuh *head= (avyuh *)malloc(sizeof(avyuh)), *alist;
-	sadish *btemp=(sadish *)malloc(sizeof(sadish)),*temp;
-	head->vector= btemp;
-	btemp->next= NULL;
+	//avyuh *head= (avyuh *)malloc(sizeof(avyuh)), *alist;
+	sadish *head=(sadish *)malloc(sizeof(sadish)),*temp, *btemp;
+	btemp = head;
 	head->next= NULL;
-	for (alist = a; alist != NULL; alist= alist->next){
+	for (avyuh *alist = a; alist != NULL; alist= alist->next){
 		temp = Vecind(alist->vector,n);//getting address of the nth column
 		btemp->data = temp->data;
 	if(alist->next !=NULL){
@@ -116,8 +125,8 @@ avyuh *Listcol(avyuh *a, int n){
 	}
 return head;
 }
-//load matrix from file
 
+//load matrix from file
 avyuh *loadList(char *str, int m, int n){
 	avyuh *head, *temp;//matrix head
 	int i=0;//dummy integer

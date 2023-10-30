@@ -36,7 +36,6 @@ A = Listcol(temp,0);
 B = Listcol(temp,1);
 C = Listcol(temp,2);
 
-
 //Direction vectors
 m1 = Listsub(A, B);
 m2 = Listsub(B, C);
@@ -54,13 +53,13 @@ mat = rotList(M_PI/2);
 trans = transposeList(temp,m,n);
 
 //printing
-printList(temp);
-printList(trans);
-//printList(mat);
-/*
 printf("%lf\n",c);
 printf("%lf\n",a);
 printf("%lf\n",b);
+/*
+printList(temp);
+printList(trans);
+//printList(mat);
 
 printList(m1);
 printList(m2);
