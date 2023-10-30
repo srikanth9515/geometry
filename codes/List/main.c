@@ -51,10 +51,11 @@ b = Listnorm(m3);
 //Rotation matrix
 mat = rotList(M_PI/2);
 //Transpose
-//trans = transposeList(temp,m,n);
+trans = transposeList(temp,m,n);
 
 //printing
 printList(temp);
+printList(trans);
 //printList(mat);
 /*
 printf("%lf\n",c);
@@ -72,7 +73,6 @@ printList(B);//print vertex C
 printList(C);//print vertex C 
 */
 ///printList(temp,1,3);
-//printList(trans);
 //printVec(heads);
 //fclose(fp);
     return 0;

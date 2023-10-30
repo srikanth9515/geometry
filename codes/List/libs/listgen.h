@@ -100,16 +100,15 @@ sadish *Vecind(sadish *a,int n){
 avyuh *Listcol(avyuh *a, int n){
 	int i = 0,j = 0;//dummy integers
 	int m = 2;
-	avyuh *head= (avyuh *)malloc(sizeof(avyuh)), *alist=a;
+	avyuh *head= (avyuh *)malloc(sizeof(avyuh)), *alist;
 	sadish *btemp=(sadish *)malloc(sizeof(sadish)),*temp;
 	head->vector= btemp;
 	btemp->next= NULL;
 	head->next= NULL;
-	while(alist != NULL){
+	for (alist = a; alist != NULL; alist= alist->next){
 		temp = Vecind(alist->vector,n);//getting address of the nth column
 		btemp->data = temp->data;
-		alist= alist->next;
-	if(alist!=NULL){
+	if(alist->next !=NULL){
 		btemp->next = (sadish *)malloc(sizeof(sadish));
 		btemp->next->next=NULL;
 		btemp= btemp->next;
