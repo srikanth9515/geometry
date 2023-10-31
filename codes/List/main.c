@@ -50,15 +50,20 @@ b = Listnorm(m3);
 //Rotation matrix
 mat = rotList(M_PI/2);
 //Transpose
-trans = transposeList(temp,m,n);
+//trans = transposeList(temp,m,n);
+trans = transposeList(temp);
 
 //printing
+//printList(temp);
+//printList(trans);
+//printList(Listmul(trans,temp));
+printf("I am here");
+//printList(Listmul(temp, temp));
+/*
 printf("%lf\n",c);
 printf("%lf\n",a);
 printf("%lf\n",b);
-/*
 printList(temp);
-printList(trans);
 //printList(mat);
 
 printList(m1);

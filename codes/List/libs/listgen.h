@@ -25,27 +25,32 @@ void printList(avyuh *p);//print matrix
 avyuh *loadList(char *str,int m,int n);//load matrix from file
 avyuh *Listcol(avyuh *a, int n);//extract nth column of matrix
 sadish *colVec(avyuh *a, int n);//extract nth column of matrix
-avyuh *transposeList(avyuh *a,  int m, int n);//transpose of a
+avyuh *transposeList(avyuh *a);//transpose of a
 //End function declaration
 
 //Matrix transpose 
-avyuh *transposeList(avyuh *a,  int m, int n){
-	int i;//dummy integer
-	avyuh *b = createList(n,1);//create empty n x m matrix 
-	avyuh *head = b, *alist=a, *blist=b;
-	sadish *temp;
+avyuh *transposeList(avyuh *a){
+	int i=0;//dummy integer
+	avyuh *head =(avyuh *)malloc(sizeof(avyuh)); 
+	avyuh *b=head;
+	sadish *temp, *bvec;
+	head->next = NULL;
 
 //extract column vector
-	for (i = 0; i < n; i++){
-		//temp = Listcol(a,i);
-		temp = colVec(a,i);
-		blist->vector = temp;
-		//blist->vector = temp->vector;
-		blist= blist->next;
+		
+	for (temp= a->vector; temp!=NULL;  temp= temp->next){
+		bvec= colVec(a,i);
+		b->vector = bvec;
+		i++;
+		if(temp->next !=NULL){
+		b->next = (avyuh *)malloc(sizeof(avyuh));
+		b->next->next=NULL;
+		b= b->next;
+	}
+
 	}
 return head;
-
-}
+	}
 
 //create vector
 sadish *createVec( int n)

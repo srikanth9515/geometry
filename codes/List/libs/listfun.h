@@ -1,6 +1,7 @@
 //Functions created by
 // G V V Sharma
 // October 29, 2023
+// Revised October 31, 2023
 
 //Function declaration
 double Listnorm(avyuh *a);//norm of a vector
@@ -10,7 +11,7 @@ avyuh *Listsub(avyuh *a, avyuh *b);//subtract two matrices
 avyuh *Listadd(avyuh *a, avyuh *b, int m, int n);//add two matrices
 avyuh *Listscale(avyuh *a, int m, int n, double k);//scale matrix
 avyuh *Listinv(avyuh *mat, int m);//invert an m  x m matrix, m <=3
-avyuh *Listmul(avyuh *a, avyuh *b, int m, int n, int p);//multiply matrices a and b
+avyuh *Listmul(avyuh *a, avyuh *b);//multiply matrices a and b
 avyuh *rotList(double theta); //rotation matrix
 avyuh *normVec(avyuh *a); //normal vector
 void circulantList(avyuh *c, int m);
@@ -86,4 +87,27 @@ row2->data = s;
 row2->next->data = c;
 return head;
 
+}
+
+//Matrix multiplication
+avyuh *Listmul(avyuh *a, avyuh *b){
+	printf("I am here");
+	avyuh *head= (avyuh *)malloc(sizeof(avyuh));
+	avyuh *c=head,*atemp, *btemp;
+	sadish *cvec;
+	head->next = NULL;
+	for(atemp=a; atemp !=NULL; atemp=atemp->next){
+		cvec = c->vector;
+		for(btemp=b; btemp !=NULL; btemp=btemp->next){
+			cvec->data=ListVecdot(atemp->vector, btemp->vector);//inner product
+			cvec = cvec->next;
+		}
+
+		if(atemp->next!=NULL){
+			c->next = (avyuh *)malloc(sizeof(avyuh));
+			c->next->next=NULL;
+			c= c->next;
+		}
+	}
+return head;
 }
