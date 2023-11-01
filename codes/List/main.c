@@ -14,10 +14,12 @@ int  main()
 FILE *fp; //file pointer
 double val;//for reading file data
 avyuh *trans, *temp;//head of the array
+avyuh *prod;
 avyuh *mat;//head of the array
 //sadish *a,*heads;
 avyuh *A,*B,*C;//triangle vertices
 avyuh *m1,*m2,*m3;//direction vectors of the sides
+avyuh *n1,*n2,*n3;//direction vectors of the sides
 double a, b, c;//sides
 int m =2, n=3, i, j;
 //fp = fopen("A.dat","r");
@@ -49,16 +51,33 @@ b = Listnorm(m3);
 
 //Rotation matrix
 mat = rotList(M_PI/2);
+
+//Normal vectors
+n1 = Listmul(mat,m1);
+n2 = Listmul(mat,m2);
+n3 = Listmul(mat,m3);
+
 //Transpose
-//trans = transposeList(temp,m,n);
 trans = transposeList(temp);
 
+//Product
+//prod = Listmul(temp,temp);
+
 //printing
+//printList(prod);
+/*
+printList(m1);
+printList(m2);
+printList(m3);
+printList(n1);
+printList(n2);
+printList(n3);
 //printList(temp);
 //printList(trans);
 //printList(Listmul(trans,temp));
-printf("I am here");
+//printf("I am here");
 //printList(Listmul(temp, temp));
+//printList(Listmul(trans, trans));
 /*
 printf("%lf\n",c);
 printf("%lf\n",a);

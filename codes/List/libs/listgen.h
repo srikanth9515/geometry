@@ -182,12 +182,13 @@ void printVec(sadish *head)
 	for (sadish *temp=head; temp !=NULL; temp= temp->next){
 		printf("%lf ",temp->data);
 	}
+	printf("\n");
 }
 
 void printList(avyuh *head)
 {
 	for (avyuh *temp=head; temp !=NULL; temp= temp->next){
 		printVec(temp->vector);
-	printf("\n");
+	fflush(stdout);
     }
 }

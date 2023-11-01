@@ -2,6 +2,7 @@
 // G V V Sharma
 // October 29, 2023
 // Revised October 31, 2023
+// Matrix Multiplication may be buggy
 
 //Function declaration
 double Listnorm(avyuh *a);//norm of a vector
@@ -91,16 +92,24 @@ return head;
 
 //Matrix multiplication
 avyuh *Listmul(avyuh *a, avyuh *b){
-	printf("I am here");
-	avyuh *head= (avyuh *)malloc(sizeof(avyuh));
-	avyuh *c=head,*atemp, *btemp;
-	sadish *cvec;
+//printf("\n");//introduced to prevent segmentation fault while invoking printList
+//printf("I am here\n");//introduced to prevent segmentation fault while invoking printList
+	avyuh *c=(avyuh *)malloc(sizeof(avyuh)),*atemp, *btemp;
+	avyuh *head = c;
+	sadish *cvec=(sadish *)malloc(sizeof(sadish));
 	head->next = NULL;
 	for(atemp=a; atemp !=NULL; atemp=atemp->next){
-		cvec = c->vector;
+		cvec=(sadish *)malloc(sizeof(sadish));
+		cvec->next = NULL;
+		c->vector = cvec;  
 		for(btemp=b; btemp !=NULL; btemp=btemp->next){
 			cvec->data=ListVecdot(atemp->vector, btemp->vector);//inner product
-			cvec = cvec->next;
+//printf("%lf\n",cvec->data);
+		if(btemp->next!=NULL){
+			cvec->next = (sadish *)malloc(sizeof(sadish));
+			cvec->next->next=NULL;
+			cvec= cvec->next;
+		}
 		}
 
 		if(atemp->next!=NULL){
