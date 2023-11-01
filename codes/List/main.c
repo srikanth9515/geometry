@@ -65,7 +65,6 @@ trans = transposeList(temp);
 
 //printing
 //printList(prod);
-/*
 printList(m1);
 printList(m2);
 printList(m3);
