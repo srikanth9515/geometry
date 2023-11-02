@@ -18,6 +18,7 @@ avyuh *prod;
 avyuh *mat;//head of the array
 //sadish *a,*heads;
 avyuh *A,*B,*C;//triangle vertices
+avyuh *D,*E,*F;//triangle mid points
 avyuh *m1,*m2,*m3;//direction vectors of the sides
 avyuh *n1,*n2,*n3;//direction vectors of the sides
 double a, b, c;//sides
@@ -37,6 +38,11 @@ temp= loadList("vertices.dat", m, n);
 A = Listcol(temp,0);
 B = Listcol(temp,1);
 C = Listcol(temp,2);
+
+//Mid points
+F= Listadd(A, B);
+D= Listadd(B, C);
+E= Listadd(C, A);
 
 //Direction vectors
 m1 = Listsub(A, B);
@@ -65,6 +71,7 @@ trans = transposeList(temp);
 
 //printing
 //printList(prod);
+/*
 printList(m1);
 printList(m2);
 printList(m3);
@@ -90,12 +97,15 @@ printList(m3);
 //printf("I am here");
 //printList(A);
 
-printList(A);//print vertex C 
-printList(B);//print vertex C 
-printList(C);//print vertex C 
 */
 ///printList(temp,1,3);
 //printVec(heads);
 //fclose(fp);
+printList(A);//print vertex C 
+printList(B);//print vertex C 
+printList(C);//print vertex C 
+printList(D);//print vertex C 
+printList(E);//print vertex C 
+printList(F);//print vertex C 
     return 0;
 }
