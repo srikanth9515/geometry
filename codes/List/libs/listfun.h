@@ -12,13 +12,14 @@ avyuh *Listsub(avyuh *a, avyuh *b);//subtract two matrices
 avyuh *Listadd(avyuh *a, avyuh *b);//add two matrices
 sadish *ListVecadd(sadish *a, sadish *b);//add two matrices
 sadish *ListVecsub(sadish *a, sadish *b);//subtract two vectors
-avyuh *Listscale(avyuh *a, int m, int n, double k);//scale matrix
+avyuh *Listscale(avyuh *a, double k);//scale matrix
+sadish *Listvecscale(sadish *a, double k);//scale vector
 avyuh *Listinv(avyuh *mat, int m);//invert an m  x m matrix, m <=3
 avyuh *Listmul(avyuh *a, avyuh *b);//multiply matrices a and b
 avyuh *rotList(double theta); //rotation matrix
 avyuh *normVec(avyuh *a); //normal vector
 void circulantList(avyuh *c, int m);
-avyuh *Listsec(avyuh *a, avyuh * b, int m, double k);//section formula
+avyuh *Listsec(avyuh *a, avyuh * b,double k);//section formula
 //End function declaration
 
 
@@ -70,7 +71,7 @@ double Listdot(avyuh *a, avyuh *b){
 	return ListVecdot(a->vector, b->vector);
 }
 sadish *ListVecsub(sadish *a, sadish *b){
-	sadish *head = (sadish *)malloc(sizeof(sadish)), *c, *tempa=a, *tempb=b;
+	sadish *head = (sadish *)malloc(sizeof(sadish)), *c, *tempb=b;
 	c = head; 
 	head->next = NULL;
 	for(sadish *tempa=a;tempa!=NULL;tempa=tempa->next){
@@ -87,7 +88,7 @@ sadish *ListVecsub(sadish *a, sadish *b){
 
 //subtract two matrices
 avyuh *Listsub(avyuh *a, avyuh *b){
-	avyuh *c= (avyuh *)malloc(sizeof(avyuh)), *tempa = a, *tempb = b, *head; 
+	avyuh *c= (avyuh *)malloc(sizeof(avyuh)),  *tempb = b, *head; 
 	c->next = NULL;
 	head = c;
 	for(avyuh *tempa=a;tempa!=NULL;tempa=tempa->next){
@@ -149,4 +150,53 @@ avyuh *Listmul(avyuh *a, avyuh *b){
 		}
 	}
 return head;
+}
+//scale vector
+sadish *Listvecscale(sadish *a, double k){
+	sadish *head = (sadish *)malloc(sizeof(sadish)), *c;
+	c = head; 
+	head->next = NULL;
+	for(sadish *tempa=a;tempa!=NULL;tempa=tempa->next){
+		c->data = k*tempa->data;
+	if(tempa->next!=NULL){
+		c->next = (sadish *)malloc(sizeof(sadish));
+		c->next->next=NULL;
+		c= c->next;
+	}
+	}
+	return head;
+}
+//scale matrix
+avyuh *Listscale(avyuh *a, double k){
+	avyuh *head = (avyuh *)malloc(sizeof(avyuh)), *c;
+	c = head; 
+	head->next = NULL;
+	for(avyuh *tempa=a;tempa!=NULL;tempa=tempa->next){
+		c->vector = Listvecscale(a->vector, k);
+	if(tempa->next!=NULL){
+		c->next = (avyuh *)malloc(sizeof(avyuh));
+		c->next->next=NULL;
+		c= c->next;
+	}
+	}
+	return head;
+}
+//section formula
+avyuh *Listsec(avyuh *a, avyuh * b,double k){
+	avyuh *head = (avyuh *)malloc(sizeof(avyuh)), *c;
+	sadish *tempc =(sadish *)malloc(sizeof(sadish)), *tempb=b->vector;
+	c = head; 
+	head->next = NULL;
+	tempc->next = NULL;
+	c->vector = tempc;
+	for(sadish *tempa=a->vector;tempa!=NULL;tempa=tempa->next){
+		tempc->data= (k*tempb->data+tempa->data)/(k+1);
+		tempb=tempb->next;
+	if(tempa->next!=NULL){
+		tempc->next = (sadish *)malloc(sizeof(sadish));
+		tempc->next->next=NULL;
+		tempc= tempc->next;
+	}
+	}
+	return head;
 }

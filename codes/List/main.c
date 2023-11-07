@@ -40,9 +40,10 @@ B = Listcol(temp,1);
 C = Listcol(temp,2);
 
 //Mid points
-F= Listadd(A, B);
-D= Listadd(B, C);
-E= Listadd(C, A);
+//F= Listadd(A, B);
+F = Listsec(A,B,1);
+D= Listsec(B, C,1);
+E= Listsec(C, A,1);
 
 //Direction vectors
 m1 = Listsub(A, B);
