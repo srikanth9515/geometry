@@ -24,14 +24,13 @@ avyuh *Listsec(avyuh *a, avyuh * b, int m, double k);//section formula
 
 //add two matrices
 avyuh *Listadd(avyuh *a, avyuh *b){
-	avyuh *c= (avyuh *)malloc(sizeof(avyuh)), *tempa = a, *tempb = b, *head; 
+	avyuh *c= (avyuh *)malloc(sizeof(avyuh)), *tempb = b, *head; 
 	c->next = NULL;
 	head = c;
-	while(tempa !=NULL){
-		c->vector = ListVecadd(tempa->vector,tempb->vector);
-		tempa = tempa->next;
-		tempb = tempb->next;
-	if(tempa!=NULL){
+	 for(avyuh *tempa=a;tempa!=NULL;tempa=tempa->next){
+                c->vector = ListVecadd(tempa->vector,tempb->vector);
+                tempb = tempb->next;
+	if(tempa->next!=NULL){
 		c->next = (avyuh *)malloc(sizeof(avyuh));
 		c->next->next=NULL;
 		c= c->next;
@@ -44,11 +43,11 @@ sadish *ListVecadd(sadish *a, sadish *b){
 	sadish *head = (sadish *)malloc(sizeof(sadish)), *c, *tempa=a, *tempb=b;
 	c = head; 
 	head->next = NULL;
-	while(tempa !=NULL){
-		c->data = tempa->data+tempb->data;
-		tempa = tempa->next;
-		tempb = tempb->next;
-	if(tempa!=NULL){
+	for(sadish *tempa=a;tempa!=NULL;tempa=tempa->next){
+                c->data = tempa->data+tempb->data;
+                //tempa = tempa->next;
+                tempb = tempb->next;
+	if(tempa->next!=NULL){
 		c->next = (sadish *)malloc(sizeof(sadish));
 		c->next->next=NULL;
 		c= c->next;
@@ -74,11 +73,10 @@ sadish *ListVecsub(sadish *a, sadish *b){
 	sadish *head = (sadish *)malloc(sizeof(sadish)), *c, *tempa=a, *tempb=b;
 	c = head; 
 	head->next = NULL;
-	while(tempa !=NULL){
+	for(sadish *tempa=a;tempa!=NULL;tempa=tempa->next){
 		c->data = tempa->data-tempb->data;
-		tempa = tempa->next;
 		tempb = tempb->next;
-	if(tempa!=NULL){
+	if(tempa->next!=NULL){
 		c->next = (sadish *)malloc(sizeof(sadish));
 		c->next->next=NULL;
 		c= c->next;
@@ -92,11 +90,10 @@ avyuh *Listsub(avyuh *a, avyuh *b){
 	avyuh *c= (avyuh *)malloc(sizeof(avyuh)), *tempa = a, *tempb = b, *head; 
 	c->next = NULL;
 	head = c;
-	while(tempa !=NULL){
+	for(avyuh *tempa=a;tempa!=NULL;tempa=tempa->next){
 		c->vector = ListVecsub(tempa->vector,tempb->vector);
-		tempa = tempa->next;
 		tempb = tempb->next;
-	if(tempa!=NULL){
+	if(tempa->next!=NULL){
 		c->next = (avyuh *)malloc(sizeof(avyuh));
 		c->next->next=NULL;
 		c= c->next;

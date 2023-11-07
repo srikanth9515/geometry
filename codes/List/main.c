@@ -84,7 +84,6 @@ printList(n3);
 //printf("I am here");
 //printList(Listmul(temp, temp));
 //printList(Listmul(trans, trans));
-/*
 printf("%lf\n",c);
 printf("%lf\n",a);
 printf("%lf\n",b);
@@ -97,10 +96,10 @@ printList(m3);
 //printf("I am here");
 //printList(A);
 
-*/
 ///printList(temp,1,3);
 //printVec(heads);
 //fclose(fp);
+*/
 printList(A);//print vertex C 
 printList(B);//print vertex C 
 printList(C);//print vertex C 
