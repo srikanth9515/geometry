@@ -49,20 +49,23 @@ def ccircle(A,B,C):
 def icircle(A,B,C):
   k1 = 1
   k2 = 1
-  p = np.zeros(2)
+  p = np.zeros((2,1))
   t = norm_vec(B,C)
   n1 = t/LA.norm(t)
   t = norm_vec(C,A)
   n2 = t/LA.norm(t)
   t = norm_vec(A,B)
   n3 = t/LA.norm(t)
-  p[0] = n1@B- k1*n2@C
-  p[1] = n2@C- k2*n3@A
+  p[0] = n1.T@B- k1*n2.T@C
+  p[1] = n2.T@C- k2*n3.T@A
   #Intersection
-  N=np.block([[n1 - k1 * n2],[ n2 - k2 * n3]])
+  N1= n1 - k1 * n2
+  N2= n2 - k1 * n3
+  N=np.block([[N1.T],[N2.T]])
   I=LA.solve(N,p)
-  r = n1@(I-B)
+  r = n1.T@(I-B)
   return I,r
+
 
 #Incircle points of contact
 '''

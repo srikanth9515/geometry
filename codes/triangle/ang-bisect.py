@@ -6,7 +6,7 @@
 
 
 import sys                                          #for path to external scripts
-sys.path.insert(0, '/home/gadepall/github/geometry/codes/CoordGeo')        #path to my scripts
+sys.path.insert(0, '/sdcard/github/geometry/codes/CoordGeo')        #path to my scripts
 import numpy as np
 import scipy.linalg as SA
 import mpmath as mp
