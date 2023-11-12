@@ -36,6 +36,10 @@ V = np.eye(2)
 u = -I
 f = LA.norm(I)**2-r**2
 
+[x1,x2] = contact(V,u,f,h)
+print(x1,x2)
+
+'''
 #intermediate
 gh = h.T@V@h+2*u.T@h+f 
 
@@ -66,3 +70,4 @@ x1 = h + mu1*m1
 x2 = h + mu2*m2
 
 print(x1,x2)
+'''
