@@ -6,82 +6,28 @@
 \contentsline {section}{\numberline {1.3}Altitude}{20}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Perpendicular Bisector}{24}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Angle Bisector}{29}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Matrices}{33}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Eigenvalues and Eigenvectors}{33}{section.1.6}%
 \contentsline {subsection}{\numberline {1.6.1}Vectors}{33}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Median}{35}{subsection.1.6.2}%
-\contentsline {subsection}{\numberline {1.6.3}Altitude}{36}{subsection.1.6.3}%
-\contentsline {subsection}{\numberline {1.6.4}Perpendicular Bisector}{36}{subsection.1.6.4}%
-\contentsline {subsection}{\numberline {1.6.5}Angle Bisector}{37}{subsection.1.6.5}%
-\contentsline {chapter}{\numberline {2}Linear Equations}{39}{chapter.2}%
-\contentsline {section}{\numberline {2.1}9}{39}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}9.3.3}{39}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}9.4.1}{39}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}9.4.2}{40}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}9.4.3}{41}{subsection.2.1.4}%
-\contentsline {section}{\numberline {2.2}10}{44}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Examples:-1-19 (10.3)}{44}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}10.3.1}{48}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}10.3.2}{48}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}10.3.3}{52}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}10.3.4}{54}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}10.3.5}{55}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}10.3.6}{58}{subsection.2.2.7}%
-\contentsline {subsection}{\numberline {2.2.8}10.3.7}{61}{subsection.2.2.8}%
-\contentsline {chapter}{\numberline {3}Quadratic Equations}{65}{chapter.3}%
-\contentsline {section}{\numberline {3.1}10}{65}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Examples:-1-18 (10.4)}{65}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}10.4.1}{68}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}10.4.2}{69}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}10.4.3}{70}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}10.4.4}{72}{subsection.3.1.5}%
-\contentsline {chapter}{\numberline {4}Coordinate Geometry}{75}{chapter.4}%
-\contentsline {section}{\numberline {4.1}10}{75}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Examples:-1-15 (10.7)}{75}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}10.7.1}{77}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}10.7.2}{79}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}10.7.3}{81}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}10.7.4}{81}{subsection.4.1.5}%
-\contentsline {chapter}{\numberline {5}Straight Lines}{87}{chapter.5}%
-\contentsline {section}{\numberline {5.1}11}{87}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Examples:-1-25 (11.10)}{87}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}11.10.1}{91}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}11.10.2}{92}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}11.10.3}{95}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}11.10.4}{97}{subsection.5.1.5}%
-\contentsline {chapter}{\numberline {6}Circles}{101}{chapter.6}%
-\contentsline {section}{\numberline {6.1}11}{101}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}11.11.1}{101}{subsection.6.1.1}%
-\contentsline {chapter}{\numberline {7}3D Geometry}{103}{chapter.7}%
-\contentsline {section}{\numberline {7.1}11}{103}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Examples:-1-13 (11.12)}{103}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}11.12.1}{105}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}11.12.2}{106}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}11.12.3}{107}{subsection.7.1.4}%
-\contentsline {subsection}{\numberline {7.1.5}11.12.4}{107}{subsection.7.1.5}%
-\contentsline {chapter}{\numberline {8}Matrices}{109}{chapter.8}%
-\contentsline {section}{\numberline {8.1}12}{109}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Examples:-1-28 (12.3)}{109}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}12.3.1}{115}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}12.3.2}{117}{subsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.1.4}12.3.3}{122}{subsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.1.5}12.3.5}{125}{subsection.8.1.5}%
-\contentsline {section}{\numberline {8.2}Determinants}{128}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Examples:-1-34 (12.4)}{128}{subsection.8.2.1}%
-\contentsline {chapter}{\numberline {9}Vector Algebra}{135}{chapter.9}%
-\contentsline {chapter}{\numberline {A}Trigonometry}{137}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Ratios}{137}{section.A.1}%
-\contentsline {section}{\numberline {A.2}The Baudhayana Theorem}{138}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Area of a Triangle}{141}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Angle Bisectors}{145}{section.A.4}%
-\contentsline {section}{\numberline {A.5}Circumradius}{149}{section.A.5}%
-\contentsline {section}{\numberline {A.6}Tangent}{151}{section.A.6}%
-\contentsline {section}{\numberline {A.7}Identities}{152}{section.A.7}%
-\contentsline {chapter}{\numberline {B}Analytic Geometry}{157}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Vectors}{157}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Collinear Points}{159}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Matrices: Cosine Formula}{165}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Area of a Triangle: Cross Product}{168}{section.B.4}%
-\contentsline {section}{\numberline {B.5}Parallelogram}{169}{section.B.5}%
-\contentsline {section}{\numberline {B.6}Altitudes of a Triangle:Line Equation}{169}{section.B.6}%
-\contentsline {section}{\numberline {B.7}Circumcircle: Circle Equation}{172}{section.B.7}%
-\contentsline {section}{\numberline {B.8}Tangent}{177}{section.B.8}%
+\contentsline {section}{\numberline {1.7}Matrices}{35}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Vectors}{36}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Median}{37}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Altitude}{38}{subsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.7.4}Perpendicular Bisector}{39}{subsection.1.7.4}%
+\contentsline {subsection}{\numberline {1.7.5}Angle Bisector}{39}{subsection.1.7.5}%
+\contentsline {chapter}{\numberline {A}Trigonometry}{41}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Ratios}{41}{section.A.1}%
+\contentsline {section}{\numberline {A.2}The Baudhayana Theorem}{42}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Area of a Triangle}{45}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Angle Bisectors}{49}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Circumradius}{53}{section.A.5}%
+\contentsline {section}{\numberline {A.6}Tangent}{55}{section.A.6}%
+\contentsline {section}{\numberline {A.7}Identities}{56}{section.A.7}%
+\contentsline {chapter}{\numberline {B}Analytic Geometry}{61}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Vectors}{61}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Collinear Points}{63}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Matrices: Cosine Formula}{69}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Area of a Triangle: Cross Product}{72}{section.B.4}%
+\contentsline {section}{\numberline {B.5}Parallelogram}{73}{section.B.5}%
+\contentsline {section}{\numberline {B.6}Altitudes of a Triangle:Line Equation}{73}{section.B.6}%
+\contentsline {section}{\numberline {B.7}Circumcircle: Circle Equation}{76}{section.B.7}%
+\contentsline {section}{\numberline {B.8}Tangent}{81}{section.B.8}%

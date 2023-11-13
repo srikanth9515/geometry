@@ -5,82 +5,28 @@
 \BOOKMARK [1][-]{section.1.3}{Altitude}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.4}{Perpendicular Bisector}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.5}{Angle Bisector}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.6}{Matrices}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.6}{Eigenvalues and Eigenvectors}{chapter.1}% 8
 \BOOKMARK [2][-]{subsection.1.6.1}{Vectors}{section.1.6}% 9
-\BOOKMARK [2][-]{subsection.1.6.2}{Median}{section.1.6}% 10
-\BOOKMARK [2][-]{subsection.1.6.3}{Altitude}{section.1.6}% 11
-\BOOKMARK [2][-]{subsection.1.6.4}{Perpendicular Bisector}{section.1.6}% 12
-\BOOKMARK [2][-]{subsection.1.6.5}{Angle Bisector}{section.1.6}% 13
-\BOOKMARK [0][-]{chapter.2}{Linear Equations}{}% 14
-\BOOKMARK [1][-]{section.2.1}{9}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.1.1}{9.3.3}{section.2.1}% 16
-\BOOKMARK [2][-]{subsection.2.1.2}{9.4.1}{section.2.1}% 17
-\BOOKMARK [2][-]{subsection.2.1.3}{9.4.2}{section.2.1}% 18
-\BOOKMARK [2][-]{subsection.2.1.4}{9.4.3}{section.2.1}% 19
-\BOOKMARK [1][-]{section.2.2}{10}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.1}{Examples:-1-19 \(10.3\)}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.2}{10.3.1}{section.2.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.3}{10.3.2}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.4}{10.3.3}{section.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.5}{10.3.4}{section.2.2}% 25
-\BOOKMARK [2][-]{subsection.2.2.6}{10.3.5}{section.2.2}% 26
-\BOOKMARK [2][-]{subsection.2.2.7}{10.3.6}{section.2.2}% 27
-\BOOKMARK [2][-]{subsection.2.2.8}{10.3.7}{section.2.2}% 28
-\BOOKMARK [0][-]{chapter.3}{Quadratic Equations}{}% 29
-\BOOKMARK [1][-]{section.3.1}{10}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.1.1}{Examples:-1-18 \(10.4\)}{section.3.1}% 31
-\BOOKMARK [2][-]{subsection.3.1.2}{10.4.1}{section.3.1}% 32
-\BOOKMARK [2][-]{subsection.3.1.3}{10.4.2}{section.3.1}% 33
-\BOOKMARK [2][-]{subsection.3.1.4}{10.4.3}{section.3.1}% 34
-\BOOKMARK [2][-]{subsection.3.1.5}{10.4.4}{section.3.1}% 35
-\BOOKMARK [0][-]{chapter.4}{Coordinate Geometry}{}% 36
-\BOOKMARK [1][-]{section.4.1}{10}{chapter.4}% 37
-\BOOKMARK [2][-]{subsection.4.1.1}{Examples:-1-15 \(10.7\)}{section.4.1}% 38
-\BOOKMARK [2][-]{subsection.4.1.2}{10.7.1}{section.4.1}% 39
-\BOOKMARK [2][-]{subsection.4.1.3}{10.7.2}{section.4.1}% 40
-\BOOKMARK [2][-]{subsection.4.1.4}{10.7.3}{section.4.1}% 41
-\BOOKMARK [2][-]{subsection.4.1.5}{10.7.4}{section.4.1}% 42
-\BOOKMARK [0][-]{chapter.5}{Straight Lines}{}% 43
-\BOOKMARK [1][-]{section.5.1}{11}{chapter.5}% 44
-\BOOKMARK [2][-]{subsection.5.1.1}{Examples:-1-25 \(11.10\)}{section.5.1}% 45
-\BOOKMARK [2][-]{subsection.5.1.2}{11.10.1}{section.5.1}% 46
-\BOOKMARK [2][-]{subsection.5.1.3}{11.10.2}{section.5.1}% 47
-\BOOKMARK [2][-]{subsection.5.1.4}{11.10.3}{section.5.1}% 48
-\BOOKMARK [2][-]{subsection.5.1.5}{11.10.4}{section.5.1}% 49
-\BOOKMARK [0][-]{chapter.6}{Circles}{}% 50
-\BOOKMARK [1][-]{section.6.1}{11}{chapter.6}% 51
-\BOOKMARK [2][-]{subsection.6.1.1}{11.11.1}{section.6.1}% 52
-\BOOKMARK [0][-]{chapter.7}{3D Geometry}{}% 53
-\BOOKMARK [1][-]{section.7.1}{11}{chapter.7}% 54
-\BOOKMARK [2][-]{subsection.7.1.1}{Examples:-1-13 \(11.12\)}{section.7.1}% 55
-\BOOKMARK [2][-]{subsection.7.1.2}{11.12.1}{section.7.1}% 56
-\BOOKMARK [2][-]{subsection.7.1.3}{11.12.2}{section.7.1}% 57
-\BOOKMARK [2][-]{subsection.7.1.4}{11.12.3}{section.7.1}% 58
-\BOOKMARK [2][-]{subsection.7.1.5}{11.12.4}{section.7.1}% 59
-\BOOKMARK [0][-]{chapter.8}{Matrices}{}% 60
-\BOOKMARK [1][-]{section.8.1}{12}{chapter.8}% 61
-\BOOKMARK [2][-]{subsection.8.1.1}{Examples:-1-28 \(12.3\)}{section.8.1}% 62
-\BOOKMARK [2][-]{subsection.8.1.2}{12.3.1}{section.8.1}% 63
-\BOOKMARK [2][-]{subsection.8.1.3}{12.3.2}{section.8.1}% 64
-\BOOKMARK [2][-]{subsection.8.1.4}{12.3.3}{section.8.1}% 65
-\BOOKMARK [2][-]{subsection.8.1.5}{12.3.5}{section.8.1}% 66
-\BOOKMARK [1][-]{section.8.2}{Determinants}{chapter.8}% 67
-\BOOKMARK [2][-]{subsection.8.2.1}{Examples:-1-34 \(12.4\)}{section.8.2}% 68
-\BOOKMARK [0][-]{chapter.9}{Vector Algebra}{}% 69
-\BOOKMARK [0][-]{appendix.A}{Trigonometry}{}% 70
-\BOOKMARK [1][-]{section.A.1}{Ratios}{appendix.A}% 71
-\BOOKMARK [1][-]{section.A.2}{The Baudhayana Theorem}{appendix.A}% 72
-\BOOKMARK [1][-]{section.A.3}{Area of a Triangle}{appendix.A}% 73
-\BOOKMARK [1][-]{section.A.4}{Angle Bisectors}{appendix.A}% 74
-\BOOKMARK [1][-]{section.A.5}{Circumradius}{appendix.A}% 75
-\BOOKMARK [1][-]{section.A.6}{Tangent}{appendix.A}% 76
-\BOOKMARK [1][-]{section.A.7}{Identities}{appendix.A}% 77
-\BOOKMARK [0][-]{appendix.B}{Analytic Geometry}{}% 78
-\BOOKMARK [1][-]{section.B.1}{Vectors}{appendix.B}% 79
-\BOOKMARK [1][-]{section.B.2}{Collinear Points}{appendix.B}% 80
-\BOOKMARK [1][-]{section.B.3}{Matrices: Cosine Formula}{appendix.B}% 81
-\BOOKMARK [1][-]{section.B.4}{Area of a Triangle: Cross Product}{appendix.B}% 82
-\BOOKMARK [1][-]{section.B.5}{Parallelogram}{appendix.B}% 83
-\BOOKMARK [1][-]{section.B.6}{Altitudes of a Triangle:Line Equation}{appendix.B}% 84
-\BOOKMARK [1][-]{section.B.7}{Circumcircle: Circle Equation}{appendix.B}% 85
-\BOOKMARK [1][-]{section.B.8}{Tangent}{appendix.B}% 86
+\BOOKMARK [1][-]{section.1.7}{Matrices}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.7.1}{Vectors}{section.1.7}% 11
+\BOOKMARK [2][-]{subsection.1.7.2}{Median}{section.1.7}% 12
+\BOOKMARK [2][-]{subsection.1.7.3}{Altitude}{section.1.7}% 13
+\BOOKMARK [2][-]{subsection.1.7.4}{Perpendicular Bisector}{section.1.7}% 14
+\BOOKMARK [2][-]{subsection.1.7.5}{Angle Bisector}{section.1.7}% 15
+\BOOKMARK [0][-]{appendix.A}{Trigonometry}{}% 16
+\BOOKMARK [1][-]{section.A.1}{Ratios}{appendix.A}% 17
+\BOOKMARK [1][-]{section.A.2}{The Baudhayana Theorem}{appendix.A}% 18
+\BOOKMARK [1][-]{section.A.3}{Area of a Triangle}{appendix.A}% 19
+\BOOKMARK [1][-]{section.A.4}{Angle Bisectors}{appendix.A}% 20
+\BOOKMARK [1][-]{section.A.5}{Circumradius}{appendix.A}% 21
+\BOOKMARK [1][-]{section.A.6}{Tangent}{appendix.A}% 22
+\BOOKMARK [1][-]{section.A.7}{Identities}{appendix.A}% 23
+\BOOKMARK [0][-]{appendix.B}{Analytic Geometry}{}% 24
+\BOOKMARK [1][-]{section.B.1}{Vectors}{appendix.B}% 25
+\BOOKMARK [1][-]{section.B.2}{Collinear Points}{appendix.B}% 26
+\BOOKMARK [1][-]{section.B.3}{Matrices: Cosine Formula}{appendix.B}% 27
+\BOOKMARK [1][-]{section.B.4}{Area of a Triangle: Cross Product}{appendix.B}% 28
+\BOOKMARK [1][-]{section.B.5}{Parallelogram}{appendix.B}% 29
+\BOOKMARK [1][-]{section.B.6}{Altitudes of a Triangle:Line Equation}{appendix.B}% 30
+\BOOKMARK [1][-]{section.B.7}{Circumcircle: Circle Equation}{appendix.B}% 31
+\BOOKMARK [1][-]{section.B.8}{Tangent}{appendix.B}% 32

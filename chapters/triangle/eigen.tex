@@ -1,0 +1,83 @@
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+The equation of the incircle is given by 
+		\begin{align}
+			 \label{eq:conic_quad_form}
+	  {g}\brak{\vec{x}}=
+			\vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f = 0
+		\end{align}
+		where 
+		\begin{align}
+			\vec{V}=\vec{I}, \vec{u}=-\vec{O}, f = \norm{\vec{O}}-r^2,
+		\end{align}
+		$\vec{O}$ being the incentre and $r$ the inradius.  Here $\vec{I}$ is the identity matrix.
+		\subsection{Vectors}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Compute 
+\begin{align}
+\vec{\Sigma} = 
+\brak{\vec{V}\vec{h}+\vec{u}}
+	  \brak{\vec{V}\vec{h}+\vec{u}}^{\top}
+   -
+	  {g}\brak{\vec{h}}\vec{V}
+\end{align}
+for $\vec{h}=\vec{A}$.
+\item Find the roots of the equation
+\begin{align}
+	\mydet{\lambda \vec{I}-\vec{\Sigma}} = 0
+\end{align}
+These are known as the eigenvalues of $\vec{\Sigma}$.
+\item Find $\vec{p}$  such that 
+\begin{align}
+	\vec{\Sigma}\vec{p}
+	=\lambda\vec{p}
+\end{align}
+using row reduction.  These are known as the eigenvectors of $\Sigma$.
+\item Define
+    \begin{align}
+      \label{eq:conic_parmas_eig_def-D}
+      \vec{D} &= \myvec{\lambda_1 & 0\\ 0 & \lambda_2}, 
+      \\
+	    \vec{P} &= \myvec{\frac{\vec{p}_1}{\norm{\vec{p}_1}} & \frac{\vec{p}_2}{\norm{\vec{p}_2}}}
+      \label{eq:eigevecP}
+    \end{align}
+    \item Verify that
+  \begin{align}
+\vec{P}^{\top}=\vec{P}^{-1}.
+  \label{eq:orth-mat}
+  \end{align}
+  $\vec{P}$ is defined to be an orthogonal matrix.
+\item Verify that
+    \begin{align}
+      \label{eq:conic_parmas_eig_def}
+      \vec{P}^{\top}\vec{\Sigma}\vec{P} &= \vec{D},
+    \end{align} 
+		This is known as the spectral (eigenvalue ) decomposition of a symmetric matrix 
+
+\item
+	The direction vectors of the tangents from a point 
+$\vec{h}$ to the circle in \eqref{eq:conic_quad_form} are given by  
+\begin{align}
+  \vec{m}&= \vec{P}\myvec{\sqrt{\abs{\lambda_2}} \\[2mm]  \pm \sqrt{\abs{\lambda_1}}}
+	  \label{eq:h-tangents-cond-mPlam}
+\end{align}
+\item The points of contact of the pair 
+of tangents 
+to the circle in \eqref{eq:conic_quad_form} 
+	from 
+	a point $\vec{h}$ 
+	are given by 
+  \begin{align}
+  \label{eq:line_dir_pt-lam}
+	  \vec{x}  = \vec{h} + \mu \vec{m}
+  \end{align}
+  where 
+  \begin{align}
+  \label{eq:line_dir_pt-lam-mu}
+	  \mu = -\frac{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}{\vec{m}^{\top}\vec{V}\vec{m} }
+  \end{align}
+	for $\vec{m}$ in 
+	  \eqref{eq:h-tangents-cond-mPlam}.
+  Compute the points of contact. You should get the same points that you obtained in the previous section. 
+\end{enumerate}
