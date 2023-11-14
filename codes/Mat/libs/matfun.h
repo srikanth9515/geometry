@@ -295,10 +295,14 @@ return a[0][0]*a[1][1]-a[0][1]*a[1][0];
 }
 //eigenvalues of a 2x2 matrix
 double **Mateigval(double **a){
-	double b = Matrace(a,2);
+	double b = -Matrace(a,2);
 	double c = Matdet(a);
 	double D = sqrt(pow(b,2.0)-4*c);
 double **lam = createMat(2,1);
 lam[0][0] = (-b+D)/2.0;
 lam[1][0] = (-b-D)/2.0;
+return lam;
+}
+//eigenvector matrix for a 2x2 matrix
+double **Mateigvec(double **a){
 }
