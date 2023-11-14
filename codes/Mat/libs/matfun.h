@@ -4,6 +4,8 @@
 // Revised November 13, 2023
 
 //Function declaration
+
+double **Mateigval(double **a);//eigenvalues of a 2x2 matrix
 double **createMat(int m,int n);//create m x n matrix array
 void printMat(double **p,int m,int n);//print matrix
 double **loadMat(char *str,int m,int n);//load matrix from file
@@ -19,9 +21,9 @@ double **rotMat(double theta); //rotation matrix
 double **normVec(double **a); //normal vector
 void circulantMat(double **c, int m);
 double **Matsec(double **a, double ** b, int m, double k);//section formula
-double *eigval(double **a);//eigenvalues of a 2x2 matrix
-double trace(double **a, int m);//trace of a matrix
-double **eigvec(double **a);//eigenvector matrix for a 2x2 matrix
+double Matrace(double **a, int m);//trace of a matrix
+double Matdet(double **a);//determinant of a 2x2 matrix
+double **Mateigvec(double **a);//eigenvector matrix for a 2x2 matrix
 //End function declaration
 
 //section formula
@@ -280,17 +282,23 @@ return c;
 }
 //End function for transpose of matrix
 //trace of a matrix
-double trace(double **a, int m){
+double Matrace(double **a, int m){
 	double c=0;
  for(int i=0;i<m;i++){
 	 c +=  a[i][i];
  }
  return c;
 }
-/*
-//eigenvalues of a 2x2 matrix
-double *eigval(double **a){
-	double *c;
-c = createMat(2,1);
+//determinant of a 2x2 matrix
+double Matdet(double **a){
+return a[0][0]*a[1][1]-a[0][1]*a[1][0];
 }
-*/
+//eigenvalues of a 2x2 matrix
+double **Mateigval(double **a){
+	double b = Matrace(a,2);
+	double c = Matdet(a);
+	double D = sqrt(pow(b,2.0)-4*c);
+double **lam = createMat(2,1);
+lam[0][0] = (-b+D)/2.0;
+lam[1][0] = (-b-D)/2.0;
+}
