@@ -1,6 +1,7 @@
 //Functions created by
 // G V V Sharma
 // October 27, 2023
+// Revised November 13, 2023
 
 //Function declaration
 double **createMat(int m,int n);//create m x n matrix array
@@ -18,6 +19,9 @@ double **rotMat(double theta); //rotation matrix
 double **normVec(double **a); //normal vector
 void circulantMat(double **c, int m);
 double **Matsec(double **a, double ** b, int m, double k);//section formula
+double *eigval(double **a);//eigenvalues of a 2x2 matrix
+double trace(double **a, int m);//trace of a matrix
+double **eigvec(double **a);//eigenvector matrix for a 2x2 matrix
 //End function declaration
 
 //section formula
@@ -275,4 +279,18 @@ return c;
 
 }
 //End function for transpose of matrix
-
+//trace of a matrix
+double trace(double **a, int m){
+	double c=0;
+ for(int i=0;i<m;i++){
+	 c +=  a[i][i];
+ }
+ return c;
+}
+/*
+//eigenvalues of a 2x2 matrix
+double *eigval(double **a){
+	double *c;
+c = createMat(2,1);
+}
+*/
