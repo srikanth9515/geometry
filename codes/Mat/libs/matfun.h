@@ -6,6 +6,7 @@
 //Function declaration
 
 double **Mateigval(double **a);//eigenvalues of a 2x2 matrix
+double **Mateye(int m);//generate identity matrix
 double **createMat(int m,int n);//create m x n matrix array
 void printMat(double **p,int m,int n);//print matrix
 double **loadMat(char *str,int m,int n);//load matrix from file
@@ -304,5 +305,24 @@ lam[1][0] = (-b-D)/2.0;
 return lam;
 }
 //eigenvector matrix for a 2x2 matrix
+/*
 double **Mateigvec(double **a){
+Matsub(a, b, 2, 2);//subtract two matrices
+}
+*/
+
+//generate identity matrix
+double **Mateye(int m){
+
+	int i,j;//dummy integers
+double **I = createMat(m,m);//create m x n matrix array
+ for(int i=0;i<m;i++){
+ 	for(int j=0;j<m;j++){
+		if(i==j)
+			 I[i][j] = 1;
+		else
+			 I[i][j] = 0;
+ }
+ }
+return I;
 }
