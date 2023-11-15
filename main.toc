@@ -7,12 +7,11 @@
 \contentsline {section}{\numberline {1.4}Perpendicular Bisector}{24}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Angle Bisector}{29}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Eigenvalues and Eigenvectors}{33}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}Vectors}{33}{subsection.1.6.1}%
 \contentsline {section}{\numberline {1.7}Matrices}{35}{section.1.7}%
-\contentsline {subsection}{\numberline {1.7.1}Vectors}{36}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.1}Vectors}{35}{subsection.1.7.1}%
 \contentsline {subsection}{\numberline {1.7.2}Median}{37}{subsection.1.7.2}%
 \contentsline {subsection}{\numberline {1.7.3}Altitude}{38}{subsection.1.7.3}%
-\contentsline {subsection}{\numberline {1.7.4}Perpendicular Bisector}{39}{subsection.1.7.4}%
+\contentsline {subsection}{\numberline {1.7.4}Perpendicular Bisector}{38}{subsection.1.7.4}%
 \contentsline {subsection}{\numberline {1.7.5}Angle Bisector}{39}{subsection.1.7.5}%
 \contentsline {chapter}{\numberline {A}Trigonometry}{41}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Ratios}{41}{section.A.1}%
