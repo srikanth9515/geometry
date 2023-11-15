@@ -24,7 +24,9 @@ void circulantMat(double **c, int m);
 double **Matsec(double **a, double ** b, int m, double k);//section formula
 double Matrace(double **a, int m);//trace of a matrix
 double Matdet(double **a);//determinant of a 2x2 matrix
-double **Mateigvec(double **a);//eigenvector matrix for a 2x2 matrix
+//void **Mateigvec(double **a);//eigenvector matrix for a 2x2 matrix
+void Mateigvec(double **a, double **lam);//eigenvector matrix for a 2x2 matrix
+//double **Mateigvec(double **a);//eigenvector matrix for a 2x2 matrix
 //End function declaration
 
 //section formula
@@ -304,12 +306,6 @@ lam[0][0] = (-b+D)/2.0;
 lam[1][0] = (-b-D)/2.0;
 return lam;
 }
-//eigenvector matrix for a 2x2 matrix
-/*
-double **Mateigvec(double **a){
-Matsub(a, b, 2, 2);//subtract two matrices
-}
-*/
 
 //generate identity matrix
 double **Mateye(int m){
@@ -325,4 +321,13 @@ double **I = createMat(m,m);//create m x n matrix array
  }
  }
 return I;
+}
+//eigenvector matrix for a 2x2 matrix
+//double **Mateigvec(double **a){
+void Mateigvec(double **a, double **lam){
+	double **b1=createMat(2,2);
+	double **b2=createMat(2,2);
+	b1 = Matadd(a,Matscale(Mateye(2),2,2,-lam[0][0]),2,2);
+	b2 = Matadd(a,Matscale(Mateye(2),2,2,-lam[1][0]),2,2);
+	printMat(b1,2,2);//print matrix
 }
