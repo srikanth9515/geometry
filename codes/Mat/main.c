@@ -14,6 +14,8 @@ double **A,**B,**C;//declare vertices
 double **m1,**m2,**m3;//direction vectors
 double **n1,**n2,**n3;//normal vectors
 double **temp;//temporary array
+double **lam;//eigenvalue vector
+double **unit;//unit vector
 double c1,c2,c3;//direction vectors
 double a,b,c; //triangle sides
 int m =2, n=3, i, j;
@@ -50,9 +52,9 @@ c = Matnorm(m1,m);
 
 //Printing
 //Print vertices 
+/*
 printMat(A,2,1);
 printMat(B,2,1);
-/*
 printMat(n1,2,1);//normal vector
 printf("%lf\n",c1);//AB line coefficient
 
@@ -79,12 +81,22 @@ printMat(m3,m,1);
 //Circulant matrix
 circulantMat(temp, 4);
 printMat(temp,4,4);
-*/
 
 //Matrix inversion
 //printMat(Matinv(temp, 2),2,2);
 //Median
-temp= Matsec(A,B,2,1);
+//temp= Matsec(A,B,2,1);
 printMat(temp,2,1);
+*/
+printMat(temp,2,2);
+lam = Mateigval(temp);
+//printMat(Matrow(temp,0,2),2,1);
+
+unit = Matrow(temp,0,2);
+unit = Matunit(unit,2);
+printMat(unit,2,1);
+//printMat(lam,2,1);
+//Mateigvec(temp, lam);
+//eigenvalues of a 2x2 matrix
     return 0;
 }

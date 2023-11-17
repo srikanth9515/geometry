@@ -24,6 +24,9 @@ void circulantMat(double **c, int m);
 double **Matsec(double **a, double ** b, int m, double k);//section formula
 double Matrace(double **a, int m);//trace of a matrix
 double Matdet(double **a);//determinant of a 2x2 matrix
+double **Matcol(double **a,int m, int n);//Extract nth column
+double **Matrow(double **a,int m, int n);//Extract mth row
+double **Matunit(double **a,int m);//Generate unit vector
 //void **Mateigvec(double **a);//eigenvector matrix for a 2x2 matrix
 void Mateigvec(double **a, double **lam);//eigenvector matrix for a 2x2 matrix
 //double **Mateigvec(double **a);//eigenvector matrix for a 2x2 matrix
@@ -117,6 +120,18 @@ double **Matcol(double **a,int m, int n){
 return b;
 }
 
+//Extract row
+//
+double **Matrow(double **a,int m, int n){
+	int i = 0;
+	double **b = createMat(n,1);//create column with n rows
+
+//extract column vector
+	for (i = 0; i < n; i++){
+		b[i][0] = a[m][i];
+	}
+return b;
+}
 
 
 //Read  matrix from file
@@ -330,4 +345,15 @@ void Mateigvec(double **a, double **lam){
 	b1 = Matadd(a,Matscale(Mateye(2),2,2,-lam[0][0]),2,2);
 	b2 = Matadd(a,Matscale(Mateye(2),2,2,-lam[1][0]),2,2);
 	printMat(b1,2,2);//print matrix
+	printMat(b2,2,2);//print matrix
+}
+
+//Generate unit vector
+double **Matunit(double **a,int m){
+	double **c=createMat(2,1);
+	double temp = Matnorm(a,m);
+	for(int i = 0; i < m; i++){
+		c[i][0] = a[i][0]/temp; 
+	}
+	return c;
 }
