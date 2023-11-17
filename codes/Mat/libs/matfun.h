@@ -6,6 +6,7 @@
 //Function declaration
 
 double **Mateigval(double **a);//eigenvalues of a 2x2 matrix
+double **Matquad(double a,double b, double c);//roots of a quadratic equation
 double **Mateye(int m);//generate identity matrix
 double **createMat(int m,int n);//create m x n matrix array
 void printMat(double **p,int m,int n);//print matrix
@@ -315,11 +316,7 @@ return a[0][0]*a[1][1]-a[0][1]*a[1][0];
 double **Mateigval(double **a){
 	double b = -Matrace(a,2);
 	double c = Matdet(a);
-	double D = sqrt(pow(b,2.0)-4*c);
-double **lam = createMat(2,1);
-lam[0][0] = (-b+D)/2.0;
-lam[1][0] = (-b-D)/2.0;
-return lam;
+	return Matquad(1,b,c);
 }
 
 //generate identity matrix
@@ -337,17 +334,6 @@ double **I = createMat(m,m);//create m x n matrix array
  }
 return I;
 }
-//eigenvector matrix for a 2x2 matrix
-//double **Mateigvec(double **a){
-void Mateigvec(double **a, double **lam){
-	double **b1=createMat(2,2);
-	double **b2=createMat(2,2);
-	b1 = Matadd(a,Matscale(Mateye(2),2,2,-lam[0][0]),2,2);
-	b2 = Matadd(a,Matscale(Mateye(2),2,2,-lam[1][0]),2,2);
-	printMat(b1,2,2);//print matrix
-	printMat(b2,2,2);//print matrix
-}
-
 //Generate unit vector
 double **Matunit(double **a,int m){
 	double **c=createMat(2,1);
@@ -357,3 +343,23 @@ double **Matunit(double **a,int m){
 	}
 	return c;
 }
+//roots of a quadratic equation
+double **Matquad(double a,double b, double c){
+	double **lam = createMat(2,1);
+	double D = sqrt(pow(b,2.0)-4*a*c);
+	double den =2.0*a; 
+lam[0][0] = (-b+D)/den;
+lam[1][0] = (-b-D)/den;
+return lam;
+}
+//eigenvector matrix for a 2x2 matrix
+//double **Mateigvec(double **a){
+void Mateigvec(double **a, double **lam){
+	double **b1;
+	double **b2;
+	b1 = Matadd(a,Matscale(Mateye(2),2,2,-lam[0][0]),2,2);
+	b2 = Matadd(a,Matscale(Mateye(2),2,2,-lam[1][0]),2,2);
+	printMat(b1,2,2);//print matrix
+	printMat(b2,2,2);//print matrix
+}
+

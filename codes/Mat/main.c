@@ -88,15 +88,15 @@ printMat(temp,4,4);
 //temp= Matsec(A,B,2,1);
 printMat(temp,2,1);
 */
-printMat(temp,2,2);
+//printMat(temp,2,2);
 lam = Mateigval(temp);
 //printMat(Matrow(temp,0,2),2,1);
-
+//lam = Matquad(1,1,-30);
 unit = Matrow(temp,0,2);
 unit = Matunit(unit,2);
-printMat(unit,2,1);
+//printMat(unit,2,1);
 //printMat(lam,2,1);
-//Mateigvec(temp, lam);
+Mateigvec(temp, lam);
 //eigenvalues of a 2x2 matrix
     return 0;
 }
