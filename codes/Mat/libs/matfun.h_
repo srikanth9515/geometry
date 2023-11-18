@@ -355,11 +355,32 @@ return lam;
 //eigenvector matrix for a 2x2 matrix
 //double **Mateigvec(double **a){
 void Mateigvec(double **a, double **lam){
-	double **b1;
-	double **b2;
+	double **b1, **b2;
+	double **p1, **p2;
+	double **temp1, **temp2;
+	double **omat=rotMat(M_PI/2);
+	//A-lambda I
 	b1 = Matadd(a,Matscale(Mateye(2),2,2,-lam[0][0]),2,2);
 	b2 = Matadd(a,Matscale(Mateye(2),2,2,-lam[1][0]),2,2);
-	printMat(b1,2,2);//print matrix
-	printMat(b2,2,2);//print matrix
+	//Extract 1st row
+	temp1 = Matrow(b1, 0, 2);
+	temp2 = Matrow(b2, 0, 2);
+	//free the matrices
+	free(b1);
+	free(b2);
+	//Generate unit vector
+	b1 = Matunit(temp1, 2);
+	b2 = Matunit(temp2, 2);
+	//free temp vectors
+	free(temp1);
+	free(temp2);
+	//Find eigen vector
+	p1 = Matmul(omat, b1, 2, 2, 1);
+	p2 = Matmul(omat, b2, 2, 2, 1);
+	free(b1);
+	free(b2);
+	printMat(p1,2,1);//print vector
+	printMat(p2,2,1);//print vector
+//	printMat(omat,2,2);//print vector
 }
 
