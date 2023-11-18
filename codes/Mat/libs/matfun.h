@@ -18,6 +18,7 @@ double **Matadd(double **a, double **b, int m, int n);//add two matrices
 double **Matscale(double **a, int m, int n, double k);//scale matrix
 double **Matinv(double **mat, int m);//invert an m  x m matrix, m <=3
 double **Matmul(double **a, double **b, int m, int n, int p);//multiply matrices a and b
+double **Mathstack(double **a, double **b, int m, int n, int p);//horizontall stack matrices a and b of size mxn and mxp respectively
 double **transposeMat(double **a,  int m, int n);//transpose of a
 double **rotMat(double theta); //rotation matrix
 double **normVec(double **a); //normal vector
@@ -29,8 +30,9 @@ double **Matcol(double **a,int m, int n);//Extract nth column
 double **Matrow(double **a,int m, int n);//Extract mth row
 double **Matunit(double **a,int m);//Generate unit vector
 //void **Mateigvec(double **a);//eigenvector matrix for a 2x2 matrix
-void Mateigvec(double **a, double **lam);//eigenvector matrix for a 2x2 matrix
+//void Mateigvec(double **a, double **lam);//eigenvector matrix for a 2x2 matrix
 //double **Mateigvec(double **a);//eigenvector matrix for a 2x2 matrix
+double **Mateigvec(double **a, double **lam);
 //End function declaration
 
 //section formula
@@ -354,7 +356,7 @@ return lam;
 }
 //eigenvector matrix for a 2x2 matrix
 //double **Mateigvec(double **a){
-void Mateigvec(double **a, double **lam){
+double **Mateigvec(double **a, double **lam){
 	double **b1, **b2;
 	double **p1, **p2;
 	double **temp1, **temp2;
@@ -377,10 +379,27 @@ void Mateigvec(double **a, double **lam){
 	//Find eigen vector
 	p1 = Matmul(omat, b1, 2, 2, 1);
 	p2 = Matmul(omat, b2, 2, 2, 1);
+	//free vectors
 	free(b1);
 	free(b2);
+	return Mathstack(p1, p2, 2, 1, 1);
+	/*
+	b1 = Mathstack(p1, p2, 2, 1, 1);
 	printMat(p1,2,1);//print vector
-	printMat(p2,2,1);//print vector
-//	printMat(omat,2,2);//print vector
+	printMat(p1,2,1);//print vector
+	*/
+//	printMat(b1,2,2);//print vector
 }
-
+//horizontall stack matrices a and b of size mxn and mxp respectively
+double **Mathstack(double **a, double **b, int m, int n, int p){
+	double **c = createMat(m,n+p);//create m x n+p matrix array
+	for(int i = 0; i < m; i++){
+		for(int j = 0; j < n; j++){
+			c[i][j] = a[i][j];//a values in c
+		for(j = n; j < n+p; j++){
+			c[i][j] = b[i][j-n];//b values in c
+		}
+		}
+	}
+		return c;
+}
