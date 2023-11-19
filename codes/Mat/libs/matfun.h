@@ -22,7 +22,8 @@ double **Mathstack(double **a, double **b, int m, int n, int p);//horizontall st
 double **transposeMat(double **a,  int m, int n);//transpose of a
 double **rotMat(double theta); //rotation matrix
 double **normVec(double **a); //normal vector
-void circulantMat(double **c, int m);
+//void circulantMat(double **c, int m);
+double **circulantMat(double **a, int m);
 double **Matsec(double **a, double ** b, int m, double k);//section formula
 double Matrace(double **a, int m);//trace of a matrix
 double Matdet(double **a);//determinant of a 2x2 matrix
@@ -74,20 +75,6 @@ c[i][j]= k*a[i][j];
 return c;
 }
 
-//Generating a circulant matrix from a vector
-void circulantMat(double **c, int m){
-    int i,j,k;
- 
-    // Forming the circulant matrix
-    for (int i = 1; i <= m - 1; i++) {
-        for (int j = 0; j <= m - 1; j++) {
-            if (j - 1 >= 0)
-                c[j][i] = c[j - 1][i - 1];
-            else
-                c[j][i] = c[m - 1][i - 1];
-        }
-    }
-}
 //Obtaining the normal vector
 double **normVec(double **m){
 	double **temp;
@@ -403,3 +390,32 @@ double **Mathstack(double **a, double **b, int m, int n, int p){
 	}
 		return c;
 }
+
+
+//Generating a circulant matrix from a vector
+//void circulantMat(double **c, int m){
+/*
+double **circulantMat(double **a, int m){
+    int i,j,k;
+double **c = createMat(m,m);
+    for(i=0; i < m; i++){
+    	for(j=0; j < m; j++){
+		if(i >=j)
+	    c[i][j] = a[i%(j+1)][0];
+		else
+	    c[i][j] = a[j-i][0];
+    }
+    }
+/*
+    // Forming the circulant matrix
+    for (int i = 1; i <= m - 1; i++) {
+        for (int j = 0; j <= m - 1; j++) {
+            if (j - 1 >= 0)
+                c[j][i] = c[j - 1][i - 1];
+            else
+                c[j][i] = c[m - 1][i - 1];
+        }
+    }
+//    return c;
+}
+    */

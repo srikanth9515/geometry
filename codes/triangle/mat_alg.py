@@ -42,6 +42,7 @@ G_v= df.to_numpy()[:,:]
 
 #Direction vector circulant matrix
 C_m= SA.circulant([1,0,-1]).T
+print(C_m)
 
 
 #Direction vector Matrix
