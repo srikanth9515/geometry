@@ -22,17 +22,13 @@ double **Mathstack(double **a, double **b, int m, int n, int p);//horizontall st
 double **transposeMat(double **a,  int m, int n);//transpose of a
 double **rotMat(double theta); //rotation matrix
 double **normVec(double **a); //normal vector
-//void circulantMat(double **c, int m);
-double **circulantMat(double **a, int m);
+double **circulantMat(double **a, int m);//Generating a circulant matrix from a vector
 double **Matsec(double **a, double ** b, int m, double k);//section formula
 double Matrace(double **a, int m);//trace of a matrix
 double Matdet(double **a);//determinant of a 2x2 matrix
 double **Matcol(double **a,int m, int n);//Extract nth column
 double **Matrow(double **a,int m, int n);//Extract mth row
 double **Matunit(double **a,int m);//Generate unit vector
-//void **Mateigvec(double **a);//eigenvector matrix for a 2x2 matrix
-//void Mateigvec(double **a, double **lam);//eigenvector matrix for a 2x2 matrix
-//double **Mateigvec(double **a);//eigenvector matrix for a 2x2 matrix
 double **Mateigvec(double **a, double **lam);
 //End function declaration
 
@@ -370,12 +366,6 @@ double **Mateigvec(double **a, double **lam){
 	free(b1);
 	free(b2);
 	return Mathstack(p1, p2, 2, 1, 1);
-	/*
-	b1 = Mathstack(p1, p2, 2, 1, 1);
-	printMat(p1,2,1);//print vector
-	printMat(p1,2,1);//print vector
-	*/
-//	printMat(b1,2,2);//print vector
 }
 //horizontall stack matrices a and b of size mxn and mxp respectively
 double **Mathstack(double **a, double **b, int m, int n, int p){
@@ -393,29 +383,17 @@ double **Mathstack(double **a, double **b, int m, int n, int p){
 
 
 //Generating a circulant matrix from a vector
-//void circulantMat(double **c, int m){
-/*
 double **circulantMat(double **a, int m){
     int i,j,k;
+    printMat(a,4,1);
 double **c = createMat(m,m);
     for(i=0; i < m; i++){
     	for(j=0; j < m; j++){
-		if(i >=j)
-	    c[i][j] = a[i%(j+1)][0];
+		if (i >=j)
+	    c[i][j] = a[i-j][0];
 		else
-	    c[i][j] = a[j-i][0];
+	    c[i][j] = a[m-j+i][0];
     }
     }
-/*
-    // Forming the circulant matrix
-    for (int i = 1; i <= m - 1; i++) {
-        for (int j = 0; j <= m - 1; j++) {
-            if (j - 1 >= 0)
-                c[j][i] = c[j - 1][i - 1];
-            else
-                c[j][i] = c[m - 1][i - 1];
-        }
-    }
-//    return c;
+return c;
 }
-    */
