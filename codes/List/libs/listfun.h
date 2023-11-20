@@ -11,6 +11,7 @@ double ListVecdot(sadish *a, sadish * b);//inner product
 avyuh *Listsub(avyuh *a, avyuh *b);//subtract two matrices
 avyuh *Listadd(avyuh *a, avyuh *b);//add two matrices
 sadish *ListVecadd(sadish *a, sadish *b);//add two matrices
+sadish *ListVecShift(sadish *a);//circulalry right shift vector
 sadish *ListVecsub(sadish *a, sadish *b);//subtract two vectors
 avyuh *Listscale(avyuh *a, double k);//scale matrix
 sadish *Listvecscale(sadish *a, double k);//scale vector
@@ -18,7 +19,7 @@ avyuh *Listinv(avyuh *mat, int m);//invert an m  x m matrix, m <=3
 avyuh *Listmul(avyuh *a, avyuh *b);//multiply matrices a and b
 avyuh *rotList(double theta); //rotation matrix
 avyuh *normVec(avyuh *a); //normal vector
-void circulantList(avyuh *c, int m);
+avyuh *circulantList(avyuh *c);//circulant matrix
 avyuh *Listsec(avyuh *a, avyuh * b,double k);//section formula
 //End function declaration
 
@@ -199,4 +200,12 @@ avyuh *Listsec(avyuh *a, avyuh * b,double k){
 	}
 	}
 	return head;
+}
+//circulant matrix
+/*
+avyuh *circulantList(avyuh *c){
+}
+*/
+//circulalry right shift vector
+sadish *ListVecShift(sadish *a){
 }
