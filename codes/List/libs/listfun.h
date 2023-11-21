@@ -3,6 +3,7 @@
 // October 29, 2023
 // Revised October 31, 2023
 // Revised November 1, 2023
+// Revised November 21, 2023
 
 //Function declaration
 double Listnorm(avyuh *a);//norm of a vector
@@ -201,11 +202,22 @@ avyuh *Listsec(avyuh *a, avyuh * b,double k){
 	}
 	return head;
 }
-//circulant matrix
 /*
+//circulant matrix
 avyuh *circulantList(avyuh *c){
+	for(avyuh *temp=c;temp!=NULL;temp=temp->next){
+		temp->vector = ListVecShift(c->vector);
+		c-
+	}
 }
 */
 //circulalry right shift vector
 sadish *ListVecShift(sadish *a){
+	sadish *tempa, *temp;
+	sadish *head = ListVecopy(a);
+	for(temp=head;temp->next->next!=NULL;temp=temp->next);
+temp->next->next = head;
+tempa = temp->next;
+temp->next = NULL;
+return tempa;
 }

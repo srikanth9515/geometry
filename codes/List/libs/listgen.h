@@ -1,6 +1,7 @@
 //Functions created by
 // G V V Sharma
 // October 27, 2023
+// Revised November 27, 2023
 
 //vector data structure
 typedef struct list
@@ -17,6 +18,7 @@ struct tree *next;
 }avyuh;
 
 //Function declaration
+sadish *ListVecopy(sadish *a);//copy vector
 sadish *Vecind(sadish *a,int n);
 void printVec(sadish *head);
 sadish *loadVec(FILE *fp, int n);
@@ -191,4 +193,19 @@ void printList(avyuh *head)
 		printVec(temp->vector);
 	fflush(stdout);
     }
+}
+//copy a vector
+sadish *ListVecopy(sadish *a){
+	sadish *c= (sadish *)malloc(sizeof(sadish)), *head;
+	head = c; 
+	head->next = NULL;
+	for(sadish *tempa=a;tempa!=NULL;tempa=tempa->next){
+                c->data = tempa->data;
+		if(tempa->next!=NULL){
+			c->next = (sadish *)malloc(sizeof(sadish));
+			c->next->next=NULL;
+			c= c->next;
+		}
+	}
+	return head;
 }
