@@ -202,15 +202,6 @@ avyuh *Listsec(avyuh *a, avyuh * b,double k){
 	}
 	return head;
 }
-/*
-//circulant matrix
-avyuh *circulantList(avyuh *c){
-	for(avyuh *temp=c;temp!=NULL;temp=temp->next){
-		temp->vector = ListVecShift(c->vector);
-		c-
-	}
-}
-*/
 //circulalry right shift vector
 sadish *ListVecShift(sadish *a){
 	sadish *tempa, *temp;
@@ -220,4 +211,20 @@ temp->next->next = head;
 tempa = temp->next;
 temp->next = NULL;
 return tempa;
+}
+//circulant matrix
+avyuh *circulantList(avyuh *a){
+	avyuh *c=(avyuh *)malloc(sizeof(avyuh));
+	avyuh *head = c;
+	sadish *ctemp;
+	ctemp=a->vector;
+	head->vector=a->vector;
+	for(sadish *temp=a->vector;temp->next!=NULL;temp=temp->next){
+			c->next = (avyuh *)malloc(sizeof(avyuh));
+			c->next->next=NULL;
+			c= c->next;
+		c->vector = ListVecShift(ctemp);
+		ctemp=c->vector;
+	}
+	return head;
 }
