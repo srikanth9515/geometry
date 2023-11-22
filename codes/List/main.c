@@ -100,12 +100,16 @@ printList(m3);
 ///printList(temp,1,3);
 //printVec(heads);
 //fclose(fp);
-*/
 printList(A);//print vertex C 
 printList(B);//print vertex C 
 printList(C);//print vertex C 
 printList(D);//print vertex C 
 printList(E);//print vertex C 
 printList(F);//print vertex C 
+//printList(Listquad(1,-1,-2));
+*/
+printList(D);//print vertex C 
+printList(B);//print vertex C 
+printList(C);//print vertex C 
     return 0;
 }

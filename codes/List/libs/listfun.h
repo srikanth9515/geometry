@@ -184,25 +184,6 @@ avyuh *Listscale(avyuh *a, double k){
 	}
 	return head;
 }
-//section formula
-avyuh *Listsec(avyuh *a, avyuh * b,double k){
-	avyuh *head = (avyuh *)malloc(sizeof(avyuh)), *c;
-	sadish *tempc =(sadish *)malloc(sizeof(sadish)), *tempb=b->vector;
-	c = head; 
-	head->next = NULL;
-	tempc->next = NULL;
-	c->vector = tempc;
-	for(sadish *tempa=a->vector;tempa!=NULL;tempa=tempa->next){
-		tempc->data= (k*tempb->data+tempa->data)/(k+1);
-		tempb=tempb->next;
-	if(tempa->next!=NULL){
-		tempc->next = (sadish *)malloc(sizeof(sadish));
-		tempc->next->next=NULL;
-		tempc= tempc->next;
-	}
-	}
-	return head;
-}
 //circulalry right shift vector
 sadish *ListVecShift(sadish *a){
 	sadish *tempa, *temp;
@@ -239,4 +220,35 @@ lam->data = (-b+D)/den;
 lam = lam->next; 
 lam->data = (-b-D)/den;
 return head;
+}
+//section formula for vectors
+sadish *ListVecSec(sadish *a, sadish *b,double k){
+	sadish *head=(sadish *)malloc(sizeof(sadish)), *tempb;
+	head->next = NULL;
+	for(sadish *c = head;a!=NULL;a=a->next){
+		c->data= (k*b->data+a->data)/(k+1);
+		b=b->next;
+	if(a->next!=NULL){
+		c->next = (sadish *)malloc(sizeof(sadish));
+		c->next->next=NULL;
+		c= c->next;
+	}
+	}
+	return head;
+}
+//section formula for matrices
+avyuh *Listsec(avyuh *a, avyuh *b, double k){
+	avyuh *c= (avyuh *)malloc(sizeof(avyuh)), *tempb = b, *head; 
+	c->next = NULL;
+	head = c;
+	 for(avyuh *tempa=a;tempa!=NULL;tempa=tempa->next){
+                c->vector = ListVecSec(tempa->vector,tempb->vector, k);
+                tempb = tempb->next;
+	if(tempa->next!=NULL){
+		c->next = (avyuh *)malloc(sizeof(avyuh));
+		c->next->next=NULL;
+		c= c->next;
+	}
+	}
+	 return head;
 }
