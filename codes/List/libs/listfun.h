@@ -6,6 +6,7 @@
 // Revised November 21, 2023
 
 //Function declaration
+avyuh *Listquad(double a,double b, double c);//roots of a quadratic equation
 double Listnorm(avyuh *a);//norm of a vector
 double Listdot(avyuh *a, avyuh * b);//inner product
 double ListVecdot(sadish *a, sadish * b);//inner product
@@ -227,4 +228,15 @@ avyuh *circulantList(avyuh *a){
 		ctemp=c->vector;
 	}
 	return head;
+}
+//roots of a quadratic equation
+avyuh *Listquad(double a,double b, double c){
+	avyuh *head=createList(1,2);//create 1 x 2 matrix 
+	sadish *lam=head->vector;
+	double D = sqrt(pow(b,2.0)-4*a*c);
+	double den =2.0*a; 
+lam->data = (-b+D)/den;
+lam = lam->next; 
+lam->data = (-b-D)/den;
+return head;
 }
