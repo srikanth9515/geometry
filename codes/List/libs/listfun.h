@@ -6,6 +6,7 @@
 // Revised November 21, 2023
 
 //Function declaration
+avyuh *Listbasis(int k);//standard basis vector of length k
 avyuh *Listquad(double a,double b, double c);//roots of a quadratic equation
 double Listnorm(avyuh *a);//norm of a vector
 double Listdot(avyuh *a, avyuh * b);//inner product
@@ -251,4 +252,25 @@ avyuh *Listsec(avyuh *a, avyuh *b, double k){
 	}
 	}
 	 return head;
+}
+//identity matrix
+//
+/*
+avyuh *Listeye(int k){
+
+}
+*/
+//standard basis vector of length k
+avyuh *Listbasis(int k){
+	avyuh *head=(avyuh *)malloc(sizeof(avyuh));
+	sadish *c = createVec(k);
+	head->vector = c;
+	head->next = NULL;
+	c->data = 1.0;
+	c = c->next;
+	for(int i=1; i < k; i++){
+		c->data= 0;
+		c= c->next;
+	}
+	return head;
 }
