@@ -4,8 +4,12 @@
 // Revised October 31, 2023
 // Revised November 1, 2023
 // Revised November 21, 2023
+// Revised November 24, 2023
 
 //Function declaration
+
+double Listrace(avyuh *c);//matrix trace
+avyuh *Listeye(int k);//identity matrix
 avyuh *Listbasis(int k);//standard basis vector of length k
 avyuh *Listquad(double a,double b, double c);//roots of a quadratic equation
 double Listnorm(avyuh *a);//norm of a vector
@@ -253,24 +257,34 @@ avyuh *Listsec(avyuh *a, avyuh *b, double k){
 	}
 	 return head;
 }
-//identity matrix
-//
-/*
-avyuh *Listeye(int k){
-
-}
-*/
 //standard basis vector of length k
 avyuh *Listbasis(int k){
 	avyuh *head=(avyuh *)malloc(sizeof(avyuh));
 	sadish *c = createVec(k);
 	head->vector = c;
 	head->next = NULL;
-	c->data = 1.0;
-	c = c->next;
-	for(int i=1; i < k; i++){
+	for(int i=0; i < k; i++){
 		c->data= 0;
 		c= c->next;
 	}
+	head->vector->data = 1;
 	return head;
+}
+//identity matrix
+avyuh *Listeye(int k){
+	avyuh *c=Listbasis(k);
+return circulantList(c);
+}
+//matrix trace
+double Listrace(avyuh *c){
+	double temp=0;
+	sadish *vec;
+	for(int i=0;c!=NULL;c=c->next,i++){
+		vec = c->vector;
+		for(int k = 0; k < i; k++){
+			vec = vec->next;
+		}
+			temp +=vec->data;
+	}
+	return temp;
 }
