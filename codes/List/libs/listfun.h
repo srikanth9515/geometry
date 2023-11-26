@@ -8,6 +8,8 @@
 
 //Function declaration
 
+double Listdet(avyuh *a);//determinant of a 2x2 matrix
+avyuh *Listeigval(avyuh *a);//eigenvalues of a 2x2 matrix
 double Listrace(avyuh *c);//matrix trace
 avyuh *Listeye(int k);//identity matrix
 avyuh *Listbasis(int k);//standard basis vector of length k
@@ -288,3 +290,28 @@ double Listrace(avyuh *c){
 	}
 	return temp;
 }
+//determinant of a 2x2 matrix
+double Listdet(avyuh *a){
+	double temp1, temp2;	
+	temp1 = a->vector->data;
+	temp2 = a->vector->next->data;
+	a = a->next;
+	temp2 = a->vector->data*temp2;
+	temp1 = a->vector->next->data*temp1;
+return temp1-temp2;
+}
+/*
+//eigenvalues of a 2x2 matrix
+double **Mateigval(double **a){
+	double b = -Matrace(a,2);
+	double c = Matdet(a);
+	return Matquad(1,b,c);
+}
+*/
+//eigenvalues of a 2x2 matrix
+avyuh *Listeigval(avyuh *a){
+	double b = -Listrace(a);
+	double c = Listdet(a);
+	return Listquad(1,b,c);
+}
+
