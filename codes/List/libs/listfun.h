@@ -8,8 +8,7 @@
 
 //Function declaration
 
-avyuh *Listeigvec(avyuh *a, avyuh *lam);
-//void Listeigvec(avyuh *a, avyuh *lam);
+avyuh *Listeigvec(avyuh *a, avyuh *lam);//eigenvector matrix 2x2
 avyuh *Listunit(avyuh *a);//unit vector
 avyuh *Listrow(avyuh *a, int k);// kth row
 double Listdet(avyuh *a);//determinant of a 2x2 matrix
