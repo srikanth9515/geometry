@@ -8,6 +8,10 @@
 
 //Function declaration
 
+avyuh *Listeigvec(avyuh *a, avyuh *lam);
+//void Listeigvec(avyuh *a, avyuh *lam);
+avyuh *Listunit(avyuh *a);//unit vector
+avyuh *Listrow(avyuh *a, int k);// kth row
 double Listdet(avyuh *a);//determinant of a 2x2 matrix
 avyuh *Listeigval(avyuh *a);//eigenvalues of a 2x2 matrix
 double Listrace(avyuh *c);//matrix trace
@@ -182,7 +186,8 @@ avyuh *Listscale(avyuh *a, double k){
 	c = head; 
 	head->next = NULL;
 	for(avyuh *tempa=a;tempa!=NULL;tempa=tempa->next){
-		c->vector = Listvecscale(a->vector, k);
+		c->vector = Listvecscale(tempa->vector, k);
+		//c->vector = Listvecscale(a->vector, k);
 	if(tempa->next!=NULL){
 		c->next = (avyuh *)malloc(sizeof(avyuh));
 		c->next->next=NULL;
@@ -300,14 +305,6 @@ double Listdet(avyuh *a){
 	temp1 = a->vector->next->data*temp1;
 return temp1-temp2;
 }
-/*
-//eigenvalues of a 2x2 matrix
-double **Mateigval(double **a){
-	double b = -Matrace(a,2);
-	double c = Matdet(a);
-	return Matquad(1,b,c);
-}
-*/
 //eigenvalues of a 2x2 matrix
 avyuh *Listeigval(avyuh *a){
 	double b = -Listrace(a);
@@ -315,3 +312,37 @@ avyuh *Listeigval(avyuh *a){
 	return Listquad(1,b,c);
 }
 
+//eigenvector matrix for a 2x2 matrix
+avyuh *Listeigvec(avyuh *a, avyuh *lam){
+//void Listeigvec(avyuh *a, avyuh *lam){
+	avyuh *b1, *b2;
+	avyuh *p1, *p2;
+	avyuh *temp1, *temp2;
+	avyuh *omat=rotList(M_PI/2);
+	//A-lambda I
+	b1 = Listadd(a,Listscale(Listeye(2),-lam->vector->data));
+	b2 = Listadd(a,Listscale(Listeye(2),-lam->vector->next->data));
+	//Extract 1st row
+	temp1 = Listunit(Listrow(b1, 0));
+	temp2 = Listunit(Listrow(b2, 0));
+	//Find eigen vector
+	temp1 = transposeList(Listmul(omat, temp1));
+	temp2 = transposeList(Listmul(omat, temp2));
+	return Listvstack(temp1,temp2);
+}
+// kth row
+avyuh *Listrow(avyuh *a, int k){
+	avyuh *c= (avyuh *)malloc(sizeof(avyuh));
+	c->next = NULL;
+	for(int i = 0; i <k; i++){
+		a = a->next;
+	}
+	c->vector = ListVecopy(a->vector);
+	return c;
+}
+//unit vector
+avyuh *Listunit(avyuh *a){
+	double k= Listnorm(a);
+	avyuh *c=Listscale(a, 1/k);//scale vector
+	return c;
+}
