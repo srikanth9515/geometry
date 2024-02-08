@@ -16,4 +16,17 @@ This directory contains **(.c)** files which solve some geometric problems.
   <li>Also download libs folder present in this directory.</li>
 </ol>
 
-<h3>Compiling and Running .c files</h3>
+<h3>Compiling and Running .c files in Terminal</h3>
+<ol>
+  <li>Compiling c</li>
+  <pre>gcc filename.c -o filename -lm</pre>
+  <li>Running c</li>
+  <pre>./filename</pre>
+</ol>
+
+<h3>To view on webpage</h3>
+<ol>
+  <li>Copy the Port Number displayed in terminal</li>
+  <li>Type: <pre>http://localhost:PortNumber</pre></li>
+  Ex: http://localhost:8080
+</ol>
