@@ -52,6 +52,6 @@ After Succesfully connecting both Vaman and Arduino, Connect Mobile to Arduino u
   <li>Now find out the Ip address assigned to vaman</li>
   <pre>ifconfig
 nmap -sn 192.168.xx.xx/24</pre>
-  <li>After finding the IP, Paste it in the Web browser.</li>
+  <li>After finding the IP, Paste it in the Web browser and use the problem values.</li>
 </ol>
 
