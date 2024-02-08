@@ -1,6 +1,6 @@
 This directory contains **(.cpp)** files which are an extension of code designed to support Vaman Esp32 Board.
 <h2>Steps to Follow:</h2>
-<h3>Setting up a Directory in Ubuntu</h3>
+<h3>Setting up Directory in Ubuntu</h3>
 <ol>
   <li>Creating Directory</li>
   <pre>mkdir geohard</pre>
@@ -13,9 +13,11 @@ This directory contains **(.cpp)** files which are an extension of code designed
   <li>Download required <b>.cpp</b> file, along with <b>libs</b> folder and paste it in here.</li>
   <li>Returning Back to geohard</li>
   <pre>cd ..</pre>
-  <li>Download the platformio.ini file and paste it in here</li>
+  <li>Download the <b>platformio.ini</b> file and paste it in here</li>
 </ol>
-Downloading required files
+<h3>Generating .bin file</h3>
 <ol>
-  <li></li>
+  <li>Open Terminal, Goto geohard Directory</li>
+  <li>Install necessary </li>
 </ol>
+
