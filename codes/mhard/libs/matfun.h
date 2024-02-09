@@ -35,6 +35,10 @@ double calculateSlope(double x1, double y1, double x2, double y2);
 void calculatePerpendicularBisector(double x1, double y1, double x2, double y2, double *slope, double *midpoint_x, double *midpoint_y);
 double distance(int x1, int y1, int x2, int y2);
 double calculateAngle(double a, double b, double c);
+double mid_point(int x1, int x2);
+double calculateMedian(double *a, double *b, double *c);
+double sqrtApprox(double x);
+
 //End function declaration
 
 //section formula
@@ -428,4 +432,27 @@ double distance(int x1, int y1, int x2, int y2) {
 //Function to find angle between sides of a triangle
 double calculateAngle(double a, double b, double c) {
     return acos((b * b + c * c - a * a) / (2 * b * c));
+}
+//Function to find midpoints of a triangle
+double mid_point(int x1, int x2){
+return (x1 + x2)/2;
+}
+// Function to calculate the median using custom square root approximation
+double calculateMedian(double *a, double *b, double *c) {
+    double median;
+// Calculate the median using the formula: sqrt(2*b^2 + 2*c^2 - a^2) / 2
+    median = sqrtApprox(2 * (*b) * (*b) + 2 * (*c) * (*c) - (*a) * (*a)) / 2.0;
+    return median;
+}
+
+// Function to find square root using Newton's method
+double sqrtApprox(double x) {
+    double result = x;
+
+    // Use Newton's method for better approximation
+    for (int i = 0; i < 10; ++i) {
+        result = 0.5 * (result + x / result);
+    }
+
+    return result;
 }
