@@ -41,6 +41,8 @@ double sqrtApprox(double x);
 void freeMat(double **matrix, int rows);
 double **tri_sides(double **A, double **B, double **C, double **sides);
 double **calculate(double **A, double **B, double **C, double **sides);
+double **dir_vec(double **A,double **B,int m,int n);
+double **line_intersect(double **m3,double **B,double **m1,double **C, int m,int n);
 
 //End function declaration
 
@@ -490,4 +492,35 @@ double **calculate(double **A, double **B, double **C, double **sides)
     sol[1][0] = (m_val * A[1][0] + p_val * B[1][0]) / (m_val + p_val);
     sol[1][1] = (p_val * C[1][0] + n_val * A[1][0]) / (p_val + n_val);
     return sol;
+}
+
+double **dir_vec(double **A,double **B,int m,int n)
+{
+    int i, j;
+    double **c;
+    c = createMat(m,n);
+
+    for(i=0;i<m;i++)
+    {
+    for(j=0;j<n;j++)
+    {
+    c[i][j]= B[i][j]-A[i][j];
+    }
+    }
+    return c;
+}
+
+double **line_intersect(double **m3,double **B,double **m1,double **C, int m,int n)
+{
+    double **N,**m3_t,**m1_t,**p0,**p1,**p,**P1,**P2,**solution;
+    p=createMat(2,1);
+    N=transposeMat(block(m3,m1,m,n),m,m);
+    m3_t=transposeMat(m3,m,n);
+    m1_t=transposeMat(m1,m,n);
+    p0=Matmul(m3_t,B,n,m,n);
+    p1=Matmul(m1_t,C,n,m,n);
+    p[0][0]=p0[0][0];
+    p[1][0]=p1[0][0];
+    solution=solve(p,N);
+    return(solution);
 }
