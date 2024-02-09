@@ -38,6 +38,9 @@ double calculateAngle(double a, double b, double c);
 double mid_point(int x1, int x2);
 double calculateMedian(double *a, double *b, double *c);
 double sqrtApprox(double x);
+void freeMat(double **matrix, int rows);
+double **tri_sides(double **A, double **B, double **C, double **sides);
+double **calculate(double **A, double **B, double **C, double **sides);
 
 //End function declaration
 
@@ -455,4 +458,36 @@ double sqrtApprox(double x) {
     }
 
     return result;
+}
+
+void freeMat(double **matrix, int rows) {
+    for (int i = 0; i < rows; ++i) {
+        free(matrix[i]);
+    }
+    free(matrix);
+}
+
+double **tri_sides(double **A, double **B, double **C, double **sides)
+{
+    sides[0][0] = hypot(B[0][0] - C[0][0], B[1][0] - C[1][0]);
+    sides[1][0] = hypot(C[0][0] - A[0][0], C[1][0] - A[1][0]);
+    sides[2][0] = hypot(A[0][0] - B[0][0], A[1][0] - B[1][0]);
+    return sides;
+}
+
+double **calculate(double **A, double **B, double **C, double **sides)
+{
+    double a, b, c, m_val, n_val, p_val,**sol;
+    a = sides[2][0];
+    b = sides[0][0];
+    c = sides[1][0];
+    p_val = (a + c - b) / 2;
+    m_val = (a + b - c) / 2;
+    n_val = (b + c - a) / 2;
+    sol = createMat(2,2);
+    sol[0][0] = (m_val * A[0][0] + p_val * B[0][0]) / (m_val + p_val);
+    sol[0][1] = (p_val * C[0][0] + n_val * A[0][0]) / (p_val + n_val);
+    sol[1][0] = (m_val * A[1][0] + p_val * B[1][0]) / (m_val + p_val);
+    sol[1][1] = (p_val * C[1][0] + n_val * A[1][0]) / (p_val + n_val);
+    return sol;
 }
