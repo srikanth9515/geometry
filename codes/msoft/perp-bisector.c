@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <math.h>
 
-#include "libs/matfun.h"
+#include "libs/geofun.h"
 
 #define BUFFER_SIZE 2048
 
