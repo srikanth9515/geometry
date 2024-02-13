@@ -5,12 +5,12 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <unistd.h>
-#include "libs/geofun.h"
 #include "libs/matfun.h"
+#include "libs/geofun.h"
 
-#define BUFFER_SIZE 2048
+#define BUFFER_SIZE 4096
 
-void sendHTMLForm(int client_fd, int x1, int y1, int x2, int y2, int x3, int y3, double sideAB, double sideBC, double sideCA, double angleA, double angleB, double angleC) {
+void sendHTMLForm(int client_fd, int x1, int y1, int x2, int y2, int x3, int y3, double sideAB, double sideBC, double sideCA, double angleA) {
     char *html_template = "<!DOCTYPE html>\n"
                           "<html lang=\"en\">\n"
                           "<head>\n"
@@ -41,14 +41,12 @@ void sendHTMLForm(int client_fd, int x1, int y1, int x2, int y2, int x3, int y3,
                           "<p>Side BC: %.2f</p>\n"
                           "<p>Side CA: %.2f</p>\n"
                           "<p>Angle A: %.2f degrees</p>\n"
-                          "<p>Angle B: %.2f degrees</p>\n"
-                          "<p>Angle C: %.2f degrees</p>\n"
                           "</body>\n"
                           "</html>\n";
 
     char response[BUFFER_SIZE];
     sprintf(response, "HTTP/1.1 200 OK\nContent-Type: text/html\n\n");
-    snprintf(response + strlen(response), BUFFER_SIZE - strlen(response), html_template, x1, y1, x2, y2, x3, y3, sideAB, sideBC, sideCA, angleA, angleB, angleC);
+    snprintf(response + strlen(response), BUFFER_SIZE - strlen(response), html_template, x1, y1, x2, y2, x3, y3, sideAB, sideBC, sideCA, angleA);
     send(client_fd, response, strlen(response), 0);
 }
 
@@ -101,7 +99,8 @@ int main() {
         if (body_start) {
             body_start += 4;
 
-            int x1, y1, x2, y2, x3, y3, m=2, n=1;
+            int x1, y1, x2, y2, x3, y3, m=2, n=1,p = 1;
+            double angleA,norm_ba,norm_ca;
             sscanf(body_start, "x1=%d&y1=%d&x2=%d&y2=%d&x3=%d&y3=%d", &x1, &y1, &x2, &y2, &x3, &y3);
             double **A,**B,**C,sideAB, sideBC, sideCA;
 	    A = createMat(m,n);
@@ -114,19 +113,34 @@ int main() {
             C[0][0] = x3;
             C[1][0] = y3;
             double **s_ab, **s_bc, **s_ca;
+            double **a_ba,**tran_ba,**mul_num;
+            double num_vs_den, mul_den;
 	    s_ab = Matsub(A,B,m,n);//A-B
             s_bc = Matsub(B,C,m,n);//B-C
             s_ca = Matsub(C,A,m,n);//C-A
+            a_ba = Matsub(B,A,m,n);//B-A
             sideAB = Matnorm(s_ab,m);
             sideBC = Matnorm(s_bc,m); 
             sideCA = Matnorm(s_ca,m);
-    
+            tran_ba = transposeMat(a_ba,m,n);
+    	    mul_num = Matmul(s_ca,tran_ba,m,n,p);
+    	    norm_ba = Matnorm(a_ba,m);
+    	    norm_ca = Matnorm(s_ca,m);
+    	    mul_den = norm_ba * norm_ca;
+    	    num_vs_den = mul_num[0][0] * mul_den;
+    	    angleA = acos(num_vs_den);
+    	    freeMat(A,2);
+    	    freeMat(B,2);
+    	    freeMat(C,2);
+    	    freeMat(s_ab,2);
+    	    freeMat(s_bc,2);
+    	    freeMat(s_ca,2);
+    	    freeMat(a_ba,2);
+    	    freeMat(tran_ba,1);
+    	    freeMat(mul_num,1);
+    	    
 
-            double angleA = calculateAngle(sideBC, sideCA, sideAB) * 180 / M_PI;
-            double angleB = calculateAngle(sideCA, sideAB, sideBC) * 180 / M_PI;
-            double angleC = calculateAngle(sideAB, sideBC, sideCA) * 180 / M_PI;
-
-            sendHTMLForm(client_fd, x1, y1, x2, y2, x3, y3, sideAB, sideBC, sideCA, angleA, angleB, angleC);
+            sendHTMLForm(client_fd, x1, y1, x2, y2, x3, y3, sideAB, sideBC, sideCA, angleA);
             printf("Results sent to the client\n");
         }
 
