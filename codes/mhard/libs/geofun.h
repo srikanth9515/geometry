@@ -1,5 +1,9 @@
-double calculateAngle(double a, double b, double c);
-
-double calculateAngle(double a, double b, double c) {
-    return acos((b * b + c * c - a * a) / (2 * b * c));
+//Function declaration
+void freeMat(double **matrix, int rows);
+//End Function declaration
+void freeMat(double **matrix, int rows) {
+    for (int i = 0; i < rows; ++i) {
+        free(matrix[i]);
+    }
+    free(matrix);
 }
