@@ -8,8 +8,8 @@
 #endif
 #include <ESPAsyncWebServer.h>
 #include <math.h>
-#include "libs/geofun.h"
-
+#include "matfun.h"
+#include "geofun.h"
 AsyncWebServer server(80);
 
 const char* ssid = "Redmi";
@@ -62,20 +62,32 @@ void setup() {
   });
 
   server.on("/get", HTTP_GET, [](AsyncWebServerRequest *request) {
-    double Ax, Ay, Bx, By, Cx, Cy;
+    int x1, y1, x2, y2, x3, y3, m=2, n=1;
+    double **A,**B,**C,sideAB, sideBC, sideCA;
+    double **s_ab, **s_bc, **s_ca;
 
     // Parse input values
-    Ax = request->arg(input_parameter00).toFloat();
-    Ay = request->arg(input_parameter01).toFloat();
-    Bx = request->arg(input_parameter10).toFloat();
-    By = request->arg(input_parameter11).toFloat();
-    Cx = request->arg(input_parameter20).toFloat();
-    Cy = request->arg(input_parameter21).toFloat();
-
-    // Calculate the lengths of the sides
-    double sideAB = distance(Ax, Ay, Bx, By);
-    double sideBC = distance(Bx, By, Cx, Cy);
-    double sideCA = distance(Cx, Cy, Ax, Ay);
+    x1 = request->arg(input_parameter00).toFloat();
+    y1 = request->arg(input_parameter01).toFloat();
+    x2 = request->arg(input_parameter10).toFloat();
+    y2 = request->arg(input_parameter11).toFloat();
+    x3 = request->arg(input_parameter20).toFloat();
+    y3 = request->arg(input_parameter21).toFloat();
+    A = createMat(m,n);
+    B = createMat(m,n);
+    C = createMat(m,n);
+    A[0][0] = x1;
+    A[1][0] = y1;
+    B[0][0] = x2;
+    B[1][0] = y2;
+    C[0][0] = x3;
+    C[1][0] = y3;
+    s_ab = Matsub(A,B,m,n);//A-B
+    s_bc = Matsub(B,C,m,n);//B-C
+    s_ca = Matsub(C,A,m,n);//C-A
+    sideAB = Matnorm(s_ab,m);
+    sideBC = Matnorm(s_bc,m); 
+    sideCA = Matnorm(s_ca,m);
 
     // Calculate the angles
     double angleA = calculateAngle(sideBC, sideCA, sideAB);
@@ -99,10 +111,4 @@ void setup() {
 }
 
 void loop() {
-Serial.begin(115200);
-  Serial.println();
-  Serial.print("IP Address: ");
-  Serial.println(WiFi.localIP());
-  // Nothing to do here for now
 }
-
