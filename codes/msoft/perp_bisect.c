@@ -6,7 +6,7 @@
 #include <netinet/in.h>
 #include <unistd.h>
 
-#include "matfun.h"
+#include "libs/matfun.h"
 
 #define BUFFER_SIZE 2048
 
