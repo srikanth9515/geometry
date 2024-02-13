@@ -1,19 +1,12 @@
 #include <ArduinoOTA.h>
-#ifdef ESP32
-  #include <WiFi.h>
-  #include <AsyncTCP.h>
-#else
-  #include <ESP8266WiFi.h>
-  #include <ESPAsyncTCP.h>
-#endif
 #include <ESPAsyncWebServer.h>
+#include "libs/matfun.h" // Assuming you have defined matrix functions in matfun.h
+#include "libs/geofun.h" // Assuming you have defined geometric functions in geofun.h
 
-#include <math.h>
-#include "libs/geofun.h"
 AsyncWebServer server(80);
 
-const char* ssid = "Redmi";
-const char* password = "987654321";
+const char* ssid = "nikhilsai";
+const char* password = "nikhilsai";
 
 const char* input_parameter00 = "input00";
 const char* input_parameter01 = "input01";
@@ -60,16 +53,6 @@ void notFound(AsyncWebServerRequest *request) {
   request->send(404, "text/plain", "Not found");
 }
 
-void calculateMidpoints(double Ax, double Ay, double Bx, double By, double Cx, double Cy, double& MxAB, double& MyAB, double& MxBC, double& MyBC, double& MxCA, double& MyCA) {
-  // Calculate midpoints
-  MxAB = (Ax + Bx) / 2;
-  MyAB = (Ay + By) / 2;
-  MxBC = (Bx + Cx) / 2;
-  MyBC = (By + Cy) / 2;
-  MxCA = (Cx + Ax) / 2;
-  MyCA = (Cy + Ay) / 2;
-}
-
 void setup() {
   Serial.begin(115200);
   WiFi.mode(WIFI_STA);
@@ -94,9 +77,31 @@ void setup() {
     double Cx = request->arg(input_parameter20).toDouble();
     double Cy = request->arg(input_parameter21).toDouble();
 
-    // Calculate midpoints of the triangle vertices
-    double MxAB, MyAB, MxBC, MyBC, MxCA, MyCA;
-    calculateMidpoints(Ax, Ay, Bx, By, Cx, Cy, MxAB, MyAB, MxBC, MyBC, MxCA, MyCA);
+    // Create matrices for the coordinates
+    double **a = createMat(3, 2);
+    a[0][0] = Ax; a[0][1] = Ay;
+    a[1][0] = Bx; a[1][1] = By;
+    a[2][0] = Cx; a[2][1] = Cy;
+
+    // Create matrix b for scaling
+    double **b = createMat(3, 1);
+    b[0][0] = b[1][0] = b[2][0] = 1.0;
+
+    // Call the Matsec function to calculate midpoints
+    double **midpoints = Matsec(a, b, 3, 1.0);
+    
+    // Extract midpoints
+    double MxAB = midpoints[0][0];
+    double MyAB = midpoints[0][1];
+    double MxBC = midpoints[1][0];
+    double MyBC = midpoints[1][1];
+    double MxCA = midpoints[2][0];
+    double MyCA = midpoints[2][1];
+    
+    // Free memory allocated for matrices
+    freeMat(midpoints, 3);
+    freeMat(a, 3);
+    freeMat(b, 3);
 
     // Send the results back to the client
     String result = "Midpoint AB: (" + String(MxAB, 2) + ", " + String(MyAB, 2) + ")<br>Midpoint BC: (" + String(MxBC, 2) + ", " + String(MyBC, 2) + ")<br>Midpoint CA: (" + String(MxCA, 2) + ", " + String(MyCA, 2) + ")";
