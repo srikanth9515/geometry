@@ -1,50 +1,53 @@
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
-#include "libs/geofun.h"
-#include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <unistd.h>
 
-#define PORT 8788
-#define BUFFER_SIZE 2048
+#include "libs/geofun.h"
+#include "libs/matfun.h"
 
-void sendHTMLForm(int client_fd, double side_a,double side_b,double side_c,double median1,double median2,double median3) {
+#define BUFFER_SIZE 4096
+
+void sendHTMLForm(int client_fd, int x1, int y1, int x2, int y2, int x3, int y3, double sideAB, double sideBC, double sideCA) {
     char *html_template = "<!DOCTYPE html>\n"
                           "<html lang=\"en\">\n"
                           "<head>\n"
                           "<meta charset=\"UTF-8\">\n"
                           "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
-                          "<title> SOFTWARE SOLUTION FOR MEDIAN</title>\n"
+                          "<title>Triangle Properties</title>\n"
                           "</head>\n"
                           "<body>\n"
-"<style>"
+                          "<style>"
     "html {font-family: Times New Roman; display: inline-block; text-align: center;}"
     "h2 {font-size: 2.0rem; color: blue;}"
-  "</style>"
-                          "<h2>MEDIAN OF A TRIANGLE </h2>\n"
+  "</style>" 
+                          "<h2>Medians of Triangle</h2>\n"
                           "<form method=\"post\">\n"
-                          "    <label for=\"side_a\">Side A:</label><br>\n"
-                          "    <input type=\"text\" id=\"side_a\" name=\"side_a\" value=\"%lf\" step=\"any\" required><br><br>"
-			  "    <label for=\"side_b\">Side B:</label><br>\n"
-                          "    <input type=\"text\" id=\"side_b\" name=\"side_b\" value=\"%lf\" step=\"any\" required><br><br>"   
-                          "    <label for=\"side_c\">Side C:</label><br>\n"
-                          "    <input type=\"text\" id=\"side_c\" name=\"side_c\" value=\"%lf\" step=\"any\" required><br><br>"  
-                        
+                          "    <label for=\"x1\">Vertex A (x1 y1):</label><br>\n"
+                          "    <input type=\"text\" id=\"x1\" name=\"x1\" value=\"%d\" required>\n"
+                          "    <input type=\"text\" id=\"y1\" name=\"y1\" value=\"%d\" required><br><br>\n"
+                          "    <label for=\"x2\">Vertex B (x2 y2):</label><br>\n"
+                          "    <input type=\"text\" id=\"x2\" name=\"x2\" value=\"%d\" required>\n"
+                          "    <input type=\"text\" id=\"y2\" name=\"y2\" value=\"%d\" required><br><br>\n"
+                          "    <label for=\"x3\">Vertex C (x3 y3):</label><br>\n"
+                          "    <input type=\"text\" id=\"x3\" name=\"x3\" value=\"%d\" required>\n"
+                          "    <input type=\"text\" id=\"y3\" name=\"y3\" value=\"%d\" required><br><br>\n"
                           "    <button type=\"submit\">Calculate</button>\n"
                           "</form>\n"
-                          "<h3>Result</h3>\n"
-                          "<p>Result Median1 of Triangle: %.2lf</p>\n"
-                          "<p>Result Median2 of Triangle: %.2lf</p>\n"
-                          "<p>Result Median3 of Triangle: %.2lf</p>\n"                                             
+                          "<h3>Results</h3>\n"
+                          "<p>Median AB: %.2f</p>\n"
+                          "<p>Median BC: %.2f</p>\n"
+                          "<p>Median CA: %.2f</p>\n"
+
                           "</body>\n"
                           "</html>\n";
 
     char response[BUFFER_SIZE];
     sprintf(response, "HTTP/1.1 200 OK\nContent-Type: text/html\n\n");
-    snprintf(response + strlen(response), BUFFER_SIZE - strlen(response), html_template, side_a,side_b,side_c,median1,median2,median3);
-
+    snprintf(response + strlen(response), BUFFER_SIZE - strlen(response), html_template, x1, y1, x2, y2, x3, y3, sideAB, sideBC, sideCA);
     send(client_fd, response, strlen(response), 0);
 }
 
@@ -54,22 +57,20 @@ int main() {
     int opt = 1;
     socklen_t addrlen = sizeof(address);
 
-    // Creating socket file descriptor
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == -1) {
         perror("socket failed");
         exit(EXIT_FAILURE);
     }
 
-    // Forcefully attaching socket to the port
     if (setsockopt(server_fd, SOL_SOCKET, SO_REUSEADDR | SO_REUSEPORT, &opt, sizeof(opt))) {
         perror("setsockopt");
         exit(EXIT_FAILURE);
     }
+
     address.sin_family = AF_INET;
     address.sin_addr.s_addr = INADDR_ANY;
-    address.sin_port = htons(PORT);
+    address.sin_port = htons(8080);
 
-    // Forcefully attaching socket to the port
     if (bind(server_fd, (struct sockaddr *)&address, sizeof(address)) < 0) {
         perror("bind failed");
         exit(EXIT_FAILURE);
@@ -80,8 +81,7 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    // Print server address
-    printf("Server is listening on port 878\n");
+    printf("Server is listening on port 8080\n");
 
     while (1) {
         if ((client_fd = accept(server_fd, (struct sockaddr *)&address, &addrlen)) < 0) {
@@ -90,31 +90,58 @@ int main() {
         }
 
         printf("New connection accepted\n");
-        
-        char buffer[BUFFER_SIZE] ={0};
+
+        char buffer[BUFFER_SIZE] = {0};
         read(client_fd, buffer, BUFFER_SIZE);
         printf("Received data from client: %s\n", buffer);
-        
-        char *body_start = strstr(buffer,"\r\n\r\n");
-        
-        if(body_start){
-        
-            body_start +=4;
-        
-            double side_a,side_b,side_c;
-            sscanf(body_start,"side_a=%lf&side_b=%lf&side_c=%lf", &side_a,&side_b,&side_c);
+
+        char *body_start = strstr(buffer, "\r\n\r\n");
+
+        if (body_start) {
+            body_start += 4;
+
+            int x1, y1, x2, y2, x3, y3, m=2, n=1;
+            sscanf(body_start, "x1=%d&y1=%d&x2=%d&y2=%d&x3=%d&y3=%d", &x1, &y1, &x2, &y2, &x3, &y3);
+            double **A,**B,**C,sideAB, sideBC, sideCA;
+	    A = createMat(m,n);
+            B = createMat(m,n);
+            C = createMat(m,n);
+            A[0][0] = x1;
+            A[1][0] = y1;
+            B[0][0] = x2;
+            B[1][0] = y2;
+            C[0][0] = x3;
+            C[1][0] = y3;
             
-            double median1 =calculateMedian(&side_a, &side_b, &side_c);
-	    double median2 =calculateMedian(&side_b, &side_c, &side_a);
-            double median3 =calculateMedian(&side_c, &side_a, &side_b);
+            double **D = Matsec(A, B, 2, 1.0);
+            double **E = Matsec(B, C, 2, 1.0);
+            double **F = Matsec(C, A, 2, 1.0);           
             
-            sendHTMLForm(client_fd, side_a,side_b,side_c,median1,median2,median3);
-            printf("Results sent to client\n");
+            double **s_ab, **s_bc, **s_ca;
+	    s_ab = Matsub(A,D,m,n);//A-D
+            s_bc = Matsub(B,E,m,n);//B-E
+            s_ca = Matsub(C,F,m,n);//C-F
+            sideAB = Matnorm(s_ab,m);
+            sideBC = Matnorm(s_bc,m); 
+            sideCA = Matnorm(s_ca,m);
+            
+            freeMat(A,3);
+            freeMat(B,3);
+            freeMat(C,3);
+            freeMat(D,3);
+	    freeMat(E,3);
+            freeMat(F,3);  
+            freeMat(s_ab,3);
+            freeMat(s_bc,3);
+            freeMat(s_ca,3);
+           
+
+            sendHTMLForm(client_fd, x1, y1, x2, y2, x3, y3, sideAB, sideBC, sideCA);
+            printf("Results sent to the client\n");
         }
-        
+
         close(client_fd);
     }
 
     return 0;
 }
-
