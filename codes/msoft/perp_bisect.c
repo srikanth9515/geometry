@@ -5,12 +5,12 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <unistd.h>
+
 #include "libs/matfun.h"
-#include "libs/geofun.h"
 
-#define BUFFER_SIZE 4096
+#define BUFFER_SIZE 2048
 
-void sendHTMLForm(int client_fd, int x1, int y1, int x2, int y2, int x3, int y3, double sideAB, double sideBC, double sideCA, double angleA) {
+void sendHTMLForm(int client_fd, int x1, int y1, int x2, int y2, int x3, int y3, double bisectorABMX,double bisectorABMY, double bisectorBCMX,double bisectorBCMY,double bisectorCAMX,double bisectorCAMY) {
     char *html_template = "<!DOCTYPE html>\n"
                           "<html lang=\"en\">\n"
                           "<head>\n"
@@ -23,30 +23,27 @@ void sendHTMLForm(int client_fd, int x1, int y1, int x2, int y2, int x3, int y3,
     "html {font-family: Times New Roman; display: inline-block; text-align: center;}"
     "h2 {font-size: 2.0rem; color: blue;}"
   "</style>" 
-                          "<h2>Side and Angle</h2>\n"
+                          "<h2>Perp bisector</h2>\n"
                           "<form method=\"post\">\n"
-                          "    <label for=\"x1\">Vertex A (x1 y1):</label><br>\n"
+                          "    <label for=\"x1\">Enter the values of points A, B and C </label><br>\n"
                           "    <input type=\"text\" id=\"x1\" name=\"x1\" value=\"%d\" required>\n"
                           "    <input type=\"text\" id=\"y1\" name=\"y1\" value=\"%d\" required><br><br>\n"
-                          "    <label for=\"x2\">Vertex B (x2 y2):</label><br>\n"
                           "    <input type=\"text\" id=\"x2\" name=\"x2\" value=\"%d\" required>\n"
                           "    <input type=\"text\" id=\"y2\" name=\"y2\" value=\"%d\" required><br><br>\n"
-                          "    <label for=\"x3\">Vertex C (x3 y3):</label><br>\n"
                           "    <input type=\"text\" id=\"x3\" name=\"x3\" value=\"%d\" required>\n"
                           "    <input type=\"text\" id=\"y3\" name=\"y3\" value=\"%d\" required><br><br>\n"
                           "    <button type=\"submit\">Calculate</button>\n"
                           "</form>\n"
                           "<h3>Results</h3>\n"
-                          "<p>Side AB: %.2f</p>\n"
-                          "<p>Side BC: %.2f</p>\n"
-                          "<p>Side CA: %.2f</p>\n"
-                          "<p>Angle A: %.2f degrees</p>\n"
+                          "<p>Bisector of AB:%.2f,%.2f</p>\n"
+                          "<p>Bisector of BC:%.2f,%.2f</p>\n"
+                          "<p>Bisector of CA:%.2f,%.2f</p>\n"
                           "</body>\n"
                           "</html>\n";
 
     char response[BUFFER_SIZE];
     sprintf(response, "HTTP/1.1 200 OK\nContent-Type: text/html\n\n");
-    snprintf(response + strlen(response), BUFFER_SIZE - strlen(response), html_template, x1, y1, x2, y2, x3, y3, sideAB, sideBC, sideCA, angleA);
+    snprintf(response + strlen(response), BUFFER_SIZE - strlen(response), html_template, x1, y1, x2, y2, x3, y3, bisectorABMX, bisectorABMY, bisectorBCMX,bisectorBCMY, bisectorCAMX, bisectorCAMY);
     send(client_fd, response, strlen(response), 0);
 }
 
@@ -99,10 +96,9 @@ int main() {
         if (body_start) {
             body_start += 4;
 
-            int x1, y1, x2, y2, x3, y3, m=2, n=1,p = 1;
-            double angleA,norm_ba,norm_ca;
+            int x1, y1, x2, y2, x3, y3, m=2, n=1;
             sscanf(body_start, "x1=%d&y1=%d&x2=%d&y2=%d&x3=%d&y3=%d", &x1, &y1, &x2, &y2, &x3, &y3);
-            double **A,**B,**C,sideAB, sideBC, sideCA;
+            double **A,**B,**C,**bisectorABMidpoint,**bisectorBCMidpoint,**bisectorCAMidpoint;
 	    A = createMat(m,n);
             B = createMat(m,n);
             C = createMat(m,n);
@@ -113,34 +109,14 @@ int main() {
             C[0][0] = x3;
             C[1][0] = y3;
             double **s_ab, **s_bc, **s_ca;
-            double **a_ba,**tran_ba,**mul_num;
-            double num_vs_den, mul_den;
 	    s_ab = Matsub(A,B,m,n);//A-B
             s_bc = Matsub(B,C,m,n);//B-C
             s_ca = Matsub(C,A,m,n);//C-A
-            a_ba = Matsub(B,A,m,n);//B-A
-            sideAB = Matnorm(s_ab,m);
-            sideBC = Matnorm(s_bc,m); 
-            sideCA = Matnorm(s_ca,m);
-            tran_ba = transposeMat(a_ba,m,n);
-    	    mul_num = Matmul(s_ca,tran_ba,m,n,p);
-    	    norm_ba = Matnorm(a_ba,m);
-    	    norm_ca = Matnorm(s_ca,m);
-    	    mul_den = norm_ba * norm_ca;
-    	    num_vs_den = mul_num[0][0] * mul_den;
-    	    angleA = acos(num_vs_den);
-    	    freeMat(A,2);
-    	    freeMat(B,2);
-    	    freeMat(C,2);
-    	    freeMat(s_ab,2);
-    	    freeMat(s_bc,2);
-    	    freeMat(s_ca,2);
-    	    freeMat(a_ba,2);
-    	    freeMat(tran_ba,1);
-    	    freeMat(mul_num,1);
-    	    
+            bisectorABMidpoint = normVec(s_ab);
+            bisectorBCMidpoint = normVec(s_bc);
+            bisectorCAMidpoint = normVec(s_ca);
 
-            sendHTMLForm(client_fd, x1, y1, x2, y2, x3, y3, sideAB, sideBC, sideCA, angleA);
+            sendHTMLForm(client_fd, x1, y1, x2, y2, x3, y3, bisectorABMidpoint[0][0], bisectorABMidpoint[1][0], bisectorBCMidpoint[0][0],bisectorBCMidpoint[1][0], bisectorCAMidpoint[0][0], bisectorCAMidpoint[1][0]);
             printf("Results sent to the client\n");
         }
 

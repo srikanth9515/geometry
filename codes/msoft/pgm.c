@@ -6,6 +6,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
+#include "libs/matfun.h"
 #include "libs/geofun.h"
 
 #define PORT 8787
@@ -109,12 +110,32 @@ int main() {
         
             int x1,y1,x2,y2,x3,y3;
             sscanf(body_start,"x1=%d&y1=%d&x2=%d&y2=%d&x3=%d&y3=%d", &x1, &y1, &x2, &y2, &x3, &y3);
-            double mid1 = mid_point(x1,x2);
-            double mid11 = mid_point(y1,y2);
-            double mid2 = mid_point(x1,x3);
-            double mid22 = mid_point(y1,y3);
-            double mid3 = mid_point(x3,x2);
-            double mid33 = mid_point(y3,y2);
+            // Create matrices for the coordinates
+            double **a = createMat(3, 2);
+            a[0][0] = x1; a[0][1] = y1;
+            a[1][0] = x2; a[1][1] = y2;
+            a[2][0] = x3; a[2][1] = y3;
+
+            // Create matrix b for scaling
+            double **b = createMat(3, 1);
+            b[0][0] = b[1][0] = b[2][0] = 1.0;
+
+            // Call the Matsec function to calculate midpoints
+            double **midpoints = Matsec(a, b, 3, 1.0);
+            
+            // Extract midpoints
+            double mid1 = midpoints[0][0];
+            double mid11 = midpoints[0][1];
+            double mid2 = midpoints[1][0];
+            double mid22 = midpoints[1][1];
+            double mid3 = midpoints[2][0];
+            double mid33 = midpoints[2][1];
+            
+            // Free memory allocated for matrices
+            freeMat(a,3);
+            freeMat(b,3);
+            freeMat(midpoints,3);
+            
             sendHTMLForm(client_fd, x1, y1, x2, y2, x3, y3, mid1, mid11, mid2, mid22, mid3, mid33);
             printf("Results sent to client\n");
         }
@@ -124,4 +145,3 @@ int main() {
 
     return 0;
 }
-
