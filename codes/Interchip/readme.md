@@ -45,14 +45,14 @@ After Succesfully connecting both Vaman and Arduino, Connect Mobile to Arduino u
   Click ok
   <li>Upload <b>.bin</b> file</li>
   <pre>Menu --> Upload --> Upload precompiled --> location of bin</pre>
-  <h3 align="center"> Or </h3>  
+  <p>Or</p>  
 </ol>
 <h3>Uploading .cpp via UART:</h3>
 <ol>
   <li>Using Arduino IDE to compile and upload <b>(.cpp)</b> file and installing necessary packages.</li>
-</ol>
+</ol><br><br>
 
-<h4>After sucessfully uploading esp32 code into vaman, Now we can move onto fpga</h4>
+<h3>After sucessfully uploading esp32 code into vaman, Now we can move onto fpga</h3>
 <ol>
   <li>Download the fpga folder present above</li>
   <li>Move to fpga folder</li>
