@@ -3,8 +3,9 @@
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 #include "esp32_eoss3_spi.h"
-#include "geofun.h"
-#include "matfun.h"
+#include "libs/geofun.h"
+#include "libs/matfun.h"
+
 
 #define GPIO_OUTPUT_VAL_REG 0x40021004
 #define GPIO_OUTPUT_DIR_REG 0x40021008
