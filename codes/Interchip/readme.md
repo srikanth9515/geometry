@@ -4,9 +4,9 @@ This directory contains **(.cpp)** files which are an extension of code designed
 <h3>Setting up Directory in Ubuntu</h3>
 <ol>
   <li>Creating Directory</li>
-  <pre>mkdir geohard</pre>
+  <pre>mkdir interchip</pre>
   <li>Changing Directory</li>
-  <pre>cd geohard</pre>
+  <pre>cd interchip</pre>
   <li>Creating src file</li>
   <pre>mkdir src</pre>
   <li>Changing to src directory</li>
@@ -17,7 +17,7 @@ This directory contains **(.cpp)** files which are an extension of code designed
   <pre>
 const char* ssid = "Redmi";
 const char* password = "987654321";</pre>
-  <li>Returning Back to geohard</li>
+  <li>Returning Back to interchip</li>
   <pre>cd ..</pre>
   <li>Download the <b>platformio.ini</b> file and paste it in here</li>
 </ol>
@@ -45,5 +45,12 @@ After Succesfully connecting both Vaman and Arduino, Connect Mobile to Arduino u
   Click ok
   <li>Upload <b>.bin</b> file</li>
   <pre>Menu --> Upload --> Upload precompiled --> location of bin</pre>
+  <h3 align="center"> Or </h3>  
 </ol>
+<h3>Uploading .cpp via UART:</h3>
+<ol>
+  <li>Using Arduino IDE to compile and upload <b>(.cpp)</b> file and installing necessary packages.</li>
+</ol>
+
+
 
