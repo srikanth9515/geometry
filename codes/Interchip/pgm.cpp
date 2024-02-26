@@ -2,7 +2,7 @@
 #include <WiFi.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-#include "esp32_eoss3_spi.h"
+#include "libs/esp32_eoss3_spi.h"
 #include "libs/matfun.h" // Assuming you have defined matrix functions in matfun.h
 #include "libs/geofun.h" // Assuming you have defined geometric functions in geofun.h
 
