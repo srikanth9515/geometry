@@ -57,7 +57,7 @@ After Succesfully connecting both Vaman and Arduino, Connect Mobile to Arduino u
   <li>Download the fpga folder present above</li>
   <li>Move to fpga folder</li>
   <pre>cd fpga</pre>
-  <li>link bin path to QORC_SDK_PATH</li>
+  <li>Link bin path to QORC_SDK_PATH</li>
   <pre>export QORC_SDK_PATH=/home/user/pygmy-dev/pygmy-sdk</pre>
   <li>Generate .bin file</li>
   <pre>make</pre>
@@ -70,9 +70,9 @@ After Succesfully connecting both Vaman and Arduino, Connect Mobile to Arduino u
 </pre>
   </ol>
     <li>After succesfull uploading, The Vaman connects to the Network whose credentials are provided in the <b>.cpp</b> file.</li>
-  <li>Now find out the Ip address assigned to vaman</li>
+  <li>Now find out the Ip address assigned to vaman.</li>
   <pre>ifconfig
 nmap -sn 192.168.xx.xx/24</pre>
-  <li>After finding the IP, type this in browser</li>
+  <li>After finding the IP, type this in browser.</li>
   <pre>http://IP_ADDRESS/form_name</pre>
   </ol>
