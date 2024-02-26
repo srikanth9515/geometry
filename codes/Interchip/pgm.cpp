@@ -3,8 +3,8 @@
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
 #include "esp32_eoss3_spi.h"
-#include "matfun.h" // Assuming you have defined matrix functions in matfun.h
-#include "geofun.h" // Assuming you have defined geometric functions in geofun.h
+#include "libs/matfun.h" // Assuming you have defined matrix functions in matfun.h
+#include "libs/geofun.h" // Assuming you have defined geometric functions in geofun.h
 
 #define GPIO_OUTPUT_VAL_REG 0x40021004
 #define GPIO_OUTPUT_DIR_REG 0x40021008
