@@ -61,7 +61,7 @@ After Succesfully connecting both Vaman and Arduino, Connect Mobile to Arduino u
   <pre>export QORC_SDK_PATH=/home/user/pygmy-dev/pygmy-sdk</pre>
   <li>Generate .bin file</li>
   <pre>make</pre>
-  <li>Upload .bin to vaman</li>
+  <li><h4>Uploading <b>(.bin)</b> to vaman</h4></li>
   <ol>
     <li>Connect ESP32 to PYGMY using the reference diagram <a href="https://github.com/gadepall/embedded-system/blob/main/main.pdf">here</a> in section 3.1.1.2 .
     </li>
@@ -69,5 +69,10 @@ After Succesfully connecting both Vaman and Arduino, Connect Mobile to Arduino u
     <pre>sudo python3 /path/to/TinyFPGA-Programmer-Application/tinyfpga-programmer-gui.py --port /dev/ttyACM0  --appfpga /path/to/AL4S3B_FPGA_Top.bin --mode m4-fpga --reset
 </pre>
   </ol>
-  
-</ol>
+    <li>After succesfull uploading, The Vaman connects to the Network whose credentials are provided in the <b>.cpp</b> file.</li>
+  <li>Now find out the Ip address assigned to vaman</li>
+  <pre>ifconfig
+nmap -sn 192.168.xx.xx/24</pre>
+  <li>After finding the IP, type this in browser</li>
+  <pre>http://IP_ADDRESS/form_name</pre>
+  </ol>
