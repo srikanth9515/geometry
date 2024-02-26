@@ -52,5 +52,22 @@ After Succesfully connecting both Vaman and Arduino, Connect Mobile to Arduino u
   <li>Using Arduino IDE to compile and upload <b>(.cpp)</b> file and installing necessary packages.</li>
 </ol>
 
-
-
+<h4>After sucessfully uploading esp32 code into vaman, Now we can move onto fpga</h4>
+<ol>
+  <li>Download the fpga folder present above</li>
+  <li>Move to fpga folder</li>
+  <pre>cd fpga</pre>
+  <li>link bin path to QORC_SDK_PATH</li>
+  <pre>export QORC_SDK_PATH=/home/user/pygmy-dev/pygmy-sdk</pre>
+  <li>Generate .bin file</li>
+  <pre>make</pre>
+  <li>Upload .bin to vaman</li>
+  <ol>
+    <li>Connect ESP32 to PYGMY using the reference diagram <a href="https://github.com/gadepall/embedded-system/blob/main/main.pdf">here</a> in section 3.1.1.2 .
+    </li>
+    <li>Flashing Vaman</li>
+    <pre>sudo python3 /path/to/TinyFPGA-Programmer-Application/tinyfpga-programmer-gui.py --port /dev/ttyACM0  --appfpga /path/to/AL4S3B_FPGA_Top.bin --mode m4-fpga --reset
+</pre>
+  </ol>
+  
+</ol>
