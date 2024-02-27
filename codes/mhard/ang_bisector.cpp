@@ -35,12 +35,12 @@ const char index_html[] PROGMEM = R"rawliteral(
     }
   </script>
   </head><body>
-  <h2>TO FIND THE Incenter and Inradius</h2>
+  <h2>TO Find the Incenter and Inradius</h2>
   <p>Enter the values of points A, B, C</p>
   <form id="triangleForm" onsubmit="submitForm(); return false;">
-    Enter the values of Point A: <input type="number" name="input00" value = 1><input type="number" name="input01" value = -1><br>
-    Enter the values of Point B: <input type="number" name="input10" value = -4><input type="number" name="input11" value = 6><br>
-    Enter the values of Point C: <input type="number" name="input20" value = -3><input type="number" name="input21" value = -5><br>
+    Enter the values of Point A: <input type="number" value="1" name="input00"><input type="number" value = "-1" name="input01"><br>
+    Enter the values of Point B: <input type="number" value="-4" name="input10"><input type="number" value="6" name="input11"><br>
+    Enter the values of Point C: <input type="number" value="-3" name="input20"><input type="number" value="-5" name="input21"><br>
     <input type="submit" value="Submit">
   </form><br>
   <div id="results"></div>
@@ -84,11 +84,13 @@ void setup() {
     double Cy = request->arg(input_parameter21).toDouble();
 
 
-    double **A, **B, **C,a,b,c,m,n,p;
+    double **A, **B, **C,**eigen,a,b,c, **D, **E, **F;
     int m1 = 2, n1 = 1;
     A = createMat(m1, n1);
     B = createMat(m1, n1);
     C = createMat(m1, n1);
+    eigen = createMat(m1, n1);
+    
     A[0][0] = Ax;
     A[1][0] = Ay;
     B[0][0] = Bx;
@@ -96,58 +98,48 @@ void setup() {
     C[0][0] = Cx;
     C[1][0] = Cy;
 
-
     double **diff_AB = Matsub(B, A, 2, 1); 
     double distance_AB = Matnorm(diff_AB, 2);  
-            
+    
     double **diff_AC = Matsub(C, A, 2, 1);
     double distance_AC = Matnorm(diff_AC, 2);  
-           
+    
     double **diff_BC = Matsub(C, B, 2, 1);
     double distance_BC = Matnorm(diff_BC, 2);
-            
-    printf("Distance between A and B: %lf\n", distance_AB);
-    printf("Distance between A and C: %lf\n", distance_AC);
-    printf("Distance between B and C: %lf\n", distance_BC);
-            
+    
     a = distance_BC;
     b = distance_AC;
     c = distance_AB;
-
-    m = (a + c - b) / 2;
-    n = (a + b - c) / 2;
-    p = (c + b - a) / 2;
-
-    printf("Sides of the triangle: %lf %lf %lf\n", m, n, p);
-
-    double **D = Matsec(C,B,2,1,m,n);
-    double **E = Matsec(A,C,2,1,n,p);
-    double **F = Matsec(B,A,2,1,p,m);
     
-   
-    printf("Point D on BC: (%lf, %lf)\n", D[0][0], D[1][0]);
-    printf("Point E on AC: (%lf, %lf)\n", E[0][0], E[1][0]);
-    printf("Point F on AB: (%lf, %lf)\n", F[0][0], F[1][0]);
-
-    double **center = calculateCircumcenter(D,E,F);
-
-    double inradius = calculateInradius(distance_AB, distance_AC, distance_BC);
-
-    printf("Incenter coordinates: (%lf, %lf)\n", center[0][0], center[1][0]);
-    printf("Inradius: %lf\n", inradius);
-
-    // Send the results back to the client
-
-   String result = "InCenter: (" + String(center[0][0], 2) + ", " + String(center[1][0], 2) + ")<br>" +
-                "inradius: " + String(inradius) + "<br>" +
-                "D: (" + String(D[0][0], 2) + ", " + String(D[1][0], 2) + ")<br>" +
-                "E: (" + String(E[0][0], 2) + ", " + String(E[1][0], 2) + ")<br>" +
-                "F: (" + String(F[0][0], 2) + ", " + String(F[1][0], 2) + ")<br>" +
-                "Distance Of AB:" +String(c)+ "<br>" +
-                "Distance Of BC:" +String(a)+ "<br>" +
-                "Distance Of CA:" +String(b)+ "<br>";
+    double l1 = (a + c - b) / 2;
+    double l2 = (a + b - c) / 2;
+    double l3 = (c+ b - a) / 2;
+    
+    D = Matscale(Matadd(Matscale(C, 2, 1, l1), Matscale(B, 2, 1, l2), 2, 1), 2, 1, 1.0 / (l1 + l2));
+    E = Matscale(Matadd(Matscale(A, 2, 1, l2), Matscale(C, 2, 1, l3), 2, 1), 2, 1, 1.0 / (l2 + l3));
+    F = Matscale(Matadd(Matscale(B, 2, 1, l3), Matscale(A, 2, 1, l1), 2, 1), 2, 1, 1.0 / (l3 + l1));
 
 
+    double **temp1 = Matscale(A, 2, 1, a);
+    double **temp2 = Matscale(B, 2, 1, b);
+    double **temp3 = Matscale(C, 2, 1, c);
+
+    double **eigenvalues = Matadd(Matadd(temp1, temp2, 2, 1), temp3, 2, 1);
+    double eigendenominator = a + b + c;
+
+    eigen[0][0] = eigenvalues[0][0] / eigendenominator;
+    eigen[1][0] = eigenvalues[1][0] / eigendenominator;
+    
+    String result = 
+    "D: " + String(D[0][0],2) + ", " + String(D[1][0],2) + "<br>"
+    "E: " + String(E[0][0],2) + ", " + String(E[1][0],2) + "<br>"
+    "F: " + String(F[0][0],2) + ", " + String(F[1][0],2) + "<br>"
+    "distance of AB: " + c + "<br>"
+    "distance of BC: " + a + "<br>"
+    "distance of CA: " + b + "<br>"
+    "InCenter:"  + String(eigen[0][0],2) + ", " + String(eigen[1][0], 2) + "<br>"    
+    ".";
+    
     request->send(200, "text/html", result);
   });
 
@@ -156,5 +148,4 @@ void setup() {
 }
 
 void loop() {
-  // Nothing to do here
 }
