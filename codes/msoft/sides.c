@@ -100,35 +100,43 @@ int main() {
             body_start += 4;
 
             int x1, y1, x2, y2, x3, y3, m=2, n=1,p = 1;
-            double angleA,norm_ba,norm_ca;
+            //double angleA,norm_ba,norm_ca;
             sscanf(body_start, "x1=%d&y1=%d&x2=%d&y2=%d&x3=%d&y3=%d", &x1, &y1, &x2, &y2, &x3, &y3);
-            double **A,**B,**C,sideAB, sideBC, sideCA;
-	    A = createMat(m,n);
-            B = createMat(m,n);
-            C = createMat(m,n);
+            //double **A,**B,**C,sideAB, sideBC, sideCA;
+	    double **A = createMat(m,n);
+            double **B = createMat(m,n);
+            double **C = createMat(m,n);
             A[0][0] = x1;
             A[1][0] = y1;
             B[0][0] = x2;
             B[1][0] = y2;
             C[0][0] = x3;
             C[1][0] = y3;
-            double **s_ab, **s_bc, **s_ca;
-            double **a_ba,**tran_ba,**mul_num;
-            double num_vs_den, mul_den;
-	    s_ab = Matsub(A,B,m,n);//A-B
-            s_bc = Matsub(B,C,m,n);//B-C
-            s_ca = Matsub(C,A,m,n);//C-A
-            a_ba = Matsub(B,A,m,n);//B-A
-            sideAB = Matnorm(s_ab,m);
-            sideBC = Matnorm(s_bc,m); 
-            sideCA = Matnorm(s_ca,m);
-            tran_ba = transposeMat(a_ba,m,n);
-    	    mul_num = Matmul(s_ca,tran_ba,m,n,p);
-    	    norm_ba = Matnorm(a_ba,m);
-    	    norm_ca = Matnorm(s_ca,m);
-    	    mul_den = norm_ba * norm_ca;
-    	    num_vs_den = mul_num[0][0] * mul_den;
-    	    angleA = acos(num_vs_den);
+            //double **s_ab, **s_bc, **s_ca;
+            //double **a_ba,**tran_ba,**mul_num;
+            //double num_vs_den, mul_den;
+	    double **s_ab = Matsub(A,B,m,n);//A-B
+            double **s_bc = Matsub(B,C,m,n);//B-C
+            double **s_ca = Matsub(C,A,m,n);//C-A
+            double **a_ba = Matsub(B,A,m,n);//B-A
+            double sideAB = Matnorm(s_ab,m);
+            double sideBC = Matnorm(s_bc,m); 
+            double sideCA = Matnorm(s_ca,m);
+            double **tran_ba = transposeMat(a_ba,m,n);
+    	    double **mul_num = Matmul(s_ca,tran_ba,m,n,p);
+    	    double norm_ba = Matnorm(a_ba,m);
+    	    double norm_ca = Matnorm(s_ca,m);
+    	    double mul_den = norm_ba * norm_ca;
+    	    double num_vs_den = mul_num[0][0] * (1/mul_den);
+    	    double cosTheta = num_vs_den;
+    	    printf("%f",cosTheta);
+    	    double angleA;
+    	    if (cosTheta >= -1.0 && cosTheta <= 1.0) {
+        	angleA = acos(cosTheta) * (180.0 / M_PI);  // Convert radians to degrees
+    	    } else {
+        	// Return some default value or handle the invalid case as appropriate
+            angleA = -1.0; // You may want to use a specific value indicating an error
+		}
     	    freeMat(A,2);
     	    freeMat(B,2);
     	    freeMat(C,2);
@@ -147,8 +155,5 @@ int main() {
         close(client_fd);
     }
 
-    return 0;
+    return (0);
 }
-/*double calculateAngle(double a, double b, double c) {
-    return acos((b * b + c * c - a * a) / (2 * b * c));
-}*/
