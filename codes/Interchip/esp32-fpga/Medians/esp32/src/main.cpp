@@ -5,7 +5,7 @@
 
 const char* ssid = "nani";
 const char* password = "nani12345";
-const char* githubFileURL = "https://raw.githubusercontent.com/mallasujith/1234/main/output.txt";
+const char* githubFileURL = "https://raw.githubusercontent.com/srikanth9515/geometry/codes/Interchip/esp32-fpga/Medians/output.txt";
 String fileContent;
 
 AsyncWebServer server(80);
